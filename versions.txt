@@ -784,3 +784,42 @@ Four new shields: Riot, Xeno Combat, Xeno Tritanium, Assault, Stormtrooper
 - Added missing Tritanium BlackOps Scout Rifle Clip Manufacturing
 - Fixed some missing Melee hit sounds 
 - Added missing commendation for weapons (Shields, DMR, Kludge Ultra)
+0.8
+Changed aiming formula for Blackops Scout Rifle and added auto firing mode (2 shots)
+Added a snap shot for the NSV Machinegun
+Added Accurized FN FAL
+Added M-21 Rifle
+Added VSSK Sniper Rifle
+Added RSh-12 Revolver
+Added ShAK-12 Rifle
+Added M16 Beowulf
+VSSK, RSH-12, M16 Beowulf and SHAK-12 can fire two type of rounds:
+1) Heavier subsonic ammo designed for controlled penetration and maximum damage against soft targets
+2) Lighter armor piercing ammo designed for heavily armored targets
+Added milestones for attacking each manor tier and all the cult versions of that tier (They do nothing for now)
+All Greater Manor assaults and above now have some of the new weapons and convoy cultists (as well as some of the appropiate cult weapons from this submod) 
+Greatest Manor assaults have 1 new elite cultist, theyre pretty dangerous so be careful!
+Additionally all cult manors will now give Weapon Boxes (Regular, Reinforced for Normal and Greater Manors) Greatest Manors give Illegal Requisition Files for their cult
+Red Dawn and Dagon Medium Convoys and Up have some of the new weapons recently added as well
+Added 1 Tier 2 cultist in each of the Warehouses where they were missing(Witch, Chosen, and Sailor respectively)
+Added DMR Category, Commendation (Scout) and Ufopaedia article
+Fixed Sturmpistole Gas Grenade clipsize (was 0 , whoops)
+Fixed missing string for clearing all Warehouse Raids
+Added some TU damage to Nitro Express
+Fixed missing EMP explosion effect for the Tactical Grenade Launcher 
+Both SKS and QBU now have firing accuracy scaling, stats adjusted to compensate
+Fixed duplicate ammo box project
+Now clearing all the warehouses and convoys at each tier wont give you all the leads at once, instead some are obtained at a very low chance from boxes as well as manor assaults
+All Cult manors additionally have extra loot in them, which can contain Black Market leads or other items (Regardless of tier)
+Cruise Liner now has destructible floor on the first and top floors, and the engines explode a bit...more 
+All cultists carrying Sturmpistoles now have a combat knife and have had their ammo doubled, Elite and Warehouse Boss have had it tripled instead and carry gas ammo for it as well (They literally only had 2 grenades before, now it should be 4 and 6 respectively)
+Added LWP Riot Taser Overvolted Clip, made the same way the other Overvolted clips
+All Overvolted clips now give more per corpse! (1 muckstar corpse = 2 Riot Taser or 3 Muckstar cannon or 5 Cyber taser overvolted clips rather than 1:1 ratio)
+Adjusted H&K-51's stats
+Adjusted H&K MP5K's stats and removed MPK clips altogether, HKMP5 and MP5K now use the same clips
+Removed Scaling accuracy formulas for MP5K, HK51, Raging Kludge, BlackOps Executioner
+Change sound for Grenade throwing and melee?
+Fixed wrong death noises for some units
+Adjusted Rat and Dog bites/barks to scale with 10% and 15% bravery as well as adjusted stats to compensate a bit
+Removed MPK Clip
+Slightly toned back damage for Laser Cannons
