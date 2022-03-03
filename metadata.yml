@@ -2,7 +2,7 @@
 # metadata.yaml for XCF Additions
 
 name: "X-Com Files Additions (for X-Com Files 2.3)"
-version: 0.7.9
+version: 0.8.0
 description: "Extra content for the X-Com Files"
 author: 8mono
 reservedSpace: 3
