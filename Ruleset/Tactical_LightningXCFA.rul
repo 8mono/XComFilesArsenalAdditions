@@ -1,0 +1,122 @@
+crafts:
+  - type: STR_TACTICAL_LIGHTNING
+    requires:
+      - STR_STEALTH_FIGHTER_TRANSPORTER
+      - STR_HYPERWAVES
+    sprite: 1
+    costRent: 900000
+    costSell: 3000000
+    fuelMax: 35
+    damageMax: 900
+    speedMax: 3200
+    armor: 1
+    accel: 9
+    weapons: 3
+    weaponTypes:
+      - [0, 1]
+      - [4, 6]
+      - [4, 6]
+      - [6]
+    weaponStrings: [STR_BEAM, STR_SHADOWSTORM_SLOT, STR_SHADOWSTORM_SLOT, STR_ELECTRONICS] 
+    soldiers: 12 #8 16
+    vehicles: 1 #1 2
+    pilots: 1
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    undetectable: true
+    repairRate: 25
+    maxItems: 999
+    score: 300
+    listOrder: 7651
+    battlescapeTerrainData:
+      name: LIGHTNINA
+      mapDataSets:
+        - BLANKS
+        - LIGHTNINA
+        - U_WALL02
+      mapBlocks:
+        - name: LIGHTNINA
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_CRAFT_FLARE_TURRET:
+              - [6, 13, 2]
+              - [13, 13, 2]
+              - [6, 6, 2]
+              - [13, 6, 2]
+          fuseTimers:
+            STR_SPAWN_CRAFT_FLARE_TURRET: [0, 0]
+    deployment:
+       - [9, 12, 1, 0]
+       - [10, 12, 1, 0]
+       - [12, 10, 1, 0]
+       - [12, 9, 1, 0]
+       - [6, 11, 1, 0]
+       - [6, 8, 1, 0]
+       - [13, 11, 1, 0]
+       - [13, 8, 1, 0]
+       - [8, 6, 1, 0]
+       - [11, 6, 1, 0]
+       - [11, 13, 1, 0]
+       - [8, 13, 1, 0]
+       
+manufacture:
+  - name: STR_TACTICAL_LIGHTNING
+    category: STR_CRAFT
+    requires:
+      - STR_STEALTH_FIGHTER_TRANSPORTER
+      - STR_HYPERWAVES
+    space: 34
+    time: 24000
+    cost: 900000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 95
+      STR_UFO_POWER_SOURCE: 2
+      STR_UFO_NAVIGATION: 2
+      STR_ELERIUM_115: 30
+extraSprites:
+  - type: UP00311.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/TacticalLightning/Tactical_UFOp.png
+  - type: BASEBITS.PCK
+    files:
+      34: Resources/TacticalLightning/TacticalLightning_Base.gif
+extraStrings:
+  - type: en-GB
+    strings:
+      STR_TACTICAL_LIGHTNING_UFOPEDIA: "Multi-role stealth craft utilizing alien grav-lift technology for fast tactical deployment in all directions as well as flare dispensers for night operations."
+  - type: en-US
+    strings:
+      STR_TACTICAL_LIGHTNING_UFOPEDIA: "Multi-role stealth craft utilizing alien grav-lift technology for fast tactical deployment in all directions as well as flare dispensers for night operations."
+ufopaedia:
+#Shadowstorm
+  - id: STR_TACTICAL_LIGHTNING
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    requires:
+      - STR_STEALTH_FIGHTER_TRANSPORTER
+    image_id: UP00311.SPK
+    rect_stats:
+      x: 5
+      y: 132
+      width: 160
+      height: 80
+    rect_text:
+      x: 5
+      y: 40
+      width: 310
+      height: 60
+    listOrder: 7650
+    text: STR_TACTICAL_LIGHTNING_UFOPEDIA
+research:
+#Shadowstorm
+  - name: STR_STEALTH_FIGHTER_TRANSPORTER
+    cost: 750
+    points: 50
+    requiresBaseFunc: [IMPLAB]
+    dependencies:
+      - STR_HYPERWAVES
+      - STR_NEW_FIGHTER_TRANSPORTER

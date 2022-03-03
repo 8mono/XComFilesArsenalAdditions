@@ -1,0 +1,67 @@
+eventScripts:
+  - type: STR_MUTON_UFO_PRELUDE
+    eventWeights:
+      0:
+        STR_MUTON_UFO_PRELUDE: 100
+    firstMonth: 0
+    executionOdds: 100
+    researchTriggers:
+       STR_MUTON_COMMANDER: true
+       STR_HYPERWAVES: true
+       STR_MUTON_UFO_PRELUDE: false
+    affectsGameProgression: true
+  # - type: STR_RANDOM_CULT_SURVEY
+    # oneTimeRandomEvents:
+      # STR_RANDOM_ZSRR_FINDINGS: 75
+      # STR_RANDOM_BLACK_LOTUS_FINDINGS: 75
+      # STR_RANDOM_CHURCH_OF_DAGON_FINDINGS: 75
+      # STR_RANDOM_EXALT_FINDINGS: 75
+    # firstMonth: 0
+    # executionOdds: 6
+    # researchTriggers:
+       # STR_EXPEDITION_CULT_SURVEY: true
+    # affectsGameProgression: true
+  - type: STR_RANDOM_ZSRR_SURVEY
+    eventWeights:
+      0:
+        STR_RANDOM_ZSRR_FINDINGS: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_EXPEDITION_CULT_SURVEY: true
+       STR_ZSRR_OPERATIONS: true
+       STR_DESTROY_ZSRR: false
+    affectsGameProgression: true
+  - type: STR_RANDOM_BLACK_LOTUS_SURVEY
+    eventWeights:
+      0:
+        STR_RANDOM_BLACK_LOTUS_FINDINGS: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+      STR_EXPEDITION_CULT_SURVEY: true
+      STR_BLACK_LOTUS_OPERATIONS: true
+      STR_DESTROY_BLACK_LOTUS: false
+    affectsGameProgression: true
+  - type: STR_RANDOM_CHURCH_OF_DAGON_SURVEY
+    eventWeights:
+      0:
+        STR_RANDOM_CHURCH_OF_DAGON_FINDINGS: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_EXPEDITION_CULT_SURVEY: true
+       STR_CHURCH_OF_DAGON_OPERATIONS: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
+    affectsGameProgression: true
+  - type: STR_RANDOM_EXALT_SURVEY
+    eventWeights:
+      0:
+        STR_RANDOM_EXALT_FINDINGS: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+      STR_EXPEDITION_CULT_SURVEY: true
+      STR_EXALT_OPERATIONS: true
+      STR_DESTROY_EXALT: false
+    affectsGameProgression: true

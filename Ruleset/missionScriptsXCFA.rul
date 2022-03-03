@@ -1,0 +1,2373 @@
+missionScripts:
+#EXALT
+#Warehouse
+  - type: CultConvoyWarehouseEXALT
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: &EXALTCityRegions
+      0:
+        STR_NORTH_AMERICA: 100
+        STR_SOUTH_AMERICA: 100
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseEXALT9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_WAREHOUSE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+#Large Convoy
+  - type: CultConvoyLargeEXALT
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeEXALT9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_LARGE: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+#Medium Convoy
+  - type: CultConvoyMediumEXALT
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumEXALT9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_MEDIUM: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_REINFORCER: false
+      STR_EXALT_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+#Small Convoy
+  - type: CultConvoyEXALT
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyEXALT9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_CONVOY_SMALL: true
+      # STR_DESTROY_EXALT: false
+      STR_EXALT_LOGISTICS: false
+      STR_EXALT_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+#Black Lotus
+#Warehouse
+  - type: CultConvoyWarehouseBlackLotus
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: &BlackLotusRegions
+      0:
+        STR_SOUTH_EAST_ASIA: 100
+        STR_AUSTRALASIA: 20
+        STR_PACIFIC: 10
+        STR_INDIAN_OCEAN: 2
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseBlackLotus9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_WAREHOUSE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+#Large Convoy
+  - type: CultConvoyLargeBlackLotus
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights:
+      0:
+        REGION_BLACK_LOTUS_CONVOYS_LARGE: 100
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeBlackLotus9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_LARGE: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+#Medium Convoy
+  - type: CultConvoyMediumBlackLotus
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumBlackLotus9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_ARCHWITCH: false
+      STR_BLACK_LOTUS_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+#Small Convoy
+  - type: CultConvoyBlackLotus
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyBlackLotus9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_CONVOY_SMALL: true
+      # STR_DESTROY_BLACK_LOTUS: false
+      STR_BLACK_LOTUS_KNIGHT: false
+      STR_BLACK_LOTUS_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+#Church of Dagon
+#Warehouse
+  - type: CultConvoyWarehouseChurchOfDagon
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: &DagonRegions
+      0:
+        STR_EUROPE: 125
+        STR_NORTH_AFRICA: 10
+        STR_SOUTHERN_AFRICA: 20
+        STR_NORTH_ATLANTIC: 40
+        STR_SOUTH_ATLANTIC: 15
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseChurchOfDagon9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_WAREHOUSE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+#Large Convoy
+  - type: CultConvoyLargeChurchOfDagon
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeChurchOfDagon9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+#Medium Convoy
+  - type: CultConvoyMediumChurchOfDagon
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumChurchOfDagon9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_LARGE: false
+      STR_PROSELYTE_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+#Small Convoy
+  - type: CultConvoyChurchOfDagon
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyChurchOfDagon9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_CONVOY_SMALL: true
+      # STR_DESTROY_CHURCH_OF_DAGON: false
+      STR_ACOLYTE_OF_DAGON: false
+      STR_CHURCH_OF_DAGON_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+#Red Dawn
+#Warehouse
+  - type: CultConvoyWarehouseZSRR
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: &ZSRRRegions
+      0:
+        STR_ARCTIC: 75
+        STR_SIBERIA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_EUROPE: 50
+        STR_NORTH_AFRICA: 30
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyWarehouseZSRR9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WAREHOUSE_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_WAREHOUSE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_WAREHOUSE_RAIDED: false
+    startDelay: 20
+    randomDelay: 43500
+#Large Convoy
+  - type: CultConvoyLargeZSRR
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyLargeZSRR9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_LARGE_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_LARGE: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_CONVOY_LARGE_INTERCEPTED: false
+      STR_ZSRR_WAREHOUSE: false
+    startDelay: 20
+    randomDelay: 43500
+#Medium Convoy
+  - type: CultConvoyMediumZSRR
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyMediumZSRR9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_MEDIUM: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_RED_OPS_OFFICER: false
+      STR_ZSRR_CONVOY_LARGE: false
+    startDelay: 20
+    randomDelay: 43500
+#Small Convoy
+  - type: CultConvoyZSRR
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR2
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR3
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR4
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR5
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR6
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR7
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR8
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: CultConvoyZSRR9
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_SMALL_GROUND_CONVOY_ZSRR: 100
+    regionWeights: *ZSRRRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_CONVOY_SMALL: true
+      # STR_DESTROY_ZSRR: false
+      STR_ZSRR_LOGISTICS: false
+      STR_ZSRR_CONVOY_MEDIUM: false
+    startDelay: 20
+    randomDelay: 43500

@@ -1,0 +1,28 @@
+startingConditions:
+  - type: STR_SPACE
+    allowedCraft: !add
+      - STR_TACTICAL_LIGHTNING
+  - type: STR_MOON_ALIENS
+    allowedCraft: !add
+      - STR_TACTICAL_LIGHTNING
+  - type: STR_ORBIT
+    allowedCraft: !add
+      - STR_TACTICAL_LIGHTNING
+  - type: STR_STAKEOUT_GEAR
+    allowedCraft: !add
+      - STR_MOTORCYCLE
+  - type: STR_INFILTRATION_GEAR_INFILTRATION_CARS_OSIRON
+    allowedCraft: !add
+      - STR_MOTORCYCLE
+  - type: STR_INFILTRATION_GEAR_INFILTRATION_CARS
+    allowedCraft: !add
+      - STR_MOTORCYCLE
+  - type: STR_BEACH_GEAR
+    allowedCraft: !add
+      - STR_MOTORCYCLE
+  - type: STR_LABOR_GEAR
+    allowedCraft: !add
+      - STR_MOTORCYCLE
+  - type: STR_WINTERSPORTS_GEAR
+    allowedCraft: !add
+      - STR_MOTORCYCLE

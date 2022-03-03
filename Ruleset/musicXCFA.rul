@@ -1,0 +1,13 @@
+musics:
+  - type: THEYLIVE_TRANSIENT_HOTEL
+    normalization: 1.0
+  - type: THEYLIVE_WAKE_UP
+    normalization: 1.0
+  - type: XCOM_APOC_RECYCLATORIUM_SWEEP
+    normalization: 1.0
+  - type: XCOM_APOC_WAREHOUSE_SWEEP
+    normalization: 1.0
+  - type: PAYDAY2_BREAK_THE_RULES_INTRO
+    normalization: 1.0
+  - type: PAYDAY2_BREAK_THE_RULES_NO_VOCALS
+    normalization: 1.0

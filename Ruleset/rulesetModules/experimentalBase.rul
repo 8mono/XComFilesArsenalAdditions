@@ -1,0 +1,588 @@
+# alienMissions:
+  # - type: STR_CULT_SUPPLY
+    # points: 0
+    # objective: 5
+    # raceWeights: {} #Special case, race comes from base.
+    # waves:
+      # - ufo: STR_SMALL_EXALT_GROUND_CONVOY
+        # count: 3
+        # trajectory: P8
+        # timer: 3000
+      # - ufo: STR_MEDIUM_EXALT_GROUND_CONVOY
+        # count: 2
+        # trajectory: P8
+        # timer: 3000
+      # - ufo: STR_LARGE_EXALT_GROUND_CONVOY
+        # count: 1
+        # trajectory: P8
+        # timer: 3000
+      # # - ufo: STR_CULT_WAREHOUSE_EXALT
+        # # count: 1
+        # # trajectory: P8
+        # # timer: 3000
+  # - type: STR_WAREHOUSE_EXALT
+    # points: 50
+    # objective: 2
+    # siteType: STR_WAREHOUSE_EXALT
+    # spawnZone: 3 #Mission zone for alien bases
+    # raceWeights:
+      # 0:
+        # STR_ZSRR: 50
+        # STR_BLACK_LOTUS: 50
+        # STR_CHURCH_OF_DAGON: 50
+        # STR_EXALT: 50
+    # waves:
+      # - ufo: dummy
+        # count: 1
+        # trajectory: CA_SPAWN
+        # timer: 13000
+      # - ufo: STR_MEDIUM_EXALT_GROUND_CONVOY
+        # count: 2
+        # trajectory: P8
+        # timer: 3000
+      # - ufo: STR_LARGE_EXALT_GROUND_CONVOY
+        # count: 1
+        # trajectory: P8
+        # timer: 3000
+# alienDeployments:
+  # - type: STR_WAREHOUSE_EXALT
+    # data:
+      # - alienRank: 5
+        # lowQty: 2
+        # highQty: 5
+        # dQty: 3
+        # percentageOutsideUfo: 70
+        # itemSets:
+          # -
+            # - STR_GLOCK_18
+            # - STR_GLOCK_18_CLIP
+            # - STR_GLOCK_18_CLIP
+            # - STR_PSICLONE
+          # -
+            # - STR_COLT_COMMANDO
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+          # -
+            # - STR_CALICO
+            # - STR_CALICO_CLIP
+            # - STR_CALICO_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_COLT45
+            # - STR_COLT45_CLIP
+            # - STR_COLT45_CLIP
+            # - STR_KNIFE
+          # -
+            # - STR_SHOTGUN
+            # - STR_SHOTGUN_SHELLS
+            # - STR_SHOTGUN_SHELLS
+            # - STR_SHOTGUN_SHELLS
+          # -
+            # - STR_GLOCK_18
+            # - STR_GLOCK_18_CLIP
+            # - STR_GLOCK_18_CLIP
+            # - STR_BASEBALL_BAT
+          # -
+            # - STR_MP
+            # - STR_MP_CLIP
+            # - STR_MP_CLIP
+            # - STR_MP_CLIP
+          # -
+            # - STR_UZI
+            # - STR_UZI_CLIP
+            # - STR_UZI_CLIP
+            # - STR_UZI_CLIP
+            # - STR_SWITCHBLADE
+          # -
+            # - STR_COLT45
+            # - STR_COLT45_CLIP
+            # - STR_COLT45_CLIP
+            # - STR_KNIFE
+          # -
+            # - STR_SHOTGUN
+            # - STR_SHOTGUN_SHELLS
+            # - STR_SHOTGUN_SHELLS
+            # - STR_SHOTGUN_SHELLS
+      # - alienRank: 4
+        # lowQty: 2
+        # highQty: 3
+        # dQty: 0
+        # percentageOutsideUfo: 20
+        # itemSets:
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_KNIFE
+          # -
+            # - STR_COLT45
+            # - STR_COLT45_CLIP
+            # - STR_COLT45_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_PSICLONE
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_PSICLONE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+          # -
+            # - STR_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_KNIFE
+          # -
+            # - STR_COLT45
+            # - STR_COLT45_CLIP
+            # - STR_COLT45_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_PSICLONE
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_PSICLONE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+          # -
+            # - STR_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_GRENADE
+      # - alienRank: 3
+        # lowQty: 1
+        # highQty: 2
+        # dQty: 1
+        # percentageOutsideUfo: 20
+        # itemSets:
+          # -
+            # - STR_MAC10
+            # - STR_MAC10_CLIP
+            # - STR_MAC10_CLIP
+            # - STR_ELECTRIC_CLUB
+          # -
+            # - STR_USP_MATCH
+            # - STR_USP_9_MM_CLIP
+            # - STR_USP_9_MM_CLIP
+            # - STR_USP_9_MM_CLIP
+          # -
+            # - STR_COLT_COMMANDO
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+          # -
+            # - STR_HK_MK23_SOCOM
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_PSICLONE
+          # -
+            # - STR_MAC10
+            # - STR_MAC10_CLIP
+            # - STR_MAC10_CLIP
+            # - STR_ELECTRIC_CLUB
+          # -
+            # - STR_CALICO
+            # - STR_CALICO_CLIP
+            # - STR_CALICO_CLIP
+          # -
+            # - STR_UZI
+            # - STR_UZI_CLIP
+            # - STR_UZI_CLIP
+            # - STR_MACHETE
+          # -
+            # - STR_HK_MK23_SOCOM
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_PSICLONE
+      # - alienRank: 2
+        # lowQty: 1
+        # highQty: 2
+        # dQty: 1
+        # percentageOutsideUfo: 20
+        # itemSets:
+          # -
+            # - STR_DOUBLE_BARRELED
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+          # -
+            # - STR_MAC10
+            # - STR_MAC10_CLIP
+            # - STR_MAC10_CLIP
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_HK_MK23_SOCOM
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_M60
+            # - STR_M60_CLIP
+            # - STR_M60_CLIP
+          # -
+            # - STR_DOUBLE_BARRELED
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+            # - STR_DOUBLE_BARRELED_BUCKSHOT
+          # -
+            # - STR_MAC10
+            # - STR_MAC10_CLIP
+            # - STR_MAC10_CLIP
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_HK_MK23_SOCOM
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_M60
+            # - STR_M60_CLIP
+            # - STR_M60_CLIP
+            # - STR_SMOKE_GRENADE
+      # - alienRank: 13 #STR_ZSRR_LOGISTICS
+        # lowQty: 1
+        # highQty: 2
+        # dQty: 1
+        # percentageOutsideUfo: 0
+        # itemSets:
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_RIFLE_M16_CLIP_AP
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_ILLEGAL_REQUISITION_FILES_EXALT
+          # -
+            # - STR_GRENADE_LAUNCHER
+            # - STR_LAUNCHER_FRAG
+            # - STR_LAUNCHER_FRAG
+            # - STR_LAUNCHER_INC
+            # - STR_LAUNCHER_INC
+            # - STR_LAUNCHER_BEAN
+          # -
+            # - STR_HK_MK23_SOCOM
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_HK_MK23_SOCOM_CLIP
+            # - STR_COMBAT_KNIFE
+            # - STR_HIGH_EXPLOSIVE
+          # -
+            # - STR_M82_BARETT
+            # - STR_M82_BARETT_HE_CLIP
+            # - STR_M82_BARETT_CLIP
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_ILLEGAL_REQUISITION_FILES_EXALT
+          # -
+            # - STR_DESERT_EAGLE
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_DESERT_EAGLE_CLIP
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_SCOPED_MAGNUM
+            # - STR_MAGNUM_DRUM
+            # - STR_MAGNUM_DRUM
+            # - STR_COMBAT_KNIFE
+          # -
+            # - STR_AA12
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+            # - STR_AA12_DRUM
+            # - STR_ILLEGAL_REQUISITION_FILES_EXALT
+          # -
+            # - STR_NTW20_DENEL
+            # - STR_NTW20_DENEL_HE_CLIP
+            # - STR_NTW20_DENEL_AP_CLIP
+      # - alienRank: 6
+        # lowQty: 1
+        # highQty: 1
+        # dQty: 1
+        # percentageOutsideUfo: 0
+        # itemSets:
+          # -
+            # - STR_COLT_COMMANDO
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_INCENDIARY_GRENADE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_LANDMINE
+          # -
+            # - STR_SNIPER_RIFLE
+            # - STR_SNIPER_RIFLE_CLIP
+            # - STR_SNIPER_RIFLE_CLIP
+            # - STR_DYNAMITE
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_GRENADE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_INCENDIARY_GRENADE
+          # -
+            # - STR_RIFLE_M16
+            # - STR_RIFLE_M16_CLIP
+            # - STR_RIFLE_M16_CLIP
+            # - STR_LANDMINE
+          # -
+            # - STR_SNIPER_RIFLE
+            # - STR_SNIPER_RIFLE_CLIP
+            # - STR_SNIPER_RIFLE_CLIP
+            # - STR_DYNAMITE
+      # - alienRank: 14 #STR_ZSRR_RED_OPS_OFFICER
+        # lowQty: 1
+        # highQty: 1
+        # dQty: 0
+        # percentageOutsideUfo: 20
+        # itemSets:
+          # -
+            # - STR_COLT_COMMANDO
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_RIFLE_M16_CLIP_AP
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+          # -
+            # - STR_ACCURIZED_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+          # -
+            # - STR_AA12
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+          # -
+            # - STR_AA12
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+          # -
+            # - STR_ACCURIZED_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+          # -
+            # - STR_AA12
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+            # - STR_AA12_SHELLS
+          # -
+            # - STR_AA12
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+      # - customUnitType: STR_EXALT_ARMORED_CAR
+        # lowQty: 1
+        # highQty: 2
+        # dQty: 0
+        # percentageOutsideUfo: 100
+      # - customUnitType: STR_EXALT_EXTERMINATOR
+        # lowQty: 1
+        # highQty: 1
+        # dQty: 0
+        # percentageOutsideUfo: 0
+        # itemSets:
+          # -
+            # - STR_M16MK
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_PUMP_ACTION_SHELLS
+            # - STR_PUMP_ACTION_SHELLS
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_M16GL
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_RIFLE_M16_CLIP_AP
+            # - STR_LAUNCHER_FRAG
+            # - STR_LAUNCHER_FLASHBANG
+            # - STR_LAUNCHER_INC
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_BLACKOPS_ACCURIZED_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_AUTO_SHOTGUN
+            # - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+            # - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+            # - STR_AUTO_SHOTGUN_FRAG_SHELLS
+            # - STR_AUTO_SHOTGUN_FRAG_SHELLS
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_AA12
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_FN_P90
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_FN_P90_CLIP
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_BLACKOPS_ACCURIZED_SHOTGUN
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_SHOTGUN_SHELLS_AP
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_AUTO_SHOTGUN
+            # - STR_AUTO_SHOTGUN_FRAG_SHELLS
+            # - STR_AUTO_SHOTGUN_FRAG_SHELLS
+            # - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+            # - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+            # - STR_RIOT_STAB_VEST
+          # -
+            # - STR_AA12
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_AA12_DRUM
+            # - STR_RIOT_STAB_VEST
+    # width: 50
+    # length: 50
+    # height: 6
+    # terrains:
+      # - MOON
+    # script: WarehouseEXALT
+    # briefing:
+      # background: EXALT_BACKGROUND.SCR #generic default CHANGE THIS TO EXALT?
+      # palette: 2
+      # music: WAR1
+      # desc: STR_WAREHOUSE_EXALT_BRIEFING
+      # showTarget: false
+    # objectiveType: 3
+    # music:
+      # - FAL_16_ALLCLEAR
+    # markerName: STR_WAREHOUSE_EXALT
+    # markerIcon: 7
+    # alert: STR_ALERT_WAREHOUSE_CULT #generic
+    # alertBackground: EXALT_BACKGROUND.SCR #CHANGE THIS TO EXALTgeneric default 
+    # alertDescription: STR_WAREHOUSE_EXALT_DESCRIPTION
+    # unlockedResearch: STR_EXALT_WAREHOUSE_RAIDED
+    # objectiveComplete: ["WAREHOUSE RAIDED", 500]
+    # missionBountyItem: STR_WEAPON_BOX_REINFORCED_EXALT
+    # missionBountyItemCount: 3
+    # genMission:
+      # STR_CULT_SUPPLY: 100
+    # genMissionFreq: 6
+    # alienBase: true    # this is only to tell new battle mode what to do with this deployment
+    # objectivePopup: STR_CONTROL_CENTER_DESTROYED
+    # points: 5

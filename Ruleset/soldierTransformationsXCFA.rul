@@ -1,0 +1,116 @@
+soldierTransformation:
+  # - name: STR_LOBSTROSITY_GENEMOD
+    # requires:
+      # - STR_LOBSTROSITY_BIOMOD
+    # requiresBaseFunc:
+      # - MEDBAY
+    # keepSoldierArmor: true
+    # allowsDeadSoldiers: false
+    # allowsLiveSoldiers: true
+    # allowedSoldierTypes:
+      # - STR_DOG
+    # forbiddenPreviousTransformations:
+      # - STR_LOBSTROSITY_GENEMOD
+    # requiredPreviousTransformations:
+      # - STR_BLOODHOUND_GENEMOD
+    # cost: 100000
+    # recoveryTime: 14
+    # includeBonusesForMinStats: true
+    # # requiredMinStats:
+      # # stamina: 60
+      # # health: 40
+      # # strength: 35
+    # soldierBonusType: STR_LOBSTROSITY_GENEMOD
+    # listOrder: 111
+  - name: STR_BLOODHOUND_GENEMOD
+    requires:
+      - STR_BLOODHOUND_BIOMOD
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_DOG
+    forbiddenPreviousTransformations:
+      - STR_GILLDOG_GENEMOD
+      - STR_BLOODHOUND_GENEMOD
+      # - STR_PSIHOUND_GENEMOD
+      # - STR_LOBSTROSITY_GENEMOD
+    cost: 40000
+    recoveryTime: 7
+    includeBonusesForMinStats: true
+    # requiredMinStats:
+      # stamina: 60
+      # health: 40
+      # strength: 35
+    soldierBonusType: STR_BLOODHOUND_GENEMOD
+    listOrder: 101
+  # - name: STR_PSIHOUND_GENEMOD
+    # requires:
+      # - STR_PSIHOUND_BIOMOD
+    # requiresBaseFunc:
+      # - MEDBAY
+    # keepSoldierArmor: true
+    # allowsDeadSoldiers: false
+    # allowsLiveSoldiers: true
+    # allowedSoldierTypes:
+      # - STR_DOG
+    # forbiddenPreviousTransformations:
+      # - STR_BLOODHOUND_GENEMOD
+    # requiredPreviousTransformations:
+      # - STR_GILLDOG_GENEMOD
+    # cost: 100000
+    # recoveryTime: 14
+    # includeBonusesForMinStats: true
+    # # requiredMinStats:
+      # # stamina: 60
+      # # health: 40
+      # # strength: 35
+    # soldierBonusType: STR_PSIHOUND_GENEMOD
+    # listOrder: 110
+  - name: STR_GILLDOG_GENEMOD
+    requires:
+      - STR_GILLDOG_BIOMOD
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_DOG
+      - STR_RAT
+      - STR_BAT
+    forbiddenPreviousTransformations:
+      - STR_GILLDOG_GENEMOD
+      - STR_BLOODHOUND_GENEMOD
+      # - STR_PSIHOUND_GENEMOD
+    cost: 40000
+    recoveryTime: 7
+    includeBonusesForMinStats: true
+    # requiredMinStats:
+      # stamina: 60
+      # health: 40
+      # strength: 35
+    soldierBonusType: STR_GILLDOG_GENEMOD
+    listOrder: 100
+  - name: STR_LAW_ENFORCEMENT_TRAINING
+    requires:
+      - STR_CROWD_CONTROL_GEAR
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_LAW_ENFORCEMENT_TRAINING
+    cost: 15000
+    transferTime: 180
+    includeBonusesForMinStats: true
+    requiredMinStats:
+      reactions: 35
+      bravery: 35
+      mana: 45
+    soldierBonusType: STR_LAW_ENFORCEMENT_TRAINING
+    listOrder: 300

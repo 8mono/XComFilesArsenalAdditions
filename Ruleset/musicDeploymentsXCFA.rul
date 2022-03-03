@@ -1,0 +1,43 @@
+alienDeployments:
+  - type: STR_CYBERWEB_LAIR
+    music:
+      - XCOM_APOC_WAREHOUSE_SWEEP
+    briefing:
+      background: SEWERS_BACKGROUND.SCR
+      palette: 2
+      music: THEYLIVE_TRANSIENT_HOTEL
+      showTarget: false
+  - type: STR_CYBERWEB_HEIST
+    music:
+      - THEYLIVE_WAKE_UP
+  - type: STR_CYBERWEB_CENTURION_RAMPAGE
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: THEYLIVE_TRANSIENT_HOTEL
+      showTarget: false
+    music:
+      - THEYLIVE_WAKE_UP
+  - type: STR_CYBERWEB_MANUFACTURING_PLANT
+    briefing:
+      background: TECHNICAL_BACKGROUND.SCR
+      palette: 2
+      music: THEYLIVE_TRANSIENT_HOTEL
+      showTarget: false
+    music:
+      - XCOM_APOC_RECYCLATORIUM_SWEEP
+  - type: STR_CYBERWEB_DIMENSIONAL_PORTAL
+    music:
+      - THEYLIVE_WAKE_UP
+  - type: STR_OOZE_NEST
+    music:
+      - XCOM_APOC_WAREHOUSE_SWEEP
+  - type: STR_OSIRON_HACIENDA
+    briefing:
+      background: CITY_RAID_BACKGROUND.SCR
+      palette: 2 
+      music: PAYDAY2_BREAK_THE_RULES_INTRO
+      desc: STR_OSIRON_HACIENDA_BRIEFING
+      showTarget: false
+    music:
+      - PAYDAY2_BREAK_THE_RULES_NO_VOCALS

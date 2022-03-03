@@ -1,0 +1,10 @@
+itemCategories:
+  - type: STR_ANTITANK
+    listOrder: 95
+  - type: STR_DMR
+    listOrder: 94
+  - type: STR_FLARE
+    listOrder: 255
+  - type: STR_BREACHING_TOOLS
+    listOrder: 256
+

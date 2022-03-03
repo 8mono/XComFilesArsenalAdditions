@@ -1,0 +1,1163 @@
+missionScripts:
+  - type: madmanHostageEarly
+    firstMonth: 0
+    lastMonth: 12
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_MADMAN_HOSTAGE_1: 50
+        STR_MADMAN_HOSTAGE_2: 50
+    useTable: false
+    regionWeights:
+      0:
+        REGION_MADMAN_HOSTAGE: 100
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: madmanHostageLate
+    firstMonth: 13
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_MADMAN_HOSTAGE_1: 50
+        STR_MADMAN_HOSTAGE_2: 50
+    useTable: false
+    regionWeights:
+      0:
+        REGION_MADMAN_HOSTAGE: 100
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: soldierHostageEarly
+    firstMonth: 4
+    lastMonth: 18
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_SOLDIER_HOSTAGE_1: 50
+        STR_SOLDIER_HOSTAGE_2: 50
+    useTable: false
+    regionWeights:
+      0:
+        REGION_MAD_SOLDIER_HOSTAGE: 100
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: soldierHostageLate
+    firstMonth: 19
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_SOLDIER_HOSTAGE_1: 50
+        STR_SOLDIER_HOSTAGE_2: 50
+    useTable: false
+    regionWeights:
+      0:
+        REGION_MAD_SOLDIER_HOSTAGE: 100
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: postalHostageEarly
+    firstMonth: 7
+    lastMonth: 20
+    executionOdds: 4 #12
+    missionWeights:
+      0:
+        STR_POSTAL_HOSTAGE_1: 50
+        STR_POSTAL_HOSTAGE_2: 50
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    useTable: false
+    regionWeights:
+      0:
+        REGION_POSTAL_HOSTAGE: 100
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: postalHostageLate
+    firstMonth: 21
+    executionOdds: 4 #4
+    missionWeights:
+      0:
+        STR_POSTAL_HOSTAGE_1: 50
+        STR_POSTAL_HOSTAGE_2: 50
+    researchTriggers:
+      STR_POSTAL_INTERROGATED: true
+      STR_BREACHING_EXPLOSIVES: true
+    useTable: false
+    regionWeights:
+      0:
+        REGION_POSTAL_HOSTAGE: 100
+    startDelay: 20
+    randomDelay: 43500
+alienMissions:
+  - type: STR_MADMAN_HOSTAGE_1
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+  - type: STR_MADMAN_HOSTAGE_2
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+  - type: STR_SOLDIER_HOSTAGE_1
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+  - type: STR_SOLDIER_HOSTAGE_2
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+  - type: STR_POSTAL_HOSTAGE_1
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+  - type: STR_POSTAL_HOSTAGE_2
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_POSTAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+alienDeployments:
+  - type: STR_MADMAN_HOSTAGE_1
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MADMAN_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_01
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 300
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: &MadmanHostage
+      - alienRank: 5
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: 
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_KNIFE
+            - STR_STIMS
+            - STR_POSTAL_DIARY
+          -
+            - STR_DESERT_EAGLE
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_MACHETE
+            - STR_PAINKILLER
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_KNIFE
+            - STR_STIMS
+            - STR_POSTAL_DIARY
+          -
+            - STR_DESERT_EAGLE
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_WINCHESTER_1901
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_MACHETE
+            - STR_PAINKILLER
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+  - type: STR_MADMAN_HOSTAGE_2
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_MADMAN_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_02
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 300
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: *MadmanHostage
+  - type: STR_SOLDIER_HOSTAGE_1
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_SOLDIER_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_01
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 400
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: &SoldierHostage
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: 
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_STIMS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_PAINKILLER
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_MEDI_PACK
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_GRENADE
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_STIMS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_AKM
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_PAINKILLER
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+          -
+            - STR_M14
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_MEDI_PACK
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_GRENADE
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+  - type: STR_SOLDIER_HOSTAGE_2
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_SOLDIER_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_02
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 400
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: *SoldierHostage
+  - type: STR_POSTAL_HOSTAGE_1
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_POSTAL_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_01
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 400
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: &PostalHostage
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: 
+          -
+            - STR_AUTO_SHOTGUN
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_STEYR_AUG
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_STIMS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_PAINKILLER
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_GRENADE_LAUNCHER
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_POSTAL_DIARY
+          -
+            - STR_NITRO_EXPRESS
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_POSTAL_DIARY
+            - STR_GRENADE
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_AUTO_SHOTGUN
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+          -
+            - STR_STEYR_AUG
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_STIMS
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_BS_AMMO
+            - STR_PAINKILLER
+            - STR_GRENADE
+            - STR_POSTAL_DIARY
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_GRENADE_LAUNCHER
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_POSTAL_DIARY
+          -
+            - STR_NITRO_EXPRESS
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_POSTAL_DIARY
+            - STR_GRENADE
+            - STR_NAPALM_GRENADE
+  - type: STR_POSTAL_HOSTAGE_2
+    civilians: 20
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_MADMAN_HOSTAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_POSTAL_HOSTAGE_DESCRIPTION
+    customUfo: STR_HOSTAGE_BUILDING_02
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MADMAN_HOSTAGE
+    duration: [90, 110]
+    despawnPenalty: 400
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data: *PostalHostage
+items:
+  - type: STR_ALIEN_BOMB_XCFA
+    categories: [STR_ALIEN_TECH, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
+    size: 0.5
+    costSell: 60000
+    weight: 80
+    bigSprite: 367
+    floorSprite: 371
+    handSprite: 249
+    power: 100 #300
+    damageAlter:
+      IgnoreOverKill: false
+      RadiusReduction: 5 #15
+      ToWound: 20
+      RandomWound: true
+      ToMorale: 500
+      ToStun: 0
+      SmokeThreshold: 1500
+      FireThreshold: 20 #150
+      ToTile: 1 #1
+      RandomTile: true
+      TileDamageMethod: 2
+      ToItem: 0
+    damageType: 3
+    costThrow:
+      energy: 20
+    costUnprime:
+      time: 15
+    attraction: 0
+    recover: false
+    recoveryPoints: 100
+    unprimeActionName: STR_UNPRIME_BOMB
+    unprimeActionMessage: STR_BOMB_IS_DEACTIVATED
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 13 #15
+    armor: 1500
+    attraction: 6
+    listOrder: 38960
+  - type: STR_SPAWN_MUTON_BERSERKER
+    spawnUnit: STR_MUTON_BERSERKER
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_CIVILIAN_MALE_SWAT_EVIL
+    spawnUnit: STR_MALE_SWAT_XCFA
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_CIVILIAN_MALE_SWAT_XCFA
+    spawnUnit: STR_MALE_SWAT_XCFA
+    spawnUnitFaction: 2
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_COUNCIL_MEMBER_HOSTAGE
+    spawnUnit: STR_COUNCIL_MEMBER_HOSTAGE
+    spawnUnitFaction: 2
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_MALE_VIP_HOSTAGE
+    spawnUnit: STR_MALE_VIP_HOSTAGE
+    spawnUnitFaction: 2
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+ufos:
+  - type: STR_HOSTAGE_BUILDING_01
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: HOSTAGE_BUILDING1
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - MADDECOR
+      mapBlocks:
+        - name: HOSTAGE_BUILDING_000
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_BOMB_XCFA:
+              - [6,6,1]
+            STR_SPAWN_MALE_VIP_HOSTAGE:
+              - [2, 13, 0]
+              - [10, 10, 0]
+              - [2, 2, 1]
+              - [10, 13, 1]
+              - [10, 2, 2]
+              - [10, 13, 2]
+            STR_SPAWN_COUNCIL_MEMBER_HOSTAGE:
+              - [10, 2, 0]
+              - [5, 13, 0]
+              - [6, 9, 1]
+              - [2, 8, 1]
+              - [2, 2, 2]
+            STR_SPAWN_CIVILIAN_MALE_SWAT_EVIL:
+              - [11, 2, 0] 
+              - [4, 9, 0]
+              - [8, 10, 0]
+              - [4, 12, 1]
+              - [3, 10, 2]
+              - [6, 7, 2]
+              - [8, 5, 2]
+              - [5, 4, 2]
+              - [8, 5, 3]
+              - [5, 4, 3]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_SWAT_EVIL: [0, 0]
+            STR_SPAWN_MALE_VIP_HOSTAGE: [0, 0]
+            STR_SPAWN_COUNCIL_MEMBER_HOSTAGE: [0, 0]
+            STR_ALIEN_BOMB_XCFA: [40, 40]            
+
+  - type: STR_HOSTAGE_BUILDING_02
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: HOSTAGE_BUILDING2
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - MADDECOR
+      mapBlocks:
+        - name: HOSTAGE_BUILDING_001
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_BOMB_XCFA:
+              - [6,6,1]
+            STR_SPAWN_MALE_VIP_HOSTAGE:
+              - [2, 13, 0]
+              - [10, 10, 0]
+              - [2, 2, 1]
+              - [10, 13, 1]
+              - [10, 2, 2]
+              - [10, 13, 2]
+            STR_SPAWN_COUNCIL_MEMBER_HOSTAGE:
+              - [10, 2, 0]
+              - [5, 13, 0]
+              - [6, 9, 1]
+              - [2, 8, 1]
+              - [2, 2, 2]
+            STR_SPAWN_CIVILIAN_MALE_SWAT_EVIL:
+              - [11, 2, 0] 
+              - [4, 9, 0]
+              - [8, 10, 0]
+              - [4, 12, 1]
+              - [3, 10, 2]
+              - [6, 7, 2]
+              - [8, 5, 2]
+              - [5, 4, 2]
+              - [8, 5, 3]
+              - [5, 4, 3]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_SWAT_EVIL: [0, 0]
+            STR_SPAWN_MALE_VIP_HOSTAGE: [0, 0]
+            STR_SPAWN_COUNCIL_MEMBER_HOSTAGE: [0, 0]
+            STR_ALIEN_BOMB_XCFA: [40, 40]            
+
+  - type: STR_SWAT_CAR_XCFA
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: SWAT_VAN
+      mapDataSets:
+        - BLANKS
+        - POLICECAR
+      mapBlocks:
+        - name: SWAT_VAN #EXPANDEDTERROR01
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CIVILIAN_MALE_SWAT_XCFA:
+              - [7, 7, 0]
+              - [2, 7, 0]
+              - [2, 3, 0]
+              - [7, 3, 0]
+              - [5, 2, 0]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_SWAT_XCFA: [0, 0]
+armors:
+  - type: STR_HUMAN_POSTAL2_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 0
+      TTAG_TEARGAS_RESISTANCE: 0
+      TAG_IS_TERRORIST: 1
+  - type: STR_COUNCIL_MEMBER_HOSTAGE_ARMOR
+    spriteSheet: COUNCIL_MEMBER.PCK
+    spriteInv: inventory_COUNCIL_MEMBER
+    ufopediaType: STR_COUNCIL_MEMBER_ARMOR
+    corpseBattle:
+      - STR_COUNCIL_MEMBER_HOSTAGE_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 16
+    underArmor: 20
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.4
+      moraleCurrent: 0.33
+      bravery: 0.2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.09
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.8
+      - 0.65
+      - 0.9
+      - 0.7
+      - 1.0
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_KARATE
+    loftempsSet: [ 3 ]
+    createsMeleeThreat: false
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 0
+      TTAG_TEARGAS_RESISTANCE: 0
+      TAG_IS_HOSTAGE: 1
+      TAG_IMMUNITY_TIME: 10
+  - type: STR_MALE_VIP_HOSTAGE_ARMOR
+    spriteSheet: MALE_VIP.PCK
+    spriteInv: inventory_MALE_VIP
+    ufopediaType: STR_MALE_VIP_ARMOR
+    corpseBattle:
+      - STR_MALE_VIP_HOSTAGE_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
+    createsMeleeThreat: false
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 0
+      TTAG_TEARGAS_RESISTANCE: 0
+      TAG_IS_HOSTAGE: 1
+      TAG_IMMUNITY_TIME: 15
+units:
+  - type: STR_MALE_VIP_HOSTAGE
+    race: STR_HUMAN
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 35
+      stamina: 65
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 15
+      mana: 50
+    armor: STR_MALE_VIP_HOSTAGE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    deathSound: &MaleDeathSounds [1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145]
+    panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]
+    intelligence: 4
+    aggression: 1
+    spotter: 1
+    energyRecovery: 20
+    civilianRecoveryType: STR_MALE_VIP_HOSTAGE
+    builtInWeaponSets:
+      - - STR_BOUND_HANDS
+  - type: STR_COUNCIL_MEMBER_HOSTAGE
+    race: STR_HUMAN
+    vip: true
+    stats:
+      tu: 54
+      stamina: 48
+      health: 35
+      bravery: 70
+      reactions: 40
+      firing: 50
+      throwing: 30
+      strength: 30
+      psiStrength: 30
+      psiSkill: 0
+      melee: 35
+      mana: 50
+    armor: STR_COUNCIL_MEMBER_HOSTAGE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: &FemaleDeathSounds [1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167]
+    panicSound: &FemalePanicSounds [731, 732, 733, 734, 735, 736, 737]
+    berserkSound: &FemaleBerserkSounds [831, 832, 833]
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 2
+    builtInWeaponSets:
+      - - STR_BOUND_HANDS
+  - type: STR_MALE_SWAT_XCFA
+    race: STR_HUMAN
+    stats:
+      tu: 60
+      stamina: 80
+      health: 60
+      bravery: 80
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 50
+      psiStrength: 40
+      psiSkill: 0
+      melee: 55
+      mana: 55
+    armor: STR_HUMAN_POSTAL2_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    energyRecovery: 25
+    builtInWeaponSets:
+      - - STR_M82_BARETT
+        - STR_M82_BARETT_CLIP
+        - STR_M82_BARETT_CLIP
+        - STR_M82_BARETT_HE_CLIP
+        - STR_GRENADE
+      - - STR_HK51
+        - STR_FN_FAL_CLIP_AP
+        - STR_FN_FAL_CLIP_AP
+        - STR_ENEMY_FLASHBANG_GRENADE
+      - - STR_FLAMETHROWER
+        - STR_FLAMETHROWER_CLIP
+        - STR_FLAMETHROWER_CLIP
+      - - STR_M16GL
+        - STR_RIFLE_M16_CLIP_AP
+        - STR_RIFLE_M16_CLIP_AP
+        - STR_LAUNCHER_FRAG
+        - STR_INCENDIARY_GRENADE
+      - - STR_FG42_BIPOD
+        - STR_7_92_CLIP
+        - STR_7_92_CLIP
+        - STR_7_92_CLIP
+        - STR_ENEMY_FLASHBANG_GRENADE
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+        - STR_INCENDIARY_GRENADE
+      - - STR_AA12
+        - STR_AA12_DRUM
+        - STR_AA12_DRUM
+        - STR_GRENADE
+      - - STR_FN_P90
+        - STR_FN_P90_CLIP
+        - STR_FN_P90_CLIP
+        - STR_FN_P90_CLIP
+      - - STR_ACCURIZED_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+        - STR_SHOTGUN_FLECHETTE_SHELLS
+      - - STR_M16MK
+        - STR_RIFLE_M16_CLIP_AP
+        - STR_RIFLE_M16_CLIP_AP
+        - STR_PUMP_ACTION_SHELLS
+        - STR_GRENADE

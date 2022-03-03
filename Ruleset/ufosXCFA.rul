@@ -1,0 +1,1571 @@
+ufos:
+  - type: STR_CULT_MANOR
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CULT_MANOR
+      mapDataSets: &CribTilesets
+        - BLANKS
+        - CRIBURBAN
+        - CRIBURBITS
+        - CRIBDECOR
+        - MANSIONBITS
+        - CITYFRNITURE
+      mapBlocks:
+        - name: LT_HOUSE_04G
+          width: 20
+          length: 30
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 10, 0]
+              - [3, 10, 0]
+              - [2, 14, 0]
+              - [3, 14, 0]
+          randomizedItems:
+              - position: [2, 10, 0]
+                amount: 2
+                mixed: false
+                itemList: &cribGeneralXCFA [STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_BAG, STR_TRAUMA_PACK, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_BOOM_BOX, STR_BOOM_BOX, STR_NOOSE, STR_NOOSE, STR_STORM, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRO_FLARE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_ETRACE, STR_DURATHREAD, STR_DURATHREAD, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_ETRACE, STR_DURATHREAD, STR_DURATHREAD, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX]
+              - position: [3, 10, 0]
+                amount: 14
+                mixed: true
+                itemList: &cribMedicalXCFA [STR_PAINKILLER, STR_PAINKILLER, STR_STIMS, STR_STIMS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_BAG, STR_TRAUMA_PACK, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE] # 1x crib medical
+              - position: [2, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: &blackMarketLeads [STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_1, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_2, STR_BLACK_MARKET_TIER_3, STR_BLACK_MARKET_TIER_3, STR_BLACK_MARKET_TIER_3, STR_BLACK_MARKET_TIER_3, STR_BLACK_MARKET_TIER_4, STR_BLACK_MARKET_TIER_4]
+              - position: [3, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: *blackMarketLeads
+  - type: STR_CULT_WAREHOUSE_EXALT
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_WAREHOUSE_EXALT
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - BATHBITZ_HT
+        - TAVERN
+      mapBlocks:
+        - name: D_ATRIUM1
+          width: 20
+          length: 20
+          items:
+            STR_AMMO_BOX_REINFORCED:
+              - [1, 15, 1]
+              - [1, 5, 1]
+  - type: STR_CULT_WAREHOUSE_CHURCH_OF_DAGON
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DAGON_WAREHOUSE
+      mapDataSets:
+        - BLANKS
+        - PORTROADS
+        - PORTURBITS
+        - ROADS
+        - URBITS
+        - FRNITURE
+      mapBlocks:
+        - name: DAGON_WAREHOUSE_000
+          width: 30
+          length: 30
+          items:
+            STR_AMMO_BOX_REINFORCED:
+              - [9, 5, 0]
+              - [9, 6, 0]
+  - type: STR_CULT_WAREHOUSE_ZSRR
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: OSIRON_NEST
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS   
+        - URBAN 
+        - CRATES
+        - DOORSSEC
+        - OSIRON_FINNIK
+      mapBlocks:
+        - name: OSIRON_NEST_001
+          width: 20
+          length: 20
+          items:
+            STR_AMMO_BOX_REINFORCED:
+              - [9, 5, 0]
+              - [9, 6, 0]
+  - type: STR_CULT_WAREHOUSE_BLACK_LOTUS
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CORPLAB
+      mapDataSets:
+        - BLANKS
+        - CORPWAREHOUSE
+      mapBlocks:
+        - name: CORPWAREHOUSE01
+          width: 20
+          length: 20
+          items:
+            STR_AMMO_BOX_REINFORCED:
+              - [9, 5, 1]
+              - [9, 6, 1]
+  - type: STR_LARGE_EXALT_GROUND_CONVOY #generic?
+    size: STR_LARGE_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CULT_CONVOY_LARGE_EXALT
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY03 #3 vans
+          width: 50
+          length: 20
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_EXALT:
+              - [27, 16, 0] 
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 15, 0]
+            STR_GENERIC_CRATE:
+              - [19, 16, 0] 
+              - [19, 17, 0]
+              - [27, 16, 0] 
+              - [27, 17, 0]
+              - [37, 16, 0] 
+              - [37, 17, 0]
+          randomizedItems:
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardEXALTShootyStash [STR_WEAPON_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardEXALTShootyStash
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodEXALTShootyStash [STR_WEAPON_BOX_REINFORCED_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodEXALTShootyStash
+              - position: [26, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodEXALTShootyStash
+              - position: [36, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+        - name: CONVOY05 #3 vans
+          width: 50
+          length: 10
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_EXALT:
+              - [27, 6, 0]
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 5, 0]
+            STR_GENERIC_CRATE:
+              - [19, 6, 0] 
+              - [19, 7, 0]
+              - [27, 6, 0] 
+              - [27, 7, 0]
+              - [37, 6, 0] 
+              - [37, 7, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardEXALTShootyStash [STR_WEAPON_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardEXALTShootyStash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodEXALTShootyStash [STR_WEAPON_BOX_REINFORCED_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodEXALTShootyStash
+              - position: [26, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodEXALTShootyStash
+              - position: [36, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_LARGE_CHURCH_OF_DAGON_GROUND_CONVOY #generic?
+    size: STR_LARGE_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY03 #3 vans
+          width: 50
+          length: 20
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON:
+              - [27, 16, 0] 
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 15, 0]
+            STR_GENERIC_CRATE:
+              - [19, 16, 0] 
+              - [19, 17, 0]
+              - [27, 16, 0] 
+              - [27, 17, 0]
+              - [37, 16, 0] 
+              - [37, 17, 0]
+          randomizedItems:
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardChurchOfDagonShootyStash [STR_WEAPON_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardChurchOfDagonShootyStash
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodChurchOfDagonShootyStash [STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodChurchOfDagonShootyStash
+              - position: [26, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodChurchOfDagonShootyStash
+              - position: [36, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+        - name: CONVOY05 #3 vans
+          width: 50
+          length: 10
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON:
+              - [27, 6, 0]
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 5, 0]
+            STR_GENERIC_CRATE:
+              - [19, 6, 0] 
+              - [19, 7, 0]
+              - [27, 6, 0] 
+              - [27, 7, 0]
+              - [37, 6, 0] 
+              - [37, 7, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardChurchOfDagonShootyStash [STR_WEAPON_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardChurchOfDagonShootyStash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodChurchOfDagonShootyStash [STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodChurchOfDagonShootyStash
+              - position: [26, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodChurchOfDagonShootyStash
+              - position: [36, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_LARGE_ZSRR_GROUND_CONVOY #generic?
+    size: STR_LARGE_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY03 #3 vans
+          width: 50
+          length: 20
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_ZSRR:
+              - [27, 16, 0] 
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 15, 0]
+            STR_GENERIC_CRATE:
+              - [19, 16, 0] 
+              - [19, 17, 0]
+              - [27, 16, 0] 
+              - [27, 17, 0]
+              - [37, 16, 0] 
+              - [37, 17, 0]
+          randomizedItems:
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardZSRRShootyStash [STR_WEAPON_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardZSRRShootyStash
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodZSRRShootyStash [STR_WEAPON_BOX_REINFORCED_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodZSRRShootyStash
+              - position: [26, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodZSRRShootyStash
+              - position: [36, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+        - name: CONVOY05 #3 vans
+          width: 50
+          length: 10
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_ZSRR:
+              - [27, 6, 0]
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 5, 0]
+            STR_GENERIC_CRATE:
+              - [19, 6, 0] 
+              - [19, 7, 0]
+              - [27, 6, 0] 
+              - [27, 7, 0]
+              - [37, 6, 0] 
+              - [37, 7, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardZSRRShootyStash [STR_WEAPON_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardZSRRShootyStash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodZSRRShootyStash [STR_WEAPON_BOX_REINFORCED_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodZSRRShootyStash
+              - position: [26, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodZSRRShootyStash
+              - position: [36, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_LARGE_BLACK_LOTUS_GROUND_CONVOY #generic?
+    size: STR_LARGE_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY03 #3 vans
+          width: 50
+          length: 20
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_BLACK_LOTUS:
+              - [27, 16, 0] 
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 15, 0]
+            STR_GENERIC_CRATE:
+              - [19, 16, 0] 
+              - [19, 17, 0]
+              - [27, 16, 0] 
+              - [27, 17, 0]
+              - [37, 16, 0] 
+              - [37, 17, 0]
+          randomizedItems:
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardBlackLotusShootyStash [STR_WEAPON_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBlackLotusShootyStash
+              - position: [18, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodBlackLotusShootyStash [STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodBlackLotusShootyStash
+              - position: [26, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 16, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodBlackLotusShootyStash
+              - position: [36, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+        - name: CONVOY05 #3 vans
+          width: 50
+          length: 10
+          items:
+            STR_ILLEGAL_REQUISITION_FILES_BLACK_LOTUS:
+              - [27, 6, 0]
+            STR_AMMO_BOX_REINFORCED:
+              - [27, 5, 0]
+            STR_GENERIC_CRATE:
+              - [19, 6, 0] 
+              - [19, 7, 0]
+              - [27, 6, 0] 
+              - [27, 7, 0]
+              - [37, 6, 0] 
+              - [37, 7, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardBlackLotusShootyStash [STR_WEAPON_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBlackLotusShootyStash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &goodBlackLotusShootyStash [STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x reinforced weapon box, 3x ammo box
+              - position: [26, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodBlackLotusShootyStash
+              - position: [26, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [36, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *goodBlackLotusShootyStash
+              - position: [36, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_MEDIUM_ZSRR_GROUND_CONVOY #generic?
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY06 #2 vans 
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [19, 6, 0]
+              - [19, 7, 0]
+              - [7, 6, 0]
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardZSRRShootyStash [STR_WEAPON_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorZSRRShootyStash [STR_WEAPON_BOX_RAMSHACKLE_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardZSRRShootyStash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardZSRRShootyStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_MEDIUM_BLACK_LOTUS_GROUND_CONVOY #generic?
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY06 #2 vans 
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [19, 6, 0]
+              - [19, 7, 0]
+              - [7, 6, 0]
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardBlackLotus [STR_WEAPON_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorBlackLotus [STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotus
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBlackLotus
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBlackLotus
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotus
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotus
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_MEDIUM_EXALT_GROUND_CONVOY #generic?
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CULT_CONVOY_MEDIUM_EXALT
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY06 #2 vans 
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [19, 6, 0]
+              - [19, 7, 0]
+              - [7, 6, 0]
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardEXALT [STR_WEAPON_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorEXALT [STR_WEAPON_BOX_RAMSHACKLE_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALT
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardEXALT
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardEXALT
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALT
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALT
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_MEDIUM_CHURCH_OF_DAGON_GROUND_CONVOY #generic?
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY03
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY06 #2 vans 
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [19, 6, 0]
+              - [19, 7, 0]
+              - [7, 6, 0]
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [18, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardChurchOfDagonShootyStash [STR_WEAPON_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorChurchOfDagonShootyStash [STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardChurchOfDagonShootyStash
+              - position: [18, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardChurchOfDagonShootyStash
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [6, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultExplosivesStash
+  - type: STR_SMALL_EXALT_GROUND_CONVOY #generic?
+    size: STR_SMALL
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CONVOY_SMALL_EXALT
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY00
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [22, 8, 0] #22 8 1 
+              - [22, 9, 0] #22 9 1
+          randomizedItems:
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorEXALTShootyStash [STR_WEAPON_BOX_RAMSHACKLE_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY01
+          width: 50
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [14, 9, 0]
+              - [22, 9, 0]
+              - [35, 9, 0]
+          randomizedItems:
+              - position: [13, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorEXALTShootyStash [STR_WEAPON_BOX_RAMSHACKLE_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [35, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY02
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorEXALTShootyStash [STR_WEAPON_BOX_RAMSHACKLE_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY04
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorEXALTShootyStash [STR_WEAPON_BOX_RAMSHACKLE_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_AMMO_BOX_EXALT, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorEXALTShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+  - type: STR_SMALL_BLACK_LOTUS_GROUND_CONVOY #generic?
+    size: STR_SMALL
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY00
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY00
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [22, 8, 0] #22 8 1 
+              - [22, 9, 0] #22 9 1
+          randomizedItems:
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorBlackLotusShootyStash [STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY01
+          width: 50
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [14, 9, 0]
+              - [22, 9, 0]
+              - [35, 9, 0]
+          randomizedItems:
+              - position: [13, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorBlackLotusShootyStash [STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [35, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY02
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorBlackLotusShootyStash [STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY04
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorBlackLotusShootyStash [STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_AMMO_BOX_BLACK_LOTUS, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorBlackLotusShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+  - type: STR_SMALL_ZSRR_GROUND_CONVOY #generic?
+    size: STR_SMALL
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY00
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY00
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [22, 8, 0] #22 8 1 
+              - [22, 9, 0] #22 9 1
+          randomizedItems:
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorZSRRShootyStash [STR_WEAPON_BOX_RAMSHACKLE_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY01
+          width: 50
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [14, 9, 0]
+              - [22, 9, 0]
+              - [35, 9, 0]
+          randomizedItems:
+              - position: [13, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorZSRRShootyStash [STR_WEAPON_BOX_RAMSHACKLE_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [35, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY02
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorZSRRShootyStash [STR_WEAPON_BOX_RAMSHACKLE_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY04
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorZSRRShootyStash [STR_WEAPON_BOX_RAMSHACKLE_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_AMMO_BOX_ZSRR, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorZSRRShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+  - type: STR_SMALL_CHURCH_OF_DAGON_GROUND_CONVOY #generic?
+    size: STR_SMALL
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CONVOY00
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+      mapBlocks:
+        - name: CONVOY00
+          width: 50
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [22, 8, 0] #22 8 1 
+              - [22, 9, 0] #22 9 1
+          randomizedItems:
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorChurchOfDagonShootyStash [STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY01
+          width: 50
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [14, 9, 0]
+              - [22, 9, 0]
+              - [35, 9, 0]
+          randomizedItems:
+              - position: [13, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [21, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorChurchOfDagonShootyStash [STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [13, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [21, 9, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [35, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY02
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorChurchOfDagonShootyStash [STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash
+        - name: CONVOY04
+          width: 10
+          length: 50
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 16, 0] 
+              - [2, 16, 0]
+          randomizedItems:
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_SWITCHBLADE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_KUKRI, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE] # 1x simple explosives crate
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: &poorChurchOfDagonShootyStash [STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_AMMO_BOX_CHURCH_OF_DAGON, STR_MONEY_BRIEFCASE, STR_MONEY_5000] # 1x ramshackle weapon box, 3x ammo box
+              - position: [2, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorChurchOfDagonShootyStash
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultExplosivesStash

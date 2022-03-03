@@ -1,0 +1,9 @@
+version: 1.2d
+- Removed floating weird tile
+- Patched to work with X-Com files and X-Com Files additions submod
+version 1.3
+- removed shield slots from 2 to 1
+version 1.4
+- removed the light sources, will now use flare dispensers, light sources actually will make your units so visible its not even funny
+- added Shadowstorm to list of craft that can take you to outer space missions
+- added support for radar upgrades, and restored shield slot

@@ -1,0 +1,238 @@
+alienMissions:
+#EXALT
+  - type: STR_WAREHOUSE_EXALT
+    interruptResearch: STR_EXALT_WAREHOUSE_RAIDED
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_EXALT: 100
+    waves:
+      - ufo: STR_WAREHOUSE_EXALT
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+  - type: STR_LARGE_GROUND_CONVOY_EXALT
+    interruptResearch: STR_EXALT_WAREHOUSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_EXALT: 100
+    waves:
+      - ufo: STR_LARGE_GROUND_CONVOY_EXALT
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+  - type: STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA
+    interruptResearch: STR_EXALT_CONVOY_LARGE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_EXALT: 100
+    waves:
+      - ufo: STR_MEDIUM_GROUND_CONVOY_EXALT_XCFA
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+  - type: STR_SMALL_GROUND_CONVOY_EXALT
+    interruptResearch: STR_EXALT_CONVOY_MEDIUM
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_EXALT: 100
+    waves:
+      - ufo: STR_SMALL_GROUND_CONVOY_EXALT
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+#Black Lotus
+  - type: STR_SMALL_GROUND_CONVOY_BLACK_LOTUS
+    interruptResearch: STR_BLACK_LOTUS_CONVOY_MEDIUM
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_LOTUS: 100
+    waves:
+      - ufo: STR_SMALL_GROUND_CONVOY_BLACK_LOTUS
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA
+    interruptResearch: STR_BLACK_LOTUS_CONVOY_LARGE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_LOTUS: 100
+    waves:
+      - ufo: STR_MEDIUM_GROUND_CONVOY_BLACK_LOTUS_XCFA
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_LARGE_GROUND_CONVOY_BLACK_LOTUS
+    interruptResearch: STR_BLACK_LOTUS_WAREHOUSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_LOTUS: 100
+    waves:
+      - ufo: STR_LARGE_GROUND_CONVOY_BLACK_LOTUS
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_WAREHOUSE_BLACK_LOTUS
+    interruptResearch: STR_BLACK_LOTUS_WAREHOUSE_RAIDED
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_LOTUS: 100
+    waves:
+      - ufo: STR_WAREHOUSE_BLACK_LOTUS
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+#Red Dawn
+  - type: STR_SMALL_GROUND_CONVOY_ZSRR
+    interruptResearch: STR_ZSRR_CONVOY_MEDIUM
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZSRR: 100
+    waves:
+      - ufo: STR_SMALL_GROUND_CONVOY_ZSRR
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA
+    interruptResearch: STR_ZSRR_CONVOY_LARGE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZSRR: 100
+    waves:
+      - ufo: STR_MEDIUM_GROUND_CONVOY_ZSRR_XCFA
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_LARGE_GROUND_CONVOY_ZSRR
+    interruptResearch: STR_ZSRR_WAREHOUSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZSRR: 100
+    waves:
+      - ufo: STR_LARGE_GROUND_CONVOY_ZSRR
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_WAREHOUSE_ZSRR
+    interruptResearch: STR_ZSRR_WAREHOUSE_RAIDED
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZSRR: 100
+    waves:
+      - ufo: STR_WAREHOUSE_ZSRR
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+#CHURCH OF DAGON
+  - type: STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON
+    interruptResearch: STR_CHURCH_OF_DAGON_CONVOY_MEDIUM
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_CHURCH_OF_DAGON: 100
+    waves:
+      - ufo: STR_SMALL_GROUND_CONVOY_CHURCH_OF_DAGON
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA
+    interruptResearch: STR_CHURCH_OF_DAGON_CONVOY_LARGE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_CHURCH_OF_DAGON: 100
+    waves:
+      - ufo: STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON
+    interruptResearch: STR_CHURCH_OF_DAGON_WAREHOUSE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_CHURCH_OF_DAGON: 100
+    waves:
+      - ufo: STR_LARGE_GROUND_CONVOY_CHURCH_OF_DAGON
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_WAREHOUSE_CHURCH_OF_DAGON
+    interruptResearch: STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_CHURCH_OF_DAGON: 100
+    waves:
+      - ufo: STR_WAREHOUSE_CHURCH_OF_DAGON
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true

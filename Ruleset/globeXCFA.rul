@@ -1,0 +1,18 @@
+globe:
+  textures:
+    - id: -5150
+      deployments:
+        STR_MADMAN_HOSTAGE_1: 50
+        STR_MADMAN_HOSTAGE_2: 50
+    - id: -5151
+      deployments:
+        STR_SOLDIER_HOSTAGE_1: 50
+        STR_SOLDIER_HOSTAGE_2: 50
+    - id: -5152
+      deployments:
+        STR_POSTAL_HOSTAGE_1: 50
+        STR_POSTAL_HOSTAGE_2: 50
+    - id: -5117 #-605
+      deployments:
+        STR_MUTON_UFO_WILDERNESS: 80
+        STR_MUTON_UFO_VILLAGE: 20

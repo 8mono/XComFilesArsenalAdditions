@@ -1,0 +1,558 @@
+alienMissions:
+  - type: STR_MUTON_UFO
+    interruptResearch: STR_MUTON_UFO_RAIDED
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_MUTON: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+alienDeployments:
+  - type: STR_MUTON_UFO_WILDERNESS
+    width: 60 #50
+    length: 60 #50
+    height: 10
+    civiliansByType:
+      STR_MALE_SOLDIER: 4
+      STR_MALE_OFFICER_SOLDIER: 1
+      STR_MALE_ELITE_SOLDIER: 10
+    alert: STR_ALERT_MUTON_UFO
+    alertBackground: SPECOPS.SCR
+    alertDescription: STR_MUTON_UFO_DESCRIPTION
+    briefing:
+      background: SPECOPS.SCR
+      palette: 2 
+      desc: STR_MUTON_UFO_BRIEFING
+      showTarget: false
+    markerName: STR_MUTON_UFO
+    markerIcon: 4
+    duration: [72, 144]
+    despawnPenalty: 200
+    enviroEffects: STR_INSANITY_1
+    music:
+      - AS_2_THEME
+    customUfo: STR_TROOP_SHIP #STR_MEDIUM_SCOUT
+    terrains:
+      - FOREST
+    data: &TroopShipMuton
+      - alienRank: 10
+        lowQty: 6
+        highQty: 12
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 11
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PHOTON_BLADE
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_BLASTER_MULTI_LAUNCHER
+            - STR_BLASTER_MULTI_BOMB
+            - STR_BLASTER_MULTI_BOMB
+            - STR_BLASTER_MULTI_BOMB
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 4
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 3
+        lowQty: 2
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_EMP_BOMB
+            - STR_EMP_BOMB
+            - STR_EMP_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_ALIEN_GRENADE
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_EMP_BOMB
+            - STR_EMP_BOMB
+            - STR_EMP_BOMB
+          -
+            - STR_SMALL_LAUNCHER
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+            - STR_ELERIUM_BOMB
+      - alienRank: 2
+        lowQty: 2
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_ALLOY_WELDER
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_ELECTRONICS
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_MULTITOOL
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_HEAVY_PLASMA_CLIP
+      - alienRank: 6
+        lowQty: 3
+        highQty: 5
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_DEATH_DISC
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_BLADE
+          -
+            - STR_ELECTRO_WHIP
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_DEATH_DISC
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_ELECTRO_WHIP
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_ELECTRO_WHIP
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_SNIPER_RIFLE
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+            - STR_PLASMA_SNIPER_RIFLE_CLIP
+          -
+            - STR_DEATH_DISC
+            - STR_PLASMA_BLADE
+            - STR_ALIEN_GRENADE
+      - alienRank: 13 #muton heavy gunner
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_GATLER
+            - STR_PLASMA_GATLER_CLIP
+            - STR_PLASMA_GATLER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+          -
+            - STR_PLASMA_GATLER
+            - STR_PLASMA_GATLER_CLIP
+            - STR_PLASMA_GATLER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PRECISION_PLASMA
+            - STR_PRECISION_PLASMA_CLIP
+            - STR_PRECISION_PLASMA_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+          -
+            - STR_PLASMA_GATLER
+            - STR_PLASMA_GATLER_CLIP
+            - STR_PLASMA_GATLER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP       
+      - alienRank: 7
+        lowQty: 1
+        highQty: 1
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets: &AnchorEmptyInventory
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 14 #muton berserker
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+  - type: STR_MUTON_UFO_VILLAGE
+    width: 60
+    length: 60
+    height: 10
+    civilians: 4
+    civiliansByType:
+      STR_MALE_SOLDIER: 4
+      STR_MALE_OFFICER_SOLDIER: 1
+      STR_MALE_ELITE_SOLDIER: 10
+    alert: STR_ALERT_MUTON_UFO
+    alertBackground: SPECOPS.SCR
+    alertDescription: STR_MUTON_UFO_DESCRIPTION
+    briefing:
+      background: SPECOPS.SCR
+      palette: 2 
+      desc: STR_MUTON_UFO_BRIEFING
+      showTarget: false
+    markerName: STR_MUTON_UFO
+    markerIcon: 4
+    duration: [72, 144]
+    despawnPenalty: 200
+    enviroEffects: STR_INSANITY_3
+    music:
+      - AS_2_THEME
+    #script: MUTON_UFO_VILLAGE #wtf does this do
+    customUfo: STR_TROOP_SHIP #STR_MEDIUM_SCOUT
+    terrains:
+      - CULTA
+      - RURAL
+      - URBAN
+    data: *TroopShipMuton
+mapScripts:
+  - type: MUTON_UFO_VILLAGE
+    commands:
+    - type: addCraft
+    - type: addUFO
+      UFOName: STR_TROOP_SHIP
+      rects:
+        - [0, 0, 3, 5]
+    - type: addBlock
+      terrain: URBAN
+      size: 2
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: URBAN
+      size: 2
+      executionChances: 80
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: URBAN
+      size: 2
+      executionChances: 40
+      rects:
+        - [0, 0, 2, 5]
+    - type: fillArea
+      terrain: URBAN
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: URBAN
+      executions: 2
+      blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+      rects:
+        - [2, 0, 1, 5]
+    - type: addBlock
+      size: 2
+    - type: addBlock
+      size: 2
+      executionChances: 50
+    - type: addBlock
+      size: 2
+      executionChances: 20
+    - type: fillArea

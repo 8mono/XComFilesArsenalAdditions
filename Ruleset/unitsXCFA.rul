@@ -1,0 +1,619 @@
+units:
+  - type: STR_BLACK_LOTUS_KNIGHT
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 60
+      health: 35
+      bravery: 80
+      reactions: 40
+      firing: 45
+      throwing: 45
+      strength: 40
+      psiStrength: 40
+      psiSkill: 0
+      melee: 55
+      mana: 50
+    armor: STR_BLACK_LOTUS_KNIGHT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 6
+    deathSound: &MaleDeathSounds [1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145]
+    panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    canSurrender: true
+  - type: STR_BLACK_LOTUS_TORONJIN
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 100
+      stamina: 100
+      health: 100
+      bravery: 100
+      reactions: 100
+      firing: 100
+      throwing: 100
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 100
+      mana: 100
+    armor: STR_BLACK_LOTUS_TORONJIN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 100
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 10
+    aggression: 10
+    sniper: 0
+    spotter: 100
+    canSurrender: true
+  - type: STR_BLACK_LOTUS_ARCHWITCH
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 80
+      reactions: 50
+      firing: 60
+      throwing: 85
+      strength: 36
+      psiStrength: 65
+      psiSkill: 0
+      melee: 60
+      mana: 60
+    armor: STR_BLACK_LOTUS_ARCHWITCH_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: &FemaleDeathSounds [1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167]
+    panicSound: &FemalePanicSounds [731, 732, 733, 734, 735, 736, 737]
+    berserkSound: &FemaleBerserkSounds [831, 832, 833]
+    energyRecovery: 30
+    intelligence: 2
+    aggression: 3
+    sniper: 75
+    spotter: 1
+    canSurrender: true
+  - type: STR_BLACK_LOTUS_ELITE_FOOTMAN
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 65
+      stamina: 80
+      health: 45
+      bravery: 80
+      reactions: 50
+      firing: 60
+      throwing: 85
+      strength: 46
+      psiStrength: 65
+      psiSkill: 0
+      melee: 60
+      mana: 60
+    armor: STR_EXALT_EXTERMINATOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 2
+    aggression: 3
+    sniper: 75
+    spotter: 1
+    canSurrender: true
+  - type: STR_CRAFT_FLARE_TURRET
+    race: STR_ALIEN_TURRET
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 15
+      stamina: 1
+      health: 30
+      bravery: 110
+      reactions: 55
+      firing: 55
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_CRAFT_FLARE_TURRET_ARMOR
+    standHeight: 19
+    kneelHeight: 19
+    value: 20
+    intelligence: 0
+    aggression: 0
+    energyRecovery: 20
+    deathSound: 23
+    livingWeapon: true
+  - &STR_FLARE_TEST
+    type: STR_FLARE_TEST
+    race: STR_FLARE
+    stats:
+      tu: 0
+      stamina: 10
+      health: 0
+      bravery: 200
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+      mana: 10
+    armor: STR_FLARE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: 1
+  - type: STR_ILLUMINATOR_FLARE
+    refNode: *STR_FLARE_TEST 
+    armor: STR_ILLUMINATOR_CLIP_ARMOR
+  - type: STR_MINI_MORTAR_STAR
+    refNode: *STR_FLARE_TEST 
+    armor: STR_MINI_MORTAR_SHELL_FLARE_ARMOR
+  - type: STR_MORTAR_STAR
+    refNode: *STR_FLARE_TEST 
+    armor: STR_MORTAR_SHELL_FLARE_ARMOR
+  - type: STR_M3_CARL_GUSTAV_STAR
+    refNode: *STR_FLARE_TEST 
+    armor: STR_M3_CARL_GUSTAV_STAR_ROUND_ARMOR
+  - type: STR_MINI_FLARE_TEST
+    race: STR_FLARE
+    stats:
+      tu: 0
+      stamina: 10
+      health: 0
+      bravery: 200
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+      mana: 10
+    armor: STR_MINI_FLARE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: 1
+  - type: STR_PROXIMITY_TEST
+    race: STR_FLARE
+    stats:
+      tu: 0
+      stamina: 10
+      health: 0
+      bravery: 200
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+      mana: 10
+    armor: STR_PROXIMITY_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    floatHeight: 2
+    value: 1
+  - type: STR_ZSRR_UBEK_PROTOTYPE_SUIT
+    race: STR_ZSRR
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 80
+      stamina: 90
+      health: 65
+      bravery: 90
+      reactions: 65
+      firing: 75
+      throwing: 60
+      strength: 70 #45
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+      mana: 70
+    armor: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_UC
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    specab: 1
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    sniper: 80
+    spotter: 2
+    canSurrender: false
+  - type: STR_ZSRR_RED_OPS_ELITE
+    race: STR_ZSRR
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 80
+      stamina: 90
+      health: 65
+      bravery: 90
+      reactions: 65
+      firing: 75
+      throwing: 60
+      strength: 70 #45
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+      mana: 70
+    armor: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_UC
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    specab: 1
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 2
+    sniper: 80
+    spotter: 2
+    canSurrender: false
+  - type: STR_ZSRR_LOGISTICS
+    race: STR_ZSRR
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 64
+      stamina: 60
+      health: 50
+      bravery: 80
+      reactions: 40
+      firing: 45
+      throwing: 45
+      strength: 40
+      psiStrength: 30
+      psiSkill: 0
+      melee: 55
+      mana: 50
+    armor: STR_ZSRR_LOGISTICS_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 2
+    aggression: 4
+    sniper: 40
+    spotter: 1
+    canSurrender: false
+  - type: STR_ZSRR_RED_OPS_OFFICER
+    race: STR_ZSRR
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 65
+      stamina: 90
+      health: 55
+      bravery: 80
+      reactions: 50
+      firing: 65
+      throwing: 50
+      strength: 45
+      psiStrength: 40
+      psiSkill: 0
+      melee: 60
+    armor: STR_ZSRR_RED_OPS_OFFICER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 14
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    sniper: 75
+    spotter: 1
+    canSurrender: false
+#Church Of Dagon
+  - type: STR_ACOLYTE_OF_DAGON
+    race: STR_CHURCH_OF_DAGON
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 60
+      stamina: 80
+      health: 50
+      bravery: 80
+      reactions: 35
+      firing: 40
+      throwing: 45
+      strength: 50
+      psiStrength: 65
+      psiSkill: 0
+      melee: 65
+      mana: 55
+    armor: STR_ACOLYTE_OF_DAGON_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 7
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 40
+    intelligence: 4
+    sniper: 35
+    spotter: 1
+    aggression: 2
+  - type: STR_PROSELYTE_OF_DAGON
+    race: STR_CHURCH_OF_DAGON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 70
+      stamina: 80
+      health: 60
+      bravery: 90
+      reactions: 50
+      firing: 40
+      throwing: 50
+      strength: 50
+      psiStrength: 70
+      psiSkill: 0
+      melee: 70
+      mana: 60
+    armor: STR_PROSELYTE_OF_DAGON_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 40
+    intelligence: 4
+    aggression: 2
+    sniper: 50
+    spotter: 1
+  - type: STR_HAND_OF_DAGON
+    race: STR_CHURCH_OF_DAGON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 80
+      stamina: 90
+      health: 100
+      bravery: 100
+      reactions: 60
+      firing: 70
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 70
+      mana: 100
+    armor: STR_PROPHET_OF_DAGON_ARMOR
+    standHeight: 20
+    kneelHeight: 16
+    floatHeight: 4
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 40
+    intelligence: 4
+    aggression: 2
+    sniper: 50
+    spotter: 1
+  - type: STR_PROPHET_OF_DAGON
+    race: STR_CHURCH_OF_DAGON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 80
+      stamina: 90
+      health: 100
+      bravery: 100
+      reactions: 60
+      firing: 70
+      throwing: 70
+      strength: 60
+      psiStrength: 100
+      psiSkill: 50
+      melee: 70
+      mana: 100
+    armor: STR_HAND_OF_DAGON_ARMOR
+    standHeight: 20
+    kneelHeight: 16
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 40
+    intelligence: 4
+    aggression: 2
+    sniper: 50
+    spotter: 1
+#EXALT
+  - type: STR_EXALT_LOGISTICS
+    race: STR_EXALT
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 50
+      stamina: 55
+      health: 35
+      bravery: 80
+      reactions: 40
+      firing: 50
+      throwing: 40
+      strength: 35
+      psiStrength: 45
+      psiSkill: 0
+      melee: 35
+      mana: 50
+    armor: STR_EXALT_LOGISTICS_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 4
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    spotter: 1
+    canSurrender: false
+  - type: STR_EXALT_REINFORCER
+    race: STR_EXALT
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 40
+      bravery: 100
+      reactions: 50
+      firing: 55
+      throwing: 45
+      strength: 40
+      psiStrength: 60
+      psiSkill: 0
+      melee: 40
+      mana: 50
+    armor: STR_EXALT_REINFORCER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 4
+    aggression: 2
+    sniper: 75
+    spotter: 1
+    canSurrender: false
+  - type: STR_EXALT_EXTERMINATOR
+    race: STR_EXALT
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 50
+      stamina: 60
+      health: 40
+      bravery: 90
+      reactions: 45
+      firing: 55
+      throwing: 50
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 45
+      mana: 50
+    armor: STR_EXALT_EXTERMINATOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    canSurrender: false
+  - type: STR_EXALT_ELITE_REINFORCER
+    race: STR_EXALT
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 50
+      stamina: 60
+      health: 40
+      bravery: 90
+      reactions: 45
+      firing: 55
+      throwing: 50
+      strength: 50
+      psiStrength: 50
+      psiSkill: 0
+      melee: 45
+      mana: 50
+    armor: STR_EXALT_EXTERMINATOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    canSurrender: false
+#Muton
+  - type: STR_MUTON_HEAVY
+    race: STR_MUTON
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 80 #76
+      stamina: 90
+      health: 135 #125
+      bravery: 80
+      reactions: 60
+      firing: 74
+      throwing: 62
+      strength: 70
+      psiStrength: 25
+      psiSkill: 0
+      melee: 76
+      mana: 100
+    armor: STR_MUTON_HEAVY_ARMOR
+    standHeight: 21
+    kneelHeight: 15
+    canPanic: false
+    berserkChance: 100
+    value: 22
+    deathSound: 6
+    intelligence: 1 #2
+    aggression: 2
+    energyRecovery: 40
+    sniper: 75
+    spotter: 1
+  - type: STR_MUTON_BERSERKER
+    race: STR_MUTON
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 150
+      stamina: 130
+      health: 200
+      bravery: 100
+      reactions: 70
+      firing: 100
+      throwing: 100
+      strength: 120
+      psiStrength: 25
+      psiSkill: 0
+      melee: 80
+      mana: 100
+    armor: STR_MUTON_BERSERKER_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 80
+    deathSound: 290
+    intelligence: 2
+    sniper: 75
+    spotter: 1
+    aggression: 8
+    canPanic: false
+    berserkChance: 100
+    energyRecovery: 40
+    livingWeapon: true

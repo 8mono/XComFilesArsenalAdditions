@@ -1,0 +1,131 @@
+armors:
+  - type: STR_HAZMAT_ARMOR_UC
+    damageModifier: &HazmatResists
+      - 1.0 #0 Special  
+      - 1.0 #1 Kinetic
+      - 0.0 #2 Incendiary
+      - 1.0 #3 Concussive
+      - 0.7 #4 Laser 
+      - 0.8 #5 Plasma 
+      - 1.0 #6 Stun
+      - 0.9 #7 Cutting
+      - 0.3 #8 Chemical
+      - 0.0 #9 Choke
+      - 0.1 #10 EMP
+      - 0.6 #11 Electric
+      - 1.0 #12
+      - 1.0 #13 
+      - 0.0 #14 Anti-E-115
+      - 1.0 #15
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 12
+  - type: STR_HAZMAT_ARMOR_OLYMPIAN_UC
+    damageModifier: *HazmatResists
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 12
+  - type: STR_HAZMAT_ARMOR_PROTEAN_UC
+    damageModifier: *HazmatResists
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 12
+  - type: STR_HAZMAT_ARMOR_H_UC
+    damageModifier: *HazmatResists
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 12
+  - type: STR_BIOEXO_UC
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 24
+    underArmor: 16
+  - type: STR_BIOEXO_H_UC
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 16
+  - type: STR_BIOEXO_PROTEAN_UC
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 24
+    underArmor: 16
+  - type: STR_BIOEXO_OLYMPIAN_UC
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 24
+    underArmor: 16
+  - type: STR_TOXI_SUIT_UC
+    damageModifier: &ToxiSuitResists
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.6
+      - 0.7
+      - 1.0
+      - 0.7
+      - 0.2
+      - 0.0
+      - 0.1
+      - 0.6
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_UC_UNDERWATER
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_OLYMPIAN_UC
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_OLYMPIAN_UC_UNDERWATER
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_PROTEAN_UC
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_PROTEAN_UC_UNDERWATER
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_H_UC
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_TOXI_SUIT_H_UC_UNDERWATER
+    damageModifier: *ToxiSuitResists
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+  - type: STR_OUTRUNNER_ARMOR_UC
+    heatVision: 33
+    frontArmor: 60 #40
+    sideArmor: 55 #35
+    rearArmor: 50 #30
+    underArmor: 35 #40

@@ -1,0 +1,3824 @@
+research:
+  - name: STR_SKS_SCOPED
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 21091
+  - name: STR_SKS_SCOPED_BUY
+    cost: 2
+    points: 1
+    lookup: STR_SKS_SCOPED
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_SKS_SCOPED
+    listOrder: 421091
+  - name: STR_DRAGONBREATH_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_FRAG_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_AP_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BREACHING_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_FLECHETTE_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HE_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+  - name: STR_MESSAGE_FROM_MAGMA_GAS_TECH
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_MAGMA_CONTACT
+    listOrder: 300659
+  - name: STR_MESSAGE_FROM_MAGMA_TRACITE_TECH
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_TRACITE
+      - STR_MAGMA_CONTACT
+    listOrder: 300659
+  - name: STR_MESSAGE_FROM_MAGMA_EMP_TECH
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_EMP_GRENADE
+      - STR_MILESTONE_3_SUMMARY
+      - STR_MAGMA_CONTACT
+    listOrder: 300659
+  - name: STR_MAGMA_GAS_AMMO_BUY
+    cost: 10
+    points: 5
+    lookup: STR_MORTAR
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_SHARE_GAS_TECH
+    listOrder: 420390
+  - name: STR_MAGMA_EMP_AMMO_BUY
+    cost: 10
+    points: 5
+    lookup: STR_EMP_GRENADE
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_SHARE_EMP_TECH
+    listOrder: 420390
+  - name: STR_SHARE_EMP_TECH
+    cost: 2
+    points: -500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_EMP_TECH
+    disables:
+      - STR_DO_NOT_SHARE_EMP_TECH
+    listOrder: 300647
+  - name: STR_DO_NOT_SHARE_EMP_TECH
+    cost: 2
+    points: 250
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_EMP_TECH
+    disables:
+      - STR_SHARE_EMP_TECH
+    listOrder: 300647
+  - name: STR_SHARE_TRACITE_TECH
+    cost: 2
+    points: -500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_TRACITE_TECH
+    disables:
+      - STR_DO_NOT_SHARE_TRACITE_TECH
+    listOrder: 300647
+  - name: STR_DO_NOT_SHARE_TRACITE_TECH
+    cost: 2
+    points: 250
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_TRACITE_TECH
+    disables:
+      - STR_SHARE_TRACITE_TECH
+    listOrder: 300647
+  - name: STR_SHARE_GAS_TECH
+    cost: 2
+    points: -500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_GAS_TECH
+    disables:
+      - STR_DO_NOT_SHARE_GAS_TECH
+    listOrder: 300647
+  - name: STR_DO_NOT_SHARE_GAS_TECH
+    cost: 2
+    points: 250
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_GAS_TECH
+    disables:
+      - STR_SHARE_GAS_TECH
+    listOrder: 300647
+  - name: STR_RSH12
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_RSH12_BUY
+    cost: 2
+    points: 1
+    lookup: STR_RSH12
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_RSH12
+    listOrder: 420251
+  - name: STR_SHAK12
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_SHAK12_BUY
+    cost: 2
+    points: 1
+    lookup: STR_SHAK12
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_SHAK12
+    listOrder: 420251
+  - name: STR_RIFLE_M16_BEOWULF
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20252
+  - name: STR_RIFLE_M16_BEOWULF_BUY
+    cost: 2
+    points: 1
+    lookup: STR_RIFLE_M16_BEOWULF
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_RIFLE_M16_BEOWULF
+    listOrder: 420253
+  - name: STR_VKS
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_VKS_BUY
+    cost: 2
+    points: 1
+    lookup: STR_VKS
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_VKS
+    listOrder: 420251
+  - name: STR_M14_SCOPED
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_M14_SCOPED_BUY
+    cost: 2
+    points: 1
+    lookup: STR_M14_SCOPED
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_M14_SCOPED
+    listOrder: 420251
+  - name: STR_FN_FAL_SCOPED
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_FN_FAL_SCOPED_BUY
+    cost: 2
+    points: 1
+    lookup: STR_FN_FAL_SCOPED
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_FN_FAL_SCOPED
+    listOrder: 420251
+  - name: STR_BLACKOPS_DMR
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_BLACKOPS_DMR_BUY
+    cost: 2
+    points: 1
+    unlocks:
+      - STR_BLACKOPS_DMR_AA_CLIP_PREQ
+    lookup: STR_BLACKOPS_DMR
+    dependencies:
+      - STR_BLACKOPS_PREMIUM
+      - STR_MILESTONE_2_SUMMARY
+      - STR_ALL_CULT_OPERATIONS
+    listOrder: 420251
+  - name: STR_BLACKOPS_DMR_AA_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACKOPS_DMR
+      - STR_BLACKOPS_DMR_AA_CLIP_PREQ
+  - name: STR_BLACKOPS_DMR_AA_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_BLACKOPS_DMR_AA_CLIP_PREQ
+    listOrder: 20200
+  - name: STR_BLACKOPS_DMR_AA_CLIP_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_SYNDICATE_OPERATIONS
+      - STR_BLACKOPS_DMR_AA_CLIP_PREQ
+  - name: STR_JUDGE_7
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_JUDGE_7_BUY
+    cost: 2
+    points: 1
+    lookup: STR_JUDGE_7
+    dependencies:
+      - STR_JUDGE_BUY
+      - STR_JUDGE_7
+      - STR_CULT_CONVOY_SMALL_INTERCEPTED
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 420251
+  - name: STR_BLACKOPS_JUDGE
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_BLACKOPS_JUDGE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_BLACKOPS_JUDGE
+    dependencies:
+      - STR_JUDGE_BUY
+      - STR_BLACKOPS_JUDGE
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+      - STR_ALL_CULT_OPERATIONS
+      - STR_MILESTONE_2_SUMMARY
+    listOrder: 420251
+  - name: STR_BLACKOPS_EXECUTIONER
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: 20251
+  - name: STR_BLACKOPS_EXECUTIONER_BUY
+    cost: 2
+    points: 1
+    lookup: STR_BLACKOPS_EXECUTIONER
+    dependencies:
+      - STR_BLACKOPS_JUDGE_BUY
+      - STR_BLACKOPS_PREMIUM
+      - STR_BLACKOPS_SHOTGUN_BUY
+      - STR_BLACKOPS_MAGNUM_BUY
+      - STR_BLACKOPS_REVOLVER_BUY
+      - STR_MILESTONE_3_SUMMARY
+    listOrder: 420251
+  - name: STR_PIANO_WIRE
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: false
+    listOrder: 34471
+  - name: STR_GARROTE_BRACELET
+    cost: 10
+    points: 10
+    needItem: false
+    destroyItem: false
+    dependencies:
+      - STR_ALLOY_BLADES
+      - STR_IMPROVED_UNDERCOVER_OPERATIONS
+      - STR_NOOSE
+    listOrder: 34471
+  - name: STR_PIANO_WIRE_BUY
+    cost: 10
+    points: 1
+    lookup: STR_PIANO_WIRE
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_BLACKOPS_PREMIUM
+      - STR_NOOSE
+      - STR_DURATHREAD
+    listOrder: 431007
+  - name: STR_NSW
+    cost: 20
+    points: 10
+    needItem: true
+    listOrder: 31200
+  - name: STR_NSW_BUY
+    cost: 2
+    points: 1
+    lookup: STR_NSW
+    unlocks:
+      - STR_NSW_AA_CLIP_PREQ
+    dependencies:
+      - STR_MACHINE_GUNS_LICENCE
+      - STR_NSW
+    listOrder: 431200
+  - name: STR_NSW_AA_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_NSW
+      - STR_NSW_AA_CLIP_PREQ
+  - name: STR_NSW_AA_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_NSW_AA_CLIP_PREQ
+    listOrder: 20200
+  - name: STR_NSW_AA_CLIP_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_NSW_AA_CLIP_PREQ
+  - name: STR_MAGMA_PULSE_SNIPER_RIFLE
+    cost: 0
+    points: 40
+    needItem: true
+    destroyItem: true
+  - name: STR_MAGMA_PULSE_SNIPER_RIFLE_BUY
+    cost: 15
+    points: 5
+    lookup: STR_MAGMA_PULSE_SNIPER_RIFLE
+    dependencies:
+      - STR_SHARE_TERRAMITE_TECH
+      - STR_PULSE_WEAPONS
+    listOrder: 431300
+  - name: STR_MAGMA_PULSE_SNIPER_RIFLE_AA_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MAGMA_PULSE_SNIPER_RIFLE
+      - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_SNIPER_RIFLE_CHEM_CLIP
+    cost: 10
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_SNIPER_RIFLE_CHEM_CLIP
+    listOrder: 31315
+  - name: STR_MAGMA_PULSE_SNIPER_RIFLE_CHEM_CLIP_BUY
+    cost: 10
+    points: 5
+    lookup: STR_MAGMA_PULSE_SNIPER_RIFLE
+    dependencies:
+      - STR_MAGMA_PULSE_SNIPER_RIFLE
+      - STR_SHARE_ALIEN_GARDENS_TECH
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
+    cost: 0
+    points: 0
+    # needItem: true
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_MANUFACTURING
+    listOrder: 20200
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_SYNDICATE_OPERATIONS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
+    cost: 0
+    points: 0
+    # needItem: true
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_MANUFACTURING
+    listOrder: 20200
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_SYNDICATE_OPERATIONS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
+    cost: 0
+    points: 0
+    # needItem: true
+    dependencies:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_MANUFACTURING
+    listOrder: 20200
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_SYNDICATE_OPERATIONS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_PREQ
+  - name: STR_MAGMA_LAUNCHER
+    cost: 1
+    points: 1
+    needItem: true
+    listOrder: 33971
+  - name: STR_MAGMA_LAUNCHER_BUY
+    cost: 2
+    points: 1
+    lookup: STR_MAGMA_LAUNCHER
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
+    listOrder: 433971
+#Weapon Overhaul
+  # - delete: STR_M3_GREASEGUN_BUY
+  # - delete: STR_MAC10_BUY
+  # - delete: STR_MAC10_CLIP
+  # - name: STR_CONTACT_CULT_ARMS_DEALERS
+    # unlocks:
+      # - STR_CULT_CONVOYS
+  # - name: STR_M3_GREASEGUN_BUY
+    # unlocks:
+      # - STR_MAC10_CLIP
+  # - name: STR_MAC10_BUY
+    # unlocks: !remove
+      # - STR_MAC10_CLIP
+  - name: STR_RIFLE_M16_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RIFLE_M16_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RIFLE_M16_CLIP
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    listOrder: 20200
+  - name: STR_RIFLE_M16_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_RIFLE_M16
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RIFLE_M16_CLIP_BUY_CONDITION
+      - STR_RIFLE_M16_CLIP_AP_PREQ
+  - name: STR_SKS_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SKS_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SKS
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_SKS_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_SKS
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_SKS_BUY
+      - STR_SKS_CLIP_AP_PREQ
+  - name: STR_UZI_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_UZI_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UZI
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_UZI_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_UZI
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_UZI_BUY
+      - STR_UZI_CLIP_AP_PREQ
+  - name: STR_USP_9_MM_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_USP_9_MM_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_USP_MATCH
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_USP_9_MM_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_USP_MATCH
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_USP_MATCH
+      - STR_USP_9_MM_CLIP_AP_PREQ
+  - name: STR_USP_9_MM_BIG_CLIP_BUY
+    cost: 1
+    lookup: STR_USP_MATCH
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_ANY_CULT_HQ
+      - STR_USP_MATCH
+  - name: STR_USP_9_MM_BIG_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    unlocks: 
+      - STR_USP_9_MM_CLIP_AP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_USP_9_MM_BIG_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_USP_9_MM_BIG_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_USP_MATCH
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_USP_9_MM_BIG_CLIP_BUY
+      - STR_USP_9_MM_BIG_CLIP_AP_PREQ
+  - name: STR_BERETTA_92FS_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BERETTA_92FS_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_BERETTA_92FS_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_RAFFICA_PISTOL
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_BERETTA_92FS_CLIP_AP_PREQ
+  - name: STR_RAFFICA_PISTOL_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    unlocks: 
+      - STR_BERETTA_92FS_CLIP_AP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RAFFICA_PISTOL_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies: 
+      - STR_RAFFICA_PISTOL
+  - name: STR_RAFFICA_PISTOL_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_RAFFICA_PISTOL
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RAFFICA_PISTOL_CLIP_BUY
+      - STR_RAFFICA_PISTOL_CLIP_AP_PREQ
+  - name: STR_MP_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MP_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MP_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    lookup: STR_AP_CLIPS
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies: 
+      - STR_MP
+  - name: STR_MP_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_MP
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_MP_BUY
+      - STR_MP_CLIP_AP_PREQ
+  - name: STR_FN_FAL_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_FN_FAL_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies:
+      - STR_FN_FAL_CLIP
+  - name: STR_FN_FAL_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_FN_FAL
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_FN_FAL_CLIP
+      - STR_FN_FAL_CLIP_AP_PREQ
+  - name: STR_QBU_88_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_QBU_88_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies:
+      - STR_QBU_88
+  - name: STR_QBU_88_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_QBU_88
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_QBU_88_BUY
+      - STR_QBU_88_CLIP_AP_PREQ
+  - name: STR_WP_7_62_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_WP_7_62_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies:
+      - STR_WP_7_62_CLIP
+  - name: STR_WP_7_62_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_AK47
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_WP_7_62_CLIP_BUY
+      - STR_WP_7_62_CLIP_AP_PREQ
+  - name: STR_WP_5_45_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_TROLLIUM
+  - name: STR_WP_5_45_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+    dependencies:
+      - STR_WP_5_45_CLIP
+  - name: STR_WP_5_45_CLIP_AP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_AKSU74
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_WP_5_45_CLIP_BUY
+      - STR_WP_5_45_CLIP_AP_PREQ
+  - name: STR_JUDGE_DRAGONBREATH_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_TROLLIUM
+  - name: STR_JUDGE_DRAGONBREATH_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies:
+      - STR_JUDGE
+  - name: STR_JUDGE_DRAGONBREATH_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_JUDGE
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_JUDGE_BUY
+      - STR_JUDGE_DRAGONBREATH_CLIP_PREQ
+  - name: STR_SHOTGUN_FLECHETTE_SHELLS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SHOTGUN_FLECHETTE_SHELLS
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_FLECHETTE_CLIPS
+    dependencies: 
+      - STR_SHOTGUN
+  - name: STR_SHOTGUN_FLECHETTE_SHELLS_BUY
+    cost: 1
+    points: 0
+    lookup: STR_SHOTGUN
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_SHOTGUN_BUY
+      - STR_SHOTGUN_FLECHETTE_SHELLS_PREQ
+  - name: STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies:
+      - STR_AUTO_SHOTGUN
+  - name: STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_BUY
+    cost: 1
+    points: 0
+    lookup: STR_AUTO_SHOTGUN
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AUTO_SHOTGUN_BUY
+      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_PREQ
+  - name: STR_AUTO_SHOTGUN_FRAG_SHELLS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_AUTO_SHOTGUN_FRAG_SHELLS
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_FRAG_CLIPS
+    dependencies:
+      - STR_AUTO_SHOTGUN
+  - name: STR_AUTO_SHOTGUN_FRAG_SHELLS_BUY
+    cost: 1
+    points: 0
+    lookup: STR_AUTO_SHOTGUN
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_AUTO_SHOTGUN_BUY
+      - STR_AUTO_SHOTGUN_FRAG_SHELLS_PREQ
+  - name: STR_KS23_SHELLS_DRAGONBREATH_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_KS23_SHELLS_DRAGONBREATH
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies: 
+      - STR_KS23
+  - name: STR_KS23_SHELLS_DRAGONBREATH_BUY
+    cost: 1
+    points: 0
+    lookup: STR_KS23
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_KS23_BUY
+      - STR_KS23_SHELLS_DRAGONBREATH_PREQ
+  - name: STR_AA12_DRAGONBREATH_DRUM_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+    - STR_TROLLIUM
+  - name: STR_AA12_DRAGONBREATH_DRUM
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies: 
+      - STR_AA12
+  - name: STR_AA12_DRAGONBREATH_DRUM_BUY
+    cost: 1
+    points: 0
+    lookup: STR_AA12
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AA12_BUY
+      - STR_AA12_DRUM_BUY
+      - STR_AA12_DRAGONBREATH_DRUM_PREQ
+  - name: STR_USAS_12_DRAGONBREATH_DRUM_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_USAS_12_DRAGONBREATH_DRUM
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies:
+      - STR_USAS_12
+  - name: STR_USAS_12_DRAGONBREATH_DRUM_BUY
+    cost: 1
+    points: 0
+    lookup: STR_USAS_12
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_USAS_12_BUY
+      - STR_USAS_12_DRAGONBREATH_DRUM_PREQ
+  - name: STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies:
+      - STR_PANCOR_JACKHAMMER
+  - name: STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_PANCOR_JACKHAMMER
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_PANCOR_JACKHAMMER_BUY
+      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_PREQ
+  - name: STR_CAWS_CLIP_FRAG_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CAWS_CLIP_FRAG
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_FRAG_CLIPS
+    dependencies:
+      - STR_CAWS
+  - name: STR_CAWS_CLIP_FRAG_BUY
+    cost: 1
+    points: 0
+    lookup: STR_CAWS
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_CAWS_BUY
+      - STR_CAWS_CLIP_FRAG_PREQ
+  - name: STR_CAWS_CLIP_DRAGONBREATH_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CAWS_CLIP_DRAGONBREATH
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_DRAGONBREATH_CLIPS
+    dependencies:
+      - STR_CAWS
+  - name: STR_CAWS_CLIP_DRAGONBREATH_BUY
+    cost: 1
+    points: 0
+    lookup: STR_CAWS
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_CAWS_BUY
+      - STR_CAWS_CLIP_DRAGONBREATH_PREQ
+  - name: STR_M82_BARETT_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_M82_BARETT_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_M82_BARETT
+  - name: STR_M82_BARETT_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_M82_BARETT
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_M82_BARETT_BUY
+      - STR_M82_BARETT_HE_CLIP_PREQ   
+  - name: STR_PTRD41_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_TROLLIUM
+  - name: STR_PTRD41_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_PTRD41
+  - name: STR_PTRD41_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_PTRD41
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_PTRD41_BUY
+      - STR_PTRD41_HE_CLIP_PREQ
+  - name: STR_PTRS41_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    unlocks:
+      - STR_PTRD41_HE_CLIP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_PTRS41_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_PTRS41
+  - name: STR_PTRS41_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_PTRS41
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_PTRS41_BUY
+      - STR_PTRS41_HE_CLIP_PREQ
+  - name: STR_NTW20_DENEL_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_NTW20_DENEL_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_NTW20_DENEL
+  - name: STR_NTW20_DENEL_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_NTW20_DENEL
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_NTW20_DENEL_BUY
+      - STR_NTW20_DENEL_HE_CLIP_PREQ
+  - name: STR_RT20_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RT20_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies: 
+      - STR_RT20
+  - name: STR_RT20_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_RT20
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RT20_BUY
+      - STR_RT20_HE_CLIP_PREQ
+  - name: STR_M42_CARL_GUSTAV_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies: 
+      - STR_TROLLIUM
+  - name: STR_M42_CARL_GUSTAV_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_M42_CARL_GUSTAV
+  - name: STR_M42_CARL_GUSTAV_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_M42_CARL_GUSTAV
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_M42_CARL_GUSTAV_BUY
+      - STR_M42_CARL_GUSTAV_HE_CLIP_PREQ
+  - name: STR_S18_SOLOTHURN_1000_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_S18_SOLOTHURN_1000_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_S18_SOLOTHURN_1000
+  - name: STR_S18_SOLOTHURN_1000_HE_CLIP_BUY
+    cost: 1
+    lookup: STR_S18_SOLOTHURN_1000
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_S18_SOLOTHURN_1000_BUY
+      - STR_S18_SOLOTHURN_1000_HE_CLIP_PREQ
+  - name: STR_MODEL_SS41_HE_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MODEL_SS41_HE_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_MODEL_SS41
+  - name: STR_MODEL_SS41_HE_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_MODEL_SS41
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_MODEL_SS41_BUY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_MODEL_SS41_HE_CLIP_PREQ
+  - name: STR_MODEL_SS41_HE_BIG_CLIP_PREQ
+    cost: 0
+    points: 0
+    unlocks:
+      - STR_MODEL_SS41_HE_CLIP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MODEL_SS41_HE_BIG_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+  - name: STR_MODEL_SS41_HE_BIG_CLIP_BUY
+    lookup: STR_MODEL_SS41
+    cost: 1
+    points: 0
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_MODEL_SS41_BIG_CLIP_BUY
+      - STR_MODEL_SS41_BUY
+      - STR_MODEL_SS41_HE_BIG_CLIP_PREQ
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS
+    cost: 0
+    points: 0
+    needItem: true
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS_BUY
+    cost: 1
+    lookup: STR_BLACKOPS_SMART_AUTO_SHOTGUN
+    points: 0
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS_PREQ
+  - name: STR_MPK
+    cost: 1
+    points: 1
+    needItem: true
+    listOrder: 20741
+  - name: STR_GASMASK_BUY
+    cost: 0
+    points: 5
+    lookup: STR_GASMASK
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR_BUY
+    listOrder: 420741
+  # - name: STR_RIOT_STAB_VEST_BUY
+    # cost: 25
+    # points: 5
+    # lookup: STR_RIOT_STAB_VEST
+    # dependencies:
+      # - STR_CROWD_CONTROL_GEAR_BUY
+      # - STR_MILESTONE_3_SUMMARY
+      # - STR_RIOT_STAB_VEST
+    listOrder: 420742
+  - name: STR_MPK_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MPK
+    dependencies:
+      - STR_MPK
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+      - STR_MP_BUY
+    listOrder: 420742
+  - name: STR_HK51
+    cost: 20
+    points: 10
+    needItem: true
+    listOrder: 21241
+  - name: STR_HK51_BUY
+    cost: 2
+    points: 1
+    lookup: STR_HK51
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_HK51
+      - STR_BUY_BLACK_LOTUS_WEAPONS
+    unlocks:
+      - STR_FN_FAL_CLIP
+    listOrder: 421242
+  - name: STR_M16GL
+    cost: 0 
+    points: 0 
+    lookup: STR_M16GL #CHECK THIS
+    listOrder: 21126
+    dependencies:
+      - STR_RIFLE_M16
+      - STR_WEAPON_MODIFICATION_II #CHECK THIS
+  - name: STR_M16MK
+    cost: 0
+    points: 0
+    lookup: STR_M16MK #CHECK THIS
+    listOrder: 21127
+    dependencies:
+      - STR_RIFLE_M16
+      - STR_WEAPON_MODIFICATION_II #CHECK THIS
+  - name: STR_EXPEDITION_CULT_SURVEY
+    cost: 1
+    points: 50
+    dependencies:
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 62162
+  - name: STR_MINI_MORTAR
+    cost: 10
+    points: 10
+    needItem: true #check this
+    listOrder: 34200
+  - name: STR_MINI_MORTAR_BUY
+    cost: 40
+    points: 40
+    lookup: STR_MINI_MORTAR
+    dependencies:
+      - STR_MINI_MORTAR
+      - STR_MORTAR_BUY
+    listOrder: 434210
+  - name: STR_TRACITETHROWER
+    cost: 35
+    points: 15
+    dependencies:
+      - STR_TRACITE
+      - STR_ADVANCED_FIREARMS
+      - STR_ALLOYS_ENGINEERING
+      - STR_CYBERWEB_MANUFACTURING_PLANT
+    listOrder: 34501
+  - name: STR_AUTO9_PISTOL
+    cost: 25
+    points: 2
+    dependencies:
+      - STR_AUTO9_PISTOL_BUY
+    listOrder: 21480
+  - name: STR_AUTO9_PISTOL_BUY
+    cost: 100
+    points: 70
+    lookup: STR_AUTO9_PISTOL
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_CYBERWEB_MANUFACTURING_PLANT
+      - STR_BLACKOPS_SMARTPISTOL
+      - STR_ADVANCED_FIREARMS
+    listOrder: 21481
+  - name: STR_AUTO9_AA_CLIP_MANUFACTURING
+    cost: 15
+    points: 10
+    lookup: STR_PISTOL_AA_CLIP
+    dependencies:
+      - STR_SYNDICATE_OPERATIONS
+      - STR_ALLOY_AMMO
+      - STR_AUTO9_PISTOL
+    listOrder: 520351
+  - name: STR_ALLOY_SHOTGUN
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_ADVANCED_FIREARMS #probably needs to be harder
+      - STR_ALLOY_BLADES
+      - STR_ALLOYS_ENGINEERING
+      #- STR_MASS_DRIVER_RIFLE
+    listOrder: 34470
+  - name: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_ALLOY_SHOTGUN
+      - STR_TRACITE
+    listOrder: 34470
+  - name: STR_AN94_RIFLE
+    cost: 10
+    needItem: true
+    points: 1
+    listOrder: 23121
+  - name: STR_AN94_RIFLE_BUY
+    cost: 5
+    points: 10
+    lookup: STR_AN94_RIFLE
+    listOrder: 21125
+    dependencies:
+      - STR_AN94_RIFLE
+      - STR_BUY_ZSRR_WEAPONS
+  - name: STR_FG42
+    cost: 10
+    needItem: true #check this
+    points: 1
+    listOrder: 23122
+  - name: STR_FG42_BUY
+    cost: 5
+    points: 10
+    lookup: STR_FG42
+    listOrder: 21126
+    dependencies:
+      - STR_FG42
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+  - name: STR_STURMPISTOLE
+    cost: 10
+    needItem: true #check this
+    points: 1
+    listOrder: 23123
+  - name: STR_STURMPISTOLE_STOCK
+    cost: 0
+    needItem: true #check this
+    points: 1
+    dependencies:
+      - STR_STURMPISTOLE
+    listOrder: 23123
+  - name: STR_STURMPISTOLE_BUY
+    cost: 5
+    points: 10
+    lookup: STR_STURMPISTOLE
+    listOrder: 21127
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_STURMPISTOLE
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ADVANCED_AI_PREQ
+    listOrder: 34470
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+    cost: 2
+    points: 1
+    lookup: STR_BLACKOPS_SMART_AUTO_SHOTGUN
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_BLACKOPS_PREMIUM
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+    listOrder: 431006
+  - name: STR_BLACKOPS_SMART_LAUNCHER
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: false
+    listOrder: 34471
+  - name: STR_BLACKOPS_SMART_LAUNCHER_BUY
+    cost: 10
+    points: 1
+    lookup: STR_BLACKOPS_SMART_LAUNCHER
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_BLACKOPS_PREMIUM
+      - STR_BLACKOPS_SMART_LAUNCHER
+    listOrder: 431007
+  - name: STR_SYNDICATE_MERC
+    getOneFree: !add
+      - STR_BLACKOPS_DMR
+      - STR_BLACKOPS_REVOLVER
+  - name: STR_SYNDICATE_MERC_CAPTAIN
+    getOneFree: !add
+      - STR_BLACKOPS_PRECISION_MAGNUM
+      - STR_BLACKOPS_PRECISION_REVOLVER
+      - STR_BLACKOPS_EXECUTIONER
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+      - STR_BLACKOPS_SMART_LAUNCHER
+  - name: STR_SYNDICATE_SUPERSOLDIER
+    getOneFree: !add
+      - STR_BLACKOPS_REVOLVER
+      - STR_BLACKOPS_EXECUTIONER
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN
+  - name: STR_EXOTIC_AMMUNITION
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+    listOrder: 34470
+  - name: STR_ALLOY_FLARE_PISTOL
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_ALLOYS_ENGINEERING
+      - STR_TRACITE
+    listOrder: 34470
+  - name: STR_ALLOY_ASSAULT_PISTOL
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_ALLOY_FLARE_PISTOL
+      - STR_STURMPISTOLE
+      - STR_TRACITE
+      - STR_CYBERWEB_MANUFACTURING_PLANT
+    listOrder: 34471
+  - name: STR_ALLOY_ASSAULT_PISTOL_STOCK
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALLOY_ASSAULT_PISTOL
+      - STR_WEAPON_MODIFICATION
+    listOrder: 34471
+  - name: STR_TRACITE
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_ETRACE
+      - STR_CHIEF_RESEARCHER_CONTACT
+    listOrder: 34470
+  - name: STR_LWP
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_SCOUT_DRONE
+  - name: STR_LIGHT_TANK_CANNON
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_LWP
+      - STR_CULT_CONVOY_LARGE_INTERCEPTED
+    listOrder: 34471
+  - name: STR_LIGHT_TANK_AUTOCANNON
+    cost: 25
+    points: 5
+    dependencies:
+      - STR_LIGHT_TANK_CANNON
+      - STR_CULT_WAREHOUSE_RAIDED
+    listOrder: 34471
+  - name: STR_LIGHT_TANK_MACHINEGUN
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_LWP
+    listOrder: 34472
+  - name: STR_LIGHT_TANK_TWIN_MACHINEGUN
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    listOrder: 34472
+  - name: STR_LIGHT_TANK_RIOT_LAUNCHER
+    cost: 25
+    points: 2
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR
+      - STR_RIOT_VEHICLES
+    listOrder: 34473
+  - name: STR_LIGHT_TANK_RIOT_TASER
+    cost: 35
+    points: 3
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR
+      - STR_RIOT_VEHICLES
+      - STR_HEAVY_STUN_WEAPONS
+    listOrder: 34473
+  - name: STR_VEHICLE_SMOKE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_LWP
+    listOrder: 34470
+  - name: STR_LIGHT_HAND_CANNON_BUY
+    cost: 2
+    points: 1
+    lookup: STR_LIGHT_HAND_CANNON
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_MAGMA_CONTACT
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LIGHT_HAND_CANNON
+    cost: 30
+    points: 20
+    needItem: true
+    unlocks:
+      - STR_MAGMA_CONTACT_PREQ
+    listOrder: 23120
+  - name: STR_LHC_AP_AMMO
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LHC_HE_AMMO
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LHC_I_AMMO
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LHC_BS_AMMO
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LHC_AA_AMMO
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SHARE_ALLOY_AMMO_TECH
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_LHC_BS_AA_AMMO
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SHARE_ALLOY_AMMO_TECH
+      - STR_LIGHT_HAND_CANNON
+  - name: STR_ACCURIZED_SHOTGUN_BUY
+    cost: 4
+    points: 1
+    lookup: STR_ACCURIZED_SHOTGUN
+    dependencies:
+      - STR_SHOTGUN_BUY
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 422521
+  - name: STR_BLACKOPS_ACCURIZED_SHOTGUN
+    cost: 15
+    points: 10
+    needItem: true
+    listOrder: 22531
+  - name: STR_BLACKOPS_ACCURIZED_SHOTGUN_BUY
+    cost: 4
+    points: 1
+    lookup: STR_BLACKOPS_ACCURIZED_SHOTGUN
+    dependencies:
+      - STR_BLACKOPS_CONTACT
+      - STR_BLACKOPS_PREMIUM
+      - STR_BLACKOPS_SHOTGUN_BUY
+    listOrder: 422531
+  - name: STR_ACCURIZED_SHOTGUN
+    cost: 10
+    points: 10
+    needItem: true
+    listOrder: 22521
+  - name: STR_MANURHIN_REVOLVER_BUY
+    cost: 5
+    points: 3
+    lookup: STR_MANURHIN_REVOLVER
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_MILESTONE_1_SUMMARY
+      - STR_MILITARY_ENVOY_CONTACT
+    listOrder: 34470
+  - name: STR_AA12
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: ???
+  - name: STR_AA12_BUY
+    cost: 2
+    points: 1
+    lookup: STR_AA12
+    dependencies:
+      - STR_BUY_EXALT_WEAPONS
+      - STR_AA12
+    listOrder: ???
+  - name: STR_AA12_DRUM_BUY
+    cost: 4
+    points: 2
+    lookup: STR_AA12
+    dependencies:
+      - STR_AA12_BUY
+      - STR_EXALT_HQ
+    listOrder: ???
+  - name: STR_MANURHIN_REVOLVER
+    cost: 3
+    points: 3
+    dependencies:
+      - STR_MANURHIN_REVOLVER_BUY
+    listOrder: 34471
+  - name: STR_BLACKOPS_PRECISION_REVOLVER
+    cost: 2
+    points: 2
+    needItem: true
+    listOrder: 20172
+  - name: STR_BLACKOPS_SCOPED_REVOLVER_BUY
+    cost: 5
+    points: 3
+    lookup: STR_BLACKOPS_SCOPED_REVOLVER
+    dependencies:
+      - STR_BLACKOPS_PRECISION_REVOLVER
+      - STR_BLACKOPS_PREMIUM
+    listOrder: 34471
+  - name: STR_BLACKOPS_PRECISION_MAGNUM
+    cost: 2
+    points: 2
+    needItem: true
+    listOrder: 20170
+  - name: STR_BLACKOPS_PRECISION_MAGNUM_BUY
+    cost: 5
+    points: 3
+    lookup: STR_BLACKOPS_PRECISION_MAGNUM
+    dependencies:
+      - STR_BLACKOPS_MAGNUM
+      - STR_BLACKOPS_PREMIUM
+    listOrder: 34470
+  - name: STR_BLACKOPS_REVOLVER
+    cost: 2
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_REVOLVER_AA_DRUM_PREQ
+    listOrder: 20171
+  - name: STR_BLACKOPS_REVOLVER_BUY
+    cost: 5
+    points: 3
+    lookup: STR_BLACKOPS_REVOLVER
+    dependencies:
+      - STR_BLACKOPS_REVOLVER
+      - STR_BLACKOPS_MAGNUM
+      - STR_BLACKOPS_CONTACT
+    listOrder: 34471
+  - name: STR_MANURHIN_SCOPED_REVOLVER
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 20181
+  - name: STR_MANURHIN_SCOPED_REVOLVER_BUY
+    cost: 10
+    points: 5
+    lookup: STR_MANURHIN_SCOPED_REVOLVER
+    dependencies:
+      - STR_MANURHIN_SCOPED_REVOLVER
+      - STR_MANURHIN_REVOLVER
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 34470
+  - name: STR_SCOPED_MAGNUM
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 20180
+  - name: STR_SCOPED_MAGNUM_BUY
+    cost: 10
+    points: 5
+    lookup: STR_SCOPED_MAGNUM
+    dependencies:
+      - STR_SCOPED_MAGNUM
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 34469
+  - name: STR_APS
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 20181
+  - name: STR_APS_BUY
+    cost: 10
+    points: 5
+    lookup: STR_APS
+    dependencies:
+      - STR_APS
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 34471
+  - name: STR_MAUSER_AUTO
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 20182
+  - name: STR_MAUSER_AUTO_BUY
+    cost: 10
+    points: 5
+    lookup: STR_MAUSER_AUTO
+    dependencies:
+      - STR_MAUSER_AUTO
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 34471
+  - name: STR_REVOLVER_AA_DRUM_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACKOPS_REVOLVER
+      - STR_MAGNUM_AA_DRUM_PREQ
+  - name: STR_REVOLVER_AA_DRUM
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_REVOLVER_AA_DRUM_PREQ
+    listOrder: 20200
+  - name: STR_REVOLVER_AA_DRUM_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_REVOLVER_AA_DRUM_PREQ
+  - name: STR_SHOTGUN_AA_SHELLS_FLAK_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_EXOTIC_AMMUNITION
+    listOrder: 520200
+  - name: STR_PLASMA_GATLER
+    requiresBaseFunc: [IMPLAB]
+    cost: 1000
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_PLASMA_WEAPONS_CALIBRATION
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    #needItem: true
+    #destroyItem: true
+    listOrder: 30700
+  - name: STR_PLASMA_GATLER_CLIP
+    requiresBaseFunc: [IMPLAB]
+    cost: 450
+    points: 6
+    #needItem: true
+    #destroyItem: true
+    listOrder: 30710
+    dependencies:
+      - STR_PLASMA_GATLER
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+  - name: STR_RAFFICA_PISTOL
+    cost: 1
+    points: 1
+    needItem: true
+    listOrder: 34470
+  - name: STR_RAFFICA_PISTOL_BUY
+    cost: 2
+    points: 1
+    lookup: STR_RAFFICA_PISTOL
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_ANY_CULT_NETWORK
+    listOrder: 34470
+  - name: STR_RAFFICA_PISTOL_STOCK
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_WEAPON_MODIFICATION
+    unlocks:
+      - STR_RAFFICA_PISTOL
+    listOrder: 34471
+  - name: STR_RAFFICA_PISTOL_CLIP_BUY
+    cost: 1
+    points: 0
+    lookup: STR_RAFFICA_PISTOL
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_RAFFICA_PISTOL
+    listOrder: 34470
+  - name: STR_MAKAROV_BIG_CLIP_BUY
+    cost: 2
+    points: 2
+    lookup: STR_APS
+    dependencies:
+      - STR_APS
+    listOrder: 34471
+  - name: STR_APS_STOCK
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_APS
+    listOrder: 34471
+  - name: STR_MAUSER_AUTO_STOCK
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_MAUSER_AUTO
+    listOrder: 34472
+  - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+    cost: 90
+    points: 30
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 16879
+  - name: STR_HEAVY_RIOT_SUIT_BUY
+    cost: 75
+    points: 25
+    lookup: STR_HEAVY_RIOT_SUIT
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR_BUY
+      - STR_ARMORED_VEST
+      - STR_ANY_CULT_HQ
+    listOrder: 16850
+  - name: STR_HEAVY_RIOT_SUIT
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_HEAVY_RIOT_SUIT_BUY
+  - name: STR_RIOT_VEST_BUY
+    cost: 50
+    points: 20
+    lookup: STR_RIOT_VEST
+    dependencies:
+      - STR_ANY_CULT_NETWORK
+      - STR_CROWD_CONTROL_GEAR_BUY
+      - STR_VEST_BUSINESS_SUIT
+  - name: STR_RIOT_VEST
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_RIOT_VEST_BUY
+  - name: STR_SUPERCAPACITORS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CYBERWEB_BATTERY
+  - name: STR_CYBERWEB_BATTERY
+    unlocks:
+      - STR_SUPERCAPACITORS_PREQ
+  - name: STR_IMPROVED_BATTERIES
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_MUCKSTAR
+      - STR_CHIEF_ENGINEER_CONTACT
+    listOrder: 17674
+  - name: STR_MUCKSTAR_CANNON
+    cost: 45
+    points: 10
+    dependencies:
+      - STR_ALIEN_ALLOYS
+      - STR_IMPROVED_BATTERIES
+      - STR_TASER_CANNON
+    listOrder: 18916
+  - name: STR_PROXIMITY_FLARE
+    cost: 15
+    points: 1
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+  - name: STR_CYBER_TASER
+    requiresBaseFunc: [STDLAB]
+    cost: 30
+    points: 15
+    dependencies:
+      - STR_SUPERCAPACITORS
+  - name: STR_SUPERCAPACITORS
+    requiresBaseFunc: [STDLAB]
+    cost: 30
+    points: 15
+    dependencies:
+      - STR_TRACITE
+      - STR_SUPERCAPACITORS_PREQ
+  - name: STR_HWP_CANNON_CANISTER_SHELLS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TANK_CANNON
+  - name: STR_NIGHTOPS
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_JUMPSUIT
+  - name: STR_WEAPON_MODIFICATION
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+  - name: STR_WEAPON_MODIFICATION_II
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_WEAPON_MODIFICATION
+      - STR_MILESTONE_2_SUMMARY
+  - name: STR_ADVANCED_NIGHTOPS
+    cost: 45
+    points: 25
+    dependencies:
+      - STR_NIGHTOPS
+      - STR_MILESTONE_2_SUMMARY
+      - STR_ANY_CULT_HQ
+      # - STR_NIGHTOPS_ARMOR
+  # - name: STR_NIGHT_VEHICLES
+    # cost: 15
+    # points: 5
+    # dependencies:
+      # - STR_LWP
+      # - STR_ADVANCED_NIGHTOPS
+  - name: STR_RIOT_VEHICLES
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_LWP
+      - STR_CROWD_CONTROL_GEAR
+      - STR_ANY_CULT_HQ
+  - name: STR_VEHICLE_PLATING
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_LWP
+      - STR_ALIEN_ALLOYS
+  - name: STR_BREACHING_EXPLOSIVES
+    cost: 30
+    points: 6
+    unlocks:
+      - STR_BREACHING_CLIPS
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: 34480
+  - name: STR_BREACHING_CHARGE
+    cost: 25
+    points: 5
+    needItem: true
+    listOrder: 34480
+  - name: STR_BREACHING_CHARGE_BUY
+    cost: 30
+    points: 5
+    lookup: STR_BREACHING_CHARGE
+    dependencies:
+      - STR_BREACHING_EXPLOSIVES
+    listOrder: 34481
+  - name: STR_CROWD_CONTROL_GEAR
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+    listOrder: 34470
+  - name: STR_CROWD_CONTROL_GEAR_BUY
+    cost: 15
+    points: 5
+    lookup: STR_TEARGAS_GRENADE
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR
+    listOrder: 34470
+  - name: STR_TEARGAS_GRENADE
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_CROWD_CONTROL_GEAR_BUY
+    listOrder: 38560
+  - name: STR_M72_LAW
+    cost: 20
+    points: 5
+    needItem: true
+    destroyItem: false
+    listOrder: 34474 #make sure this is closer to rpg check this
+  - name: STR_M72_LAW_BUY
+    cost: 25
+    points: 10
+    lookup: STR_M72_LAW
+    dependencies:
+      - STR_M72_LAW
+      - STR_EXPLOSIVES_LICENCE
+      - STR_EXALT_OPERATIONS
+    listOrder: 34475
+  - name: STR_M3_CARL_GUSTAV
+    cost: 25
+    points: 5
+    needItem: true
+    destroyItem: false
+    listOrder: 34475 #make sure this is closer to rpg
+  - name: STR_M3_CARL_GUSTAV_BUY
+    cost: 30
+    points: 10
+    lookup: STR_M3_CARL_GUSTAV
+    dependencies:
+      - STR_M3_CARL_GUSTAV
+      - STR_EXPLOSIVES_LICENCE
+      - STR_BLACK_LOTUS_OPERATIONS
+    listOrder: 34476
+  - name: STR_PTRD41
+    cost: 25
+    points: 5
+    needItem: true
+    destroyItem: false
+    listOrder: 34474
+  - name: STR_PTRD41_BUY
+    cost: 50
+    points: 10
+    lookup: STR_PTRD41
+    dependencies:
+      - STR_PTRD41
+      - STR_ZSRR_OPERATIONS
+    listOrder: 34475
+  - name: STR_PTRS41
+    cost: 25
+    points: 5
+    needItem: true
+    destroyItem: false
+    listOrder: 34476
+  - name: STR_PTRS41_BUY
+    cost: 50
+    points: 10
+    lookup: STR_PTRS41
+    unlocks:
+      - STR_PTRD41
+    dependencies:
+      - STR_ZSRR_HQ
+      - STR_PTRS41
+    listOrder: 34477
+  - name: STR_MODEL_SS41
+    cost: 30
+    points: 5
+    needItem: true
+    destroyItem: false
+    listOrder: 34476 #check this
+  - name: STR_MODEL_SS41_BUY
+    cost: 55
+    points: 10
+    lookup: STR_MODEL_SS41
+    dependencies:
+      - STR_BLACK_LOTUS_HQ
+      - STR_MODEL_SS41
+    listOrder: 34477
+  - name: STR_MODEL_SS41_BIG_CLIP_BUY
+    cost: 55
+    points: 10
+    lookup: STR_MODEL_SS41
+    dependencies:
+      - STR_DESTROY_BLACK_LOTUS
+      - STR_MODEL_SS41
+    listOrder: 34478
+  - name: STR_NTW20_DENEL
+    cost: 30
+    points: 6
+    needItem: true
+    destroyItem: false
+    listOrder: 34478
+  - name: STR_NTW20_DENEL_BUY
+    cost: 60
+    points: 12
+    lookup: STR_NTW20_DENEL
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_ALL_CULT_HQ
+      - STR_NTW20_DENEL
+    listOrder: 34479
+  - name: STR_RT20
+    cost: 30
+    points: 6
+    needItem: true
+    destroyItem: false
+    listOrder: 34479 #check this
+  - name: STR_RT20_BUY
+    cost: 60
+    points: 12
+    lookup: STR_RT20
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_ALL_CULT_HQ
+      - STR_RT20
+    listOrder: 34480 #check this
+  - name: STR_RT20_BIG_CLIP_BUY
+    cost: 10
+    points: 0
+    lookup: STR_RT20
+    dependencies:
+      - STR_DESTROY_EXALT
+      - STR_RT20_BUY
+      - STR_EXALT_WAREHOUSE_RAIDED
+    listOrder: 34480 #check this
+  - name: STR_M42_CARL_GUSTAV
+    cost: 50
+    points: 6
+    needItem: true
+    destroyItem: false
+    listOrder: 34479 #check this
+  - name: STR_M42_CARL_GUSTAV_BIG_CLIP_BUY
+    cost: 10
+    points: 0
+    lookup: STR_M42_CARL_GUSTAV
+    dependencies:
+      - STR_M42_CARL_GUSTAV_BUY
+      - STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED
+    listOrder: 34480 #check this
+  - name: STR_M42_CARL_GUSTAV_BUY
+    cost: 75
+    points: 12
+    lookup: STR_M42_CARL_GUSTAV
+    dependencies:
+      - STR_DESTROY_CHURCH_OF_DAGON
+      - STR_ALL_CULT_HQ
+      - STR_MILESTONE_3_SUMMARY
+    listOrder: 34480 #check this
+  - name: STR_CULT_CONVOY_SMALL_INTERCEPTED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_CULT_CONVOY_LARGE_INTERCEPTED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_CULT_WAREHOUSE_RAIDED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_TROLLIUM
+    unlocks:
+      - STR_NSW
+    listOrder: 180320
+  - name: STR_CULT_MANOR_RAIDED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_CULT_GREATER_MANOR_RAIDED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 25
+    unlocks: 
+      - STR_CULT_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_CULT_GREATEST_MANOR_RAIDED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 30
+    unlocks: 
+      - STR_CULT_GREATER_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320
+  - name: STR_ANY_CULT_OPERATIONS
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180321
+  - name: STR_ALL_CULT_OPERATIONS
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 50
+    dependencies:
+      - STR_EXALT_OPERATIONS
+      - STR_ZSRR_OPERATIONS
+      - STR_CHURCH_OF_DAGON_OPERATIONS
+      - STR_BLACK_LOTUS_OPERATIONS
+    listOrder: 180321
+  - name: STR_ANY_CULT_HQ
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 25
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180321
+  - name: STR_ALL_CULT_HQ
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_EXALT_HQ
+      - STR_ZSRR_HQ
+      - STR_CHURCH_OF_DAGON_HQ
+      - STR_BLACK_LOTUS_HQ
+    listOrder: 180321
+  - name: STR_EXALT_HQ
+    unlocks:
+      - STR_ANY_CULT_HQ
+  - name: STR_CHURCH_OF_DAGON_HQ
+    unlocks:
+      - STR_ANY_CULT_HQ 
+  - name: STR_BLACK_LOTUS_HQ
+    unlocks:
+      - STR_ANY_CULT_HQ
+  - name: STR_ZSRR_HQ
+    requiresBaseFunc: [INTLAB]
+    unlocks:
+      - STR_ANY_CULT_HQ
+  - name: STR_S18_SOLOTHURN_1000
+    cost: 50
+    points: 6
+    needItem: true
+    destroyItem: false
+    listOrder: 34479 #check this
+  - name: STR_S18_SOLOTHURN_1000_BUY
+    cost: 75
+    points: 12
+    lookup: STR_S18_SOLOTHURN_1000
+    dependencies:
+      - STR_DESTROY_BLACK_LOTUS
+      - STR_ALL_CULT_HQ
+      - STR_MILESTONE_3_SUMMARY
+    listOrder: 34480 #check this
+  - name: STR_BLACK_MARKET_TIER_1
+    cost: 1
+    points: -5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_EXOTIC_AMMUNITION
+    getOneFree:
+      - STR_JUDGE_DRAGONBREATH_CLIP_PREQ
+      - STR_SHOTGUN_FLECHETTE_SHELLS_PREQ
+      - STR_UZI_CLIP_AP_PREQ
+      - STR_MP_CLIP_AP_PREQ
+      - STR_PTRD41_HE_CLIP_PREQ
+      - STR_USP_9_MM_CLIP_AP_PREQ
+      - STR_BERETTA_92FS_CLIP_AP_PREQ
+    listOrder: 47108
+  - name: STR_BLACK_MARKET_TIER_2
+    cost: 1
+    points: -10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_EXOTIC_AMMUNITION
+    getOneFree:
+      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_PREQ
+      - STR_KS23_SHELLS_DRAGONBREATH_PREQ
+      - STR_SKS_CLIP_AP_PREQ
+      - STR_QBU_88_CLIP_AP_PREQ
+      - STR_PTRS41_HE_CLIP_PREQ
+      - STR_RAFFICA_PISTOL_CLIP_AP_PREQ
+      - STR_USP_9_MM_BIG_CLIP_AP_PREQ
+    listOrder: 47108
+  - name: STR_BLACK_MARKET_TIER_3
+    cost: 1
+    points: -25
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_EXOTIC_AMMUNITION
+    getOneFree:
+      - STR_AA12_DRAGONBREATH_DRUM_PREQ
+      - STR_USAS_12_DRAGONBREATH_DRUM_PREQ
+      - STR_AUTO_SHOTGUN_FRAG_SHELLS_PREQ
+      - STR_RIFLE_M16_CLIP_AP_PREQ
+      - STR_WP_7_62_CLIP_AP_PREQ
+      - STR_WP_5_45_CLIP_AP_PREQ
+      - STR_NTW20_DENEL_HE_CLIP_PREQ
+      - STR_MODEL_SS41_HE_CLIP_PREQ
+      - STR_S18_SOLOTHURN_1000_HE_CLIP_PREQ
+  - name: STR_BLACK_MARKET_TIER_4
+    cost: 1
+    points: -50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_EXOTIC_AMMUNITION
+    getOneFree:
+      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_PREQ
+      - STR_CAWS_CLIP_FRAG_PREQ
+      - STR_CAWS_CLIP_DRAGONBREATH_PREQ
+      - STR_FN_FAL_CLIP_AP_PREQ
+      - STR_M82_BARETT_HE_CLIP_PREQ
+      - STR_M42_CARL_GUSTAV_HE_CLIP_PREQ
+      - STR_MODEL_SS41_HE_BIG_CLIP_PREQ
+      - STR_RT20_HE_CLIP_PREQ
+    listOrder: 47108
+  - name: STR_ILLEGAL_REQUISITION_FILES
+    getOneFree: !add
+      - STR_MPK
+      - STR_HK51
+      - STR_SCOPED_MAGNUM
+      - STR_JUDGE_7
+      - STR_STURMPISTOLE
+      - STR_AN94_RIFLE
+      - STR_AA12
+      - STR_PTRD41
+      - STR_NTW20_DENEL
+      - STR_M72_LAW
+      - STR_M3_CARL_GUSTAV
+      - STR_RT20
+      - STR_MODEL_SS41
+    getOneFreeProtected: !add
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+    listOrder: 47108
+  - name: STR_ILLEGAL_REQUISITION_FILES_ZSRR
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_MAKAROV
+      - STR_TOKAREV
+      - STR_AK47
+      - STR_APS
+      - STR_RAK
+      - STR_LUGER
+      - STR_PKM
+      - STR_AKM
+      - STR_MOSIN_RIFLE
+      - STR_SWD
+      - STR_AKSU74
+      - STR_GROZA
+      - STR_LIGHT_CANNON
+      - STR_HIGH_EXPLOSIVE
+      - STR_LANDMINE
+      - STR_GRENADE
+      - STR_DYNAMITE
+      - STR_SNIPER_RIFLE
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+      - STR_LIGHT_HAND_CANNON
+    getOneFreeProtected:
+      STR_PTRD41:
+        - STR_PTRS41
+    listOrder: 47109
+  - name: STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_CROSSBOW
+      - STR_ENFIELD_REVOLVER
+      - STR_MPK
+      - STR_STURMPISTOLE
+      - STR_STEN
+      - STR_BOLT_ACTION
+      - STR_AK47
+      - STR_AKM
+      - STR_FAMAS
+      - STR_FN_FAL
+      - STR_GALIL
+      - STR_M14
+      - STR_RT20
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_SHOTGUN
+      - STR_MINIMI
+      - STR_MILKOR_MGL
+      - STR_DYNAMITE
+      - STR_LANDMINE
+      - STR_INCENDIARY_GRENADE
+      - STR_LIGHT_HAND_CANNON  
+    getOneFreeProtected:
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+    listOrder: 47110
+  - name: STR_ILLEGAL_REQUISITION_FILES_BLACK_LOTUS
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_TONFA
+      - STR_WOODEN_CLUB
+      - STR_WAKIZASHI
+      - STR_KATANA
+      - STR_S&W_610
+      - STR_QBU_88
+      - STR_ARASAKA_3000
+      - STR_INCENDIARY_GRENADE
+      - STR_GOLDEN_DRAGONS
+      - STR_MAUSER_AUTO
+      - STR_HK51
+      - STR_M3_CARL_GUSTAV
+      - STR_MODEL_SS41
+      - STR_S18_SOLOTHURN_1000
+      - STR_LIGHT_HAND_CANNON 
+    listOrder: 47111
+  - name: STR_ILLEGAL_REQUISITION_FILES_EXALT
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_HK_MK23_SOCOM
+      - STR_USP_MATCH
+      - STR_DESERT_EAGLE
+      - STR_WILDEY
+      - STR_TOMMYGUN
+      - STR_M3_GREASEGUN
+      - STR_MAC10
+      - STR_SCOPED_MAGNUM
+      - STR_COLT_COMMANDO
+      - STR_CALICO
+      - STR_FN_P90
+      - STR_RIFLE_M16
+      - STR_FN_FAL
+      - STR_M14
+      - STR_AA12
+      - STR_M82_BARETT
+      - STR_NTW20_DENEL
+      - STR_M72_LAW
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_M60
+      - STR_MINIMI
+      - STR_RPG
+      - STR_GRENADE_LAUNCHER
+      - STR_JUDGE_7
+      - STR_LIGHT_HAND_CANNON 
+    getOneFreeProtected:
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+    listOrder: 47112
+  - name: STR_EXALT_ENFORCER
+    getOneFree: !add
+      - STR_SCOPED_MAGNUM
+      - STR_JUDGE_7
+      - STR_AA12
+      - STR_M72_LAW
+    getOneFreeProtected: !add
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+  - name: STR_EXALT_LIQUIDATOR
+    getOneFree: !add
+      - STR_SCOPED_MAGNUM
+      - STR_JUDGE_7
+      - STR_AA12
+      - STR_M72_LAW
+      - STR_RIFLE_M16_BEOWULF
+    getOneFreeProtected: !add
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+      STR_M14:
+        - STR_M14_SCOPED
+  - name: STR_EXALT_MASTER
+    getOneFree: !add
+      - STR_SCOPED_MAGNUM
+      - STR_JUDGE_7
+      - STR_AA12
+      - STR_M72_LAW
+      - STR_NTW20_DENEL
+      - STR_RIFLE_M16_BEOWULF
+    getOneFreeProtected: !add
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+      STR_M14:
+        - STR_M14_SCOPED
+  - name: STR_ZSRR_MATROS
+    getOneFree: !add
+      - STR_APS
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+  - name: STR_ZSRR_RED_OPS_MALE
+    getOneFree: !add
+      - STR_APS
+      - STR_MAUSER
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+    getOneFreeProtected: !add
+      STR_LOGISTICS:
+        - STR_MINI_MORTAR
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_SKS:
+      - STR_SKS_SCOPED
+  - name: STR_ZSRR_RED_OPS_FEMALE
+    getOneFree: !add
+      - STR_APS
+      - STR_MAUSER
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+    getOneFreeProtected: !add
+      STR_LOGISTICS:
+        - STR_MINI_MORTAR
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_SKS:
+      - STR_SKS_SCOPED
+  - name: STR_ZSRR_PIONEER_MALE
+    getOneFree: !add
+      - STR_APS
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+    getOneFreeProtected: !add
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_SKS:
+      - STR_SKS_SCOPED
+  - name: STR_ZSRR_PIONEER_FEMALE
+    getOneFree: !add
+      - STR_APS
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+    getOneFreeProtected: !add
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_SKS:
+      - STR_SKS_SCOPED
+  - name: STR_ZSRR_UBEK
+    getOneFree: !add
+      - STR_APS
+      - STR_PTRD41
+      - STR_AN94_RIFLE
+    getOneFreeProtected: !add
+      STR_LOGISTICS:
+        - STR_MINI_MORTAR
+      STR_PTRD41:
+        - STR_PTRS41
+      STR_SKS:
+      - STR_SKS_SCOPED
+  - name: STR_BLACK_LOTUS_FOOTMAN
+    getOneFree: !add
+      - STR_MAUSER_AUTO
+  - name: STR_BLACK_LOTUS_KNIGHT
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    spawnedItem:  STR_WEAPON_BOX_BLACK_LOTUS
+    # unlocks:
+      # - STR_BLACK_LOTUS_CONVOY_MEDIUM
+    getOneFree:
+      - STR_MACHETE
+      - STR_TONFA
+      - STR_QBU_88
+      - STR_S&W_610
+      - STR_AKSU74
+      - STR_MAUSER_AUTO
+      - STR_GOLDEN_DRAGONS
+      - STR_HK51
+    listOrder: 150107
+  - name: STR_BLACK_LOTUS_ARCHWITCH #add weapon here
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_BLACK_LOTUS
+    # unlocks:
+      # - STR_BLACK_LOTUS_CONVOY_LARGE
+    getOneFree:
+      - STR_MACHETE
+      - STR_TONFA
+      - STR_KATANA
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_QBU_88
+      - STR_S&W_610
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_MAUSER_AUTO
+      - STR_GOLDEN_DRAGONS
+      - STR_M3_CARL_GUSTAV
+    getOneFreeProtected:
+      STR_BLACK_LOTUS_KNIGHT:
+        - STR_HK51
+      STR_BLACK_LOTUS_ARCHWITCH:
+        - STR_MODEL_SS41
+      STR_BLACK_LOTUS_TORONJIN:
+        - STR_M3_CARL_GUSTAV
+    listOrder: 150108
+  - name: STR_BLACK_LOTUS_TORONJIN
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 100
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS
+    getOneFree:
+      - STR_NINJA_ARTS
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_M3_CARL_GUSTAV
+      - STR_MAUSER_AUTO
+      - STR_BLACK_LOTUS_HQ
+    listOrder: 150109
+  - name: STR_BLACK_LOTUS_ELITE_FOOTMAN
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS
+    # unlocks:
+      # - STR_BLACK_LOTUS_CONVOY_LARGE
+    getOneFree:
+      - STR_MACHETE
+      - STR_TONFA
+      - STR_KATANA
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_QBU_88
+      - STR_S&W_610
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_MAUSER_AUTO
+      - STR_GOLDEN_DRAGONS
+      - STR_M3_CARL_GUSTAV
+    getOneFreeProtected:
+      STR_BLACK_LOTUS_KNIGHT:
+        - STR_HK51
+      STR_BLACK_LOTUS_ARCHWITCH:
+        - STR_MODEL_SS41
+      STR_BLACK_LOTUS_TORONJIN:
+        - STR_M3_CARL_GUSTAV
+    listOrder: 150110
+  - name: STR_BLACK_LOTUS_MANDARIN
+    getOneFree: !add
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_MAUSER_AUTO
+  - name: STR_BLACK_LOTUS_ASSASSIN
+    getOneFree: !add
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_MAUSER_AUTO
+  - name: STR_BLACK_LOTUS_WITCH #add weapon here
+    getOneFree: !add
+      - STR_HK51
+      - STR_MODEL_SS41
+      - STR_MAUSER_AUTO
+  - name: STR_CHOSEN_OF_DAGON
+    getOneFree: !add
+      - STR_M3_CARL_GUSTAV
+      - STR_STURMPISTOLE
+      - STR_FG42
+      - STR_MANURHIN_SCOPED_REVOLVER
+    getOneFreeProtected: !add
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+  - name: STR_SORCERER_OF_DAGON
+    getOneFree: !add
+      - STR_M3_CARL_GUSTAV
+      - STR_FG42
+      - STR_STURMPISTOLE
+      - STR_MANURHIN_SCOPED_REVOLVER
+      - STR_FN_FAL_SCOPED
+      - STR_RT20
+    getOneFreeProtected: !add
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+  - name: STR_ALIEN_DATA_QUANTUM_SLATE #instead have Alien Weapon Data Slates for guns or specific slates for specific rewards?
+    cost: 100
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ALIEN_LANGUAGE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 47301
+  - name: STR_ALIEN_DATA_QUANTUM_SLATE_DECRYPTED
+    cost: 100
+    points: 25
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UFO_SUBTYPES
+      - STR_FUSION_EXPLOSIVES
+      - STR_ALIEN_GRAVITY_GENERATOR
+      - STR_TRACTOR_BEAM_GENERATOR
+      - STR_HYPERWAVES
+      - STR_ALIEN_GARDENS
+      - STR_ALIEN_REPRODUCTION
+      - STR_ALIEN_SURGERY
+      - STR_PLASMA_GATLER
+      - STR_PLASMA_GATLER_CLIP
+      - STR_BLOODCLOT_GRENADE
+      - STR_STASIS_GRENADE
+    listOrder: 47311
+  - name: STR_BLOODCLOT_GRENADE
+    cost: 75
+    points: 15
+    needItem: true
+    destroyItem: false
+    listOrder: 47312
+    requiresBaseFunc: [IMPLAB]
+    dependencies:
+      - STR_ALIEN_GARDENS
+      - STR_ALIEN_SURGERY
+  - name: STR_STASIS_GRENADE
+    cost: 50
+    points: 10
+    needItem: true
+    destroyItem: false
+    listOrder: 47312
+    requiresBaseFunc: [IMPLAB]
+    dependencies:
+      - STR_ALIEN_GARDENS
+      - STR_ALIEN_SURGERY
+#CULT SUPPLIES
+  - name: STR_WEAPON_BOX_CULT
+    cost: 0
+    points: 2
+    needItem: false
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_RAMSHACKLE_CULT
+    cost: 0
+    points: 2
+    needItem: false
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_REINFORCED_CULT
+    cost: 0
+    points: 2
+    needItem: false
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62135
+  - name: STR_AMMO_BOX_CULT
+    cost: 0
+    points: 1
+    needItem: false
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62139
+  - name: STR_AMMO_BOX_REINFORCED
+    cost: 0
+    points: 1
+    needItem: true
+    listOrder: 62138 #Make sure htis matches!
+  # - name: STR_EXOTIC_AMMO_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_EXOTIC_AMMO_BOX_REINFORCED
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_BLACKOPS_WEAPON_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_BLACKOPS_WEAPON_BOX_PREMIUM
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_BLACKOPS_AMMO_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_BLACKOPS_AMMO_BOX_PREMIUM
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_MAGMA_WEAPON_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_MAGMA_WEAPON_BOX_PREMIUM
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_MAGMA_AMMO_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_MAGMA_AMMO_BOX_PREMIUM
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+  # - name: STR_OSIRON_TRITANIUM_AMMO_CONTRABAND_BOX
+    # cost: 0
+    # points: 1
+    # needItem: true
+    # listOrder: 62138 #Make sure htis matches!
+#RED DAWN
+  - name: STR_WEAPON_BOX_ZSRR
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_CULT
+    lookup: STR_WEAPON_BOX_CULT
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_RAMSHACKLE_ZSRR
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_RAMSHACKLE_CULT
+    lookup: STR_WEAPON_BOX_RAMSHACKLE_CULT
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_REINFORCED_ZSRR
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_REINFORCED_CULT
+    lookup: STR_WEAPON_BOX_REINFORCED_CULT
+    listOrder: 62135
+  - name: STR_AMMO_BOX_ZSRR
+    cost: 0
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_AMMO_BOX_CULT
+    lookup: STR_AMMO_BOX_CULT
+    listOrder: 62139
+#EXALT 
+  - name: STR_WEAPON_BOX_EXALT
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_CULT
+    lookup: STR_WEAPON_BOX_CULT
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_RAMSHACKLE_EXALT
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_RAMSHACKLE_CULT
+    lookup: STR_WEAPON_BOX_RAMSHACKLE_CULT
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_REINFORCED_EXALT
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_REINFORCED_CULT
+    lookup: STR_WEAPON_BOX_REINFORCED_CULT
+    listOrder: 62135
+  - name: STR_AMMO_BOX_EXALT
+    cost: 0
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_AMMO_BOX_CULT
+    lookup: STR_AMMO_BOX_CULT
+    listOrder: 62139
+#CHURCH OF DAGON
+  - name: STR_WEAPON_BOX_CHURCH_OF_DAGON
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_CULT
+    lookup: STR_WEAPON_BOX_CULT
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_RAMSHACKLE_CULT
+    lookup: STR_WEAPON_BOX_RAMSHACKLE_CULT
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_REINFORCED_CULT
+    lookup: STR_WEAPON_BOX_REINFORCED_CULT
+    listOrder: 62135
+  - name: STR_AMMO_BOX_CHURCH_OF_DAGON
+    cost: 0
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_AMMO_BOX_CULT
+    lookup: STR_AMMO_BOX_CULT
+    listOrder: 62139
+#BLACK LOTUS
+  - name: STR_WEAPON_BOX_BLACK_LOTUS
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_CULT
+    lookup: STR_WEAPON_BOX_CULT
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_RAMSHACKLE_CULT
+    lookup: STR_WEAPON_BOX_RAMSHACKLE_CULT
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS
+    cost: 0
+    points: 2
+    needItem: true
+    unlocks:
+      - STR_WEAPON_BOX_REINFORCED_CULT
+    lookup: STR_WEAPON_BOX_REINFORCED_CULT
+    listOrder: 62135
+  - name: STR_AMMO_BOX_BLACK_LOTUS
+    cost: 0
+    points: 1
+    needItem: true
+    unlocks:
+      - STR_AMMO_BOX_CULT
+    lookup: STR_AMMO_BOX_CULT
+    listOrder: 62139
+#Red Dawn Convoys
+  - name: STR_ZSRR_LOGISTICS_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZSRR_LOGISTICS
+  - name: STR_ZSRR_RED_OPS_OFFICER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZSRR_RED_OPS_OFFICER
+  - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_UC
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZSRR_UBEK_PROTOTYPE_SUIT
+#Black Lotus Convoys
+  - name: STR_BLACK_LOTUS_KNIGHT_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_KNIGHT
+  - name: STR_BLACK_LOTUS_ARCHWITCH_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_ARCHWITCH
+  - name: STR_BLACK_LOTUS_TORONJIN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_TORONJIN
+#GIVE CONVOYS(GENERAL AND THEIR SIZE SPECIFIC ENTRIES TOO) A UFOPEDIA ARTICLE, AS WELL AS THEIR TERMINATION ENTRIES
+#EXALT Convoys
+  - name: STR_EXALT_LOGISTICS_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_EXALT_LOGISTICS
+  - name: STR_EXALT_REINFORCER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_EXALT_REINFORCER
+  - name: STR_EXALT_EXTERMINATOR_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_EXALT_EXTERMINATOR
+  - name: STR_EXALT_CONVOYS
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_EXALT_NETWORK
+      - STR_CULT_CONVOYS
+    listOrder: 300394
+  - name: STR_EXALT_CONVOY_SMALL
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_EXALT_CONVOYS
+    listOrder: 300395
+  - name: STR_EXALT_CONVOY_SMALL_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_SMALL_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_EXALT_CONVOY_MEDIUM
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_EXALT_LOGISTICS
+      - STR_EXALT_OPERATIONS
+    listOrder: 300396
+  - name: STR_EXALT_CONVOY_MEDIUM_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_EXALT_CONVOY_LARGE
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_EXALT_REINFORCER
+      - STR_EXALT_HQ
+    listOrder: 300397
+  - name: STR_EXALT_WAREHOUSE
+    cost: 0
+    points: 25
+    dependencies:
+      - STR_EXALT_CONVOY_LARGE_INTERCEPTED
+    listOrder: 300399
+  - name: STR_EXALT_CONVOY_LARGE_INTERCEPTED
+    cost: 1
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_LARGE_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_WAREHOUSE_RAIDED
+    cost: 0
+    points: 100
+    unlocks:
+      - STR_CULT_WAREHOUSE_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_LOGISTICS
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    spawnedItem:  STR_WEAPON_BOX_EXALT
+    # unlocks:
+      # - STR_EXALT_CONVOY_MEDIUM
+    getOneFree:
+      - STR_EXALT_RATIONALE
+      - STR_CALICO
+      - STR_M14
+      - STR_SCOPED_MAGNUM
+      - STR_JUDGE_7
+      - STR_AA12
+      - STR_PSG1
+      - STR_MAC10
+      - STR_M3_GREASEGUN
+      - STR_FN_P90
+      - STR_HK_MK23_SOCOM
+      - STR_BLACKOPS_ASSAULT_LMG
+      - STR_M82_BARETT
+      - STR_M72_LAW
+      - STR_COLT_COMMANDO
+      - STR_PSICLONE
+    getOneFreeProtected:
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+      STR_EXALT_LOGISTICS:
+        - STR_SCOPED_MAGNUM
+      STR_EXALT_REINFORCER:
+        - STR_AA12
+      STR_EXALT_EXTERMINATOR:
+        - STR_NTW20_DENEL
+    listOrder: 150222
+  - name: STR_EXALT_REINFORCER
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_EXALT
+    # unlocks:
+      # - STR_EXALT_CONVOY_LARGE
+    getOneFree:
+      - STR_CALICO
+      - STR_M14
+      - STR_MAC10
+      - STR_M3_GREASEGUN
+      - STR_FN_P90
+      - STR_HK_MK23_SOCOM
+      - STR_BLACKOPS_ASSAULT_LMG
+      - STR_SNIPER_RIFLE
+      - STR_M72_LAW
+      - STR_COLT_COMMANDO
+      - STR_PSICLONE
+      - STR_RIFLE_M16_BEOWULF
+    getOneFreeProtected:
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+      STR_M14:
+        - STR_M14_SCOPED
+      STR_EXALT_LOGISTICS:
+        - STR_SCOPED_MAGNUM
+      STR_EXALT_REINFORCER:
+        - STR_AA12
+      STR_EXALT_EXTERMINATOR:
+        - STR_NTW20_DENEL
+    listOrder: 150242
+  - name: STR_EXALT_ELITE_REINFORCER
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 15
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_EXALT
+    # unlocks:
+      # - STR_EXALT_CONVOY_LARGE
+    getOneFree:
+      - STR_CALICO
+      - STR_M14
+      - STR_MAC10
+      - STR_M3_GREASEGUN
+      - STR_FN_P90
+      - STR_HK_MK23_SOCOM
+      - STR_BLACKOPS_ASSAULT_LMG
+      - STR_SNIPER_RIFLE
+      - STR_M72_LAW
+      - STR_COLT_COMMANDO
+      - STR_PSICLONE
+      - STR_RIFLE_M16_BEOWULF
+    getOneFreeProtected:
+      STR_JUDGE_7:
+        - STR_BLACKOPS_JUDGE
+      STR_M14:
+        - STR_M14_SCOPED
+      STR_EXALT_LOGISTICS:
+        - STR_SCOPED_MAGNUM
+      STR_EXALT_REINFORCER:
+        - STR_AA12
+      STR_EXALT_EXTERMINATOR:
+        - STR_NTW20_DENEL
+    listOrder: 150243
+  - name: STR_EXALT_EXTERMINATOR
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 100
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_EXALT
+    unlocks:
+      - STR_HEAVY_RIOT_SUIT_BUY
+      - STR_EXALT_HQ
+  - name: STR_MUTON_UFO_RAIDED
+    cost: 0
+    points: 150
+    dependencies:
+      - STR_TROLLIUM 
+  - name: STR_CULT_CONVOYS
+    cost: 1
+    points: 5
+    needItem: false
+    dependencies:
+      - STR_ANY_CULT_NETWORK
+    listOrder: 300394
+  - name: STR_ZSRR_CONVOYS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZSRR_NETWORK
+      - STR_CULT_CONVOYS
+    listOrder: 300394
+  - name: STR_ZSRR_CONVOY_SMALL
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_ZSRR_CONVOYS
+    listOrder: 300395
+  - name: STR_ZSRR_CONVOY_SMALL_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_SMALL_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300396
+  - name: STR_ZSRR_CONVOY_MEDIUM
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_ZSRR_LOGISTICS
+      - STR_ZSRR_OPERATIONS
+    listOrder: 300396
+  - name: STR_ZSRR_CONVOY_MEDIUM_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_ZSRR_CONVOY_LARGE
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_ZSRR_RED_OPS_OFFICER
+      - STR_ZSRR_HQ
+    listOrder: 300397
+  - name: STR_ZSRR_WAREHOUSE
+    cost: 0
+    points: 25
+    dependencies:
+      - STR_ZSRR_CONVOY_LARGE_INTERCEPTED
+    listOrder: 300399
+  - name: STR_ZSRR_CULT_MANOR_ASSAULTED
+    cost: 0
+    points: 25
+    unlocks:
+      - STR_CULT_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_CULT_GREATER_MANOR_ASSAULTED
+    cost: 0
+    points: 30
+    unlocks:
+      - STR_CULT_GREATER_MANOR_RAIDED
+      - STR_ZSRR_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_CULT_GREATEST_MANOR_ASSAULTED
+    cost: 0
+    points: 50
+    unlocks:
+      - STR_CULT_GREATEST_MANOR_RAIDED
+      - STR_ZSRR_CULT_GREATER_MANOR_ASSAULTED
+      - STR_ZSRR_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_CULT_MANOR_ASSAULTED
+    cost: 0
+    points: 25
+    unlocks:
+      - STR_CULT_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_CULT_GREATER_MANOR_ASSAULTED
+    cost: 0
+    points: 30
+    unlocks:
+      - STR_CULT_GREATER_MANOR_RAIDED
+      - STR_CHURCH_OF_DAGON_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_CULT_GREATEST_MANOR_ASSAULTED
+    cost: 0
+    points: 50
+    unlocks:
+      - STR_CULT_GREATEST_MANOR_RAIDED
+      - STR_CHURCH_OF_DAGON_CULT_GREATER_MANOR_ASSAULTED
+      - STR_CHURCH_OF_DAGON_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BLACK_LOTUS_CULT_MANOR_ASSAULTED
+    cost: 0
+    points: 25
+    unlocks:
+      - STR_CULT_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BLACK_LOTUS_CULT_GREATER_MANOR_ASSAULTED
+    cost: 0
+    points: 30
+    unlocks:
+      - STR_CULT_GREATER_MANOR_RAIDED
+      - STR_BLACK_LOTUS_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BLACK_LOTUS_CULT_GREATEST_MANOR_ASSAULTED
+    cost: 0
+    points: 50
+    unlocks:
+      - STR_CULT_GREATEST_MANOR_RAIDED
+      - STR_BLACK_LOTUS_CULT_GREATER_MANOR_ASSAULTED
+      - STR_BLACK_LOTUS_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_CULT_MANOR_ASSAULTED
+    cost: 0
+    points: 25
+    unlocks:
+      - STR_CULT_MANOR_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_CULT_GREATER_MANOR_ASSAULTED
+    cost: 0
+    points: 30
+    unlocks:
+      - STR_CULT_GREATER_MANOR_RAIDED
+      - STR_EXALT_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_CULT_GREATEST_MANOR_ASSAULTED
+    cost: 0
+    points: 50
+    unlocks:
+      - STR_CULT_GREATEST_MANOR_RAIDED
+      - STR_EXALT_CULT_GREATER_MANOR_ASSAULTED
+      - STR_EXALT_CULT_MANOR_ASSAULTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_WAREHOUSE_RAIDED
+    cost: 0
+    points: 100
+    unlocks:
+      - STR_CULT_WAREHOUSE_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_CONVOY_LARGE_INTERCEPTED
+    cost: 1
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_LARGE_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_LOGISTICS
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    spawnedItem:  STR_WEAPON_BOX_ZSRR
+    # unlocks:
+      # - STR_ZSRR_CONVOY_MEDIUM
+    getOneFree:
+      - STR_KNIFE
+      - STR_SKORPION
+      - STR_BASEBALL_BAT
+      - STR_WOODEN_CLUB
+      - STR_BILLHOOK
+      - STR_TOKAREV
+      - STR_MAKAROV
+      - STR_LUGER
+      - STR_MAUSER
+      - STR_APS
+      - STR_RAK
+      - STR_AKSU74
+      - STR_SKS
+      - STR_MOSIN_RIFLE
+      - STR_PIPE
+      - STR_AN94_RIFLE
+    getOneFreeProtected:
+      STR_SKS:
+        - STR_SKS_SCOPED
+    listOrder: 150221
+  - name: STR_ZSRR_RED_OPS_OFFICER
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_ZSRR
+    # unlocks:
+      # - STR_ZSRR_CONVOY_LARGE
+    getOneFree:
+      - STR_GROZA
+      - STR_AKSU74
+      - STR_SKORPION
+      - STR_BASEBALL_BAT
+      - STR_WOODEN_CLUB
+      - STR_KNIFE
+      - STR_TOKAREV
+      - STR_MAKAROV
+      - STR_LUGER
+      - STR_MAUSER
+      - STR_RAK
+      - STR_APS
+      - STR_SWD
+      - STR_PKM
+      - STR_SKS
+      - STR_SNIPER_RIFLE
+      - STR_VSS
+      - STR_MOSIN_RIFLE
+      - STR_MORTAR
+    getOneFreeProtected:
+      STR_SKS:
+        - STR_SKS_SCOPED
+      STR_LOGISTICS:
+        - STR_AN94_RIFLE
+      STR_ZSRR_RED_OPS:
+        - STR_PTRD41
+      STR_ZSRR_UBEK:
+        - STR_PTRS41
+    listOrder: 150241
+  - name: STR_ZSRR_RED_OPS_ELITE
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 15
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_ZSRR
+    # unlocks:
+      # - STR_ZSRR_CONVOY_LARGE
+    getOneFree:
+      - STR_GROZA
+      - STR_AKSU74
+      - STR_SKORPION
+      - STR_BASEBALL_BAT
+      - STR_WOODEN_CLUB
+      - STR_KNIFE
+      - STR_TOKAREV
+      - STR_MAKAROV
+      - STR_LUGER
+      - STR_MAUSER
+      - STR_RAK
+      - STR_APS
+      - STR_SWD
+      - STR_PKM
+      - STR_SKS
+      - STR_SNIPER_RIFLE
+      - STR_VSS
+      - STR_MOSIN_RIFLE
+      - STR_MORTAR
+    getOneFreeProtected:
+      STR_SKS:
+        - STR_SKS_SCOPED
+      STR_LOGISTICS:
+        - STR_AN94_RIFLE
+      STR_ZSRR_RED_OPS:
+        - STR_PTRD41
+      STR_ZSRR_UBEK:
+        - STR_PTRS41
+    listOrder: 150242
+  - name: STR_ZSRR_UBEK_PROTOTYPE_SUIT
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 100
+    needItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_ZSRR
+    unlocks:
+      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+      - STR_ZSRR_HQ
+#Church Of Dagon Convoys
+  - name: STR_ACOLYTE_OF_DAGON_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ACOLYTE_OF_DAGON
+  - name: STR_PROSELYTE_OF_DAGON_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PROSELYTE_OF_DAGON
+  - name: STR_HAND_OF_DAGON_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HAND_OF_DAGON
+  - name: STR_CHURCH_OF_DAGON_CONVOYS
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_CHURCH_OF_DAGON_NETWORK
+      - STR_CULT_CONVOYS
+    listOrder: 300394
+  - name: STR_CHURCH_OF_DAGON_CONVOY_SMALL
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_CHURCH_OF_DAGON_CONVOYS
+    listOrder: 300395
+  - name: STR_CHURCH_OF_DAGON_CONVOY_SMALL_INTERCEPTED
+    cost: 1
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_SMALL_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_CHURCH_OF_DAGON_CONVOY_MEDIUM
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_ACOLYTE_OF_DAGON
+      - STR_CHURCH_OF_DAGON_OPERATIONS
+    listOrder: 300396
+  - name: STR_CHURCH_OF_DAGON_CONVOY_MEDIUM_INTERCEPTED
+    cost: 1
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_CHURCH_OF_DAGON_CONVOY_LARGE
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_PROSELYTE_OF_DAGON
+      - STR_CHURCH_OF_DAGON_HQ
+    listOrder: 300397
+  - name: STR_CHURCH_OF_DAGON_WAREHOUSE
+    cost: 0
+    points: 25
+    dependencies:
+      - STR_CHURCH_OF_DAGON_CONVOY_LARGE_INTERCEPTED
+    listOrder: 300399
+  - name: STR_CHURCH_OF_DAGON_CONVOY_LARGE_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_LARGE_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_WAREHOUSE_RAIDED
+    cost: 1
+    points: 100
+    unlocks:
+      - STR_CULT_WAREHOUSE_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ACOLYTE_OF_DAGON
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    spawnedItem:  STR_WEAPON_BOX_CHURCH_OF_DAGON
+    # unlocks:
+      # - STR_CHURCH_OF_DAGON_CONVOY_MEDIUM
+    getOneFree:
+      - STR_AXE
+      - STR_MACHETE
+      - STR_CROSSBOW
+      - STR_BILLHOOK
+      - STR_ENFIELD_REVOLVER
+      - STR_MANURHIN_SCOPED_REVOLVER
+      - STR_MPK
+      - STR_DOUBLE_BARRELED
+      - STR_FAMAS
+      - STR_MP
+      - STR_MINIMI
+      - STR_BOLT_ACTION
+      - STR_FN_FAL
+      - STR_G11
+      - STR_GALIL
+      - STR_PIPE
+    getOneFreeProtected:
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+    listOrder: 150222
+  - name: STR_PROSELYTE_OF_DAGON
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_CHURCH_OF_DAGON
+    unlocks:
+      # - STR_CHURCH_OF_DAGON_CONVOY_LARGE
+      - STR_ELDRITCH_LANGUAGE_INVESTIGATION
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+    getOneFree:
+      - STR_AXE
+      - STR_CROSSBOW
+      - STR_ENFIELD_REVOLVER
+      - STR_DOUBLE_BARRELED
+      - STR_FAMAS
+      - STR_MP
+      - STR_MINIMI
+      - STR_BOLT_ACTION
+      - STR_G11
+      - STR_GALIL
+      - STR_PIPE
+    getOneFreeProtected:
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+      STR_ACOLYTE_OF_DAGON:
+        - STR_MANURHIN_SCOPED_REVOLVER
+      STR_PROSELYTE_OF_DAGON:
+        - STR_STURMPISTOLE
+      STR_HAND_OF_DAGON:
+        - STR_RT20
+    listOrder: 150242
+  - name: STR_PROPHET_OF_DAGON
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 15
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON
+    unlocks:
+      # - STR_CHURCH_OF_DAGON_CONVOY_LARGE
+      - STR_ELDRITCH_LANGUAGE_INVESTIGATION
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+    getOneFree:
+      - STR_AXE
+      - STR_CROSSBOW
+      - STR_ENFIELD_REVOLVER
+      - STR_DOUBLE_BARRELED
+      - STR_FAMAS
+      - STR_MP
+      - STR_MINIMI
+      - STR_BOLT_ACTION
+      - STR_G11
+      - STR_GALIL
+      - STR_PIPE
+    getOneFreeProtected:
+      STR_FN_FAL:
+        - STR_FN_FAL_SCOPED
+      STR_ACOLYTE_OF_DAGON:
+        - STR_MANURHIN_SCOPED_REVOLVER
+      STR_PROSELYTE_OF_DAGON:
+        - STR_STURMPISTOLE
+      STR_HAND_OF_DAGON:
+        - STR_RT20
+    listOrder: 150243
+  - name: STR_MALE_SWAT_XCFA
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_RIOT_VEST
+    unlocks:
+      - STR_POSTAL_INTERROGATED
+    getOneFree:
+      - STR_CHURCH_OF_DAGON
+      - STR_EXALT
+      - STR_ZSRR
+      - STR_BLACK_LOTUS
+      - STR_GIANT_RAT
+      - STR_REAPER
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_DOSSIER_DAVID_VINCENT
+      - STR_DOSSIER_GABRIEL_NADEAU
+      - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
+      - STR_COUNCIL_OF_EARTH
+    getOneFreeProtected:
+      STR_CHURCH_OF_DAGON:
+        - STR_CHURCH_OF_DAGON_RATIONALE
+        - STR_DAGON_MORPH
+      STR_EXALT:
+        - STR_PSICLONE
+        - STR_EXALT_RATIONALE
+      STR_ZSRR:
+        - STR_ZSRR_STORM_TRADE
+        - STR_ZSRR_RATIONALE
+      STR_ZOMBIE_STERILE:
+        - STR_ZOMBIE_PARASITE
+      STR_CULT_OF_APOCALYPSE:
+        - STR_GANG_MOTOR_MEN
+        - STR_GANG_WESTMEN
+        - STR_GANG_EASY_RIDERS
+        - STR_GANG_CAVEMEN
+        - STR_GANG_LUCHADORES
+        - STR_GANG_TECH_WIZARDS
+        - STR_GANG_PINKY_DEVILS
+        - STR_GANG_STORMIES
+      STR_COUNCIL_OF_EARTH:
+        - STR_COUNCIL_POWER_CHAIN
+    listOrder: 154121
+  - name: STR_HAND_OF_DAGON
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 100
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON
+    unlocks:
+      - STR_PSIONICS_PREREQUISITE1
+      - STR_ALIEN_BIOLOGY
+      - STR_CHURCH_OF_DAGON_HQ
+  - name: STR_MUTON_UFO_RAIDED
+    cost: 0
+    points: 150
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MUTON_UFO_PRELUDE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MUTON_BERSERKER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MUTON_BERSERKER
+  - name: STR_MUTON_BERSERKER
+    requiresBaseFunc: [BIOLAB]
+    cost: 250
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_MUTON
+    getOneFree:
+      - STR_IMPACT_VEST_SCHEMATICS #check if this is correct
+    listOrder: 138056
+  - name: STR_MUTON_HEAVY_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MUTON_HEAVY
+  - name: STR_MUTON_HEAVY
+    requiresBaseFunc: [BIOLAB]
+    cost: 250
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_MUTON
+    getOneFree:
+      - STR_PLASMA_GATLER
+    listOrder: 138057
+  - name: STR_GILLDOG_BIOMOD
+    cost: 40
+    points: 50
+    needItem: false
+    dependencies:
+      - STR_ALIEN_BIOLOGY
+      - STR_GILLDOG_TERRORIST
+      - STR_XCOMPANION_GENEMODDING
+  # - name: STR_BLOODHOUND_BIOMOD #neoderms already exists now
+    # cost: 40
+    # points: 50
+    # needItem: false
+    # destroyItem: true
+    # dependencies:
+      # - STR_BLOODHOUND_TERRORIST
+      # - STR_XCOMPANION_GENEMODDING
+  # - name: STR_CHUPACABRA_BIOMOD
+    # cost: 40
+    # points: 50
+    # needItem: true
+    # destroyItem: true
+    # dependencies:
+      # - STR_CHUPACABRA_TERRORIST
+      # - STR_XCOMPANION_GENEMODDING
+  - name: STR_XCOMPANION_GENEMODDING
+    cost: 40
+    points: 50
+    needItem: false
+    destroyItem: true
+    dependencies:
+      - STR_SYNDICATE_CHRYSSALID_RESEARCH
+      - STR_ZEPHYR_SERUM
+# BLACK LOTUS CONVOYS 
+  - name: STR_BLACK_LOTUS_CONVOYS
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_BLACK_LOTUS_NETWORK
+      - STR_CULT_CONVOYS
+    listOrder: 300394
+  - name: STR_BLACK_LOTUS_CONVOY_SMALL
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_BLACK_LOTUS_CONVOYS
+    listOrder: 300395
+  - name: STR_BLACK_LOTUS_CONVOY_SMALL_INTERCEPTED
+    cost: 0
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_SMALL_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300396
+  - name: STR_BLACK_LOTUS_CONVOY_MEDIUM
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_BLACK_LOTUS_KNIGHT
+      - STR_BLACK_LOTUS_OPERATIONS
+    listOrder: 300396
+  - name: STR_BLACK_LOTUS_CONVOY_MEDIUM_INTERCEPTED
+    cost: 1
+    points: 75
+    unlocks:
+      - STR_CULT_CONVOY_MEDIUM_INTERCEPTED
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 300397
+  - name: STR_BLACK_LOTUS_CONVOY_LARGE
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_BLACK_LOTUS_ARCHWITCH
+      - STR_BLACK_LOTUS_HQ
+    listOrder: 300397
+  - name: STR_BLACK_LOTUS_WAREHOUSE
+    cost: 0
+    points: 25
+    dependencies:
+      - STR_BLACK_LOTUS_CONVOY_LARGE_INTERCEPTED
+    listOrder: 300399
+  - name: STR_BLACK_LOTUS_WAREHOUSE_RAIDED
+    cost: 0
+    points: 100
+    unlocks:
+      - STR_CULT_WAREHOUSE_RAIDED
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BLACK_LOTUS_CONVOY_LARGE_INTERCEPTED
+    cost: 0
+    unlocks:
+      - STR_CULT_CONVOY_LARGE_INTERCEPTED
+    points: 75
+    dependencies:
+      - STR_TROLLIUM
+#vest
+  - name: STR_IMPACT_VEST_SCHEMATICS
+    cost: 40
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_IMPACT_VEST
+    listOrder: 60991
+    unlocks:
+      - STR_IMPACT_VEST
+  - name: STR_IMPACT_VEST
+    cost: 15
+    points: 1
+    listOrder: 34470
+    needItem: true
+  - name: STR_GASMASK
+    cost: 0
+    points: 1
+    listOrder: 34468
+    needItem: true
+  - name: STR_RIOT_STAB_VEST
+    cost: 15
+    points: 1
+    listOrder: 34469
+    needItem: true
+  - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS
+    cost: 40
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+    listOrder: 60992

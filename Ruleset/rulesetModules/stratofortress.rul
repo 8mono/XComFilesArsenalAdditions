@@ -1,0 +1,662 @@
+research:
+  - name: STR_HEAVY_CRAFT_CANNON
+    cost: 0 #5
+    points: 10
+    dependencies:
+      - STR_UAC_CRAFT_CANNON_BUY
+      - STR_STRATOFORTRESS_PROCUREMENT
+    listOrder: 9101
+  - name: STR_CRAFT_HOWITZER
+    cost: 0 #10
+    points: 15
+    dependencies:
+      - STR_HEAVY_CRAFT_CANNON
+    listOrder: 9101
+  - name: STR_STRATOFORTRESS_PROCUREMENT
+    cost: 1 #100
+    points: 15
+    dependencies:
+      - STR_MIG31
+    listOrder: 7331
+  - name: STR_HEAVY_FUEL_TANK
+    requiresBaseFunc: [STDLAB]
+    cost: 0 #40
+    points: 25
+    dependencies:
+      - STR_FUEL_TANK
+      - STR_STRATOFORTRESS_PROCUREMENT
+    listOrder: 10251
+  - name: STR_CARGO_COMPARTMENT
+    requiresBaseFunc: [STDLAB]
+    cost: 0 #40
+    points: 25
+    dependencies:
+      - STR_STRATOFORTRESS_PROCUREMENT #add something else
+      - STR_CRAFT_MODIFICATION
+    listOrder: 10252
+  - name: STR_HEAVY_PLATING
+    requiresBaseFunc: [STDLAB]
+    cost: 0 #40
+    points: 25
+    dependencies:
+      - STR_CRAFT_PLATING
+    listOrder: 10253
+  - name: STR_CRAFT_PLATING
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_CRAFT_MODIFICATION
+      - STR_ALIEN_ALLOYS
+      - STR_ALIEN_ENGINEERING
+  - name: STR_CRAFT_MODIFICATION
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_STRATOFORTRESS_PROCUREMENT
+crafts:
+  - type: STR_OPSCAR
+    soldiers: 6
+  - type: STR_MOTORCYCLE
+    requires:
+      - STR_PRIVATE_TRANSPORT
+    sprite: 901
+    fuelMax: 9999
+    damageMax: 1
+    speedMax: 520 #450
+    accel: 1
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    maxItems: 999
+    radarRange: 75
+    radarChance: 40
+    sightRange: 300
+    costBuy: 40000
+    costRent: 10000
+    costSell: 0
+    refuelRate: 9999
+    repairRate: 1
+    transferTime: 1
+    score: 15
+    undetectable: true
+    battlescapeTerrainData:
+      name: LUXURYCAR
+      mapDataSets:
+        - BLANKS
+        - XCARS
+      mapBlocks:
+        - name: LUXURYCAR
+          width: 10
+          length: 10
+    deployment:
+      - [3, 5, 0, 6]
+      - [6, 5, 0, 2]
+    listOrder: 7294
+  - type: STR_OSPREY
+    weapons: 2
+    weaponTypes: [8, 8]
+    weaponStrings: [STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED]
+  - type: STR_STRATOFORTRESS
+    requires:
+      - STR_STRATOFORTRESS_PROCUREMENT
+    sprite: 888 #check this
+    fuelMax: 820 #815 real world value
+    damageMax: 100 #140
+    speedMax: 450 #431 for the real world speed, 750 was a previous value, balance this!, you're not meant to hunt UFO's with this, some can be intercepted but you'll mostly be outsped, this is more of an armed transport/pseudo radar ship
+    accel: 1 #1
+    costBuy: 2000000 #550000
+    costSell: 750000 #500000
+    costRent: 250000 #100000
+    refuelRate: 30 #75
+    repairRate: 2 #3
+    radarRange: 750 #1250
+    radarChance: 20 #40
+    transferTime: 192 #96
+    score: 250
+    undetectable: false #true
+    autoPatrol: true
+    weapons: 4 #no idea why i cant do 4
+    weaponTypes:
+      - [0, 7, 8] #light or heavy cannon, pintle
+      - [0, 7, 8] #light or heavy cannon, pintle
+      - [2, 8] #missiile, pintle
+      - [11, 9, 10] #plating, fuel, howitzer
+    weaponStrings: [STR_ANY_CANNONS, STR_ANY_CANNONS, STR_MISSILES_OR_PINTLE, STR_PLATING_OR_FUEL_OR_HOWITZER]
+    soldiers: 8
+    vehicles: 1 #test if items can change this!
+    pilots: 3 #5 for real world values
+    maxItems: 999
+    score: 250
+    avoidBonus: 10 #24
+    battlescapeTerrainData:
+      name: OSPREY
+      mapDataSets:
+        - BLANKS
+        - OSPREY
+      mapBlocks:
+        - name: OSPREY
+          width: 20
+          length: 20
+    listOrder: 7331
+  - type: STR_STRATOFORTRESS_CARGO
+    requires:
+      - STR_CARGO_COMPARTMENT
+    sprite: 888 #check this
+    fuelMax: 790 #1500
+    damageMax: 100 #70
+    speedMax: 400 #250
+    accel: 1 #1
+    costSell: 750000 #500000
+    costRent: 250000 #100000
+    refuelRate: 30 #75
+    repairRate: 2 #3
+    radarRange: 750 #1250
+    radarChance: 20 #40
+    transferTime: 200 #192
+    score: 250
+    undetectable: false #true
+    autoPatrol: true
+    weapons: 3
+    weaponTypes:
+      - [0, 7, 8] #light or heavy cannon, pintle
+      - [0, 7, 8] #light or heavy cannon, pintle
+      - [11, 9] #plating, fuel
+    weaponStrings: [STR_ANY_CANNONS, STR_ANY_CANNONS, STR_PLATING_OR_FUEL]
+    soldiers: 12
+    vehicles: 2 #test if items can change this!
+    pilots: 3
+    maxItems: 999
+    score: 250
+    avoidBonus: 8 #12
+    battlescapeTerrainData:
+      name: OSPREY
+      mapDataSets:
+        - BLANKS
+        - OSPREY
+      mapBlocks:
+        - name: OSPREY
+          width: 20
+          length: 20
+    listOrder: 7332
+craftWeapons:
+  - type: STR_NSW_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 4
+    damage: 6
+    range: 12
+    accuracy: 15
+    reloadCautious: 6
+    reloadStandard: 6
+    reloadAggressive: 6
+    ammoMax: 300 #5 full clips
+    rearmRate: 60 #1 full clip
+    launcher: STR_NSW
+    clip: STR_NSW_CLIP
+    projectileType: 2
+    projectileSpeed: 8
+  - type: STR_PLASMA_GATLER_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 5
+    sound: 9
+    damage: 8
+    range: 11
+    accuracy: 30
+    reloadCautious: 2
+    reloadStandard: 2
+    reloadAggressive: 1
+    ammoMax: 500 #2 full clips
+    rearmRate: 250 #1 full clip
+    launcher: STR_PLASMA_GATLER
+    clip: STR_PLASMA_GATLER_CLIP
+    projectileType: 5
+    projectileSpeed: 100
+  - type: STR_PTRD41_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 4
+    damage: 12
+    range: 14
+    accuracy: 50
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 20
+    rearmRate: 4
+    launcher: STR_PTRD41
+    clip: STR_PTRD41_AP_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_PTRS41_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 14
+    range: 17
+    accuracy: 40
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 100
+    rearmRate: 20 #check these!
+    launcher: STR_PTRS41
+    clip: STR_PTRS41_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_NTW20_DENEL_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 14
+    range: 16
+    accuracy: 55
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 100
+    rearmRate: 20 #check these!
+    launcher: STR_NTW20_DENEL
+    clip: STR_NTW20_DENEL_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_RT20_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 18
+    range: 18
+    accuracy: 60
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 20
+    rearmRate: 4
+    launcher: STR_RT20
+    clip: STR_RT20_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_M42_CARL_GUSTAV_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 19
+    range: 19
+    accuracy: 60
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 20
+    rearmRate: 4
+    launcher: STR_M42_CARL_GUSTAV
+    clip: STR_M42_CARL_GUSTAV_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_S18_SOLOTHURN_1000_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 16
+    range: 18
+    accuracy: 55
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 100
+    rearmRate: 20 #check these!
+    launcher: STR_S18_SOLOTHURN_1000
+    clip: STR_S18_SOLOTHURN_1000_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_M3_CARL_GUSTAV_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 1
+    sound: 5
+    damage: 25
+    range: 14
+    accuracy: 45
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 15 #15 full clips
+    rearmRate: 3 #3 full clips
+    launcher: STR_M3_CARL_GUSTAV
+    clip: STR_M3_CARL_GUSTAV_HEAT_ROUND
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_MODEL_SS41_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 13
+    range: 16
+    accuracy: 55
+    reloadCautious: 25
+    reloadStandard: 25
+    reloadAggressive: 25
+    ammoMax: 120
+    rearmRate: 40
+    launcher: STR_PTRD41
+    clip: STR_MODEL_SS41_HE_BIG_CLIP
+    projectileType: 2
+    projectileSpeed: 6
+  - type: STR_M82_BARETT_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 7
+    range: 14
+    accuracy: 70
+    reloadCautious: 20
+    reloadStandard: 20
+    reloadAggressive: 20
+    ammoMax: 100 #5 full clips
+    rearmRate: 10 #1 full clip
+    launcher: STR_M82_BARETT
+    clip: STR_M82_BARETT_HE_CLIP
+    projectileType: 2
+    projectileSpeed: 8
+  - type: STR_HEAVY_SNIPER_RIFLE_CRAFT_WEAPON_UC
+    weaponType: 8
+    sprite: 2
+    sound: 5
+    damage: 22
+    range: 16
+    accuracy: 70
+    reloadCautious: 20
+    reloadStandard: 20
+    reloadAggressive: 20
+    ammoMax: 100 #5 full clips
+    rearmRate: 10 #1 full clip
+    launcher: STR_HEAVY_SNIPER_RIFLE
+    clip: STR_HEAVY_SNIPER_RIFLE_AA_CLIP
+    projectileType: 2
+    projectileSpeed: 8
+  - type: STR_HEAVY_CANNON_UC
+    weaponType: 7
+    sprite: 2
+    sound: 4
+    damage: 14 #10
+    range: 15 #25
+    accuracy: 25
+    reloadCautious: 8 #4
+    reloadStandard: 8 #4
+    reloadAggressive: 8 #4
+    ammoMax: 40 #100
+    rearmRate: 100
+    launcher: STR_HEAVY_CRAFT_CANNON  #make item!
+    clip: STR_HEAVY_CANNON_ROUNDS_X10 #make item!
+    projectileType: 2
+    projectileSpeed: 10 #8
+  - type: STR_CRAFT_HOWITZER_UC
+    weaponType: 10
+    sprite: 2 #2
+    sound: 4
+    damage: 22 #20
+    range: 25 #25
+    accuracy: 45 #25
+    reloadCautious: 16 #8
+    reloadStandard: 16 #8
+    reloadAggressive: 16 #8
+    ammoMax: 20 #100
+    rearmRate: 100
+    launcher: STR_CRAFT_HOWITZER  #make item!
+    clip: STR_CRAFT_HOWITZER_ROUNDS_X5 #make item!
+    projectileType: 4 #2
+    projectileSpeed: 6 #4
+  - type: STR_HEAVY_PLATING_UC
+    weaponType: 11
+    sprite: 886
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_HEAVY_PLATING #make item!
+    projectileType: 0
+    projectileSpeed: 0
+    hidePediaInfo: true
+    stats:
+      fuelMax: -10
+      damageMax: 40 #50
+      speedMax: -50
+      radarChance: -10
+      radarRange: -100
+      armor: 10 #don't think this works
+  - type: STR_HEAVY_FUEL_TANK_UC
+    weaponType: 9
+    sprite: 885
+    sound: 0
+    damage: 0
+    range: 0
+    accuracy: 0
+    reloadCautious: 0
+    reloadStandard: 0
+    reloadAggressive: 0
+    ammoMax: 0
+    rearmRate: 0
+    launcher: STR_HEAVY_FUEL_TANK #make item!
+    projectileType: 0
+    projectileSpeed: 0
+    hidePediaInfo: true
+    stats:
+      fuelMax: 40
+      speedMax: -25
+  - type: STR_PKM_CRAFT_WEAPON_UC
+    damage: &MachinegunDmg 3
+  - type: STR_M60_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_MG3_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_MINIMI_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_STONER_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_BLACKOPS_ASSAULT_LMG_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_BLACKOPS_LMG_CRAFT_WEAPON_UC
+    damage: *MachinegunDmg
+  - type: STR_LIGHT_MINIGUN_CRAFT_WEAPON_UC
+    reloadAggressive: 1
+    projectileSpeed: 10
+  - type: STR_MINIGUN_CRAFT_WEAPON_UC
+    reloadAggressive: 1
+    projectileSpeed: 10
+  - type: STR_SCATTER_LASER_CRAFT_WEAPON_UC
+    reloadAggressive: 1
+    projectileSpeed: 10
+  - type: STR_MAGMA_PULSE_LMG_CRAFT_WEAPON_UC
+    damage: 4
+    clip: STR_MAGMA_PULSE_LMG_AA_CLIP
+  - type: STR_RPG_CRAFT_WEAPON_UC
+    accuracy: 25
+  - type: STR_UAC_ROCKET_LAUNCHER_CRAFT_WEAPON_UC
+    accuracy: 25
+  - type: STR_ROCKET_LAUNCHER_CRAFT_WEAPON_UC
+    accuracy: 35
+  - type: STR_ADVANCED_ROCKET_LAUNCHER_CRAFT_WEAPON_UC
+    accuracy: 50
+  - type: STR_RECOILLESS_GUN_CRAFT_WEAPON_UC
+    accuracy: 45
+items:
+  - type: STR_HEAVY_CRAFT_CANNON
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_LAND]
+    requiresBuy:
+      - STR_HEAVY_CRAFT_CANNON
+    size: 1.5
+    costBuy: 30000
+    costSell: 22500
+    transferTime: 48
+    listOrder: 8901
+  - type: STR_CRAFT_HOWITZER
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_LAND]
+    requiresBuy:
+      - STR_CRAFT_HOWITZER
+    size: 2
+    costBuy: 75000
+    costSell: 33500
+    transferTime: 72
+    listOrder: 8902
+  - type: STR_HEAVY_CANNON_ROUNDS_X10
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_HEAVY_CRAFT_CANNON
+    size: 0.1
+    costBuy: 1240
+    costSell: 1012
+    transferTime: 48
+    clipSize: 10
+    listOrder: 8911
+  - type: STR_CRAFT_HOWITZER_ROUNDS_X5
+    categories: [STR_HUMAN_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_CRAFT_HOWITZER
+    size: 0.1
+    costBuy: 2500
+    costSell: 1512
+    transferTime: 72
+    clipSize: 5
+    listOrder: 8912
+  - type: STR_HEAVY_FUEL_TANK
+    categories: [STR_XCOM_TECH, STR_CRAFT_SYSTEMS, STR_LAND]
+    size: 5
+    costSell: 22500
+ #   costBuy: 20
+    transferTime: 48
+    listOrder: 10250
+  - type: STR_HEAVY_PLATING
+    categories: [STR_XCOM_TECH, STR_CRAFT_SYSTEMS, STR_LAND]
+    size: 5
+    costSell: 22500
+    transferTime: 48
+    listOrder: 10251
+  - type: STR_CARGO_COMPARTMENT #manufacture project now!
+    categories: [STR_XCOM_TECH, STR_CRAFT_SYSTEMS, STR_LAND]
+    size: 10
+    costSell: 22500
+    transferTime: 48
+    listOrder: 10250
+manufacture:
+  - name: STR_HEAVY_FUEL_TANK
+    category: STR_CRAFT_SYSTEM
+    requires:
+      - STR_HEAVY_FUEL_TANK
+    space: 30
+    time: 600
+    cost: 64000
+    requiresBaseFunc: [WORKS]
+    listOrder: 10251
+  - name: STR_HEAVY_PLATING
+    category: STR_CRAFT_SYSTEM
+    requires:
+      - STR_CRAFT_PLATING
+    space: 20
+    time: 24 #see if being instant doesn't make it too op
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+    producedItems:
+      STR_HEAVY_PLATING: 1
+    listOrder: 7397
+  - name: STR_STRATOFORTRESS_CARGO
+    category: STR_CRAFT #STR_CRAFT_MODIFICATION
+    requires:
+      - STR_STRATOFORTRESS_PROCUREMENT
+      - STR_CRAFT_MODIFICATION
+      - STR_CARGO_COMPARTMENT
+    space: 30
+    time: 72 #see if being instant doesn't make it too op
+    cost: 350000
+    requiredItems:
+      STR_STRATOFORTRESS: 1
+    listOrder: 206842
+ufopaedia:
+  - id: STR_HEAVY_CANNON_UC
+    type_id: 2
+    section: STR_XCOM_ARMAMENT_UC
+    requires:
+      - STR_HEAVY_CRAFT_CANNON
+    image_id: UP008.SPK #check this!
+    text: STR_HEAVY_CRAFT_CANNON_UFOPEDIA
+    listOrder: 8901
+  - id: STR_CRAFT_HOWITZER_UC
+    type_id: 2
+    section: STR_XCOM_ARMAMENT_UC
+    requires:
+      - STR_CRAFT_HOWITZER
+    image_id: UP008.SPK #check this!
+    text: STR_CRAFT_HOWITZER_UFOPEDIA
+    listOrder: 8902
+  - id: STR_HEAVY_FUEL_TANK_UC
+    type_id: 2
+    section: STR_XCOM_ARMAMENT_UC
+    requires:
+      - STR_HEAVY_FUEL_TANK
+    image_id: HEAVY_FUEL_TANK.SPK #change this!
+    text: STR_HEAVY_FUEL_TANK_UFOPEDIA
+    listOrder: 8902
+  - id: STR_HEAVY_PLATING_UC
+    type_id: 2
+    section: STR_XCOM_ARMAMENT_UC
+    requires:
+      - STR_HEAVY_PLATING
+    image_id: HEAVY_PLATING.SPK #change this!
+    text: STR_HEAVY_PLATING_UFOPEDIA
+    listOrder: 16602
+  - id: STR_STRATOFORTRESS
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: STRATOFORTRESS.SPK #change this
+    rect_stats:
+      x: 208
+      y: 135
+      width: 160
+      height: 65
+    rect_text:
+      x: 5
+      y: 140
+      width: 140
+      height: 160
+    text: STR_STRATOFORTRESS_UFOPEDIA
+    requires:
+      - STR_STRATOFORTRESS_PROCUREMENT
+    listOrder: 7391
+  - id: STR_MOTORCYCLE
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: MOTORCYCLE.SPK #change this
+    rect_stats:
+      x: 208
+      y: 135
+      width: 160
+      height: 65
+    rect_text:
+      x: 5
+      y: 140
+      width: 140
+      height: 160
+    text: STR_MOTORCYCLE_UFOPEDIA
+    requires:
+      - STR_PRIVATE_TRANSPORT
+    listOrder: 7294
+  - id: STR_STRATOFORTRESS_CARGO
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: STRATOFORTRESS.SPK #change this
+    rect_stats:
+      x: 208
+      y: 135
+      width: 160
+      height: 65
+    rect_text:
+      x: 5
+      y: 140
+      width: 140
+      height: 160
+    text: STR_STRATOFORTRESS_CARGO_UFOPEDIA
+    requires:
+      - STR_CARGO_COMPARTMENT
+    listOrder: 7392

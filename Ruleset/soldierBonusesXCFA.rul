@@ -1,0 +1,414 @@
+soldierBonuses:
+# Template
+  # - name: STR_FIRST_TEST
+    # visibilityAtDark: 20     # +20 tiles
+    # stats:
+      # tu: 0
+      # stamina: 0
+      # health: 0
+      # bravery: 0
+      # reactions: 0
+      # firing: 0
+      # throwing: 0
+      # strength: 0
+      # psiStrength: 0
+      # psiSkill: 0
+      # melee: 0
+      # mana: 0
+    # recovery:
+      # time:
+        # flatOne: -10
+      # energy:
+        # flatOne: 100
+      # morale:
+        # flatOne: -15       # -15 morale per turn
+      # health:
+        # flatOne: -5
+      # mana:
+        # flatOne: -1
+      # stun:
+        # flatOne: 4
+  # - name: STR_ARMOR_BUFF_BONUS
+    # frontArmor: 200
+    # leftArmorDiff: -100
+    # sideArmor: 400
+    # rearArmor: 500
+    # underArmor: 600
+# Transformations
+  - name: STR_MEDAL_SCOUT_1
+    stats:
+      firing: 1
+      reactions: 1
+  - name: STR_MEDAL_SCOUT_2
+    stats:
+      firing: 1
+      stamina: 1
+      reactions: 1
+  - name: STR_MEDAL_SCOUT_3
+    stats:
+      firing: 2
+      stamina: 1
+      reactions: 2
+  - name: STR_MEDAL_SCOUT_4
+    stats:
+      firing: 2
+      stamina: 2
+      reactions: 2
+  - name: STR_MEDAL_SCOUT_5
+    stats:
+      firing: 2
+      stamina: 3
+      reactions: 2
+  - name: STR_MEDAL_SCOUT_6
+    stats:
+      firing: 3
+      stamina: 3
+      reactions: 3
+  - name: STR_MEDAL_SCOUT_7
+    stats:
+      firing: 3
+      stamina: 4
+      reactions: 3
+  - name: STR_MEDAL_SCOUT_8
+    stats:
+      firing: 4
+      stamina: 4
+      reactions: 4
+  - name: STR_MEDAL_SCOUT_9
+    stats:
+      firing: 4
+      stamina: 5
+      reactions: 4
+  - name: STR_MEDAL_SCOUT_10
+    stats:
+      firing: 5
+      stamina: 5
+      reactions: 5
+  - name: STR_LAW_ENFORCEMENT_TRAINING
+    stats:
+      reactions: 5
+      firing: 5
+      throwing: 5
+      melee: 5
+      stamina: 5
+  - name: STR_GILLDOG_GENEMOD
+    underArmor: 2
+    rearArmor: 2
+    sideArmor: 2
+    frontArmor: 2
+    visibilityAtDark: 2
+    stats:
+      tu: 5
+      stamina: 5
+      health: 5
+      strength: 5
+      melee: 5
+  - name: STR_PSIHOUND_GENEMOD
+    underArmor: 2
+    rearArmor: 2
+    sideArmor: 2
+    frontArmor: 2
+    stats:
+      tu: 5
+      stamina: 5
+      mana: 10
+      strength: 5
+      psiStrength: 20
+      psiSkill: 50
+  - name: STR_BLOODHOUND_GENEMOD
+    underArmor: 5
+    rearArmor: 5
+    sideArmor: 5
+    frontArmor: 5
+    stats:
+      stamina: 5
+      health: 5
+      strength: 5
+      melee: 5
+      tu: -10
+      energy: -10
+  - name: STR_LOBSTROSITY_GENEMOD
+    underArmor: 5
+    rearArmor: 5
+    sideArmor: 5
+    frontArmor: 5
+    stats:
+      health: 5
+      tu: -5
+      energy: -5
+# Commendations
+  - name: STR_MEDAL_INCENDIARY_1
+    stats:
+      mana: 1
+  - name: STR_MEDAL_INCENDIARY_2
+    stats:
+      mana: 1
+  - name: STR_MEDAL_INCENDIARY_3
+    stats:
+      mana: 2
+  - name: STR_MEDAL_INCENDIARY_4
+    stats:
+      mana: 2
+  - name: STR_MEDAL_INCENDIARY_5
+    stats:
+      mana: 2
+      psiStrength: 1
+  - name: STR_MEDAL_INCENDIARY_6
+    stats:
+      mana: 2
+      psiStrength: 2
+  - name: STR_MEDAL_INCENDIARY_7
+    stats:
+      mana: 3
+      psiStrength: 2
+  - name: STR_MEDAL_INCENDIARY_8
+    stats:
+      mana: 3
+      psiStrength: 3
+  - name: STR_MEDAL_INCENDIARY_9
+    stats:
+      mana: 4
+      psiStrength: 3
+  - name: STR_MEDAL_INCENDIARY_10
+    stats:
+      mana: 4
+      psiStrength: 4
+  - name: STR_MEDAL_CHEMICAL_1
+    stats:
+      mana: 1
+  - name: STR_MEDAL_CHEMICAL_2
+    stats:
+      mana: 1
+  - name: STR_MEDAL_CHEMICAL_3
+    stats:
+      mana: 2
+  - name: STR_MEDAL_CHEMICAL_4
+    stats:
+      mana: 2
+  - name: STR_MEDAL_CHEMICAL_5
+    stats:
+      mana: 2
+      psiStrength: 1
+  - name: STR_MEDAL_CHEMICAL_6
+    stats:
+      mana: 2
+      psiStrength: 2
+  - name: STR_MEDAL_CHEMICAL_7
+    stats:
+      mana: 3
+      psiStrength: 2
+  - name: STR_MEDAL_CHEMICAL_8
+    stats:
+      mana: 3
+      psiStrength: 3
+  - name: STR_MEDAL_CHEMICAL_9
+    stats:
+      mana: 4
+      psiStrength: 3
+  - name: STR_MEDAL_CHEMICAL_10
+    stats:
+      mana: 4
+      psiStrength: 4
+  - name: STR_MEDAL_GUARDIAN_1
+    stats:
+      strength: 1
+      melee: 1
+  - name: STR_MEDAL_GUARDIAN_2
+    stats:
+      strength: 1
+      melee: 2
+  - name: STR_MEDAL_GUARDIAN_3
+    stats:
+      strength: 1
+      melee: 2
+      bravery: 10
+  - name: STR_MEDAL_GUARDIAN_4
+    stats:
+      strength: 2
+      melee: 2
+      bravery: 10
+  - name: STR_MEDAL_GUARDIAN_5
+    stats:
+      strength: 2
+      melee: 2
+      health: 1
+      bravery: 10
+  - name: STR_MEDAL_GUARDIAN_6
+    stats:
+      strength: 2
+      melee: 2
+      health: 2
+      bravery: 10
+  - name: STR_MEDAL_GUARDIAN_7
+    stats:
+      strength: 2
+      melee: 3
+      health: 2
+      bravery: 20
+  - name: STR_MEDAL_GUARDIAN_8
+    stats:
+      strength: 2
+      melee: 3
+      health: 3
+      bravery: 20
+  - name: STR_MEDAL_GUARDIAN_9
+    stats:
+      strength: 3
+      melee: 3
+      health: 3
+      bravery: 20
+  - name: STR_MEDAL_GUARDIAN_10
+    stats:
+      strength: 4
+      melee: 4
+      health: 4
+      bravery: 20
+  - name: STR_MEDAL_ANTITANK_1
+    stats:
+      stamina: 1
+      firing: 1
+      strength: 1
+  - name: STR_MEDAL_ANTITANK_2
+    stats:
+      stamina: 1
+      firing: 1
+      strength: 2
+  - name: STR_MEDAL_ANTITANK_3
+    stats:
+      stamina: 2
+      firing: 1
+      strength: 2
+  - name: STR_MEDAL_ANTITANK_4
+    stats:
+      stamina: 2
+      firing: 2
+      strength: 2
+  - name: STR_MEDAL_ANTITANK_5
+    stats:
+      stamina: 2
+      firing: 2
+      strength: 3
+  - name: STR_MEDAL_ANTITANK_6
+    stats:
+      stamina: 3
+      firing: 2
+      strength: 3
+  - name: STR_MEDAL_ANTITANK_7
+    stats:
+      stamina: 3
+      firing: 3
+      strength: 3
+  - name: STR_MEDAL_ANTITANK_8
+    stats:
+      stamina: 3
+      firing: 3
+      strength: 4
+  - name: STR_MEDAL_ANTITANK_9
+    stats:
+      stamina: 4
+      firing: 3
+      strength: 4
+  - name: STR_MEDAL_ANTITANK_10
+    stats:
+      stamina: 4
+      firing: 4
+      strength: 4
+  - name: STR_MEDAL_CUSTODIAN_1
+    stats:
+      tu: 0
+      firing: 0
+      throwing: 1
+  - name: STR_MEDAL_CUSTODIAN_2
+    stats:
+      tu: 1
+      firing: 0
+      throwing: 1
+  - name: STR_MEDAL_CUSTODIAN_3
+    stats:
+      tu: 1
+      firing: 1
+      throwing: 1
+  - name: STR_MEDAL_CUSTODIAN_4
+    stats:
+      tu: 1
+      firing: 1
+      throwing: 2
+  - name: STR_MEDAL_CUSTODIAN_5
+    stats:
+      tu: 2
+      firing: 1
+      throwing: 2
+  - name: STR_MEDAL_CUSTODIAN_6
+    stats:
+      tu: 2
+      firing: 2
+      throwing: 2
+  - name: STR_MEDAL_CUSTODIAN_7
+    stats:
+      tu: 2
+      firing: 2
+      throwing: 3
+  - name: STR_MEDAL_CUSTODIAN_8
+    stats:
+      tu: 3
+      firing: 2
+      throwing: 3
+  - name: STR_MEDAL_CUSTODIAN_9
+    stats:
+      tu: 3
+      firing: 3
+      throwing: 3
+  - name: STR_MEDAL_CUSTODIAN_10
+    stats:
+      tu: 4
+      firing: 4
+      throwing: 4
+  - name: STR_MEDAL_GNAWER_1
+    stats:
+      strength: 1
+      melee: 1
+  - name: STR_MEDAL_GNAWER_2
+    stats:
+      strength: 1
+      melee: 1
+      reactions: 1
+  - name: STR_MEDAL_GNAWER_3
+    stats:
+      strength: 1
+      melee: 2
+      reactions: 1
+  - name: STR_MEDAL_GNAWER_4
+    stats:
+      strength: 1
+      melee: 2
+      reactions: 2
+  - name: STR_MEDAL_GNAWER_5
+    stats:
+      strength: 2
+      melee: 2
+      reactions: 2
+  - name: STR_MEDAL_GNAWER_6
+    stats:
+      strength: 2
+      melee: 2
+      reactions: 3
+  - name: STR_MEDAL_GNAWER_7
+    stats:
+      strength: 3
+      melee: 2
+      reactions: 3
+  - name: STR_MEDAL_GNAWER_8
+    stats:
+      strength: 3
+      melee: 3
+      reactions: 3
+  - name: STR_MEDAL_GNAWER_9
+    stats:
+      strength: 3
+      melee: 4
+      reactions: 4
+  - name: STR_MEDAL_GNAWER_10
+    stats:
+      strength: 4
+      melee: 4
+      reactions: 4

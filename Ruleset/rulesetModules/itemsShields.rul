@@ -1,0 +1,80 @@
+extraStrings:
+  - type: en-US
+    strings:      
+      STR_BALLISTIC_SHIELD: "Ballistic Shield"
+      STR_BALLISTIC_SHIELD_UFOPEDIA: "A ballistic shield designed to withstand bullets, will reduce any damage by about half if a frontal hit is taken."
+      STR_BALLISTIC_SHIELD_SCHEMATICS: "Ballistic Shield Schematics"
+      STR_BALLISTIC_SHIELD_SCHEMATICS_UFOPEDIA: "These schematics show how to build a Ballistic Shield."
+manufacture:
+  - name: STR_BALLISTIC_SHIELD
+    requires:
+      - STR_BALLISTIC_SHIELD_SCHEMATICS
+    space: 10
+    time: 600
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_DURATHREAD: 5
+    producedItems:
+      STR_BALLISTIC_SHIELD: 1
+#vest
+research:
+  - name: STR_BALLISTIC_SHIELD_SCHEMATICS
+    cost: 40
+    points: 50
+    needItem: true
+    destroyItem: true
+    lookup: STR_BALLISTIC_SHIELD
+    listOrder: 60991
+    unlocks:
+      - STR_BALLISTIC_SHIELD
+  - name: STR_BALLISTIC_SHIELD
+    cost: 15
+    points: 1
+    listOrder: 34470
+    needItem: true
+items:
+#impact vest
+  - type: STR_BALLISTIC_SHIELD_SCHEMATICS
+    categories: [STR_ALIEN_TECH, STR_EVIDENCE, STR_LAND]
+    size: 0.3
+    costSell: 100000
+    weight: 1
+    bigSprite: 303
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    armor: 80
+    listOrder: 60990
+  - type: STR_BALLISTIC_SHIELD
+    categories: [STR_ACCESSORIES, STR_XCOM_TECH, STR_CONCEALABLE]
+    size: 0.2
+    costSell: 25000
+    weight: 2
+    bigSprite: 0 #check this 
+    floorSprite: 0 #check this
+    battleType: 10
+    costThrow:
+      energy: 6
+      time: 30
+    invWidth: 2
+    invHeight: 2
+    supportedInventorySections:
+      - STR_BACK_PACK
+    attraction: 10
+    listOrder: 16601
+ufopaedia:
+  - id: STR_BALLISTIC_SHIELD
+    type_id: 4
+    requires:
+      - STR_BALLISTIC_SHIELD
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_BALLISTIC_SHIELD_UFOPEDIA
+    listOrder: ??? #make this close to the other vests
+  - id: STR_BALLISTIC_SHIELD_SCHEMATICS
+    type_id: 4
+    requires:
+      - STR_BALLISTIC_SHIELD_SCHEMATICS
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_BALLISTIC_SHIELD_SCHEMATICS_UFOPEDIA
+    listOrder: ???#make this close to the other vests??

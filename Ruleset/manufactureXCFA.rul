@@ -1,0 +1,3618 @@
+manufacture:
+  - name: STR_XENO_ALLOY_WIELDABLE_SHIELD
+    category: STR_SHIELDS
+    requires:
+      - STR_ALLOY_VEST
+    space: 8
+    time: 600
+    cost: 10000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 16861
+  - name: STR_ASSAULT_WIELDABLE_SHIELD
+    category: STR_SHIELDS
+    requires:
+      - STR_ASSAULT_SUIT
+    space: 14
+    time: 2800
+    cost: 125000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 16971
+  - name: STR_STORMTROOPER_WIELDABLE_SHIELD
+    category: STR_SHIELDS
+    requires:
+      - STR_STORMTROOPER_ARMOR
+    space: 16
+    time: 4000
+    cost: 180000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+      STR_ELERIUM_115: 2
+      STR_GRAV_MODULE: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 17031
+  - name: STR_BLACKOPS_SMART_LAUNCHER_GAS_CLIP
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_BLACKOPS_SMART_LAUNCHER
+    space: 2
+    time: 300
+    cost: 10000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38910
+  - name: STR_EMP_ROCKET
+    category: STR_WEAPON
+    requires:
+      - STR_EMP_GRENADE
+      - STR_MAGMA_LAUNCHER
+    space: 2
+    time: 300
+    cost: 10000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38910
+  - name: STR_TACTICAL_GRENADE_LAUNCHER_EMP
+    category: STR_WEAPON
+    requires:
+      - STR_EMP_GRENADE
+      - STR_TACTICAL_GRENADE_LAUNCHER
+    space: 2
+    time: 300
+    cost: 10000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38910
+  - name: STR_BLACKOPS_SMART_LAUNCHER_ELERIUM_CLIP
+    category: STR_MISSILES
+    requires:
+      - STR_ELERIUM_115
+      - STR_BLACKOPS_SMART_LAUNCHER
+    space: 4
+    time: 400
+    cost: 30000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 6
+    listOrder: 34088
+  - name: STR_GAS_ROCKET
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_MAGMA_LAUNCHER
+    space: 2
+    time: 300
+    cost: 10000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38910
+  - name: STR_VAR_TRACITE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_TRACITE
+      - STR_VAR_CANNON
+    space: 6
+    time: 130
+    cost: 2000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_TRACITE: 1
+      STR_ALIEN_ALLOYS: 4      
+    listOrder: 23501
+  - name: STR_VAR_FLAK_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_VAR_CANNON
+    space: 6
+    time: 130
+    cost: 2000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8     
+    listOrder: 23502
+  - name: STR_NSW_AA_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_NSW_AA_CLIP_MANUFACTURING
+    space: 2
+    time: 32
+    cost: 450
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+    requiresBaseFunc: [WORKS]
+    listOrder: 31220
+  - name: STR_BLACKOPS_DMR_AA_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_BLACKOPS_DMR_AA_CLIP_MANUFACTURING
+    space: 2
+    time: 70
+    cost: 600
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 31220
+  - name: STR_STURMPISTOLE_GAS_CLIP
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+    space: 3
+    time: 90
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38431
+  - name: STR_MORTAR_SHELL_GAS
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_MORTAR_BUY
+    space: 4
+    time: 270
+    cost: 3000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38432
+  - name: STR_MINI_MORTAR_SHELL_GAS
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_MINI_MORTAR_BUY
+    space: 4
+    time: 90
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38433
+  - name: STR_GARROTE_BRACELET
+    category: STR_WEAPON
+    requires:
+      - STR_GARROTE_BRACELET
+    space: 2
+    time: 45
+    cost: 5000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_DURATHREAD: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 38433
+  - name: STR_MINI_MORTAR_TRISHELL_GAS
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_MINI_MORTAR_BUY
+    space: 4
+    time: 270
+    cost: 3000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38433
+  - name: STR_M16GL_ATTACH
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION_II
+      - STR_RIFLE_M16_BUY
+      - STR_GRENADE_LAUNCHER_BUY
+      - STR_M16GL
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_RIFLE_M16: 1
+      STR_GRENADE_LAUNCHER: 1
+    producedItems:
+      STR_M16GL: 1
+    listOrder: 46003
+  - name: STR_M16GL_DETTACH
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION_II
+      - STR_RIFLE_M16_BUY
+      - STR_GRENADE_LAUNCHER_BUY
+      - STR_M16GL
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_M16GL: 1
+    producedItems:
+      STR_RIFLE_M16: 1
+      STR_GRENADE_LAUNCHER: 1
+    listOrder: 46004
+  - name: STR_M16MK_ATTACH
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION_II
+      - STR_RIFLE_M16_BUY
+      - STR_M16MK
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_RIFLE_M16: 1
+      STR_SMALL_SHOTGUN: 1
+    producedItems:
+      STR_M16MK: 1
+    listOrder: 46005
+  - name: STR_M16MK_DETTACH
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION_II
+      - STR_RIFLE_M16_BUY
+      - STR_M16MK
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_M16MK: 1
+    producedItems:
+      STR_RIFLE_M16: 1
+      STR_SMALL_SHOTGUN: 1
+    listOrder: 46006
+  - name: STR_RAFFICA_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_RAFFICA_PISTOL
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_RAFFICA_PISTOL: 1
+    producedItems:
+      STR_RAFFICA_PISTOL_STOCK: 1
+    listOrder: 46001
+  - name: STR_RAFFICA_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_RAFFICA_PISTOL
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_RAFFICA_PISTOL_STOCK: 1
+    producedItems:
+      STR_RAFFICA_PISTOL: 1
+    listOrder: 46002
+  - name: STR_APS_ADD_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_APS
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_APS: 1
+    producedItems:
+      STR_APS_STOCK: 1
+    listOrder: 46003
+  - name: STR_APS_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_APS
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_APS_STOCK: 1
+    producedItems:
+      STR_APS: 1
+    listOrder: 46004
+  - name: STR_REVOLVER_BIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_MANURHIN_SCOPED_REVOLVER
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_MANURHIN_SCOPED_REVOLVER: 1
+    producedItems:
+      STR_MANURHIN_SCOPED_REVOLVER_BIPOD: 1
+    listOrder: 46003
+  - name: STR_REVOLVER_UNBIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_MANURHIN_SCOPED_REVOLVER
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_MANURHIN_SCOPED_REVOLVER_BIPOD: 1
+    producedItems:
+      STR_MANURHIN_SCOPED_REVOLVER: 1
+    listOrder: 46004
+  - name: STR_BLACKOPS_REVOLVER_BIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_BLACKOPS_PRECISION_REVOLVER
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_BLACKOPS_PRECISION_REVOLVER: 1
+    producedItems:
+      STR_BLACKOPS_PRECISION_REVOLVER_BIPOD: 1
+    listOrder: 46005
+  - name: STR_BLACKOPS_REVOLVER_UNBIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_BLACKOPS_PRECISION_REVOLVER
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_BLACKOPS_PRECISION_REVOLVER_BIPOD: 1
+    producedItems:
+      STR_BLACKOPS_PRECISION_REVOLVER: 1
+    listOrder: 46006
+  - name: STR_MAGNUM_BIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_SCOPED_MAGNUM
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_SCOPED_MAGNUM: 1
+    producedItems:
+      STR_SCOPED_MAGNUM_BIPOD: 1
+    listOrder: 46007
+  - name: STR_MAGNUM_UNBIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_SCOPED_MAGNUM
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_SCOPED_MAGNUM_BIPOD: 1
+    producedItems:
+      STR_SCOPED_MAGNUM: 1
+    listOrder: 46008
+  - name: STR_BLACKOPS_MAGNUM_BIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_BLACKOPS_PRECISION_MAGNUM
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_BLACKOPS_PRECISION_MAGNUM: 1
+    producedItems:
+      STR_BLACKOPS_PRECISION_MAGNUM_BIPOD: 1
+    listOrder: 46009
+  - name: STR_BLACKOPS_REVOLVER_UNBIPOD
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_BLACKOPS_PRECISION_MAGNUM
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_BLACKOPS_PRECISION_MAGNUM_BIPOD: 1
+    producedItems:
+      STR_BLACKOPS_PRECISION_MAGNUM: 1
+    listOrder: 46010
+  - name: STR_AUTO9_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_AUTO9_PISTOL
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_AUTO9_PISTOL: 1
+    producedItems:
+      STR_AUTO9_PISTOL_STOCK: 1
+    listOrder: 46007
+  - name: STR_AUTO9_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_AUTO9_PISTOL
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_AUTO9_PISTOL_STOCK: 1
+    producedItems:
+      STR_AUTO9_PISTOL: 1
+    listOrder: 46008
+  - name: STR_MAUSER_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_MAUSER_AUTO
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_MAUSER_AUTO: 1
+    producedItems:
+      STR_MAUSER_AUTO_STOCK: 1
+    listOrder: 46009
+  - name: STR_MAUSER_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_MAUSER_AUTO
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_MAUSER_AUTO_STOCK: 1
+    producedItems:
+      STR_MAUSER_AUTO: 1
+    listOrder: 46010
+  - name: STR_STURMPISTOLE_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_STURMPISTOLE
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_STURMPISTOLE: 1
+    producedItems:
+      STR_STURMPISTOLE_STOCK: 1
+    listOrder: 46011
+  - name: STR_STURMPISTOLE_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_STURMPISTOLE
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_STURMPISTOLE_STOCK: 1
+    producedItems:
+      STR_STURMPISTOLE: 1
+    listOrder: 46012
+  - name: STR_ALLOY_ASSAULT_PISTOL_STOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_ALLOY_ASSAULT_PISTOL
+    space: 1
+    time: 1
+    cost: 5
+    requiredItems:
+      STR_ALLOY_ASSAULT_PISTOL: 1
+    producedItems:
+      STR_ALLOY_ASSAULT_PISTOL_STOCK: 1
+    listOrder: 46013
+  - name: STR_ALLOY_ASSAULT_PISTOL_UNSTOCK
+    category: STR_WEAPON_MODIFICATION
+    requires:
+      - STR_WEAPON_MODIFICATION
+      - STR_ALLOY_ASSAULT_PISTOL
+    space: 1
+    time: 1
+    cost: -5
+    requiredItems:
+      STR_ALLOY_ASSAULT_PISTOL_STOCK: 1
+    producedItems:
+      STR_ALLOY_ASSAULT_PISTOL: 1
+    listOrder: 46014
+  - name: STR_AUTO9_AA_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_AUTO9_AA_CLIP_MANUFACTURING
+    space: 2
+    time: 25
+    cost: 100
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 20351
+  - name: STR_AUTO9_AA_BIG_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_AUTO9_AA_CLIP_MANUFACTURING
+      - STR_CYBERWEB_HQ
+    space: 2
+    time: 60
+    cost: 200
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 20352
+  - name: STR_PROXIMITY_FLARE_X5
+    category: STR_EQUIPMENT
+    requires:
+      - STR_PROXIMITY_FLARE
+    space: 2
+    time: 20
+    cost: 300
+    producedItems:
+      STR_PROXIMITY_FLARE: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 46284
+  - name: STR_PROXIMITY_TRACITE_FLARE_X5
+    category: STR_EQUIPMENT
+    requires:
+      - STR_PROXIMITY_FLARE
+      - STR_TRACITE
+    space: 2
+    time: 25
+    cost: 600
+    requiredItems:
+      STR_TRACITE: 5
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_PROXIMITY_TRACITE_FLARE: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 46285
+  - name: STR_PROXIMITY_ELERIUM_FLARE_X5
+    category: STR_EQUIPMENT
+    requires:
+      - STR_ELERIUM_FLARE
+      - STR_PROXIMITY_FLARE
+    space: 2
+    time: 30
+    cost: 750
+    requiredItems:
+      STR_ELERIUM_115: 5
+      STR_ALIEN_ALLOYS: 5
+    producedItems:
+      STR_PROXIMITY_ELERIUM_FLARE: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 46286
+  - name: STR_MUCKSTAR_CANNON
+    category: STR_WEAPON
+    requires:
+      - STR_MUCKSTAR_CANNON
+    space: 4
+    time: 250
+    cost: 25000
+    requiredItems:
+      STR_MUCKSTAR_TERRORIST: 1
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 18917
+  - name: STR_MUCKSTAR_CANNON_DENSE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_MUCKSTAR_CANNON
+      - STR_CYBER_TASER
+    space: 2
+    time: 80
+    cost: 3000
+    requiredItems:
+      STR_MUCKSTAR_CORPSE: 1
+    producedItems:
+      STR_MUCKSTAR_CANNON_DENSE_CLIP: 3
+    requiresBaseFunc: [WORKS]
+    listOrder: 18919
+  - name: STR_MUCKSTAR_CANNON_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_MUCKSTAR_CANNON
+    space: 2
+    time: 40
+    cost: 1500
+    requiresBaseFunc: [WORKS]
+    listOrder: 18918
+  - name: STR_CYBER_TASER
+    category: STR_WEAPON
+    requires:
+      - STR_CYBER_TASER
+    space: 2
+    time: 150
+    cost: 15000
+    requiresBaseFunc: [WORKS]
+    listOrder: 18919
+  - name: STR_CYBER_TASER_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_CYBER_TASER
+    space: 2
+    time: 32
+    cost: 1200
+    requiresBaseFunc: [WORKS]
+    listOrder: 18920
+  - name: STR_CYBER_TASER_DENSE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_CYBER_TASER
+      - STR_MUCKSTAR_CANNON
+    space: 2
+    time: 64
+    cost: 2400
+    requiredItems:
+      STR_MUCKSTAR_CORPSE: 1
+    producedItems:
+      STR_CYBER_TASER_DENSE_CLIP: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 18921
+  - name: STR_ALLOY_SHOTGUN
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_SHOTGUN
+    space: 10
+    time: 3000
+    cost: 100000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+    listOrder: 34440
+  - name: STR_ALLOY_SHOTGUN_SHARDS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_SHOTGUN
+    space: 1
+    time: 120
+    cost: 20000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 34440
+  - name: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    space: 1
+    time: 150
+    cost: 25000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+       STR_ALIEN_ALLOYS: 1
+       STR_TRACITE: 1
+    listOrder: 34440
+  - name: STR_ALLOY_FLARE_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_FLARE_PISTOL
+    space: 10
+    time: 25000
+    cost: 10000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 34440
+  - name: STR_ALLOY_ASSAULT_PISTOL
+    category: STR_WEAPON
+    requires:
+      - STR_ALLOY_ASSAULT_PISTOL
+    space: 10
+    time: 400
+    cost: 20000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALLOY_FLARE_PISTOL: 1
+      STR_ALIEN_ALLOYS: 2
+    listOrder: 34441
+  - name: STR_ALLOY_FLARE_PISTOL_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ALLOY_FLARE_PISTOL
+    space: 1
+    time: 300
+    cost: 5000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_TRACITE: 1
+    listOrder: 34440
+  - name: STR_TRACITETHROWER
+    category: STR_WEAPON
+    requires:
+      - STR_TRACITETHROWER
+    space: 10
+    time: 600
+    cost: 40000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    listOrder: 34441
+  - name: STR_TRACITETHROWER_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_TRACITETHROWER
+    space: 1
+    time: 750
+    cost: 9000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_TRACITE: 2
+    listOrder: 34442
+  - name: STR_TRACITE
+    category: STR_AMMUNITION
+    requires:
+      - STR_TRACITE
+    space: 1
+    time: 300
+    cost: 2000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ETRACE: 1
+    listOrder: 34440
+  # - name: STR_LIGHT_TANK_CANNON
+    # category: STR_WEAPON #Check category name later 
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+    # space: 20
+    # time: 4000
+    # cost: 100000
+    # requiresBaseFunc: [WORKS]
+    # listOrder: 34441
+  # - name: STR_LIGHT_TANK_AUTOCANNON
+    # category: STR_WEAPON #Check category name later 
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+    # space: 20
+    # time: 4500
+    # cost: 150000
+    # requiresBaseFunc: [WORKS]
+    # listOrder: 34442
+  - name: STR_LWP_CANNON_SHELLS
+    category: STR_AMMUNITION
+    requires:
+      - STR_LIGHT_TANK_CANNON
+    space: 2
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34442
+  - name: STR_LWP_CANNON_AP_SHELLS
+    category: STR_AMMUNITION
+    requires:
+      - STR_LIGHT_TANK_CANNON
+    space: 2
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34442
+  - name: STR_LWP_CANNON_CANISTER_SHELLS
+    category: STR_LWP_CANNON_SHELLS
+    requires:
+      - STR_LIGHT_TANK_CANNON
+    space: 2
+    time: 300
+    cost: 1200
+    requiresBaseFunc: [WORKS]
+    listOrder: 34442
+  - name: STR_LWP_RIOT_LAUNCHER_RUBBER_CLIP
+    category: STR_LWP_CANNON_SHELLS
+    requires:
+      - STR_LIGHT_TANK_RIOT_LAUNCHER
+    space: 2
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34443
+  - name: STR_LWP_RIOT_LAUNCHER_RUBBER_CLIP
+    category: STR_LWP_CANNON_SHELLS
+    requires:
+      - STR_LIGHT_TANK_RIOT_LAUNCHER
+    space: 2
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34443
+  - name: STR_LWP_RIOT_LAUNCHER_TEARGAS_CLIP
+    category: STR_LWP_CANNON_SHELLS
+    requires:
+      - STR_LIGHT_TANK_RIOT_LAUNCHER
+    space: 2
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34443
+  - name: STR_LIGHT_TANK_MACHINEGUN
+    category: STR_WEAPON #Check category name later 
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+    space: 10
+    time: 4000
+    cost: 80000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34443
+  - name: STR_VEHICLE_LIGHT_MACHINEGUN_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+    space: 1
+    time: 300
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34444
+  - name: STR_VEHICLE_LIGHT_MACHINEGUN_I_AMMO
+    category: STR_AMMUNITION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_NAPALM_GRENADE_MANUFACTURING
+    space: 1
+    time: 350
+    cost: 1200
+    requiresBaseFunc: [WORKS]
+    listOrder: 34444
+  - name: STR_LIGHT_TANK_RIOT_LAUNCHER
+    category: STR_WEAPON #Check category name later 
+    requires:
+      - STR_LIGHT_TANK_RIOT_LAUNCHER
+    space: 10
+    time: 4500
+    cost: 125000
+    requiresBaseFunc: [WORKS]
+    listOrder: 34445
+  - name: STR_LIGHT_TANK_RIOT_TASER
+    category: STR_WEAPON #Check category name later 
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+    space: 10
+    time: 4500
+    cost: 137500
+    requiresBaseFunc: [WORKS]
+    listOrder: 34446
+  - name: STR_NIGHT_JUMPSUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_NIGHTOPS
+    space: 8
+    time: 180
+    cost: 2500
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_DURATHREAD: 2
+    listOrder: 16741
+  - name: STR_BLACKOPS_NIGHTVISION
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ADVANCED_NIGHTOPS
+    space: 8
+    time: 1500
+    cost: 15000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_DURATHREAD: 4
+    listOrder: 16742
+  - name: STR_BREAKDOWN_STR_PLASMA_GATLER_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_PLASMA_GATLER_CLIP
+      - STR_ELERIUM_115
+    space: 4
+    time: 500
+    cost: 2500
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_PLASMA_GATLER_CLIP: 1
+    producedItems:
+      STR_ELERIUM_115: 5
+    listOrder: 200090
+  - name: STR_PLASMA_GATLER
+    category: STR_WEAPON
+    requires:
+      - STR_PLASMA_WEAPONS
+      - STR_PLASMA_GATLER
+      - STR_PLASMA_GATLER_CLIP
+    space: 8
+    time: 5000
+    cost: 180000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 30690
+  - name: STR_PLASMA_GATLER_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_PLASMA_WEAPONS
+      - STR_PLASMA_GATLER_CLIP
+    space: 5
+    time: 120
+    cost: 8000
+    requiredItems:
+      STR_ELERIUM_115: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: 30700
+  # - name: STR_LIGHT_TANK_CANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+    # space: 20
+    # time: 400
+    # cost: 50000
+    # requiredItems:
+      # STR_LIGHT_TANK_CANNON_RECOVER: 1
+    # producedItems:
+      # STR_LIGHT_TANK_CANNON: 1
+    # listOrder: 206830
+  # - name: STR_LIGHT_TANK_AUTOCANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+    # space: 20
+    # time: 425
+    # cost: 75000
+    # requiredItems:
+      # STR_LIGHT_TANK_AUTOCANNON_RECOVER: 1
+    # producedItems:
+      # STR_LIGHT_TANK_AUTOCANNON: 1
+    # listOrder: 206831
+  - name: STR_LIGHT_TANK_MACHINEGUN_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+    space: 20
+    time: 375
+    cost: 40000
+    requiredItems:
+      STR_MACHINEGUN_RECOVER: 1
+    producedItems:
+      STR_LIGHT_TANK_MACHINEGUN: 1
+    listOrder: 206831
+  # - name: STR_LIGHT_TANK_CANNON_PLATING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+      # - STR_VEHICLE_PLATING
+    # space: 20
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 10000
+    # requiredItems:
+      # STR_LIGHT_TANK_CANNON: 1
+      # STR_ALIEN_ALLOYS: 6
+    # producedItems:
+      # STR_LIGHT_TANK_PLATED_CANNON: 1
+    # listOrder: 206832
+  # - name: STR_LIGHT_TANK_CANNON_UNPLATING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+      # - STR_VEHICLE_PLATING
+    # space: 20
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 500
+    # requiredItems:
+      # STR_LIGHT_TANK_PLATED_CANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_CANNON: 1
+      # STR_ALIEN_ALLOYS: 6
+    # listOrder: 206833
+  # - name: STR_LIGHT_TANK_PLATED_CANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_VEHICLE_PLATING
+      # - STR_LIGHT_TANK_CANNON
+    # space: 20
+    # time: 400
+    # cost: 125000
+    # requiredItems:
+      # STR_LIGHT_TANK_PLATED_CANNON_RECOVER: 1
+      # STR_ALIEN_ALLOYS: 3
+    # producedItems:
+      # STR_LIGHT_TANK_PLATED_CANNON: 1
+    # listOrder: 206834
+  # - name: STR_LIGHT_TANK_AUTOCANNON_PLATING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+      # - STR_VEHICLE_PLATING
+    # space: 20
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 10000
+    # requiredItems:
+      # STR_LIGHT_TANK_AUTOCANNON: 1
+      # STR_ALIEN_ALLOYS: 6
+    # producedItems:
+      # STR_LIGHT_TANK_PLATED_AUTOCANNON: 1
+    # listOrder: 206835
+  # - name: STR_LIGHT_TANK_AUTOCANNON_UNPLATING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+      # - STR_VEHICLE_PLATING
+    # space: 20
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 500
+    # requiredItems:
+      # STR_LIGHT_TANK_PLATED_AUTOCANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_AUTOCANNON: 1
+      # STR_ALIEN_ALLOYS: 6
+    # listOrder: 206836
+  # - name: STR_LIGHT_TANK_PLATED_AUTOCANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_VEHICLE_PLATING
+      # - STR_LIGHT_TANK_AUTOCANNON
+    # space: 20
+    # time: 425
+    # cost: 137500
+    # requiredItems:
+      # STR_LIGHT_TANK_PLATED_AUTOCANNON_RECOVER: 1
+      # STR_ALIEN_ALLOYS: 3
+    # producedItems:
+      # STR_LIGHT_TANK_PLATED_AUTOCANNON: 1
+    # listOrder: 206837
+  - name: STR_LIGHT_TANK_MACHINEGUN_PLATING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_VEHICLE_PLATING
+    space: 20
+    time: 1 #see if being instant doesn't make it too op
+    cost: 10000
+    requiredItems:
+      STR_LIGHT_TANK_MACHINEGUN: 1
+      STR_ALIEN_ALLOYS: 6
+    producedItems:
+      STR_LIGHT_TANK_PLATED_MACHINEGUN: 1
+    listOrder: 206835
+  - name: STR_LIGHT_TANK_MACHINEGUN_UNPLATING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_VEHICLE_PLATING
+    space: 20
+    time: 1 #see if being instant doesn't make it too op
+    cost: 500
+    requiredItems:
+      STR_LIGHT_TANK_PLATED_MACHINEGUN: 1
+    producedItems:
+      STR_LIGHT_TANK_MACHINEGUN: 1
+      STR_ALIEN_ALLOYS: 6
+    listOrder: 206836
+  - name: STR_LIGHT_TANK_PLATED_MACHINEGUN_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_VEHICLE_PLATING
+      - STR_LIGHT_TANK_MACHINEGUN
+    space: 20
+    time: 400
+    cost: 100000
+    requiredItems:
+      STR_LIGHT_TANK_PLATED_MACHINEGUN_RECOVER: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_LIGHT_TANK_PLATED_MACHINEGUN: 1
+    listOrder: 206837
+  # - name: STR_LIGHT_TANK_CANNON_CAMOUFLAGING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+      # - STR_NIGHTOPS
+    # space: 15
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 1000
+    # requiredItems:
+      # STR_LIGHT_TANK_CANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_NIGHT_CANNON: 1
+    # listOrder: 206838
+  # - name: STR_LIGHT_TANK_CANNON_UNCAMOUFLAGING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+      # - STR_NIGHTOPS
+    # space: 15
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 50
+    # requiredItems:
+      # STR_LIGHT_TANK_NIGHT_CANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_CANNON: 1
+    # listOrder: 206839
+  # - name: STR_LIGHT_TANK_NIGHT_CANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_LIGHT_TANK_CANNON
+      # - STR_NIGHTOPS
+    # space: 20
+    # time: 400
+    # cost: 125000
+    # requiredItems:
+      # STR_LIGHT_TANK_NIGHT_CANNON_RECOVER: 1
+    # producedItems:
+      # STR_LIGHT_TANK_NIGHT_CANNON: 1
+    # listOrder: 206840
+  # - name: STR_LIGHT_TANK_AUTOCANNON_CAMOUFLAGING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+      # - STR_NIGHTOPS
+    # space: 15
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 1000
+    # requiredItems:
+      # STR_LIGHT_TANK_AUTOCANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_NIGHT_AUTOCANNON: 1
+    # listOrder: 206838
+  # - name: STR_LIGHT_TANK_AUTOCANNON_UNCAMOUFLAGING
+    # category: STR_MODIFICATION
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+      # - STR_NIGHTOPS
+    # space: 15
+    # time: 1 #see if being instant doesn't make it too op
+    # cost: 50
+    # requiredItems:
+      # STR_LIGHT_TANK_NIGHT_AUTOCANNON: 1
+    # producedItems:
+      # STR_LIGHT_TANK_AUTOCANNON: 1
+    # listOrder: 206839
+  # - name: STR_LIGHT_TANK_NIGHT_AUTOCANNON_REPAIR
+    # category: STR_MAINTENANCE
+    # requires:
+      # - STR_LIGHT_TANK_AUTOCANNON
+      # - STR_NIGHTOPS
+    # space: 20
+    # time: 400
+    # cost: 125000
+    # requiredItems:
+      # STR_LIGHT_TANK_NIGHT_AUTOCANNON_RECOVER: 1
+    # producedItems:
+      # STR_LIGHT_TANK_NIGHT_AUTOCANNON: 1
+    # listOrder: 206840
+  - name: STR_LIGHT_TANK_MACHINEGUN_CAMOUFLAGING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_NIGHTOPS
+    space: 15
+    time: 1 #see if being instant doesn't make it too op
+    cost: 1000
+    requiredItems:
+      STR_LIGHT_TANK_MACHINEGUN: 1
+    producedItems:
+      STR_LIGHT_TANK_NIGHT_MACHINEGUN: 1
+    listOrder: 206841
+  - name: STR_LIGHT_TANK_MACHINEGUN_UNCAMOUFLAGING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_NIGHTOPS
+    space: 15
+    time: 1 #see if being instant doesn't make it too op
+    cost: 50
+    requiredItems:
+      STR_LIGHT_TANK_NIGHT_MACHINEGUN: 1
+    producedItems:
+      STR_LIGHT_TANK_MACHINEGUN: 1
+    listOrder: 206842
+  - name: STR_LIGHT_TANK_NIGHT_MACHINEGUN_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_LIGHT_TANK_MACHINEGUN
+      - STR_NIGHTOPS
+    space: 20
+    time: 400
+    cost: 100000
+    requiredItems:
+      STR_LIGHT_TANK_NIGHT_MACHINEGUN_RECOVER: 1
+    producedItems:
+      STR_LIGHT_TANK_NIGHT_MACHINEGUN: 1
+    listOrder: 206843
+  - name: STR_LIGHT_TANK_RIOT_LAUNCHER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_RIOT_VEHICLES
+      - STR_LIGHT_TANK_RIOT_LAUNCHER
+    space: 20
+    time: 400
+    cost: 125000
+    requiredItems:
+      STR_LIGHT_TANK_RIOT_LAUNCHER_RECOVER: 1
+    producedItems:
+      STR_LIGHT_TANK_RIOT_LAUNCHER: 1
+    listOrder: 206844
+  - name: STR_LIGHT_TANK_RIOT_TASER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+    space: 20
+    time: 400
+    cost: 137500
+    requiredItems:
+      STR_LIGHT_TANK_RIOT_TASER_RECOVER: 1
+    producedItems:
+      STR_LIGHT_TANK_RIOT_TASER: 1
+    listOrder: 206845
+  - name: STR_LIGHT_TANK_RIOT_TASER_PLATING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+      - STR_VEHICLE_PLATING
+    space: 20
+    time: 1 #see if being instant doesn't make it too op
+    cost: 10000
+    requiredItems:
+      STR_LIGHT_TANK_RIOT_TASER: 1
+      STR_ALIEN_ALLOYS: 6
+    producedItems:
+      STR_LIGHT_TANK_PLATED_RIOT_TASER: 1
+    listOrder: 206846
+  - name: STR_LIGHT_TANK_RIOT_TASER_UNPLATING
+    category: STR_MODIFICATION
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+      - STR_VEHICLE_PLATING
+    space: 20
+    time: 1 #see if being instant doesn't make it too op
+    cost: 500
+    requiredItems:
+      STR_LIGHT_TANK_PLATED_RIOT_TASER: 1
+    producedItems:
+      STR_LIGHT_TANK_RIOT_TASER: 1
+      STR_ALIEN_ALLOYS: 6
+    listOrder: 206847
+  - name: STR_LIGHT_TANK_PLATED_RIOT_TASER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_VEHICLE_PLATING
+      - STR_LIGHT_TANK_RIOT_TASER
+    space: 20
+    time: 400
+    cost: 137500
+    requiredItems:
+      STR_LIGHT_TANK_PLATED_RIOT_TASER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_LIGHT_TANK_PLATED_RIOT_TASER: 1
+    listOrder: 206848
+  - name: STR_HWP_CANNON_CANISTER_SHELLS
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_CANNON_CANISTER_SHELLS
+    space: 3
+    time: 300
+    cost: 1500
+    requiresBaseFunc: [WORKS]
+    listOrder: 11080
+  - name: STR_HWP_CANNON_AP_SHELLS
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_CANNON_SHELLS
+    space: 3
+    time: 300
+    cost: 1500
+    requiresBaseFunc: [WORKS]
+    listOrder: 11080
+  - name: STR_LWP_RIOT_TASER_CANNON_CLIP
+    category: STR_LWP_CANNON_SHELLS
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+    space: 3
+    time: 300
+    cost: 3500
+    requiresBaseFunc: [WORKS]
+    listOrder: 11081
+  - name: STR_LWP_RIOT_TASER_CANNON_DENSE_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_LIGHT_TANK_RIOT_TASER
+      - STR_MUCKSTAR_CANNON
+    space: 3
+    time: 350
+    cost: 5000
+    requiredItems:
+      STR_MUCKSTAR_CORPSE: 1
+    producedItems:
+      STR_LWP_RIOT_TASER_CANNON_DENSE_CLIP: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 11082
+  - name: STR_WEAPON_BOX_RAMSHACKLE_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_RAMSHACKLE
+    requiredItems:
+      STR_WEAPON_BOX_RAMSHACKLE: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      - [10, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 2}]
+      - [10, {STR_SKS: 1, STR_SKS_CLIP: 2}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 3}]
+      - [10, {STR_BOW: 1, STR_BOW_QUIVER: 3}]
+      - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [20, {STR_TASER: 1, STR_TASER_CLIP: 3}]
+      - [20, {STR_TASER: 1, STR_TASER_CLIP: 2}]
+      - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 3}]
+      - [20, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 2}]
+      - [20, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 2}]
+      - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [20, {STR_UZI: 1, STR_UZI_CLIP: 2}]
+      - [20, {STR_SMALL_SHOTGUN: 1, STR_SMALL_SHOTGUN_SHELLS: 3}]
+      - [30, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [30, {STR_PPSH: 1, STR_PPSH_CLIP: 3}]
+      - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 2}]
+      - [30, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      - [30, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 3}]
+      - [30, {STR_CROSSBOW: 1, STR_CROSSBOW_BOLTS: 2}]
+      - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 3}]
+      - [40, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 3}]
+      - [40, {STR_SNUBNOSE_PISTOL: 1, STR_SNUBNOSE_PISTOL_CLIP: 3}]
+      - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 3}]
+      - [50, {STR_ENFIELD_REVOLVER: 1, STR_ENFIELD_REVOLVER_AMMO: 3}]
+      - [50, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [60, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      - [60, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      - [70, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 3}]
+      - [70, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 3}]
+      - [70, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 3}]
+      - [60, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      - [60, {STR_APS: 1, STR_MAKAROV_CLIP: 3}]
+      - [50, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      - [1, {STR_BLACK_MARKET_TIER_1: 1}]
+    listOrder: 62130
+  - name: STR_WEAPON_BOX_RAMSHACKLE_ZSRR_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_RAMSHACKLE_ZSRR
+    requiredItems:
+      STR_WEAPON_BOX_RAMSHACKLE_ZSRR: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      - [10, {STR_SKS: 1, STR_SKS_CLIP: 2}]
+      - [5, {STR_SKS: 1, STR_SKS_CLIP_AP: 2}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 3}]
+      - [20, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 2}]
+      # - [20, {STR_UZI: 1, STR_UZI_CLIP: 2}]
+      - [10, {STR_UZI: 1, STR_UZI_CLIP_AP: 2}]
+      - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 3}]
+      - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      - [50, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [70, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 3}]
+      - [50, {STR_APS: 1, STR_MAKAROV_CLIP: 3}]
+      - [35, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      - [70, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 3}]
+      - [60, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX
+    requiredItems:
+      STR_WEAPON_BOX: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+      - [5, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 6}]
+      - [6, {STR_M72_LAW: 2}]
+      - [4, {STR_PTRS41: 1, STR_PTRS41_AP_CLIP: 3}]
+      - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 5}]
+      - [5, {STR_MAUSER_AUTO: 1, STR_MAUSER_CLIP: 5}]
+      - [4, {STR_MAUSER_AUTO: 1, STR_MAUSER_BIG_CLIP: 4}]
+      - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [10, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      - [8, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      - [8, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_HE_CLIP: 3}]
+      - [8, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_INC_CLIP: 3}]
+      - [8, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_SMOKE_CLIP: 3}]
+      - [8, {STR_FG42: 1, STR_7_92_CLIP: 4}]
+      - [10, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      - [10, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_USAS_12: 1, STR_USAS_12_DRUM: 3}]
+      - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 5}]
+      - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_COLT_COMMANDO: 1, STR_MP40_CLIP: 3}]
+      - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 5}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_SMALL_SHOTGUN: 1, STR_SMALL_SHOTGUN_SHELLS: 5}]
+      - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [20, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [20, {STR_TOMMYGUN: 1, STR_TOMMYGUN_DRUM: 3}]
+      - [25, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [30, {STR_SNUBNOSE_PISTOL: 1, STR_SNUBNOSE_PISTOL_CLIP: 5}]
+      - [30, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 3}]
+      - [30, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [30, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
+      - [30, {STR_SKS: 1, STR_SKS_CLIP: 3}]
+      - [30, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [30, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      - [30, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [35, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 5}]
+      - [40, {STR_TASER: 1, STR_TASER_CLIP: 5}]
+      - [40, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 5}]
+      - [30, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      - [30, {STR_APS: 1, STR_MAKAROV_CLIP: 5}]
+      - [20, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 5}]
+      - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      - [40, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [40, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 5}]
+      - [50, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 5}]
+      - [50, {STR_MP: 1, STR_MP_CLIP: 3}]
+      - [25, {STR_MPK: 1, STR_MP_CLIP: 3}]
+      - [50, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 3}]
+      - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [60, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [60, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [3, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62132
+  - name: STR_WEAPON_BOX_ZSRR_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_ZSRR
+    requiredItems:
+      STR_WEAPON_BOX_ZSRR: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+#UNIVERSAL TABLE
+      - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+#ZSRR T2 TABLE
+      - [5, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 6}]
+      - [4, {STR_PTRS41: 1, STR_PTRS41_AP_CLIP: 3}]
+      - [4, {STR_RSH12: 1, STR_RSH12_AP_CLIP: 4, STR_RSH12_HP_CLIP: 4}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 5}]
+      - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [10, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      - [8, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      # - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 5}]
+      - [30, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [30, {STR_SKS: 1, STR_SKS_CLIP: 3}]
+      - [15, {STR_SKS: 1, STR_SKS_CLIP_AP: 3}]
+      - [10, {STR_SKS_SCOPED: 1, STR_SKS_CLIP_AP: 3}]
+      - [30, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [30, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      - [40, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 5}]
+      - [30, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      - [30, {STR_APS: 1, STR_MAKAROV_CLIP: 5}]
+      - [20, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      - [50, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 5}]
+      # - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [40, {STR_UZI: 1, STR_UZI_CLIP_AP: 3}]
+      - [60, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [60, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [5, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_REINFORCED_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1, {}] # empty
+      - [1, {STR_RIOT_STAB_VEST: 1}]
+      - [1, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_HE_CLIP: 4}]
+      - [2, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_AP_CLIP: 4}]
+      - [1, {STR_S18_SOLOTHURN_1000: 1, STR_S18_SOLOTHURN_1000_HE_CLIP: 3}]
+      - [2, {STR_S18_SOLOTHURN_1000: 1, STR_S18_SOLOTHURN_1000_AP_CLIP: 3}]
+      - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 3, STR_MORTAR_SHELL_SMOKE: 1}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 4}]
+      - [4, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 2, STR_MORTAR_SHELL_I: 2}]
+      - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      - [4, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_HE_CLIP: 3}]
+      - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
+      - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
+      - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3}]
+      - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_I_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_AP_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_BS_AMMO: 3}]
+      - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 4}]
+      - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_STAR_ROUND: 4}]
+      - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [8, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_AP_CLIP: 3}]
+      - [3, {STR_RT20: 1, STR_RT20_HE_CLIP: 5}]
+      - [2, {STR_MODEL_SS41: 1, STR_MODEL_SS41_HE_CLIP: 3}]
+      - [5, {STR_MODEL_SS41: 1, STR_MODEL_SS41_AP_CLIP: 3}]
+      - [6, {STR_RT20: 1, STR_RT20_AP_CLIP: 5}]
+      - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 6}]
+      - [6, {STR_PTRD41: 1, STR_PTRD41_HE_CLIP: 12}]
+      - [5, {STR_PTRS41: 1, STR_PTRD41_HE_CLIP: 6}]
+      - [12, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 12}]
+      - [10, {STR_PTRS41: 1, STR_PTRD41_AP_CLIP: 6}]
+      - [10, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
+      - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_USAS_12: 1, STR_USAS_12_DRUM: 3}]
+      - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      - [5, {STR_AA12: 1, STR_AA12_DRUM: 2}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [4, {STR_QBU_88: 1, STR_QBU_88_CLIP_AP: 3}]
+      - [10, {STR_SKS: 1, STR_SKS_CLIP: 3}]
+      - [4, {STR_SKS: 1, STR_SKS_CLIP_AP: 3}]
+      - [10, {STR_M82_BARETT: 1, STR_M82_BARETT_CLIP: 3}]
+      - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      - [10, {STR_LIGHT_MINIGUN: 1, STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [10, {STR_BLACKOPS_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      - [10, {STR_M60: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      - [8, {STR_NSW: 1, STR_NSW_CLIP: 2}]
+      - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [10, {STR_ARASAKA_3000: 1, STR_ARASAKA_3000_CLIP: 3}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
+      - [25, {STR_M72_LAW: 3}]
+      - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
+      - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [5, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP_AP: 3}]
+      - [5, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP_AP: 3}]
+      - [5, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP_AP: 3}]
+      - [5, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP_AP: 3}]
+      - [5, {STR_GALIL: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [5, {STR_FN_FAL: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [5, {STR_M14: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      - [15, {STR_MANURHIN_SCOPED_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [20, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [5, {STR_AKM: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [15, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      - [5, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP_AP: 3}]
+      - [15, {STR_HK51: 1, STR_FN_FAL_CLIP: 3}]
+      - [5, {STR_HK51: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [15, {STR_FG42: 1, STR_7_92_CLIP: 3}]
+      - [20, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [5, {STR_AK47: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+      - [30, {STR_MILKOR_MGL: 1, STR_MILKOR_MGL_CLIP: 5}]
+      - [30, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
+      - [30, {STR_PKM: 1, STR_PKM_CLIP: 3}]
+      - [30, {STR_SWD: 1, STR_SWD_CLIP: 2}]
+      - [40, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      - [10, {STR_AKSU74: 1, STR_WP_5_45_CLIP_AP: 3}]
+      - [40, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      - [40, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      - [10, {STR_GROZA: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [4, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62134
+  - name: STR_WEAPON_BOX_REINFORCED_ZSRR_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED_ZSRR
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED_ZSRR: 1
+    producedItems: {} # empty
+    randomProducedItems:
+#UNIVERSAL TABLE
+      - [1, {}] # empty
+      - [2, {STR_RIOT_STAB_VEST: 1}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      # - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3, STR_INCENDIARY_ROCKET: 3, STR_LARGE_ROCKET: 3}]
+      - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 6}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [10, {STR_BLACKOPS_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+#ZSRR T3 TABLE
+      # - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_RSH12: 1, STR_RSH12_AP_CLIP: 4, STR_RSH12_HP_CLIP: 4}]
+      - [4, {STR_SHAK12: 1, STR_SHAK12_AP_CLIP: 3, STR_SHAK12_HP_CLIP: 3}]
+      - [2, {STR_VKS: 1, STR_VKS_AP_CLIP: 2, STR_VKS_HP_CLIP: 2}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 3, STR_MORTAR_SHELL_SMOKE: 1}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 4}]
+      - [4, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 2, STR_MORTAR_SHELL_I: 2}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3, STR_LC_I_AMMO: 3, STR_LC_AP_AMMO: 3, STR_LC_BS_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3, STR_LHC_I_AMMO: 3, STR_LHC_AP_AMMO: 3, STR_LHC_BS_AMMO: 3}]
+      # - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [6, {STR_PTRD41: 1, STR_PTRD41_HE_CLIP: 12}]
+      - [5, {STR_PTRS41: 1, STR_PTRD41_HE_CLIP: 6}]
+      - [12, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 12}]
+      - [10, {STR_PTRS41: 1, STR_PTRD41_AP_CLIP: 6}]
+      - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
+      - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
+      - [10, {STR_LIGHT_MINIGUN: 1, STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [15, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      - [20, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [10, {STR_AKM: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [5, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP_AP: 3}]
+      - [10, {STR_AK47: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
+      - [30, {STR_PKM: 1, STR_PKM_CLIP: 3}]
+      - [30, {STR_SWD: 1, STR_SWD_CLIP: 2}]
+      - [40, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      - [40, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      - [20, {STR_AKSU74: 1, STR_WP_5_45_CLIP_AP: 3}]
+      - [20, {STR_GROZA: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [4, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [3, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62135
+  - name: STR_AMMO_BOX_REINFORCED_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX_REINFORCED
+    requiredItems:
+      STR_AMMO_BOX_REINFORCED: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      # - [50, {STR_RAFFICA_PISTOL_CLIP: 4}]
+      - [60, {STR_MAKAROV_BIG_CLIP: 4}]
+      # - [50, {STR_MANURHIN_REVOLVER_DRUM: 7}]
+      - [20, {STR_MAUSER_BIG_CLIP: 5}]
+# SMGs
+      - [50, {STR_MP_CLIP_AP: 6}]
+      - [50, {STR_UZI_CLIP_AP: 6}]
+# Shotguns
+      # - [40, {STR_SHOTGUN_SHELLS_BREACHING: 12}]
+      - [30, {STR_SHOTGUN_FLECHETTE_SHELLS: 12}] #check this is correct
+      # - [50, {STR_AA12_SHELLS: 5}]
+      - [25, {STR_AA12_DRUM: 3}]
+      - [30, {STR_AUTO_SHOTGUN_FRAG_SHELLS: 5}]
+      - [25, {STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS: 5}]
+# Rifles
+      - [65, {STR_RIFLE_M16_CLIP_AP: 5}]
+      - [65, {STR_7_92_CLIP: 5}]
+      - [60, {STR_WP_7_62_CLIP_AP: 5}] #check both of these are correct
+      - [60, {STR_WP_5_45_CLIP_AP: 5}]
+      - [45, {STR_FN_FAL_CLIP_AP: 5}] #make sure this is correct
+      - [45, {STR_QBU_88_CLIP_AP: 5}]
+# Sniper Rifles
+      - [20, {STR_M82_BARETT_HE_CLIP: 8}]
+# Anti-Tank Rifles
+      - [35, {STR_PTRD41_AP_CLIP: 10}]
+      - [30, {STR_PTRS41_AP_CLIP: 5}]
+      - [20, {STR_PTRD41_HE_CLIP: 10}]
+      - [15, {STR_PTRS41_HE_CLIP: 5}]
+      - [15, {STR_NTW20_DENEL_AP_CLIP: 5}]
+      - [10, {STR_NTW20_DENEL_HE_CLIP: 5}]
+      - [15, {STR_RT20_AP_CLIP: 8}]
+      - [10, {STR_RT20_HE_CLIP: 8}]
+      - [15, {STR_M42_CARL_GUSTAV_AP_CLIP: 8}]
+      - [10, {STR_M42_CARL_GUSTAV_HE_CLIP: 8}]
+      - [15, {STR_S18_SOLOTHURN_1000_AP_CLIP: 5}]
+      - [10, {STR_S18_SOLOTHURN_1000_HE_CLIP: 5}]
+      - [15, {STR_MODEL_SS41_AP_CLIP: 5}]
+      - [10, {STR_MODEL_SS41_HE_CLIP: 5}]
+      - [10, {STR_MODEL_SS41_AP_BIG_CLIP: 5}]
+      - [5, {STR_MODEL_SS41_HE_BIG_CLIP: 5}]
+# GL Grenades
+      - [40, {STR_MILKOR_MGL_CLIP_TEARGAS: 4}]
+      - [40, {STR_LAUNCHER_TEARGAS: 10}]
+      # - [40, {STR_LAUNCHER_BREACHING: 10}]
+      # - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      # - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+      # - [8, {STR_MINI_MORTAR_SHELL_HE: 6}]
+      # - [8, {STR_MINI_MORTAR_SHELL_I: 6}]
+      # - [8, {STR_MINI_MORTAR_SHELL_SMOKE: 6}]
+      # - [8, {STR_MINI_MORTAR_SHELL_FLARE: 3}]
+      - [8, {STR_MINI_MORTAR_SHELL_HE: 3, STR_MINI_MORTAR_SHELL_I: 3, STR_MINI_MORTAR_SHELL_SMOKE: 3, STR_MINI_MORTAR_SHELL_FLARE: 3}]
+      # - [4, {STR_MINI_MORTAR_TRISHELL_HE: 3}]
+      # - [4, {STR_MINI_MORTAR_TRISHELL_I: 3}]
+      # - [4, {STR_MINI_MORTAR_TRISHELL_SMOKE: 3}]
+      # - [4, {STR_MINI_MORTAR_TRISHELL_FLARE: 3}]
+      - [4, {STR_MINI_MORTAR_TRISHELL_HE: 3, STR_MINI_MORTAR_TRISHELL_I: 3, STR_MINI_MORTAR_TRISHELL_SMOKE: 3, STR_MINI_MORTAR_TRISHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      # - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [12, {STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3, STR_M3_CARL_GUSTAV_HEI_ROUND: 3, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3, STR_M3_CARL_GUSTAV_STAR_ROUND: 3, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+# Grenades
+      # - [40, {STR_TEARGAS_GRENADE: 12}]
+      - [5, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62140
+  - name: STR_AMMO_BOX_ZSRR_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX_ZSRR
+    requiredItems:
+      STR_AMMO_BOX_ZSRR: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      - [80, {STR_MAKAROV_CLIP: 6}]
+      - [60, {STR_MAKAROV_BIG_CLIP: 4}]
+      - [70, {STR_TOKAREV_CLIP: 6}]
+      # - [50, {STR_PISTOL_LT_CLIP: 6}]
+      # - [50, {STR_MAGNUM_DRUM: 7}]
+      - [40, {STR_LUGER_CLIP: 6}]
+      - [30, {STR_MAUSER_CLIP: 6}]
+      - [20, {STR_MAUSER_BIG_CLIP: 5}]
+      # - [15, {STR_PISTOL_CLIP: 6}]
+      # - [10, {STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      # - [5, {STR_JUDGE_AP_CLIP: 6}]
+      # - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      - [50, {STR_SKORPION_CLIP: 6}]
+      - [30, {STR_RAK_CLIP: 6}]
+      - [20, {STR_UZI_CLIP_AP: 6}]
+      # - [15, {STR_SMG_CLIP: 6}]
+      - [10, {STR_MESSER_CLIP: 6}]
+      # - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      # - [150, {STR_SHOTGUN_SHELLS: 12}]
+      # - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      # - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      # - [25, {STR_CAWS_CLIP_BS: 10}]
+      # - [25, {STR_CAWS_CLIP_AP: 10}]
+      # - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      # - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+# Rifles
+      - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      - [80, {STR_WP_7_62_CLIP: 5}]
+      - [80, {STR_WP_5_45_CLIP: 5}]
+      - [60, {STR_WP_7_62_CLIP_AP: 5}]
+      - [60, {STR_WP_5_45_CLIP_AP: 5}]
+      - [70, {STR_SKS_CLIP: 5}]
+      - [50, {STR_SKS_CLIP_AP: 5}]
+      # - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      # - [30, {STR_G11_CLIP: 5}]
+      # - [15, {STR_RIFLE_CLIP: 5}]
+# MGs
+      - [40, {STR_PKM_CLIP: 4}]
+      # - [30, {STR_HMG_CLIP: 2}]
+      # - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      # - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      # - [10, {STR_LC_AP_AMMO: 10}]
+      # - [10, {STR_LC_BS_AMMO: 10}]
+      # - [6, {STR_LC_HE_AMMO: 10}]
+      # - [6, {STR_LC_I_AMMO: 10}]
+      - [10, {STR_LC_HE_AMMO: 10, STR_LC_I_AMMO: 10, STR_LC_AP_AMMO: 10, STR_LC_BS_AMMO: 10}]
+# Sniper Rifles
+      - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      - [65, {STR_SWD_CLIP: 5}]
+      # - [50, {STR_PSG1_CLIP: 5}]
+      - [40, {STR_VSS_CLIP: 5}]
+      # - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      # - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# Anti-Tank Rifles
+      - [35, {STR_PTRD41_AP_CLIP: 10}]
+      - [30, {STR_PTRS41_AP_CLIP: 5}]
+      - [20, {STR_PTRD41_HE_CLIP: 10}]
+      - [15, {STR_PTRS41_HE_CLIP: 5}]
+# GL Grenades
+      # - [50, {STR_LAUNCHER_FRAG: 10}]
+      # - [40, {STR_LAUNCHER_SMOKE: 10}]
+      # - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      # - [40, {STR_LAUNCHER_BEAN: 10}]
+      # - [30, {STR_LAUNCHER_INC: 10}]
+      # - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      # - [5, {STR_MORTAR_SHELL_HE: 3}]
+      # - [5, {STR_MORTAR_SHELL_I: 3}]
+      # - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
+      # - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      # - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+      - [8, {STR_MORTAR_SHELL_HE: 1, STR_MORTAR_SHELL_I: 3, STR_MORTAR_SHELL_SMOKE: 3, STR_MORTAR_SHELL_TEARGAS: 3, STR_MORTAR_SHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      # - [10, {STR_SMALL_ROCKET: 3}]
+      # - [6, {STR_LARGE_ROCKET: 3}]
+      # - [8, {STR_INCENDIARY_ROCKET: 3}]
+      - [8, {STR_SMALL_ROCKET: 3, STR_INCENDIARY_ROCKET: 3, STR_LARGE_ROCKET: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      # - [40, {STR_TEARGAS_GRENADE: 12}]
+      # - [40, {STR_SMOKE_GRENADE: 12}]
+      # - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Other
+      # - [90, {STR_TASER_CLIP: 8}]
+      # - [50, {STR_CROSSBOW_BOLTS: 6}]
+      # - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      # - [80, {STR_ELECTRO_FLARE: 10}]
+      - [6, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [5, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62139
+  - name: STR_WEAPON_BOX_RAMSHACKLE_EXALT_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_RAMSHACKLE_EXALT
+    requiredItems:
+      STR_WEAPON_BOX_RAMSHACKLE_EXALT: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      # - [10, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 2}]
+      - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 3}]
+      - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      # - [20, {STR_UZI: 1, STR_UZI_CLIP: 2}]
+      - [10, {STR_UZI: 1, STR_UZI_CLIP_AP: 2}]
+      # - [30, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 2}]
+      - [30, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      # - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 3}]
+      # - [40, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 3}]
+      - [60, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_EXALT_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_EXALT
+    requiredItems:
+      STR_WEAPON_BOX_EXALT: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+      - [6, {STR_M72_LAW: 2}]
+      - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      # - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
+      - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [10, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      # - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_COLT_COMMANDO: 1, STR_MP40_CLIP: 3}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [20, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [20, {STR_TOMMYGUN: 1, STR_TOMMYGUN_DRUM: 3}]
+      - [25, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [30, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 3}]
+      - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
+      - [30, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [35, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 5}]
+      # - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 5}]
+      # - [50, {STR_MP: 1, STR_MP_CLIP: 3}]
+      # - [50, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 3}]
+      # - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [40, {STR_UZI: 1, STR_UZI_CLIP_AP: 3}]
+      - [5, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62133
+  - name: STR_WEAPON_BOX_REINFORCED_EXALT_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED_EXALT
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED_EXALT: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1, {}] # empty
+      - [1, {STR_RIOT_STAB_VEST: 1}]
+      # - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      # - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 3, STR_MORTAR_SHELL_SMOKE: 1}]
+      # - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 4}]
+      # - [4, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 2, STR_MORTAR_SHELL_I: 2}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      # - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3, STR_INCENDIARY_ROCKET: 3, STR_LARGE_ROCKET: 3}]
+      - [4, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_HE_CLIP: 3}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3, STR_LC_I_AMMO: 3, STR_LC_AP_AMMO: 3, STR_LC_BS_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3, STR_LHC_I_AMMO: 3, STR_LHC_AP_AMMO: 3, STR_LHC_BS_AMMO: 3}]
+      # - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [8, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_AP_CLIP: 3}]
+      - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 6}]
+      - [10, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
+      - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      - [5, {STR_AA12: 1, STR_AA12_DRUM: 2}]
+      - [10, {STR_M82_BARETT: 1, STR_M82_BARETT_CLIP: 3}]
+      - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      - [10, {STR_LIGHT_MINIGUN: 1, STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [10, {STR_BLACKOPS_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      - [10, {STR_M60: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
+      - [25, {STR_M72_LAW: 3}]
+      - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
+      - [20, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [4, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP_AP: 3}]
+      - [2, {STR_RIFLE_M16_BEOWULF: 1, STR_RIFLE_M16_BEOWULF_AP_CLIP: 3}]
+      - [5, {STR_M14: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [2, {STR_M14_SCOPED: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+      - [30, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
+      - [40, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      - [4, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [3, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62135
+  - name: STR_ALIEN_DATA_QUANTUM_SLATE_DECRYPTION
+    category: STR_HACKING
+    requires:
+      - STR_ALIEN_ENCRYPTION
+    space: 5
+    time: 300
+    cost: 250000
+    requiresBaseFunc: [IMPLAB]
+    requiredItems:
+      STR_ALIEN_DATA_QUANTUM_SLATE: 1
+    producedItems:
+      STR_ALIEN_DATA_QUANTUM_SLATE_DECRYPTED: 1
+    listOrder: 235001
+  - name: STR_GOOD_OSIRON_CRATE_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_GOOD_OSIRON_CRATE
+    requiredItems:
+      STR_GOOD_OSIRON_CRATE: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [3, {STR_RIOT_STAB_VEST: 1}]
+      - [5, {STR_ALENIUM_SHARD: 1}]
+      - [5, {STR_INCINERATOR_GRENADE: 5}]
+      - [5, {STR_GOLDEN_DRAGONS: 10}]
+      - [5, {STR_ALIEN_GRENADE: 5}]
+      - [5, {STR_SONIC_PULSER: 5}]
+      - [5, {STR_ACID_BOLT: 5}]
+      - [10, {STR_SYNTHMUSCLES: 1}]
+      - [5, {STR_SYNTHMUSCLES: 3}]
+      - [1, {STR_SYNTHMUSCLES: 10}]
+      - [15, {STR_SECRET_FILES_1: 3}]
+      - [10, {STR_SECRET_FILES_2: 2}]
+      - [5, {STR_CYBERWEB_BATTERY: 6}]
+      - [5, {STR_ETRACE: 25}]
+      - [5, {STR_BONE: 1}]
+      - [5, {STR_BIG_BONE: 1}]
+      - [5, {STR_PLASMA_BLADE: 1}]
+      - [5, {STR_TLETH_SPEAR: 1}]
+      - [5, {STR_PLASMA_SWORD: 1}]
+      - [5, {STR_FLAME_GLOVE: 1}]
+      - [5, {STR_STORM_ROSE: 1}]
+      - [5, {STR_DAGON_STAFF: 1}]
+      - [5, {STR_STAFF_OF_HEART_GRIP: 1}]
+      - [5, {STR_VIBRO_BLADE: 1}]
+      - [1, {STR_ALIEN_DATA_QUANTUM_SLATE: 1}]
+      - [2, {STR_BLOODCLOT_GRENADE: 1}]
+      - [2, {STR_STASIS_GRENADE: 1}]
+      - [5, {STR_ALIEN_DATA_SLATE: 1}]
+      - [5, {STR_ALIEN_ELECTRONICS: 1}]
+      - [5, {STR_OPTRONIC_PARTS: 1}]
+      - [5, {STR_ALIEN_COMMUNICATOR: 1}]
+      - [5, {STR_MIND_PROBE: 1}]
+      - [5, {STR_ALIEN_EMBRYO: 1}]
+      - [5, {STR_ALIEN_ORGAN_SAMPLE: 1}]
+      - [5, {STR_ALIEN_ALLOY_WELDER: 1}]
+      - [5, {STR_ALIEN_MULTITOOL: 1}]
+      - [5, {STR_PSICLONE: 6}]
+      - [5, {STR_MONEY_BAG: 2}]
+      - [5, {STR_MONEY_BRIEFCASE: 1}]
+      - [5, {STR_ZRBITE_TANK: 1}]
+      - [5, {STR_DURATHREAD: 10}]
+      - [5, {STR_AQUA_PLASTICS: 10}]
+      - [5, {STR_SPIDERWEB: 15}]
+      - [5, {STR_ZOMBIE_PARASITE: 5}]
+      - [5, {STR_HEAVY_CANNON: 1, STR_HC_AP_AMMO: 3}]
+      - [5, {STR_HEAVY_CANNON: 1, STR_HC_HE_AMMO: 3}]
+      - [5, {STR_AUTO_CANNON: 1, STR_AC_AP_AMMO: 2}]
+      - [5, {STR_AUTO_CANNON: 1, STR_AC_BS_AMMO: 2}]
+      - [5, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 8}]
+      - [5, {STR_LASER_PISTOL_MIB: 1, STR_LASER_PISTOL_MIB_CLIP: 3}]
+      - [5, {STR_CHEMPISTOL: 1, STR_CHEMPISTOL_CLIP: 5}]
+      - [5, {STR_HYDRA_LASER: 1, STR_HYDRA_LASER_CLIP: 5}]
+      - [5, {STR_MPG: 1, STR_MPG_CLIP: 5}]
+      - [5, {STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3}]
+      - [3, {STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 2}]
+      - [1, {STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2}]
+      - [5, {STR_PLASMA_CASTER: 1, STR_PLASMA_CASTER_CLIP: 3}]
+      - [5, {STR_PLASMA_PISTOL: 1, STR_PLASMA_PISTOL_CLIP: 3}]
+      - [5, {STR_ALIEN_LASER_RIFLE: 1, STR_ALIEN_LASER_RIFLE_CLIP: 4}]
+      - [5, {STR_CHEMOGUN: 1, STR_CHEMOGUN_CLIP: 3}]
+      - [5, {STR_TOXIGUN: 1, STR_TOXIGUN_FLASK: 3}]
+      - [5, {STR_INCINERATOR: 1, STR_INCINERATOR_CLIP: 3}]
+      - [2, {STR_CANISTER_GUN: 1, STR_CANISTER_GUN_CLIP_CH: 3}]
+      - [3, {STR_CANISTER_GUN: 1, STR_CANISTER_GUN_CLIP_I: 3}]
+      - [3, {STR_CANISTER_GUN: 1, STR_CANISTER_GUN_CLIP_CH: 2, STR_CANISTER_GUN_CLIP_I: 2}]
+      - [2, {STR_SMALL_LAUNCHER: 1, STR_STUN_BOMB: 3}]
+      - [3, {STR_SMALL_LAUNCHER: 1, STR_ELERIUM_BOMB: 3}]
+      - [3, {STR_SMALL_LAUNCHER: 1, STR_STUN_BOMB: 2, STR_ELERIUM_BOMB: 2}]
+      - [3, {STR_GAUSS_PISTOL: 1, STR_GAUSS_PISTOL_CLIP: 3}]
+      - [3, {STR_GAUSS_RIFLE: 1, STR_GAUSS_RIFLE_CLIP: 2}]
+      - [3, {STR_HEAVY_GAUSS: 1, STR_HEAVY_GAUSS_CLIP: 2}]
+      - [3, {STR_UAC_PLASMA_RIFLE: 1, STR_UAC_PLASMA_RIFLE_CLIP: 2}]
+      - [3, {STR_UAC_LIGHT_PLASMA_GUN: 1, STR_UAC_LIGHT_PLASMA_GUN_CLIP: 2}]
+      - [3, {STR_MONSTROUS_TOOTH: 5, STR_BIG_BONE: 1, STR_BONE: 2}]
+      - [3, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_3: 1}]
+    listOrder: 62155
+  - name: STR_AMMO_BOX_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX
+    requiredItems:
+      STR_AMMO_BOX: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      - [100, {STR_BERETTA_92FS_CLIP: 6}]
+      # - [50, {STR_RAFFICA_PISTOL_CLIP: 4}]
+      - [100, {STR_GLOCK_18_CLIP: 6}]
+      - [80, {STR_MAKAROV_CLIP: 6}]
+      - [60, {STR_MAKAROV_BIG_CLIP: 4}]
+      - [80, {STR_COLT45_CLIP: 6}]
+      - [70, {STR_TOKAREV_CLIP: 6}]
+      - [60, {STR_SNUBNOSE_PISTOL_CLIP: 6}]
+      - [60, {STR_USP_9_MM_CLIP: 6}]
+      - [60, {STR_DESERT_EAGLE_CLIP: 6}]
+      - [40, {STR_CALICO_CLIP: 6}]
+      - [10, {STR_CALICO_LARGE_CLIP: 3}]
+      - [50, {STR_PISTOL_LT_CLIP: 6}]
+      - [50, {STR_MAGNUM_DRUM: 7}]
+      - [50, {STR_MANURHIN_REVOLVER_DRUM: 7}]
+      - [40, {STR_LUGER_CLIP: 6}]
+      - [40, {STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_FN_P90_CLIP: 6}]
+      - [30, {STR_MAUSER_CLIP: 6}]
+      - [20, {STR_MAUSER_BIG_CLIP: 5}]
+      - [20, {STR_S&W_610_CLIP: 5}]
+      - [20, {STR_WILDEY_CLIP: 5}]
+      - [20, {STR_ENFIELD_REVOLVER_AMMO: 6}]
+      - [15, {STR_PISTOL_CLIP: 6}]
+      - [10, {STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [5, {STR_JUDGE_AP_CLIP: 6}]
+      - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      - [90, {STR_UZI_CLIP: 6}]
+      - [70, {STR_PPSH_CLIP: 6}]
+      - [60, {STR_MP40_CLIP: 6}]
+      - [50, {STR_SKORPION_CLIP: 6}]
+      - [40, {STR_MAC10_CLIP: 6}]
+      - [30, {STR_RAK_CLIP: 6}]
+      - [25, {STR_TOMMYGUN_DRUM: 6}]
+      # - [20, {STR_MP_CLIP_AP: 3}]
+      - [15, {STR_SMG_CLIP: 6}]
+      - [10, {STR_MESSER_CLIP: 6}]
+      - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      - [150, {STR_SHOTGUN_SHELLS: 12}]
+      - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      - [100, {STR_PUMP_ACTION_SHELLS: 12}]
+      - [100, {STR_PUMP_ACTION_SLUGS: 12}]
+      - [50, {STR_SMALL_SHOTGUN_SHELLS: 12}]
+      - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      # - [30, {STR_SHOTGUN_SHELLS_BREACHING: 12}] #check this is correct
+      - [30, {STR_SHOTGUN_FLECHETTE_SHELLS: 12}] #check this is correct
+      - [25, {STR_CAWS_CLIP_BS: 10}]
+      - [25, {STR_CAWS_CLIP_AP: 10}]
+      - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [50, {STR_USAS_12_DRUM: 5}]
+      - [50, {STR_AA12_SHELLS: 5}]
+# Rifles
+      - [85, {STR_RIFLE_M16_CLIP: 5}]
+      - [80, {STR_HUNTING_RIFLE_CLIP: 5}]
+      - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      - [80, {STR_WP_7_62_CLIP: 5}]
+      - [80, {STR_WP_5_45_CLIP: 5}]
+      - [65, {STR_7_92_CLIP: 5}]
+      - [70, {STR_SKS_CLIP: 5}]
+      - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      - [60, {STR_FN_FAL_CLIP: 5}]
+      - [45, {STR_QBU_88_CLIP: 5}]
+      - [30, {STR_G11_CLIP: 5}]
+      - [25, {STR_ARASAKA_3000_CLIP: 5}]
+      - [15, {STR_RIFLE_CLIP: 5}]
+# MGs
+      - [40, {STR_PKM_CLIP: 4}]
+      - [30, {STR_M60_CLIP: 4}]
+      - [40, {STR_MINIMI_CLIP: 4}]
+      - [30, {STR_HMG_CLIP: 2}]
+      - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      - [10, {STR_LC_AP_AMMO: 10}]
+      - [10, {STR_LC_BS_AMMO: 10}]
+      - [6, {STR_LC_HE_AMMO: 10}]
+      - [6, {STR_LC_I_AMMO: 10}]
+# Sniper Rifles
+      - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      - [65, {STR_SWD_CLIP: 5}]
+      - [50, {STR_PSG1_CLIP: 5}]
+      - [40, {STR_VSS_CLIP: 5}]
+      - [40, {STR_M82_BARETT_CLIP: 8}]
+      - [20, {STR_M82_BARETT_HE_CLIP: 8}]
+      - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# # Anti-Tank Rifles
+      # - [35, {STR_PTRD41_AP_CLIP: 10}]
+      # - [30, {STR_PTRS41_AP_CLIP: 5}]
+      # - [20, {STR_PTRD41_HE_CLIP: 10}]
+      # - [15, {STR_PTRS41_HE_CLIP: 5}]
+      # - [15, {STR_NTW20_DENEL_AP_CLIP: 5}]
+      # - [10, {STR_NTW20_DENEL_HE_CLIP: 5}]
+      # - [15, {STR_RT20_AP_CLIP: 8}]
+      # - [10, {STR_RT20_HE_CLIP: 8}]
+      # - [15, {STR_M42_CARL_GUSTAV_AP_CLIP: 8}]
+      # - [10, {STR_M42_CARL_GUSTAV_HE_CLIP: 8}]
+      # - [15, {STR_S18_SOLOTHURN_1000_AP_CLIP: 5}]
+      # - [10, {STR_S18_SOLOTHURN_1000_HE_CLIP: 5}]
+      # - [15, {STR_MODEL_SS41_AP_CLIP: 5}]
+      # - [10, {STR_MODEL_SS41_HE_CLIP: 5}]
+      # - [10, {STR_MODEL_SS41_AP_BIG_CLIP: 5}]
+      # - [5, {STR_MODEL_SS41_HE_BIG_CLIP: 5}]
+# GL Grenades
+      - [40, {STR_MILKOR_MGL_CLIP: 4}]
+      - [50, {STR_LAUNCHER_FRAG: 10}]
+      - [40, {STR_LAUNCHER_SMOKE: 10}]
+      - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      - [40, {STR_LAUNCHER_BEAN: 10}]
+      - [30, {STR_LAUNCHER_INC: 10}]
+      - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [5, {STR_MORTAR_SHELL_HE: 3}]
+      - [5, {STR_MORTAR_SHELL_I: 3}]
+      - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
+      - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      - [10, {STR_SMALL_ROCKET: 3}]
+      - [6, {STR_LARGE_ROCKET: 3}]
+      - [8, {STR_INCENDIARY_ROCKET: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [12, {STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      - [40, {STR_TEARGAS_GRENADE: 12}]
+      - [40, {STR_SMOKE_GRENADE: 12}]
+      - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Throwing weapons
+      - [25, {STR_THROWING_KNIVES: 5}]
+      - [25, {STR_THROWING_STARS: 5}]
+# Other
+      - [90, {STR_TASER_CLIP: 8}]
+      - [50, {STR_CROSSBOW_BOLTS: 6}]
+      - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      - [80, {STR_ELECTRO_FLARE: 10}]
+      - [5, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62138
+  - name: STR_REVOLVER_AA_DRUM
+    category: STR_AMMUNITION
+    requires:
+      - STR_REVOLVER_AA_DRUM_MANUFACTURING
+    space: 2
+    time: 30
+    cost: 340
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 20201
+  - name: STR_SHOTGUN_AA_SHELLS_FLAK
+    category: STR_AMMUNITION
+    requires:
+      - STR_SHOTGUN_AA_SHELLS_FLAK_MANUFACTURING
+    space: 2
+    time: 35
+    cost: 300
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 22561
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
+    category: STR_AMMUNITION
+    requires:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK_MANUFACTURING
+    space: 2
+    time: 40
+    cost: 500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 22561
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
+    category: STR_AMMUNITION
+    requires:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS_MANUFACTURING
+    space: 2
+    time: 40
+    cost: 500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 22561
+  - name: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
+    category: STR_AMMUNITION
+    requires:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS_MANUFACTURING
+    space: 2
+    time: 40
+    cost: 500
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 22561
+  - name: STR_HEAVY_RIOT_SUIT_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_EXALT_WAREHOUSE_RAIDED
+    space: 2
+    time: 20
+    cost: 1000
+    requiredItems:
+      STR_EXALT_EXTERMINATOR_CORPSE: 1
+    producedItems:
+      STR_HEAVY_RIOT_SUIT: 1
+    listOrder: 220061
+  - name: STR_ZSRR_UBEK_PROTOTYPE_SUIT_ADAPTATION
+    category: STR_MAINTENANCE
+    requires:
+      - STR_ZSRR_UBEK_PROTOTYPE_SUIT
+    space: 2
+    time: 20
+    cost: 50
+    requiredItems:
+      STR_ZSRR_UBEK_PROTOTYPE_SUIT: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [50, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1}]
+      - [50, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1, STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS: 1}]
+    listOrder: 220061
+  - name: STR_UBEK_PROTOTYPE_SUIT_UPGRADE
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HEAVY_TACTICAL_SUIT
+    space: 2
+    time: 20
+    cost: 5000
+    requiredItems:
+      STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1
+    producedItems:
+      STR_HEAVY_TACTICAL_SUIT: 1
+    listOrder: 220061
+  - name: STR_REPAIR_PROTOTYPE_TACTICAL_SUIT
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_CORPSE: 1
+      STR_DURATHREAD: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [67, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1}]
+      - [33, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1, STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS: 1}]
+    requiresBaseFunc: [WORKS]
+    listOrder: 27010
+  - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS
+    space: 12
+    time: 600
+    cost: 50000
+    requiredItems:
+      STR_DURATHREAD: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 27011
+  - name: STR_IMPACT_VEST
+    requires:
+      - STR_IMPACT_VEST_SCHEMATICS
+    space: 10
+    time: 600
+    cost: 25000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_DURATHREAD: 5
+    producedItems:
+      STR_IMPACT_VEST: 1
+  - name: STR_EXPEDITION_PLANET_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_PLANET_SURVEY
+    requiredItems:
+      STR_EXPEDITION_PLANET_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE: 4}]
+      - [40, {STR_WEAPON_BOX: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED: 1}]
+      - [40, {STR_AMMO_BOX: 3}]
+      - [40, {STR_AMMO_BOX_REINFORCED: 2}]
+      - [40, {STR_GOOD_OSIRON_CRATE: 3}]
+      - [40, {STR_ILLEGAL_REQUISITION_FILES: 3}]
+      - [10, {STR_ILLEGAL_REQUISITION_FILES_ZSRR: 1}]
+      - [10, {STR_ILLEGAL_REQUISITION_FILES_BLACK_LOTUS: 1}]
+      - [10, {STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON: 1}]
+      - [10, {STR_ILLEGAL_REQUISITION_FILES_EXALT: 1}]
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 1}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 3}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 6}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 10}]
+      - [10, {STR_MUTANT_BLOOD_PLASMA: 30}]
+      - [20, {STR_ECTOPLASM: 1}]
+      - [20, {STR_ECTOPLASM: 3}]
+      - [40, {STR_CORPSE: 1}]
+      - [10, {STR_CORPSE: 4}]
+      - [10, {STR_SPIDERWEB: 5}]
+      - [30, {STR_JARHEAD_CORPSE: 1}]
+      - [10, {STR_BLACK_LOTUS_AVATAR_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 2}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 5}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 1}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 2}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 4}]
+      - [50, {STR_ZOMBIE_BOOMER_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_INFECTOR_CORPSE: 1}]
+      - [30, {STR_ZOMBIE_INFECTOR_CORPSE: 2}]
+      - [30, {STR_VAMPIRE_KNIGHT_CORPSE: 1}]
+      - [40, {STR_GIANT_RAT_CORPSE: 1}]
+      - [40, {STR_GIANT_RAT_CORPSE: 3}]
+      - [40, {STR_GIANT_RAT_CORPSE: 8}]
+      - [40, {STR_BULLFROG_CORPSE: 1}]
+      - [40, {STR_BULLFROG_CORPSE: 2}]
+      - [40, {STR_SHAMBLER_CORPSE: 1}]
+      - [40, {STR_SHAMBLER_CORPSE: 2}]
+      - [10, {STR_SHAMBLER_CORPSE: 3}]
+      - [40, {STR_MONGORN_CORPSE: 1}]
+      - [40, {STR_MONGORN_CORPSE: 3}]
+      - [40, {STR_MONGORN_CORPSE: 5}]
+      - [10, {STR_BLOODHOUND_CORPSE: 1}]
+      - [40, {STR_MUCKSTAR_CORPSE: 1}]
+      - [40, {STR_MUCKSTAR_CORPSE: 3}]
+      - [30, {STR_MUCKSTAR_CORPSE: 6}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 1}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 2}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 4}]
+      - [40, {STR_CHUPACABRA_CORPSE: 1}]
+      - [40, {STR_CHUPACABRA_CORPSE: 3}]
+      - [40, {STR_CHUPACABRA_CORPSE: 6}]
+      - [30, {STR_CHUPACABRA_CORPSE: 10}]
+      - [20, {STR_SHADOWBAT_CORPSE: 1}]
+      - [40, {STR_SHADOWBAT_CORPSE: 3}]
+      - [40, {STR_SHADOWBAT_CORPSE: 6}]
+      - [40, {STR_SHADOWBAT_CORPSE: 9}]
+      - [40, {STR_MEGASCORPION_CORPSE: 1}]
+      - [40, {STR_MEGASCORPION_CORPSE: 3}]
+      - [40, {STR_MEGASCORPION_CORPSE: 7}]
+      - [30, {STR_MEGASCORPION_CORPSE: 12}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 1}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 4}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 10}]
+      - [30, {STR_GIANT_BEETLE_CORPSE: 16}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 1}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 3}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 7}]
+      - [30, {STR_GIANT_SPIDER_CORPSE: 12}]
+      - [40, {STR_GIANT_SPIDER_QUEEN_CORPSE: 1}]
+      - [50, {STR_FENRIR_CORPSE: 1}]
+      - [30, {STR_FENRIR_CORPSE: 2}]
+      - [20, {STR_GILLDOG_CORPSE: 1}]
+      - [40, {STR_WEREWOLF_CORPSE: 1}]
+      - [40, {STR_WEREWOLF_CORPSE: 2}]
+      - [40, {STR_WERECAT_CORPSE: 1}]
+      - [40, {STR_WERECAT_CORPSE: 2}]
+      - [10, {STR_OOZE_CORPSE: 1}]
+      - [10, {STR_GIANT_RAT_TERRORIST: 1}]
+      - [3, {STR_BULLFROG_TERRORIST: 1}]
+      - [4, {STR_SHAMBLER_TERRORIST: 1}]
+      - [6, {STR_MONGORN_TERRORIST: 1}]
+      - [5, {STR_MUCKSTAR_TERRORIST: 1}]
+      - [4, {STR_SPIKEBOAR_TERRORIST: 1}]
+      - [6, {STR_CHUPACABRA_TERRORIST: 1}]
+      - [6, {STR_SHADOWBAT_TERRORIST: 1}]
+      - [10, {STR_MEGASCORPION_TERRORIST: 1}]
+      - [10, {STR_GIANT_BEETLE_TERRORIST: 1}]
+      - [10, {STR_GIANT_SPIDER_TERRORIST: 1}]
+      - [2, {STR_FENRIR_TERRORIST: 1}]
+      - [1, {STR_GILLDOG_TERRORIST: 1}]
+      - [3, {STR_WEREWOLF_TERRORIST: 1}]
+      - [3, {STR_WERECAT_TERRORIST: 1}]
+      - [20, {STR_BOOMER_ORGAN: 1}]
+      - [20, {STR_BOOMER_ORGAN: 3}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 1}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 3}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 9}]
+      - [5, {STR_SCHUTZSTAFFELN_RING: 1}]
+      - [5, {STR_GOLDEN_DRAGONS: 1}]
+      - [80, {STR_ZOMBIE_BOOMER_CORPSE: 1, STR_BOOMER_ORGAN: 3}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_BARDICHE: 1}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_GREATSWORD: 1}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_BARDICHE: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_2: 1}]
+  - name: STR_EXPEDITION_ZSRR_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_CULT_SURVEY
+      - STR_ZSRR_OPERATIONS
+    requiredItems:
+      STR_EXPEDITION_ZSRR_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE_ZSRR: 4}]
+      - [40, {STR_WEAPON_BOX_ZSRR: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED_ZSRR: 1}]
+      - [40, {STR_AMMO_BOX_ZSRR: 3}]
+      - [40, {STR_AMMO_BOX_REINFORCED: 2}]
+      - [10, {STR_GOOD_OSIRON_CRATE: 1}]  
+      - [15, {STR_ILLEGAL_REQUISITION_FILES_ZSRR: 1}]
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_CORPSE: 1}]
+      - [15, {STR_CORPSE: 2}]
+      - [20, {STR_STORM: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_3: 1}]
+    listOrder: 62163
+  - name: STR_EXPEDITION_CHURCH_OF_DAGON_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_CULT_SURVEY
+      - STR_CHURCH_OF_DAGON_OPERATIONS
+    requiredItems:
+      STR_EXPEDITION_CHURCH_OF_DAGON_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON: 4}]
+      - [40, {STR_WEAPON_BOX_CHURCH_OF_DAGON: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON: 1}]
+      - [40, {STR_AMMO_BOX_CHURCH_OF_DAGON: 3}]
+      - [40, {STR_AMMO_BOX_REINFORCED: 2}]
+      - [10, {STR_GOOD_OSIRON_CRATE: 1}]  
+      - [15, {STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON: 1}]
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_CORPSE: 1}]
+      - [15, {STR_CORPSE: 2}]
+      - [20, {STR_GILLDOG_CORPSE: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_3: 1}]
+    listOrder: 62164
+  - name: STR_EXPEDITION_BLACK_LOTUS_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_CULT_SURVEY
+      - STR_BLACK_LOTUS_OPERATIONS
+    requiredItems:
+      STR_EXPEDITION_BLACK_LOTUS_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS: 4}]
+      - [40, {STR_WEAPON_BOX_BLACK_LOTUS: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS: 1}]
+      - [40, {STR_AMMO_BOX_BLACK_LOTUS: 3}]
+      - [40, {STR_AMMO_BOX_REINFORCED: 2}]
+      - [10, {STR_GOOD_OSIRON_CRATE: 1}]  
+      - [15, {STR_ILLEGAL_REQUISITION_FILES_BLACK_LOTUS: 1}]
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_CORPSE: 1}]
+      - [15, {STR_CORPSE: 2}]
+      - [20, {STR_BLACK_LOTUS_AVATAR_CORPSE: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_3: 1}]
+    listOrder: 62165
+  - name: STR_EXPEDITION_EXALT_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_CULT_SURVEY
+      - STR_EXALT_OPERATIONS
+    requiredItems:
+      STR_EXPEDITION_EXALT_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE_EXALT: 4}]
+      - [40, {STR_WEAPON_BOX_EXALT: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED_EXALT: 1}]
+      - [40, {STR_AMMO_BOX_EXALT: 3}]
+      - [40, {STR_AMMO_BOX_REINFORCED: 2}]
+      - [10, {STR_GOOD_OSIRON_CRATE: 1}]  
+      - [15, {STR_ILLEGAL_REQUISITION_FILES_EXALT: 1}]
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_CORPSE: 1}]
+      - [15, {STR_CORPSE: 2}]
+      - [20, {STR_PSICLONE: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [2, {STR_BLACK_MARKET_TIER_2: 1}]
+      - [1, {STR_BLACK_MARKET_TIER_3: 1}]
+    listOrder: 62166
+  - name: STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS
+    requiredItems:
+      STR_WEAPON_BOX_RAMSHACKLE_BLACK_LOTUS: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      # - [10, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 2}]
+      # - [10, {STR_SKS: 1, STR_SKS_CLIP: 2}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 3}]
+      # - [10, {STR_BOW: 1, STR_BOW_QUIVER: 3}]
+      # - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      # - [20, {STR_TASER: 1, STR_TASER_CLIP: 3}]
+      # - [20, {STR_TASER: 1, STR_TASER_CLIP: 2}]
+      # - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 3}]
+      # - [20, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 2}]
+      # - [20, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 2}]
+      # - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      # - [20, {STR_UZI: 1, STR_UZI_CLIP: 2}]
+      - [10, {STR_UZI: 1, STR_UZI_CLIP_AP: 2}]
+      # - [20, {STR_SMALL_SHOTGUN: 1, STR_SMALL_SHOTGUN_SHELLS: 3}]
+      # - [30, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 3}]
+      # - [30, {STR_PPSH: 1, STR_PPSH_CLIP: 3}]
+      # - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 2}]
+      # - [30, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      # - [30, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      # - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 3}]
+      # - [30, {STR_CROSSBOW: 1, STR_CROSSBOW_BOLTS: 2}]
+      # - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      # - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      # - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 3}]
+      # # - [40, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 3}]
+      # - [40, {STR_SNUBNOSE_PISTOL: 1, STR_SNUBNOSE_PISTOL_CLIP: 3}]
+      # - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 3}]
+      # - [50, {STR_ENFIELD_REVOLVER: 1, STR_ENFIELD_REVOLVER_AMMO: 3}]
+      # - [50, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      # - [60, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      # - [60, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      # - [70, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 3}]
+      # - [70, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 3}]
+      # - [70, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 3}]
+      # - [60, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      # - [60, {STR_APS: 1, STR_MAKAROV_CLIP: 3}]
+      # - [50, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 2}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+    listOrder: 62130
+  - name: STR_WEAPON_BOX_BLACK_LOTUS_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_BLACK_LOTUS
+    requiredItems:
+      STR_WEAPON_BOX_BLACK_LOTUS: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+      # - [5, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 6}]
+      # - [6, {STR_M72_LAW: 2}]
+      # - [4, {STR_PTRS41: 1, STR_PTRS41_AP_CLIP: 3}]
+      - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      # - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 5}]
+      - [5, {STR_MAUSER_AUTO: 1, STR_MAUSER_CLIP: 5}]
+      - [4, {STR_MAUSER_AUTO: 1, STR_MAUSER_BIG_CLIP: 4}]
+      # - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      # - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      # - [10, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      # - [8, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      # - [10, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      # - [10, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      # - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_USAS_12: 1, STR_USAS_12_DRUM: 3}]
+      # - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [8, {STR_QBU_88: 1, STR_QBU_88_CLIP_AP: 3}]
+      # - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+      # - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      # - [20, {STR_COLT_COMMANDO: 1, STR_MP40_CLIP: 3}]
+      # - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 5}]
+      # - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_SMALL_SHOTGUN: 1, STR_SMALL_SHOTGUN_SHELLS: 5}]
+      # - [20, {STR_WINCHESTER_1901: 1, STR_SHOTGUN_SHELLS: 3}]
+      # - [20, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      # - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      # - [20, {STR_TOMMYGUN: 1, STR_TOMMYGUN_DRUM: 3}]
+      # - [25, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      # - [30, {STR_SNUBNOSE_PISTOL: 1, STR_SNUBNOSE_PISTOL_CLIP: 5}]
+      # - [30, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      # - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 3}]
+      # - [30, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [30, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      # - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
+      # - [30, {STR_SKS: 1, STR_SKS_CLIP: 3}]
+      # - [30, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 3}]
+      # - [30, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      # - [30, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [30, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [30, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [30, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [30, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      # - [35, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 5}]
+      # - [40, {STR_TASER: 1, STR_TASER_CLIP: 5}]
+      # - [40, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 5}]
+      # - [30, {STR_MAKAROV: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      # - [30, {STR_APS: 1, STR_MAKAROV_CLIP: 5}]
+      # - [20, {STR_APS: 1, STR_MAKAROV_BIG_CLIP: 3}]
+      # - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 5}]
+      # - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      # - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      # - [40, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 3}]
+      # - [40, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      # - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 5}]
+      # - [50, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 5}]
+      # - [50, {STR_MP: 1, STR_MP_CLIP: 3}]
+      # - [25, {STR_MPK: 1, STR_MP_CLIP: 3}]
+      # - [50, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 3}]
+      # - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [40, {STR_UZI: 1, STR_UZI_CLIP_AP: 3}]
+      # - [60, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      # - [60, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [5, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62132
+  - name: STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED_BLACK_LOTUS: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1, {}] # empty
+      - [2, {STR_RIOT_STAB_VEST: 1}]
+      # - [1, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_HE_CLIP: 4}]
+      # - [2, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_AP_CLIP: 4}]
+      - [1, {STR_S18_SOLOTHURN_1000: 1, STR_S18_SOLOTHURN_1000_HE_CLIP: 3}]
+      - [2, {STR_S18_SOLOTHURN_1000: 1, STR_S18_SOLOTHURN_1000_AP_CLIP: 3}]
+      # - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      # - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 3, STR_MORTAR_SHELL_SMOKE: 1}]
+      # - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 4}]
+      # - [4, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 2, STR_MORTAR_SHELL_I: 2}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      # - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      # - [4, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_HE_CLIP: 3}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
+      # - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 4}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_STAR_ROUND: 4}]
+      - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEAT_ROUND: 3, STR_M3_CARL_GUSTAV_HEI_ROUND: 3, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3, STR_M3_CARL_GUSTAV_STAR_ROUND: 3, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      # - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [8, {STR_NTW20_DENEL: 1, STR_NTW20_DENEL_AP_CLIP: 3}]
+      # - [3, {STR_RT20: 1, STR_RT20_HE_CLIP: 5}]
+      - [2, {STR_MODEL_SS41: 1, STR_MODEL_SS41_HE_CLIP: 3}]
+      - [5, {STR_MODEL_SS41: 1, STR_MODEL_SS41_AP_CLIP: 3}]
+      # - [6, {STR_RT20: 1, STR_RT20_AP_CLIP: 5}]
+      # - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      # - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 6}]
+      # - [6, {STR_PTRD41: 1, STR_PTRD41_HE_CLIP: 12}]
+      # - [5, {STR_PTRS41: 1, STR_PTRD41_HE_CLIP: 6}]
+      # - [12, {STR_PTRD41: 1, STR_PTRD41_AP_CLIP: 12}]
+      # - [10, {STR_PTRS41: 1, STR_PTRD41_AP_CLIP: 6}]
+      - [10, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      # - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      # - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_USAS_12: 1, STR_USAS_12_DRUM: 3}]
+      # - [10, {STR_AA12: 1, STR_AA12_SHELLS: 3}]
+      # - [5, {STR_AA12: 1, STR_AA12_DRUM: 2}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [5, {STR_QBU_88: 1, STR_QBU_88_CLIP_AP: 3}]
+      # - [10, {STR_M82_BARETT: 1, STR_M82_BARETT_CLIP: 3}]
+      # - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      # - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      # - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      # - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      # - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      # - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      # - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      # - [10, {STR_LIGHT_MINIGUN: 1, STR_LIGHT_MINIGUN_CLIP: 2}]
+      # - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      # - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      # - [10, {STR_BLACKOPS_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      # - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      # - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      # - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      # - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      # - [10, {STR_M60: 1, STR_M60_CLIP: 3}]
+      # - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
+      # - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      # - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [10, {STR_ARASAKA_3000: 1, STR_ARASAKA_3000_CLIP: 3}]
+      # - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      # - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
+      # - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
+      # - [25, {STR_M72_LAW: 3}]
+      # - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
+      # - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [20, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [20, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [20, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      # - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      # - [15, {STR_MANURHIN_SCOPED_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      # - [20, {STR_USP_MATCH: 1, STR_USP_9_MM_CLIP: 3}]
+      # - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [20, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      # - [20, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      # - [15, {STR_AN94_RIFLE: 1, STR_WP_5_45_CLIP: 3}]
+      - [15, {STR_HK51: 1, STR_FN_FAL_CLIP: 3}]
+      - [10, {STR_HK51: 1, STR_FN_FAL_CLIP_AP: 3}]
+      # - [15, {STR_FG42: 1, STR_7_92_CLIP: 3}]
+      # - [20, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      # - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3, STR_LHC_I_AMMO: 3, STR_LHC_AP_AMMO: 3, STR_LHC_BS_AMMO: 3}]
+      # - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+      # - [30, {STR_MILKOR_MGL: 1, STR_MILKOR_MGL_CLIP: 5}]
+      # - [30, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      # - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
+      # - [30, {STR_PKM: 1, STR_PKM_CLIP: 3}]
+      # - [30, {STR_SWD: 1, STR_SWD_CLIP: 2}]
+      # - [40, {STR_AKSU74: 1, STR_WP_5_45_CLIP: 3}]
+      # - [40, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      # - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      # - [40, {STR_GROZA: 1, STR_WP_7_62_CLIP: 3}]
+      - [4, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [3, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62134
+  - name: STR_AMMO_BOX_BLACK_LOTUS_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX_BLACK_LOTUS
+    requiredItems:
+      STR_AMMO_BOX_BLACK_LOTUS: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      # - [100, {STR_BERETTA_92FS_CLIP: 6}]
+      # - [50, {STR_RAFFICA_PISTOL_CLIP: 4}]
+      # - [100, {STR_GLOCK_18_CLIP: 6}]
+      # - [80, {STR_MAKAROV_CLIP: 6}]
+      # - [60, {STR_MAKAROV_BIG_CLIP: 4}]
+      # - [80, {STR_COLT45_CLIP: 6}]
+      # - [70, {STR_TOKAREV_CLIP: 6}]
+      # - [60, {STR_SNUBNOSE_PISTOL_CLIP: 6}]
+      # - [60, {STR_USP_9_MM_CLIP: 6}]
+      # - [60, {STR_DESERT_EAGLE_CLIP: 6}]
+      # - [40, {STR_CALICO_CLIP: 6}]
+      # - [10, {STR_CALICO_LARGE_CLIP: 3}]
+      # - [50, {STR_PISTOL_LT_CLIP: 6}]
+      # - [50, {STR_MAGNUM_DRUM: 7}]
+      # - [50, {STR_MANURHIN_REVOLVER_DRUM: 7}]
+      # - [40, {STR_LUGER_CLIP: 6}]
+      # - [40, {STR_HK_MK23_SOCOM_CLIP: 5}]
+      # - [40, {STR_FN_P90_CLIP: 6}]
+      - [30, {STR_MAUSER_CLIP: 6}]
+      - [20, {STR_MAUSER_BIG_CLIP: 5}]
+      - [20, {STR_S&W_610_CLIP: 5}]
+      # - [20, {STR_WILDEY_CLIP: 5}]
+      # - [20, {STR_ENFIELD_REVOLVER_AMMO: 6}]
+      # - [15, {STR_PISTOL_CLIP: 6}]
+      # - [10, {STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      # - [5, {STR_JUDGE_AP_CLIP: 6}]
+      # - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      # - [90, {STR_UZI_CLIP: 6}]
+      - [75, {STR_UZI_CLIP_AP: 6}]
+      # - [70, {STR_PPSH_CLIP: 6}]
+      # - [60, {STR_MP40_CLIP: 6}]
+      # - [50, {STR_SKORPION_CLIP: 6}]
+      # - [40, {STR_MAC10_CLIP: 6}]
+      # - [30, {STR_RAK_CLIP: 6}]
+      # - [25, {STR_TOMMYGUN_DRUM: 6}]
+      # - [15, {STR_SMG_CLIP: 6}]
+      # - [10, {STR_MESSER_CLIP: 6}]
+      # - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      # - [150, {STR_SHOTGUN_SHELLS: 12}]
+      # - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      # - [100, {STR_PUMP_ACTION_SHELLS: 12}]
+      # - [50, {STR_SMALL_SHOTGUN_SHELLS: 12}]
+      # - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      # - [25, {STR_CAWS_CLIP_BS: 10}]
+      # - [25, {STR_CAWS_CLIP_AP: 10}]
+      # - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      # - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [50, {STR_USAS_12_DRUM: 5}]
+      # - [50, {STR_AA12_SHELLS: 5}]
+      # - [25, {STR_AA12_DRUM: 3}]
+# Rifles
+      # - [85, {STR_RIFLE_M16_CLIP: 5}]
+      # - [80, {STR_HUNTING_RIFLE_CLIP: 5}]
+      # - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      # - [80, {STR_WP_7_62_CLIP: 5}]
+      # - [80, {STR_WP_5_45_CLIP: 5}]
+      # - [70, {STR_SKS_CLIP: 5}]
+      # - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      - [60, {STR_FN_FAL_CLIP: 5}]
+      - [40, {STR_FN_FAL_CLIP_AP: 5}]
+      - [45, {STR_QBU_88_CLIP: 5}]
+      - [30, {STR_QBU_88_CLIP_AP: 5}]
+      # - [30, {STR_G11_CLIP: 5}]
+      - [25, {STR_ARASAKA_3000_CLIP: 5}]
+      # - [15, {STR_RIFLE_CLIP: 5}]
+# MGs
+      # - [40, {STR_PKM_CLIP: 4}]
+      # - [30, {STR_M60_CLIP: 4}]
+      # - [30, {STR_M60_CLIP: 4}]
+      # - [40, {STR_MINIMI_CLIP: 4}]
+      # - [30, {STR_HMG_CLIP: 2}]
+      # - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      # - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      # - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      # - [10, {STR_LC_AP_AMMO: 10}]
+      # - [10, {STR_LC_BS_AMMO: 10}]
+      # - [6, {STR_LC_HE_AMMO: 10}]
+      # - [6, {STR_LC_I_AMMO: 10}]
+# Sniper Rifles
+      # - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      # - [65, {STR_SWD_CLIP: 5}]
+      # - [50, {STR_PSG1_CLIP: 5}]
+      # - [40, {STR_VSS_CLIP: 5}]
+      # - [40, {STR_M82_BARETT_CLIP: 8}]
+      # - [20, {STR_M82_BARETT_HE_CLIP: 8}]
+      # - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      # - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# Anti-Tank Rifles
+      # - [35, {STR_PTRD41_AP_CLIP: 10}]
+      # - [30, {STR_PTRS41_AP_CLIP: 5}]
+      # - [20, {STR_PTRD41_HE_CLIP: 10}]
+      # - [15, {STR_PTRS41_HE_CLIP: 5}]
+      # - [15, {STR_NTW20_DENEL_AP_CLIP: 5}]
+      # - [10, {STR_NTW20_DENEL_HE_CLIP: 5}]
+      # - [15, {STR_RT20_AP_CLIP: 8}]
+      # - [10, {STR_RT20_HE_CLIP: 8}]
+      # - [15, {STR_M42_CARL_GUSTAV_AP_CLIP: 8}]
+      # - [10, {STR_M42_CARL_GUSTAV_HE_CLIP: 8}]
+      - [15, {STR_S18_SOLOTHURN_1000_AP_CLIP: 5}]
+      - [10, {STR_S18_SOLOTHURN_1000_HE_CLIP: 5}]
+      # - [15, {STR_MODEL_SS41_AP_CLIP: 5}]
+      # - [10, {STR_MODEL_SS41_HE_CLIP: 5}]
+      - [10, {STR_MODEL_SS41_AP_CLIP: 3, STR_MODEL_SS41_HE_CLIP: 3}]
+      # - [10, {STR_MODEL_SS41_AP_BIG_CLIP: 5}]
+      # - [5, {STR_MODEL_SS41_HE_BIG_CLIP: 5}]
+      - [5, {STR_MODEL_SS41_AP_BIG_CLIP: 3, STR_MODEL_SS41_HE_BIG_CLIP: 3}]
+# GL Grenades
+      # - [40, {STR_MILKOR_MGL_CLIP: 4}]
+      # - [50, {STR_LAUNCHER_FRAG: 10}]
+      # - [40, {STR_LAUNCHER_SMOKE: 10}]
+      # - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      # - [40, {STR_LAUNCHER_BEAN: 10}]
+      # - [30, {STR_LAUNCHER_INC: 10}]
+      # - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      # - [5, {STR_MORTAR_SHELL_HE: 3}]
+      # - [5, {STR_MORTAR_SHELL_I: 3}]
+      # - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
+      # - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      # - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      # - [10, {STR_SMALL_ROCKET: 3}]
+      # - [6, {STR_LARGE_ROCKET: 3}]
+      # - [8, {STR_INCENDIARY_ROCKET: 3}]
+      - [10, {STR_SMALL_ROCKET: 3, STR_LARGE_ROCKET: 3, STR_INCENDIARY_ROCKET: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [12, {STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      - [10, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3, STR_M3_CARL_GUSTAV_HEI_ROUND: 3, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3, STR_M3_CARL_GUSTAV_STAR_ROUND: 3, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      # - [40, {STR_TEARGAS_GRENADE: 12}]
+      # - [40, {STR_SMOKE_GRENADE: 12}]
+      # - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Throwing weapons
+      - [25, {STR_THROWING_KNIVES: 5}]
+      - [25, {STR_THROWING_STARS: 5}]
+# Other
+      # - [90, {STR_TASER_CLIP: 8}]
+      # - [50, {STR_CROSSBOW_BOLTS: 6}]
+      # - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      # - [80, {STR_ELECTRO_FLARE: 10}]
+      - [6, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [5, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62138
+  - name: STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON
+    requiredItems:
+      STR_WEAPON_BOX_RAMSHACKLE_CHURCH_OF_DAGON: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      - [20, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 2}]
+      # - [20, {STR_UZI: 1, STR_UZI_CLIP: 2}]
+      # - [30, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 3}]
+      - [30, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      - [30, {STR_CROSSBOW: 1, STR_CROSSBOW_BOLTS: 2}]
+      - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      # - [40, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 3}]
+      # - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 3}]
+      - [50, {STR_ENFIELD_REVOLVER: 1, STR_ENFIELD_REVOLVER_AMMO: 3}]
+      - [60, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      # - [60, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      - [2, {STR_BLACK_MARKET_TIER_1: 1}]
+    listOrder: 62131
+  - name: STR_WEAPON_BOX_CHURCH_OF_DAGON_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_CHURCH_OF_DAGON
+    requiredItems:
+      STR_WEAPON_BOX_CHURCH_OF_DAGON: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+#UNIVERSAL TABLE
+      - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+#CHURCH OF DAGON T2 TABLE
+      # - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
+      # - [10, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      # - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
+      - [30, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [15, {STR_FN_FAL_SCOPED: 1, STR_FN_FAL_CLIP: 3}]
+      # - [35, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 5}]
+      - [40, {STR_SAWED_OFF: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 5}]
+      - [40, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [30, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [40, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      # - [50, {STR_MP: 1, STR_MP_CLIP: 3}]
+      - [25, {STR_MPK: 1, STR_MP_CLIP: 3}]
+      - [15, {STR_MPK: 1, STR_MP_CLIP_AP: 3}]
+      - [15, {STR_MANURHIN_SCOPED_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      # - [5, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_HE_CLIP: 3}]
+      # - [5, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_INC_CLIP: 3}]
+      # - [10, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_SMOKE_CLIP: 3}]
+      - [10, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_HE_CLIP: 3, STR_STURMPISTOLE_INC_CLIP: 3, STR_STURMPISTOLE_SMOKE_CLIP: 3}]
+      # - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      # - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [60, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [60, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [5, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [4, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62132
+  - name: STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED_CHURCH_OF_DAGON: 1
+    producedItems: {} # empty
+    randomProducedItems:
+#UNIVERSAL TABLE
+      - [1, {}] # empty
+      - [2, {STR_RIOT_STAB_VEST: 1}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      # - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
+      - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      # - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      # - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3, STR_INCENDIARY_ROCKET: 3, STR_LARGE_ROCKET: 3}]
+      - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 6}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [10, {STR_BLACKOPS_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+#CHURCH OF DAGON T3 TABLE
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3}]
+      # - [3, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_I_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_AP_AMMO: 3}]
+      # - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_BS_AMMO: 3}]
+      - [7, {STR_LIGHT_HAND_CANNON: 1, STR_LHC_HE_AMMO: 3, STR_LHC_I_AMMO: 3, STR_LHC_AP_AMMO: 3, STR_LHC_BS_AMMO: 3}]
+      - [1, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_HE_CLIP: 4}]
+      - [2, {STR_M42_CARL_GUSTAV: 1, STR_M42_CARL_GUSTAV_AP_CLIP: 4}]
+      # - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      # - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [4, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 4}]
+      # - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_STAR_ROUND: 4}]
+      - [8, {STR_M3_CARL_GUSTAV: 1, STR_M3_CARL_GUSTAV_HEAT_ROUND: 3, STR_M3_CARL_GUSTAV_HEI_ROUND: 3, STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3, STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3, STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [3, {STR_RT20: 1, STR_RT20_HE_CLIP: 5}]
+      - [6, {STR_RT20: 1, STR_RT20_AP_CLIP: 5}]
+      # - [5, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_HE_CLIP: 3}]
+      # - [5, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_INC_CLIP: 3}]
+      # - [10, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_SMOKE_CLIP: 3}]
+      - [10, {STR_STURMPISTOLE: 1, STR_STURMPISTOLE_HE_CLIP: 3, STR_STURMPISTOLE_INC_CLIP: 3, STR_STURMPISTOLE_SMOKE_CLIP: 3}]
+      - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
+      - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      - [10, {STR_GALIL: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [20, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [10, {STR_FN_FAL: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [15, {STR_FN_FAL_SCOPED: 1, STR_FN_FAL_CLIP: 3}]
+      - [5, {STR_FN_FAL_SCOPED: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [10, {STR_M14: 1, STR_FN_FAL_CLIP_AP: 3}]
+      - [15, {STR_MANURHIN_SCOPED_REVOLVER: 1, STR_MANURHIN_REVOLVER_DRUM: 5}]
+      # - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_AKM: 1, STR_WP_7_62_CLIP: 3}]
+      - [20, {STR_AK47: 1, STR_WP_7_62_CLIP: 3}]
+      - [10, {STR_AKM: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [10, {STR_AK47: 1, STR_WP_7_62_CLIP_AP: 3}]
+      - [30, {STR_MILKOR_MGL: 1, STR_MILKOR_MGL_CLIP: 5}]
+      - [4, {STR_BLACK_MARKET_TIER_3: 1}]
+      - [3, {STR_BLACK_MARKET_TIER_4: 1}]
+    listOrder: 62134
+  - name: STR_AMMO_BOX_CHURCH_OF_DAGON_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX_CHURCH_OF_DAGON
+    requiredItems:
+      STR_AMMO_BOX_CHURCH_OF_DAGON: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      # - [100, {STR_BERETTA_92FS_CLIP: 6}]
+      # - [50, {STR_RAFFICA_PISTOL_CLIP: 4}]
+      # - [100, {STR_GLOCK_18_CLIP: 6}]
+      # - [50, {STR_MAGNUM_DRUM: 7}]
+      - [50, {STR_MANURHIN_REVOLVER_DRUM: 7}]
+      - [20, {STR_ENFIELD_REVOLVER_AMMO: 6}]
+      # - [5, {STR_JUDGE_AP_CLIP: 6}]
+      # - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      # - [90, {STR_UZI_CLIP: 6}]
+      - [70, {STR_UZI_CLIP_AP: 6}]
+      # - [80, {STR_MP_CLIP: 6}]
+      - [60, {STR_MP_CLIP_AP: 6}]
+      # - [15, {STR_SMG_CLIP: 6}]
+      - [10, {STR_MESSER_CLIP: 6}]
+      # - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      # - [150, {STR_SHOTGUN_SHELLS: 12}]
+      - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      # - [100, {STR_PUMP_ACTION_SHELLS: 12}]
+      # - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      # - [25, {STR_CAWS_CLIP_BS: 10}]
+      # - [25, {STR_CAWS_CLIP_AP: 10}]
+      # - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      # - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+# Rifles
+      - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      - [80, {STR_WP_7_62_CLIP: 5}]
+      - [60, {STR_WP_7_62_CLIP_AP: 5}]
+      - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      - [60, {STR_FN_FAL_CLIP: 5}]
+      - [40, {STR_FN_FAL_CLIP_AP: 5}]
+      # - [30, {STR_G11_CLIP: 5}]
+      # - [15, {STR_RIFLE_CLIP: 5}]
+# # MGs
+      - [40, {STR_MINIMI_CLIP: 4}]
+      # - [30, {STR_HMG_CLIP: 2}]
+      # - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      # - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      # - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      # - [10, {STR_LC_AP_AMMO: 10}]
+      # - [10, {STR_LC_BS_AMMO: 10}]
+      # - [6, {STR_LC_HE_AMMO: 10}]
+      # - [6, {STR_LC_I_AMMO: 10}]
+# Sniper Rifles
+      - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      # - [65, {STR_SWD_CLIP: 5}]
+      # - [50, {STR_PSG1_CLIP: 5}]
+      # - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      # - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# # Anti-Tank Rifles
+      - [15, {STR_RT20_AP_CLIP: 8}]
+      - [10, {STR_RT20_HE_CLIP: 8}]
+      - [15, {STR_M42_CARL_GUSTAV_AP_CLIP: 8}]
+      - [10, {STR_M42_CARL_GUSTAV_HE_CLIP: 8}]
+# GL Grenades
+      - [40, {STR_MILKOR_MGL_CLIP: 4}]
+      # - [50, {STR_LAUNCHER_FRAG: 10}]
+      # - [40, {STR_LAUNCHER_SMOKE: 10}]
+      # - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      # - [40, {STR_LAUNCHER_BEAN: 10}]
+      # - [30, {STR_LAUNCHER_INC: 10}]
+      # - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      # - [5, {STR_MORTAR_SHELL_HE: 3}]
+      # - [5, {STR_MORTAR_SHELL_I: 3}]
+      # - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
+      # - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      # - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      # - [10, {STR_SMALL_ROCKET: 3}]
+      # - [6, {STR_LARGE_ROCKET: 3}]
+      # - [8, {STR_INCENDIARY_ROCKET: 3}]
+      - [10, {STR_SMALL_ROCKET: 3, STR_LARGE_ROCKET: 3, STR_INCENDIARY_ROCKET: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [12, {STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      # - [40, {STR_TEARGAS_GRENADE: 12}]
+      # - [40, {STR_SMOKE_GRENADE: 12}]
+      # - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Other
+      # - [90, {STR_TASER_CLIP: 8}]
+      # - [50, {STR_CROSSBOW_BOLTS: 6}]
+      # - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      # - [80, {STR_ELECTRO_FLARE: 10}]
+      - [6, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [5, {STR_BLACK_MARKET_TIER_2: 1}]
+    listOrder: 62138
+  - name: STR_AMMO_BOX_EXALT_OPENING #fix this later
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX_EXALT
+    requiredItems:
+      STR_AMMO_BOX_EXALT: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      # - [100, {STR_BERETTA_92FS_CLIP: 6}]
+      # - [50, {STR_RAFFICA_PISTOL_CLIP: 4}]
+      # - [100, {STR_GLOCK_18_CLIP: 6}]
+      # - [80, {STR_MAKAROV_CLIP: 6}]
+      # - [60, {STR_MAKAROV_BIG_CLIP: 4}]
+      # - [80, {STR_COLT45_CLIP: 6}]
+      # - [70, {STR_TOKAREV_CLIP: 6}]
+      # - [60, {STR_SNUBNOSE_PISTOL_CLIP: 6}]
+      - [60, {STR_USP_9_MM_CLIP: 6}]
+      - [60, {STR_DESERT_EAGLE_CLIP: 6}]
+      - [40, {STR_CALICO_CLIP: 6}]
+      - [10, {STR_CALICO_LARGE_CLIP: 3}]
+      # - [50, {STR_PISTOL_LT_CLIP: 6}]
+      # - [50, {STR_MAGNUM_DRUM: 7}]
+      # - [50, {STR_MANURHIN_REVOLVER_DRUM: 7}]
+      # - [40, {STR_LUGER_CLIP: 6}]
+      - [40, {STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_FN_P90_CLIP: 6}]
+      # - [30, {STR_MAUSER_CLIP: 6}]
+      # - [20, {STR_MAUSER_BIG_CLIP: 5}]
+      - [20, {STR_S&W_610_CLIP: 5}]
+      - [20, {STR_WILDEY_CLIP: 5}]
+      # - [20, {STR_ENFIELD_REVOLVER_AMMO: 6}]
+      - [15, {STR_PISTOL_CLIP: 6}]
+      - [10, {STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      # - [5, {STR_JUDGE_AP_CLIP: 6}]
+      # - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      # - [90, {STR_UZI_CLIP: 6}]
+      - [70, {STR_UZI_CLIP_AP: 6}]
+      # - [70, {STR_PPSH_CLIP: 6}]
+      - [60, {STR_MP40_CLIP: 6}]
+      # - [50, {STR_SKORPION_CLIP: 6}]
+      - [40, {STR_MAC10_CLIP: 6}]
+      # - [30, {STR_RAK_CLIP: 6}]
+      - [25, {STR_TOMMYGUN_DRUM: 6}]
+      # - [20, {STR_MP_CLIP_AP: 3}]
+      - [15, {STR_SMG_CLIP: 6}]
+      - [10, {STR_MESSER_CLIP: 6}]
+      - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      # - [150, {STR_SHOTGUN_SHELLS: 12}]
+      # - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      # - [100, {STR_PUMP_ACTION_SHELLS: 12}]
+      # - [50, {STR_SMALL_SHOTGUN_SHELLS: 12}]
+      # - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      # - [30, {STR_SHOTGUN_SHELLS_BREACHING: 12}] #check this is correct
+      - [30, {STR_SHOTGUN_FLECHETTE_SHELLS: 12}] #check this is correct
+      - [25, {STR_CAWS_CLIP_BS: 10}]
+      - [25, {STR_CAWS_CLIP_AP: 10}]
+      - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+      # - [50, {STR_USAS_12_DRUM: 5}]
+      - [50, {STR_AA12_SHELLS: 5}]
+# Rifles
+      - [85, {STR_RIFLE_M16_CLIP: 5}]
+      # - [80, {STR_HUNTING_RIFLE_CLIP: 5}]
+      # - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      # - [80, {STR_WP_7_62_CLIP: 5}]
+      # - [80, {STR_WP_5_45_CLIP: 5}]
+      # - [65, {STR_7_92_CLIP: 5}]
+      # - [70, {STR_SKS_CLIP: 5}]
+      # - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      # - [60, {STR_FN_FAL_CLIP: 5}]
+      # - [45, {STR_QBU_88_CLIP: 5}]
+      - [30, {STR_G11_CLIP: 5}]
+      # - [25, {STR_ARASAKA_3000_CLIP: 5}]
+      - [15, {STR_RIFLE_CLIP: 5}]
+# MGs
+      # - [40, {STR_PKM_CLIP: 4}]
+      - [30, {STR_M60_CLIP: 4}]
+      - [30, {STR_M60_CLIP: 4}]
+      # - [40, {STR_MINIMI_CLIP: 4}]
+      - [30, {STR_HMG_CLIP: 2}]
+      - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      # - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      # - [10, {STR_LC_AP_AMMO: 10}]
+      # - [10, {STR_LC_BS_AMMO: 10}]
+      # - [6, {STR_LC_HE_AMMO: 10}]
+      # - [6, {STR_LC_I_AMMO: 10}]
+# Sniper Rifles
+      - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      # - [65, {STR_SWD_CLIP: 5}]
+      - [50, {STR_PSG1_CLIP: 5}]
+      # - [40, {STR_VSS_CLIP: 5}]
+      - [40, {STR_M82_BARETT_CLIP: 8}]
+      - [20, {STR_M82_BARETT_HE_CLIP: 8}]
+      - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# # Anti-Tank Rifles
+      # - [35, {STR_PTRD41_AP_CLIP: 10}]
+      # - [30, {STR_PTRS41_AP_CLIP: 5}]
+      # - [20, {STR_PTRD41_HE_CLIP: 10}]
+      # - [15, {STR_PTRS41_HE_CLIP: 5}]
+      - [15, {STR_NTW20_DENEL_AP_CLIP: 5}]
+      - [10, {STR_NTW20_DENEL_HE_CLIP: 5}]
+      # - [15, {STR_RT20_AP_CLIP: 8}]
+      # - [10, {STR_RT20_HE_CLIP: 8}]
+      # - [15, {STR_M42_CARL_GUSTAV_AP_CLIP: 8}]
+      # - [10, {STR_M42_CARL_GUSTAV_HE_CLIP: 8}]
+      # - [15, {STR_S18_SOLOTHURN_1000_AP_CLIP: 5}]
+      # - [10, {STR_S18_SOLOTHURN_1000_HE_CLIP: 5}]
+      # - [15, {STR_MODEL_SS41_AP_CLIP: 5}]
+      # - [10, {STR_MODEL_SS41_HE_CLIP: 5}]
+      # - [10, {STR_MODEL_SS41_AP_BIG_CLIP: 5}]
+      # - [5, {STR_MODEL_SS41_HE_BIG_CLIP: 5}]
+# GL Grenades
+      - [40, {STR_MILKOR_MGL_CLIP: 4}]
+      # - [50, {STR_LAUNCHER_FRAG: 10}]
+      # - [40, {STR_LAUNCHER_SMOKE: 10}]
+      # - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      # - [40, {STR_LAUNCHER_BEAN: 10}]
+      # - [30, {STR_LAUNCHER_INC: 10}]
+      - [10, {STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 4, STR_LAUNCHER_INC: 4, STR_LAUNCHER_BEAN: 4, STR_LAUNCHER_FLASHBANG: 4}]
+      # - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      # - [5, {STR_MORTAR_SHELL_HE: 3}]
+      # - [5, {STR_MORTAR_SHELL_I: 3}]
+      # - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
+      # - [8, {STR_MORTAR_SHELL_TEARGAS: 3}]
+      # - [8, {STR_MORTAR_SHELL_FLARE: 3}]
+# ADD CARL GUSTAV ROCKETS HERE Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      # - [10, {STR_SMALL_ROCKET: 3}]
+      # - [6, {STR_LARGE_ROCKET: 3}]
+      # - [8, {STR_INCENDIARY_ROCKET: 3}]
+      - [10, {STR_SMALL_ROCKET: 3, STR_LARGE_ROCKET: 3, STR_INCENDIARY_ROCKET: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_HEAT_ROUND: 3}]
+      # - [12, {STR_M3_CARL_GUSTAV_HEI_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_SMOKE_ROUND: 3}]
+      # - [20, {STR_M3_CARL_GUSTAV_STAR_ROUND: 3}]
+      # - [15, {STR_M3_CARL_GUSTAV_FLECHETTE_ROUND: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      # - [40, {STR_TEARGAS_GRENADE: 12}]
+      # - [40, {STR_SMOKE_GRENADE: 12}]
+      # - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Throwing weapons
+      - [25, {STR_THROWING_KNIVES: 5}]
+      - [25, {STR_THROWING_STARS: 5}]
+# Other
+      # - [90, {STR_TASER_CLIP: 8}]
+      # - [50, {STR_CROSSBOW_BOLTS: 6}]
+      # - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      # - [80, {STR_ELECTRO_FLARE: 10}]
+      - [6, {STR_BLACK_MARKET_TIER_1: 1}]
+      - [5, {STR_BLACK_MARKET_TIER_2: 1}]
