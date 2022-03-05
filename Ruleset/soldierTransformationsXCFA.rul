@@ -79,7 +79,6 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_DOG
-      - STR_RAT
       - STR_BAT
     forbiddenPreviousTransformations:
       - STR_GILLDOG_GENEMOD
