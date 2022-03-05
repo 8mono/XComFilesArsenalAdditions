@@ -858,6 +858,12 @@ ufopaedia:
     requires:
       - STR_MAGMA_LAUNCHER
       - STR_GAS_GRENADE_MANUFACTURING
+  - id: STR_TRACITE_ROCKET
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MAGMA_LAUNCHER
+      - STR_SHARE_TRACITE_TECH
   - id: STR_EMP_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
