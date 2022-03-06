@@ -6357,7 +6357,12 @@ items:
     shotgunChoke: 100
     compatibleAmmo: !add
       - STR_SCOUT_DRONE_BS_AMMO
+  - type: STR_SCOUT_DRONE_AMMO
+    nameAsAmmo: (DOORBREAKER SLUG)
+    damageAlter:
+      ToStun: 0.4
   - type: STR_SCOUT_DRONE_BS_AMMO
+    nameAsAmmo: (BS)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
     requiresBuy:
       - STR_SCOUT_DRONE

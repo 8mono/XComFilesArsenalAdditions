@@ -1235,7 +1235,7 @@ extraStrings:
       STR_AP_CLIPS: "Armor Piercing Ammunition"
       STR_AP_CLIPS_UFOPEDIA: "Has the same ballistic properties as regular ammunition but can damage armored foes with much more ease. Armor piercing rounds have /AP next to their name"
       STR_HP_CLIPS: "Hollow Point/Subsonic Ammunition"
-      STR_HP_CLIPS_UFOPEDIA: "These bullets can rip through soft targets and expand causing significant damage, they do however struggle with heavier armor. Hollow points have /HP next to their name. Subsonic ammunition behaves similarly, but is usually a lot slower than its AP counterpart."
+      STR_HP_CLIPS_UFOPEDIA: "These bullets can rip through soft targets and expand causing significant damage, they do however struggle with heavier armor. They can cause damage to TU's as well as to Stun. Hollow points have /HP next to their name. Subsonic ammunition behaves similarly, but is usually a lot slower than its AP counterpart."
       STR_BUCKSHOT_CLIPS: "Buckshot (Shotguns)"
       STR_BUCKSHOT_CLIPS_UFOPEDIA: "Buckshot is used at close range to neutralize enemies. It can damage the target's Time Units as well as causing more Stun damage than regular ammunition types."
       STR_SLUG_CLIPS: "Slugs (Shotguns)"
