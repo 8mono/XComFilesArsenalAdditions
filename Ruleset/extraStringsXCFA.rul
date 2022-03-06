@@ -5,6 +5,10 @@ extraStrings:
       STR_SCORPOID_CHIEF_ARMOR: "Scorpoid Chief Combat Analysis"
       STR_SCORPOID_CHIEF_CORPSE: "Scorpoid Chief Corpse"
 # DELETE ABOVE
+      STR_ASSAULT_CANNON_CONT: "BlackOps Assault Cannon (Continued)"
+      STR_ASSAULT_CANNON_CLIP_BS: "BlackOps Assault Cannon BS Clip"
+      STR_ASSAULT_CANNON_CLIP_AA_BS: "BlackOps Assault Cannon Tritanium BS Clip"
+      STR_ASSAULT_CANNON_CLIP_AA_BS_MANUFACTURING: "BlackOps Assault Cannon Tritanium BS Clip Manufacturing"
       STR_RIFLE_M16_BEOWULF: "M16-50 Grendel"
       STR_RIFLE_M16_BEOWULF_BUY: "M16-50 Grendel Acquisition"
       STR_RIFLE_M16_BEOWULF_UFOPEDIA: "Fires the massive .50 Beowulf round in two versions; one designed to defeat walls and armor, another for controlled penetration and maximum damage. Also comes equipped with an underbarrel grenade launcher."

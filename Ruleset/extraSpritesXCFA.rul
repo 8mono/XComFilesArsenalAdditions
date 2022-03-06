@@ -504,6 +504,8 @@ extraSprites:
       554: Resources/Weapons_Compilation/ClassicWeapons/bigob_40MM_Baton.png
       555: Resources/Weapons_Compilation/ClassicWeapons/bigob_40MM_Teargas.png
       556: Resources/Weapons_Compilation/ClassicWeapons/bigob_40MM_Buckshot.png
+      557: Resources/Weapons_Compilation/BlackOpsWeapons/bigob_AssaultCannonClip4.png
+      558: Resources/Weapons_Compilation/BlackOpsWeapons/bigob_AssaultCannonClip5.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -727,6 +729,7 @@ extraSprites:
       438: Resources/Weapons_Compilation/ClassicWeapons/floorob_VKS.png
       439: Resources/Weapons_Compilation/ClassicWeapons/floorob_M16Beowulf.png
       440: Resources/Weapons_Compilation/ClassicWeapons/floorob_SKS_SCOPED.png
+      441: Resources/Weapons_Compilation/BlackOpsWeapons/floorob_AssaultCannonClip.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.

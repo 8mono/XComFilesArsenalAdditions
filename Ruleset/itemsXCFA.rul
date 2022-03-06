@@ -964,8 +964,72 @@ items:
       bravery: 0.7
       strength: *HeavyWeaponStrenghtMultiplier
   - type: STR_ASSAULT_CANNON
+    compatibleAmmo: !add
+      - STR_ASSAULT_CANNON_CLIP_BS
+      - STR_ASSAULT_CANNON_CLIP_AA_BS
     accuracyMultiplier:
       strength: *HeavyWeaponStrenghtMultiplier
+  - type: STR_ASSAULT_CANNON_CLIP_BS
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_ASSAULT_CANNON_BUY
+    size: 0.05
+    costBuy: 2500
+    costSell: 1800
+    weight: 10
+    bigSprite: 557
+    floorSprite: 441
+    hitSound: 80
+    hitAnimation: 26
+    power: 24
+    powerRangeThreshold: 18
+    powerRangeReduction: 2
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 6
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.5
+      ToStun: 0.25
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    attraction: 15
+    listOrder: 23410
+  - type: STR_ASSAULT_CANNON_CLIP_AA_BS
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    size: 0.05
+    costSell: 21000
+    weight: 10
+    bigSprite: 558
+    floorSprite: 441
+    hitSound: 80
+    hitAnimation: 26
+    power: 40
+    powerRangeThreshold: 23
+    powerRangeReduction: 3
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 6
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.5
+      ToStun: 0.25
+    damageType: 1
+    clipSize: 20
+    costThrow:
+      energy: 12
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 40
+    attraction: 15
+    listOrder: 23420
   - type: STR_NUCLEAR_HEAVY_LASER
     accuracyMultiplier:
       strength: *HeavyWeaponStrenghtMultiplier

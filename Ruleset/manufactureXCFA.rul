@@ -1,4 +1,15 @@
 manufacture:
+  - name: STR_ASSAULT_CANNON_CLIP_AA_BS
+    category: STR_AMMUNITION
+    requires:
+      - STR_ASSAULT_CANNON_CLIP_AA_BS_MANUFACTURING
+    space: 4
+    time: 60
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+    listOrder: 23420
   - name: STR_XENO_ALLOY_WIELDABLE_SHIELD
     category: STR_SHIELDS
     requires:

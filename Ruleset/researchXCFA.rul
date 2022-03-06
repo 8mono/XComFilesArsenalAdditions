@@ -1,4 +1,20 @@
 research:
+  - name: STR_ASSAULT_CANNON_CLIP_AA_BS
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_ASSAULT_CANNON
+    listOrder: 23420
+  - name: STR_ASSAULT_CANNON_CLIP_AA_BS_MANUFACTURING
+    cost: 10
+    points: 10
+    lookup: STR_ASSAULT_CANNON_CLIP_AA_BS
+    dependencies:
+      - STR_SYNDICATE_OPERATIONS
+      - STR_ALLOY_AMMO
+      - STR_ASSAULT_CANNON
+    listOrder: 523420
   - name: STR_SKS_SCOPED
     cost: 5
     points: 10

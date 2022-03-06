@@ -1,4 +1,26 @@
 ufopaedia:
+  - id: STR_ASSAULT_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ASSAULT_CANNON_UFOPEDIA
+    pages:
+      - title: STR_ASSAULT_CANNON
+        text: STR_ASSAULT_CANNON_UFOPEDIA
+      - title: STR_ASSAULT_CANNON_CONT
+        text: STR_ASSAULT_CANNON_UFOPEDIA
+    requires:
+      - STR_ASSAULT_CANNON
+    listOrder: 23400
+  - id: STR_ASSAULT_CANNON_CLIP_BS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ASSAULT_CANNON
+  - id: STR_ASSAULT_CANNON_CLIP_AA_BS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_ASSAULT_CANNON_CLIP_AA_BS
   - id: STR_SHAK12
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
