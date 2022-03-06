@@ -1,4 +1,82 @@
 ufopaedia:
+  - id: STR_COLT45_HP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COLT45_HP_CLIP
+  - id: STR_COLT45_HP_CLIP_PREQ
+    text: STR_COLT45_HP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COLT45_HP_CLIP_PREQ
+  - id: STR_COLT45_AP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COLT45_AP_CLIP
+  - id: STR_COLT45_AP_CLIP_PREQ
+    text: STR_COLT45_AP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COLT45_AP_CLIP_PREQ
+  - id: STR_DESERT_EAGLE_HP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DESERT_EAGLE_HP_CLIP
+  - id: STR_DESERT_EAGLE_HP_CLIP_PREQ
+    text: STR_DESERT_EAGLE_HP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DESERT_EAGLE_HP_CLIP_PREQ
+  - id: STR_DESERT_EAGLE_AP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_DESERT_EAGLE_AP_CLIP
+  - id: STR_DESERT_EAGLE_AP_CLIP_PREQ
+    text: STR_DESERT_EAGLE_AP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_DESERT_EAGLE_AP_CLIP_PREQ
+  - id: STR_HK_MK23_SOCOM_HP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HK_MK23_SOCOM_HP_CLIP
+  - id: STR_HK_MK23_SOCOM_HP_CLIP_PREQ
+    text: STR_HK_MK23_SOCOM_HP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HK_MK23_SOCOM_HP_CLIP_PREQ
+  - id: STR_HK_MK23_SOCOM_AP_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HK_MK23_SOCOM_AP_CLIP
+  - id: STR_HK_MK23_SOCOM_AP_CLIP_PREQ
+    text: STR_HK_MK23_SOCOM_AP_CLIP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HK_MK23_SOCOM_AP_CLIP_PREQ
   - id: STR_ASSAULT_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -536,6 +614,15 @@ ufopaedia:
     requires:
       - STR_TROLLIUM
     listOrder: 802
+  - id: STR_HP_CLIPS
+    type_id: 7
+    section: STR_TUTORIALS_UC
+    image_id: EXOTICAMMOIMG
+    text: STR_HP_CLIPS_UFOPEDIA
+    text_width: 315
+    requires:
+      - STR_TROLLIUM
+    listOrder: 802
   - id: STR_OVERVOLTED_CLIPS
     type_id: 7
     section: STR_TUTORIALS_UC
@@ -550,6 +637,13 @@ ufopaedia:
     section: STR_TUTORIALS_UC
     image_id: UFOPEDIA_IMG_SHOTGUNS
     text: STR_BUCKSHOT_CLIPS_UFOPEDIA
+    text_width: 315
+    listOrder: 802
+  - id: STR_SLUG_CLIPS
+    type_id: 7
+    section: STR_TUTORIALS_UC
+    image_id: UFOPEDIA_IMG_SHOTGUNS
+    text: STR_SLUG_CLIPS_UFOPEDIA
     text_width: 315
     listOrder: 802
   - id: STR_CROWD_CONTROL_CLIPS #Teargas & Flashbang ammo

@@ -1,4 +1,120 @@
 research:
+  - name: STR_COLT45_AP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_COLT45_HP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_COLT45_AP_CLIP_BUY
+    cost: 1
+    lookup: STR_COLT45
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_COLT45_AP_CLIP_PREQ
+  - name: STR_COLT45_HP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_COLT45_HP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_HP_CLIPS
+  - name: STR_COLT45_HP_CLIP_BUY
+    cost: 1
+    lookup: STR_COLT45
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_COLT45_HP_CLIP_PREQ
+  - name: STR_HK_MK23_SOCOM_AP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HK_MK23_SOCOM_AP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_HK_MK23_SOCOM
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_HK_MK23_SOCOM_AP_CLIP_BUY
+    cost: 1
+    lookup: STR_HK_MK23_SOCOM
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_HK_MK23_SOCOM_AP_CLIP_PREQ
+  - name: STR_HK_MK23_SOCOM_HP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HK_MK23_SOCOM_HP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_HK_MK23_SOCOM
+    unlocks:
+      - STR_HP_CLIPS
+  - name: STR_HK_MK23_SOCOM_HP_CLIP_BUY
+    cost: 1
+    lookup: STR_HK_MK23_SOCOM
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_HK_MK23_SOCOM_HP_CLIP_PREQ
+  - name: STR_DESERT_EAGLE_AP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_DESERT_EAGLE_AP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_DESERT_EAGLE
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_DESERT_EAGLE_AP_CLIP_BUY
+    cost: 1
+    lookup: STR_DESERT_EAGLE
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_DESERT_EAGLE_AP_CLIP_PREQ
+  - name: STR_DESERT_EAGLE_HP_CLIP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_DESERT_EAGLE_HP_CLIP
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_DESERT_EAGLE
+    unlocks:
+      - STR_HP_CLIPS
+  - name: STR_DESERT_EAGLE_HP_CLIP_BUY
+    cost: 1
+    lookup: STR_DESERT_EAGLE
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_DESERT_EAGLE_HP_CLIP_PREQ
   - name: STR_ASSAULT_CANNON_CLIP_AA_BS
     cost: 0
     points: 0
@@ -39,6 +155,11 @@ research:
     dependencies:
       - STR_TROLLIUM
   - name: STR_AP_CLIPS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HP_CLIPS
     cost: 0
     points: 0
     dependencies:
@@ -2222,6 +2343,8 @@ research:
       - STR_PTRD41_HE_CLIP_PREQ
       - STR_USP_9_MM_CLIP_AP_PREQ
       - STR_BERETTA_92FS_CLIP_AP_PREQ
+      - STR_COLT45_AP_CLIP_PREQ
+      - STR_COLT45_HP_CLIP_PREQ
     listOrder: 47108
   - name: STR_BLACK_MARKET_TIER_2
     cost: 1
@@ -2238,6 +2361,8 @@ research:
       - STR_PTRS41_HE_CLIP_PREQ
       - STR_RAFFICA_PISTOL_CLIP_AP_PREQ
       - STR_USP_9_MM_BIG_CLIP_AP_PREQ
+      - STR_HK_MK23_SOCOM_AP_CLIP_PREQ
+      - STR_HK_MK23_SOCOM_HP_CLIP_PREQ
     listOrder: 47108
   - name: STR_BLACK_MARKET_TIER_3
     cost: 1
@@ -2256,6 +2381,8 @@ research:
       - STR_NTW20_DENEL_HE_CLIP_PREQ
       - STR_MODEL_SS41_HE_CLIP_PREQ
       - STR_S18_SOLOTHURN_1000_HE_CLIP_PREQ
+      - STR_DESERT_EAGLE_AP_CLIP_PREQ
+      - STR_DESERT_EAGLE_HP_CLIP_PREQ
   - name: STR_BLACK_MARKET_TIER_4
     cost: 1
     points: -50
