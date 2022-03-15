@@ -2257,7 +2257,6 @@ armors:
       - STR_RIOT_COMBAT_SHIELD_FLASHLIGHT
   - type: STR_RIOT_VEST_UC
     spriteSheet: XCOM_68.PCK
-    requires: STR_NIGHTOPS
     layersDefaultPrefix: HUMAN_AGENT
     layersDefinition:
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_BLUE_M", "RIOT_VEST", "", "M0_HEAD", "", "", "", "RIOT_HELMET"]
@@ -2942,6 +2941,7 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
     customArmorPreviewIndex: 74
+    requires: STR_NIGHTOPS
     storeItem: STR_RIOT_VEST
     corpseBattle:
       - STR_RIOT_VEST_CORPSE
