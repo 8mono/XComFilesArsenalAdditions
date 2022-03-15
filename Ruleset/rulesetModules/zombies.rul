@@ -1,0 +1,1468 @@
+crafts:
+  - type: DIMENSION_X_LANDING_PAD_MAGMA
+    requires:
+      - DIMENSION_X_LANDING_PAD
+    sprite: 827
+    fuelMax: 50
+    damageMax: 90
+    speedMax: 130
+    accel: 1
+    soldiers: 1
+    vehicles: 0
+    costBuy: 0
+    costRent: 0
+    costSell: 0
+    refuelRate: 100
+    repairRate: 1
+    transferTime: 1
+    score: 5
+    battlescapeTerrainData:
+      name: DIM_X_PAD
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK_XCOMENTRY
+      mapBlocks:
+        - name: DIM_X_PAD
+          width: 20
+          length: 20
+          # items:
+            # STR_AMMO_BOX_REINFORCED:
+              # - [10, 10, 0]
+    deployment:
+      - [6, 5, 0, 7]
+      - [14, 6, 0, 1]
+      - [13, 14, 0, 3]
+      - [5, 13, 0, 5]
+      - [5, 6, 0, 7]
+      - [13, 5, 0, 1]
+      - [14, 13, 0, 3]
+      - [6, 14, 0, 5]
+      - [5, 8, 0, 6]
+      - [11, 5, 0, 0]
+      - [14, 11, 0, 2]
+      - [8, 14, 0, 4]
+      - [5, 11, 0, 6]
+      - [8, 5, 0, 0]
+      - [14, 8, 0, 2]
+      - [11, 14, 0, 4]
+      - [7, 7, 0, 7]
+      - [12, 7, 0, 1]
+      - [12, 12, 0, 3]
+      - [7, 12, 0, 5]
+      - [9, 9, 0, 7]
+      - [10, 9, 0, 1]
+      - [10, 10, 0, 3]
+      - [9, 10, 0, 5]
+    craftInventoryTile: [10, 10, 0]
+research:
+  - name: STR_MOON_OUTPOST_MAGMA_1_VISITED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320 #change this to magma cosmonauts saved?
+  - name: STR_MOON_OUTPOST_MAGMA_2_VISITED
+    requiresBaseFunc: [INTLAB]
+    cost: 0
+    points: 30
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320 #change this to magma cosmonauts saved?
+mapScripts:
+  - type: MoonOutpostMagmaPart1
+    commands:
+    - type: addCraft
+      craftName: DIMENSION_X_LANDING_PAD_MAGMA
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X30_BUILDING_MAGMA
+      executionChances: 35 #rthis was commented
+    - type: addUFO
+      UFOName: STR_LOC_HT_30X30_BUILDING_MAGMA
+      executionChances: 35
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_NOT_HABITAT_MAGMA
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_HABITAT_MAGMA
+      executions: 2
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_HABITAT_MAGMA
+      executionChances: 50
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_NOT_HABITAT_MAGMA
+      executionChances: 50
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_HABITAT_MAGMA
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_20X20_NOT_HABITAT_MAGMA
+      executionChances: 50
+      canBeSkipped: true 
+    - type: addUFO
+      UFOName: STR_LOC_HT_10X10_BUILDING_MAGMA
+      executions: 3
+      canBeSkipped: true 
+    - type: fillArea
+missionScripts:
+  - type: MoonOutpostMagma
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_MOON_OUTPOST_MAGMA_1: 100
+    regionWeights: &MoonOutpostRegions
+      0:
+        STR_ARCTIC: 75
+        STR_SIBERIA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_EUROPE: 50
+        STR_NORTH_AFRICA: 30
+    researchTriggers:
+      STR_MOON_FLIGHT: true
+      STR_MAGMA_CONTACT: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: MoonOutpostMagma1
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_MOON_OUTPOST_MAGMA_1: 100
+    regionWeights: *MoonOutpostRegions
+    researchTriggers:
+      STR_MOON_FLIGHT: true
+      STR_MAGMA_CONTACT: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: MoonOutpostMagma2
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_MOON_OUTPOST_MAGMA_2: 100
+    regionWeights: *MoonOutpostRegions
+    researchTriggers:
+      STR_MOON_FLIGHT: true
+      STR_MAGMA_CONTACT: true
+      STR_MOON_OUTPOST_MAGMA_1_VISITED: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+alienMissions:
+  - type: STR_MOON_OUTPOST_MAGMA_1 #STR_MAGMA_COSMONAUTS_RESCUE
+    interruptResearch: STR_MOON_OUTPOST_MAGMA_1_VISITED
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_SUN: 100
+    waves:
+      - ufo: STR_MOON_OUTPOST_MAGMA_1
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+  - type: STR_MOON_OUTPOST_MAGMA_2 #STR_MAGMA_COSMONAUTS_RESCUE
+    interruptResearch: STR_MOON_OUTPOST_MAGMA_2_VISITED
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_BLACK_SUN: 100
+    waves:
+      - ufo: STR_MOON_OUTPOST_MAGMA_2
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+alienDeployments:
+  - type: STR_MOON_OUTPOST_MAGMA_1 #STR_MOON_MAGMA_RESCUE
+    width: 70
+    length: 70
+    height: 10
+    civiliansByType:
+      STR_MAGMA_COSMONAUT: 4 #STR_MAGMA_COSMONAUT_HUMAN
+    alert: STR_MOON_OUTPOST_MAGMA_1
+    alertBackground: MOON_SURFACE_BACKGROUND.SCR
+    alertDescription: STR_MOON_OUTPOST_MAGMA_1_DESCRIPTION
+    briefing:
+      background: MOON_SURFACE_BACKGROUND.SCR
+      palette: 2 
+      music: AS_2_THEME
+      desc: STR_MOON_OUTPOST_MAGMA_1_BRIEFING
+      showTarget: false
+    markerName: STR_MOON_OUTPOST_MAGMA_1
+    startingCondition: STR_SPACE
+    enviroEffects: STR_SPACE
+    duration: [10, 12]
+    despawnPenalty: 200
+    unlockedResearch: STR_MOON_OUTPOST_MAGMA_2_VISITED
+    music:
+      - SR2_SPACE
+    customUfo: STR_LOC_HT_30X30_BUILDING_ZOMBIE
+    script: MoonOutpostMagmaPart1
+    terrains:
+      - MOON
+    data:
+      - alienRank: 4
+        customUnitType: STR_MAGMA_COSMONAUT
+        lowQty: 4
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAGMA_PULSE_PISTOL
+            - STR_MAGMA_PULSE_PISTOL_CLIP
+            - STR_MAGMA_PULSE_PISTOL_CLIP
+          -
+            - STR_WRENCH
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_MOON_OUTPOST_MAGMA_2 #STR_MOON_MAGMA_RESCUE
+    width: 70
+    length: 70
+    height: 10
+    civiliansByType:
+      STR_MAGMA_COSMONAUT_HUMAN: 8
+    alert: STR_MOON_OUTPOST_MAGMA_2
+    alertBackground: MOON_SURFACE_BACKGROUND.SCR
+    alertDescription: STR_MOON_OUTPOST_MAGMA_2_DESCRIPTION
+    briefing:
+      background: MOON_SURFACE_BACKGROUND.SCR
+      palette: 2 
+      music: ETRIAN_ODYSSEY_REDSHIFT_CORRIDOR
+      desc: STR_MOON_OUTPOST_MAGMA_2_BRIEFING
+      showTarget: false
+    markerName: STR_MOON_OUTPOST_MAGMA_2
+    startingCondition: STR_SPACE
+    enviroEffects: STR_SPACE
+    duration: [10, 12]
+    shade: 15
+    despawnPenalty: 500
+    cheatTurn: 10
+    turnLimit: 20
+    chronoTrigger: 2
+    escapeType: 0
+    unlockedResearch: STR_MOON_OUTPOST_MAGMA_2_VISITED
+    music:
+      - ETRIAN_ODYSSEY_REDSHIFT_CORRIDOR_FM
+    customUfo: STR_LOC_HT_30X30_BUILDING_ZOMBIE
+    script: MoonOutpostMagmaPart1
+    terrains:
+      - MOON
+    data:
+      - alienRank: 4
+        customUnitType: STR_MAGMA_COSMONAUT_ZOMBIE
+        lowQty: 8
+        highQty: 12
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: &AnchorEmptyInventory
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 3
+        customUnitType: STR_MAGMA_COSMONAUT_HUMAN
+        lowQty: 2
+        highQty: 2
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+          -
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+            - STR_ALIEN_EGG
+    reinforcements: &EliteSoldiersAndServantsGreatestManorReinforcements
+      - type: servants
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_MAGMA_COSMONAUT_HUMAN
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: &AnchorEmptyInventoryReinforcements
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+      - type: northwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [NORTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 16
+            customUnitType: STR_MAGMA_COSMONAUT_HUMAN
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: southwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 17
+            customUnitType: STR_MAGMA_COSMONAUT_HUMAN
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: eastwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EAST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 18
+            customUnitType: STR_MAGMA_COSMONAUT_ZOMBIE
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: westwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [WEST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 19
+            customUnitType: STR_BADASS_CHRYSSALID_TERRORIST
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+ufos:
+  - type: STR_LOC_HT_10X10_BUILDING_MAGMA
+    size: STR_VERY_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT10X10BUILDING
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: HTHOUSE_00b
+          width: 10
+          length: 10
+        - name: HTHOUSE_10
+          width: 10
+          length: 10
+        - name: HTHOUSE_11
+          width: 10
+          length: 10
+        - name: HTHOUSE_12
+          width: 10
+          length: 10
+  - type: STR_LOC_HT_20X20_NOT_HABITAT_MAGMA
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT20X20NOTHABITAT
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: HTHOUSE_01
+          width: 20
+          length: 20
+        - name: HTHOUSE_02
+          width: 20
+          length: 20
+        - name: HTHOUSE_06
+          width: 20
+          length: 20
+        - name: HTHOUSE_07
+          width: 20
+          length: 20
+        - name: HTHOUSE_09
+          width: 20
+          length: 20
+  - type: STR_LOC_HT_20X20_HABITAT_MAGMA
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT20X20HABITAT
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: HTHOUSE_04
+          width: 20
+          length: 20
+        - name: HTHOUSE_05
+          width: 20
+          length: 20
+        - name: HTHOUSE_13
+          width: 20
+          length: 20
+        - name: HTHOUSE_14
+          width: 20
+          length: 20
+        - name: HTHOUSE_01G
+          width: 20
+          length: 20
+        - name: HTHOUSE_04G
+          width: 20
+          length: 20
+        - name: HTHOUSE_05G
+          width: 20
+          length: 20
+        - name: HTHOUSE_06G
+          width: 20
+          length: 20
+  - type: STR_LOC_HT_30X30_BUILDING_MAGMA
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT30X30BUILDING
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: HTHOUSE_03
+          width: 30
+          length: 30
+        - name: HTHOUSE_07G
+          width: 30
+          length: 30
+  - type: STR_LOC_HT_20X30_BUILDING_MAGMA
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT30X30BUILDING
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_RED
+        - C_EXT_ROOF_BLACK
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: HTHOUSE_02G
+          width: 20
+          length: 30
+        - name: HTHOUSE_03G
+          width: 20
+          length: 30
+alienRaces:
+  - id: STR_ZOMBIE_TEMPERED
+    members:
+      - STR_VAMPIRE_QUEEN_COMMANDER
+      - STR_VAMPIRE_KNIGHT_LEADER
+      - STR_TOMB_GUARD_FEMALE_TERRORIST
+      - STR_ZOMBIE_INFECTOR_TERRORIST
+      - STR_ZOMBIE_GRUBAS_TERRORIST
+      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_MEGAZOMBIE_TERRORIST
+      - STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST #Zombie trooper 1 Terrorist
+      - STR_GHOUL_SOLDIER
+      - STR_GHOUL_WARRIOR
+      - STR_STRIX_TERRORIST
+      - STR_MUMMY_MATRIARCH
+      - STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST
+      - STR_PHARAOH_COMMANDER
+    membersRandom:
+      - [STR_VAMPIRE_QUEEN_COMMANDER]
+      - [STR_VAMPIRE_KNIGHT_LEADER]
+      - [STR_TOMB_GUARD_FEMALE_TERRORIST, STR_TOMB_GUARD_MALE_TERRORIST]
+      - [STR_ZOMBIE_INFECTOR_TERRORIST]
+      - [STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST]
+      - [STR_ZOMBIE_STERILE_TERRORIST]
+      - [STR_ZOMBIE_STERILE_TERRORIST]
+      - [STR_MEGAZOMBIE_TERRORIST]
+      - [STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST] #Zombie trooper 1 Terrorist
+      - [STR_GHOUL_SOLDIER]
+      - [STR_GHOUL_WARRIOR]
+      - [STR_STRIX_TERRORIST]
+      - [STR_MUMMY_MATRIARCH]
+      - [STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST]
+      - [STR_PHARAOH_COMMANDER]
+    retaliationMissionWeights: &StandardRetalWeights
+      0:
+        # STR_ALIEN_DOMINATION: 60
+        STR_ALIEN_RETALIATION: 30
+        STR_ALIEN_TERROR: 15
+      12:
+        # STR_ALIEN_DOMINATION: 60
+        STR_ALIEN_RETALIATION: 30
+        STR_ALIEN_TERROR: 15
+        STR_ALIEN_BASE: 10
+      24:
+        # STR_ALIEN_DOMINATION: 50
+        STR_ALIEN_RETALIATION: 30
+        STR_ALIEN_TERROR: 20
+        STR_ALIEN_BASE: 10
+      32:
+        # STR_ALIEN_DOMINATION: 35
+        # STR_ALIEN_FLYBY: 15
+        STR_ALIEN_RETALIATION: 30
+        STR_ALIEN_TERROR: 15
+        STR_ALIEN_TERROR_2: 10
+        STR_ALIEN_BASE: 10
+        # STR_ALIEN_INFILTRATION: 5
+      40:
+        # STR_ALIEN_DOMINATION: 25
+        # STR_ALIEN_FLYBY: 25
+        STR_ALIEN_RETALIATION: 40
+        STR_ALIEN_TERROR: 15
+        STR_ALIEN_TERROR_2: 15
+        STR_ALIEN_BASE: 10
+        # STR_ALIEN_INFILTRATION: 5
+extraSprites:
+  - type: UFOPEDIA_IMG_EGG_SAC_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Races_Compilation/ChryssalidRace/ufopedia_EGG_SAC_AUTOPSY.png
+  - type: UFOPEDIA_IMG_EGG_SAC
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/ufopaedia_EGG_SAC.png
+  - type: UFOPEDIA_IMG_ZOMBIE_BOOMER_TEMPERED_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_ZOMBIE_BOOMER_TEMPERED_AUTOPSY.png
+  - type: UFOPEDIA_IMG_ZOMBIE_BOOMER_TEMPERED
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_ZOMBIE_BOOMER_TEMPERED_GLOWING.png
+  - type: inventory_ZOMBIE_SPITTER_TEMPERED
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ZombieRace/inventory_ZOMBIE_SPITTER_BURNT.png
+  - type: inventory_EGG_SAC
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/inventory_EGG_SAC.png
+  - type: EGG_SAC.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/EGG_SAC.png
+  - type: ZOMBIE_BOOMER_TEMPERED.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ZOMBIE_TEMPERED_GLOWING_DEATHFRAMES.png
+  - type: inventory_ZOMBIE_BOOMER_TEMPERED
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ZombieRace/inventory_ZOMBIE_BOOMER_TEMPERED_GLOWINGv2.png
+  - type: ZOMBIE_SPITTER_TEMPERED.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ZOMBIE_SPITTER_PANTS.png
+items:
+  - type: STR_EGG_SAC
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 70000
+    listOrder: 143770
+  - type: STR_EGG_SAC_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 22000
+    battleType: 11
+    listOrder: 66670
+  - type: EGG_SAC_CORPSE_1
+    name: STR_ANTMAN_QUEEN_CORPSE
+    floorSprite: 442
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: EGG_SAC_CORPSE_2
+    floorSprite: 443
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: EGG_SAC_CORPSE_3
+    floorSprite: 444
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: EGG_SAC_CORPSE_4
+    floorSprite: 445
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_BADASS_CHRYSSALID_WEAPON
+    zombieUnit: STR_EGG_SAC
+  - type: STR_ALIEN_EGG
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 179
+    floorSprite: 22 #check this
+    handSprite: 0
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BELT
+    listOrder: 38220
+  - type: STR_SAC_EGG
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 179
+    floorSprite: 22 #check this
+    handSprite: 0
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
+  - type: STR_BADASS_SAC_EGG
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 179
+    floorSprite: 22 #check this
+    handSprite: 0
+    power: 10
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0
+      ToHealth: 1
+      ArmorEffectiveness: 0
+      ToWound: 100
+      RandomWound: false
+    damageType: 1
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_BADASS_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
+  - type: STR_ZOMBIE_SPAWNER #adjust stock stats!
+    categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_FLARE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 2500
+    weight: 6
+    bigSprite: 390
+    floorSprite: 388
+    handSprite: 2480
+    bulletSprite: 5 
+    fireSound: 189
+    reloadSound: 190
+    compatibleAmmo:
+      - STR_ZOMBIE_SPAWNER_CLIP
+    accuracyCloseQuarters: 100 #ADJUST THESE STATS PLEASE 
+    accuracyAimed: 40
+    tuAimed: 40
+    tuLoad: 12
+    battleType: 1
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    blockBothHands: false
+    oneHandedPenalty: 85
+    armor: 25
+    aimRange: 17
+    dropoff: 3
+    kneelBonus: 110
+    attraction: 15
+    listOrder: 34470
+  - type: STR_ZOMBIE_SPAWNER_CLIP
+    nameAsAmmo: (ZOMBIE)
+    categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_FLARE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    requiresBuy:
+      - STR_FLARE_PISTOL_BUY
+    costBuy: 50
+    costSell: 20
+    weight: 2
+    bigSprite: 293 #get a new sprite soon please
+    floorSprite: 2
+    hidePower: true
+    power: 0
+    spawnUnit: STR_BADASS_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    damageType: 2
+    blastRadius: 0
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    attraction: 16
+    listOrder: 34462 #check this
+  - type: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 90000
+    listOrder: 115415
+  - type: STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 80000
+    listOrder: 115415
+  - type: STR_MAGMA_COSMONAUT_ZOMBIE
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 80000
+    listOrder: 115415
+  - type: STR_ZOMBIE_BOOMER_TEMPERED_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 12000
+    weight: 30
+    bigSprite: 0
+    floorSprite: 0
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 25
+    battleType: 11
+    power: 80
+    blastRadius: 10
+    armor: 20
+    listOrder: 62315
+  - type: STR_ZOMBIE_SPITTER_TEMPERED_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 10000
+    weight: 30
+    bigSprite: 0
+    floorSprite: 0
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
+  - type: STR_BOOMER_TEMPERED_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 179
+    hitAnimation: 0
+    hitSound: 0
+    power: 25
+    strengthApplied: false
+    damageType: 3
+    zombieUnit: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST #Zombie_sterile_Tempered_Terrorist
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 3
+      RadiusReduction: 0.0
+      ToTile: 0.33
+    tuSnap: 15
+    accuracySnap: 100
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    maxRange: 2
+    blastRadius: 15 #10
+    recover: false
+    flatRate: true
+  - type: STR_INFECTOR_TEMPERED_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 179
+    meleeSound: 48
+    meleeHitSound: 109
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ArmorEffectiveness: 1.3
+      ToTile: 0.33
+    zombieUnit: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST #Zombie_sterile_Tempered_Terrorist
+    # zombieUnitByType: {STR_DOG: STR_ZOMBIE_TEMPERED_DOGE, STR_DOGE: STR_ZOMBIE_TEMPERED_DOGE}   # exceptions
+    accuracyMelee: 100
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    flatRate: true
+  - type: STR_ZOMBIE_BOOMER_TEMPERED_GLOW
+    categories: [STR_BUILT_INS]
+    size: 0.1
+    weight: 3
+    bigSprite: 0
+    floorSprite: 0
+    power: 26
+    battleType: 10
+    armor: 30
+    costThrow:
+      energy: 14
+#Prime/Unprime segment
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    primeActionName: STR_TURN_ON
+    unprimeActionName: STR_TURN_OFF
+    primeActionMessage: STR_LIGHT_IT_UP
+    unprimeActionMessage: STR_LIGHTS_OUT
+    fuseType: -2
+    fuseTriggerEvents:
+      defaultBehavior: true
+      throwTrigger: false
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    recover: false
+    fixedWeapon: true
+  - type: STR_ZOMBIE_SPITTER_TEMPERED_SPIT
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 179
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 22
+    fireSound: 0
+    hitSound: 0
+    hitAnimation: 240
+    explosionHitSound: 116
+    hitAnimation: 0
+    clipSize: -1
+    power: 25 #36
+    damageType: 6
+    damageAlter:
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToHealth: 1.0
+      ToStun: 0.2
+      ToMorale: 0.25
+      ToArmor: 0.5
+      ToTile: 0.33
+      ToItem: 0.5
+      ToWound: 0
+      FixRadius: 5
+      ResistType: 8
+      FireThreshold: 1000
+      SmokeThreshold: 5
+    accuracySnap: 70
+    tuSnap: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    arcingShot: true
+    recover: false
+units:
+  - type: STR_EGG_SAC
+    race: STR_CHRYSSALID
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 50
+      stamina: 1
+      health: 100
+      bravery: 80
+      reactions: 36
+      firing: 70
+      throwing: 20
+      strength: 60
+      psiStrength: 60
+      psiSkill: 0
+      melee: 10
+      mana: 25
+    armor: STR_EGG_SAC_ARMOR
+    standHeight: 13
+    kneelHeight: 10
+    value: 60
+    deathSound: 0
+    intelligence: 4
+    aggression: 0
+    canSurrender: true
+    energyRecovery: 40
+  - type: STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
+    race: STR_ZOMBIE_TEMPERED
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 120
+      health: 80
+      bravery: 110
+      reactions: 25
+      firing: 70
+      throwing: 70
+      strength: 90
+      psiStrength: 80
+      psiSkill: 0
+      melee: 65
+    armor: STR_ZOMBIE_SPITTER_TEMPERED_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    aggroSound: 0
+    deathSound: 0
+    intelligence: 2
+    aggression: 2
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+        - STR_ZOMBIE_SPITTER_TEMPERED_SPIT
+    livingWeapon: true
+    sniper: 75
+    spotter: 1
+  - type: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST
+    race: STR_ZOMBIE_TEMPERED
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 77
+      stamina: 176
+      health: 136
+      bravery: 120
+      reactions: 44
+      firing: 0
+      throwing: 0
+      strength: 103
+      psiStrength: 88
+      psiSkill: 0
+      melee: 88
+      mana: 77
+    armor: STR_ZOMBIE_BOOMER_TEMPERED_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    intelligence: 3
+    aggression: 9
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 0 #check these
+    deathSound: 0
+    specab: 1
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+        - STR_ZOMBIE_BOOMER_TEMPERED_GLOW
+  - type: STR_MAGMA_COSMONAUT_HUMAN
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 54
+      stamina: 68
+      health: 40
+      bravery: 80
+      reactions: 35
+      firing: 45
+      throwing: 30
+      strength: 30
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+      mana: 65
+    armor: STR_ASTRONAUT_ARMOR_HUMAN #STR_ASTRONAUT_ARMOR_HUMAN
+    spawnUnit: STR_MAGMA_COSMONAUT_ZOMBIE
+    liveAlien: STR_MAGMA_COSMONAUT_ZOMBIE
+    standHeight: 22
+    kneelHeight: 14
+    value: 35
+    energyRecovery: 25
+    intelligence: 1
+    aggression: 1
+    canSurrender: true
+  - type: STR_MAGMA_COSMONAUT_ZOMBIE
+    race: STR_ZOMBIE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 40
+      stamina: 110
+      health: 124
+      bravery: 110
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+      mana: 70
+    armor: STR_ASTRONAUT_ARMOR_ZOMBIE #STR_ASTRONAUT_ARMOR_ZOMBIE
+    liveAlien: STR_MAGMA_COSMONAUT_ZOMBIE
+    standHeight: 22
+    kneelHeight: 14
+    value: 7
+    intelligence: 4
+    aggression: 5
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 0
+    deathSound: 0
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+armors:
+  - type: STR_EGG_SAC_ARMOR
+    spriteSheet: EGG_SAC.PCK
+    spriteInv: inventory_EGG_SAC
+    allowInv: true
+    bleedImmune: false
+    corpseBattle:
+      - EGG_SAC_CORPSE_1
+      - EGG_SAC_CORPSE_2
+      - EGG_SAC_CORPSE_3
+      - EGG_SAC_CORPSE_4
+    corpseGeo: STR_EGG_SAC_CORPSE
+    visibilityAtDay: 20
+    visibilityAtDark: 20
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.4
+      moraleCurrent: 0.33
+      bravery: 0.2
+    drawingRoutine: 3
+    size: 2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.01
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.7
+      - 1.0
+      - 1.2
+      - 1.0
+      - 0.75
+      - 1.0
+      - 0.5
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    builtInWeapons:
+      - STR_SAC_EGG
+      - STR_SAC_EGG
+      - STR_SAC_EGG
+      - STR_SAC_EGG
+      - STR_BADASS_SAC_EGG
+    loftempsSet: [ 105, 108, 102, 99 ]
+  - type: STR_ASTRONAUT_ARMOR_HUMAN
+    spriteSheet: ASTRONAUT.PCK
+    spriteInv: inventory_ASTRONAUT
+    corpseBattle:
+      - STR_ASTRONAUT_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AstronautResists
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    loftempsSet: [ 3 ]
+  - type: STR_ASTRONAUT_ARMOR_ZOMBIE
+    spriteSheet: ASTRONAUT.PCK
+    spriteInv: inventory_ASTRONAUT
+    corpseBattle:
+      - STR_ASTRONAUT_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AstronautResists
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    loftempsSet: [ 3 ]
+  - type: STR_ZOMBIE_SPITTER_TEMPERED_ARMOR
+    spriteSheet: ZOMBIE_SPITTER_TEMPERED.PCK
+    spriteInv: inventory_ZOMBIE_SPITTER_TEMPERED
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_SPITTER_TEMPERED_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 4
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    allowsRunning: false
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+      - 0.5
+    loftempsSet: [ 3 ]
+  - type: STR_ZOMBIE_BOOMER_TEMPERED_ARMOR
+    spriteSheet: ZOMBIE_BOOMER_TEMPERED.PCK
+    spriteInv: inventory_ZOMBIE_BOOMER_TEMPERED
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_BOOMER_TEMPERED_CORPSE
+    visibilityAtDark: 12
+    personalLight: 15
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 4
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+      - 0.5
+    loftempsSet: [ 3 ]

@@ -1,0 +1,224 @@
+items:
+  - type: STR_METALLOID_SPAWNER #adjust stock stats!
+    categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_FLARE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 2500
+    weight: 6
+    bigSprite: 390
+    floorSprite: 388
+    handSprite: 2480
+    bulletSprite: 5 
+    fireSound: 189
+    reloadSound: 190
+    compatibleAmmo:
+      - STR_METALLOID_SPAWNER_CLIP
+    accuracyCloseQuarters: 100 #ADJUST THESE STATS PLEASE 
+    accuracyAimed: 40
+    tuAimed: 40
+    tuLoad: 12
+    battleType: 1
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    twoHanded: true
+    blockBothHands: false
+    oneHandedPenalty: 85
+    armor: 25
+    aimRange: 17
+    dropoff: 3
+    kneelBonus: 110
+    attraction: 15
+    listOrder: 34470
+  - type: STR_METALLOID_SPAWNER_CLIP
+    nameAsAmmo: (METALLOID)
+    categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_FLARE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    requiresBuy:
+      - STR_FLARE_PISTOL_BUY
+    costBuy: 50
+    costSell: 20
+    weight: 2
+    bigSprite: 293 #get a new sprite soon please
+    floorSprite: 2
+    hidePower: true
+    power: 0
+    spawnUnit: STR_SUPER_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    damageType: 2
+    blastRadius: 0
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    attraction: 16
+    listOrder: 34462 #check this
+  - type: STR_METALLOID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 30000
+    weight: 40
+    bigSprite: 0
+    floorSprite: 4
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 26
+    listOrder: 63100
+  - type: STR_METALLOID_SOLDIER
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 70000
+    listOrder: 122100
+extraSprites:
+  - type: METALLOID.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Races_Compilation/SyntheticRace/METALLOID.png
+  - type: inventory_METALLOID
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SyntheticRace/inventory_METALLOID.png
+units:
+  - type: STR_SUPER_CHRYSSALID_TERRORIST
+    race: STR_CHRYSSALID
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 110
+      stamina: 140
+      health: 96
+      bravery: 100
+      reactions: 70
+      firing: 0
+      throwing: 0
+      strength: 110
+      psiStrength: 50
+      psiSkill: 0
+      melee: 80
+    armor: STR_CHRYSSALID_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 40
+    deathSound: 9
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+    spawnUnit: STR_SUPER_CHRYSSALID_TERRORIST
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CHRYSSALID_WEAPON
+  - type: STR_SUPER_ZOMBIE
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 40
+      stamina: 110
+      health: 84
+      bravery: 110
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+      mana: 70
+    armor: STR_ZOMBIE_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 25
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 20
+    spawnUnit: STR_SUPER_ZOMBIE
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+  - type: STR_METALLOID_SOLDIER
+    race: STR_SYNTHETICS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 70
+      stamina: 130
+      health: 100
+      bravery: 80
+      reactions: 100
+      firing: 100
+      throwing: 100
+      strength: 36
+      psiStrength: 200
+      psiSkill: 0
+      melee: 50
+      mana: 100
+    armor: STR_METALLOID_STANDARD_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    deathSound: 10
+    intelligence: 30
+    aggression: 3
+    energyRecovery: 40
+    sniper: 0
+    spotter: 0
+armors:
+  - type: STR_METALLOID_STANDARD_ARMOR
+    spriteSheet: METALLOID.PCK
+    spriteInv: inventory_METALLOID
+    corpseBattle:
+      - STR_METALLOID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 5
+    heatVision: 0
+    frontArmor: 14
+    sideArmor: 14
+    rearArmor: 14
+    underArmor: 150
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.4
+      moraleCurrent: 0.33
+      bravery: 0.2
+    drawingRoutine: 10
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier: &AndronResists
+      - 1.0
+      - 0.2
+      - 0.1
+      - 0.2
+      - 0.3
+      - 0.4
+      - 0.5
+      - 0.2
+      - 1.0
+      - 0.0
+      - 1.2
+      - 1.2
+      - 0.0
+      - 0.5
+      - 0.0
+      - 0.0
+    specialWeapon: STR_UNARMED_MUTON
+    loftempsSet: [ 3 ]

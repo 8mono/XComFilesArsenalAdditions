@@ -736,6 +736,10 @@ extraSprites:
       439: Resources/Weapons_Compilation/ClassicWeapons/floorob_M16Beowulf.png
       440: Resources/Weapons_Compilation/ClassicWeapons/floorob_SKS_SCOPED.png
       441: Resources/Weapons_Compilation/BlackOpsWeapons/floorob_AssaultCannonClip.png
+      442: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_1.png
+      443: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_2.png
+      444: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_3.png
+      445: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_4.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.
