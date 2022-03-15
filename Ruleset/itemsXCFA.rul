@@ -1211,7 +1211,6 @@ items:
       - STR_NAPALM_ROCKET
       - STR_EMP_ROCKET
       - STR_TRACITE_ROCKET
-      - STR_ANTI_E115_ROCKET
     accuracyCloseQuarters: 33
     accuracySnap: 55
     accuracyAimed: 115
@@ -1282,37 +1281,6 @@ items:
       RandomType: 4
       FixRadius: 8
       ToHealth: 1.25
-      ToStun: 0.8
-      ToEnergy: 4.0
-      ToMorale: 3.0
-      RandomStun: false
-    clipSize: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 3
-    armor: 28
-    attraction: 16
-    listOrder: 34000
-  - type: STR_ANTI_E115_ROCKET
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CHEMICALS, STR_CLIPS, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_MAGMA_LAUNCHER_BUY
-      - STR_MAGMA_GAS_AMMO_BUY
-    size: 0.2
-    costBuy: 9000
-    costSell: 4300
-    weight: 9
-    bigSprite: 446
-    floorSprite: 422
-    handSprite: 0
-    explosionHitSound: 118
-    hitAnimation: 192
-    power: 90
-    damageType: 14
-    damageAlter:
-      RandomType: 7
-      FixRadius: 8
-      ToHealth: 1
       ToStun: 0.8
       ToEnergy: 4.0
       ToMorale: 3.0

@@ -11,7 +11,3 @@ musics:
     normalization: 1.0
   - type: PAYDAY2_BREAK_THE_RULES_NO_VOCALS
     normalization: 1.0
-  - type: ETRIAN_ODYSSEY_REDSHIFT_CORRIDOR_FM
-    normalization: 1.0
-  - type: ETRIAN_ODYSSEY_REDSHIFT_CORRIDOR
-    normalization: 1.0
