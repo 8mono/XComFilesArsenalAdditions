@@ -2942,8 +2942,8 @@ armors:
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
     customArmorPreviewIndex: 74
-    requires: STR_NIGHTOPS
     storeItem: STR_RIOT_VEST
+    requires: STR_NIGHTOPS
     corpseBattle:
       - STR_RIOT_VEST_CORPSE
     visibilityAtDark: 9
