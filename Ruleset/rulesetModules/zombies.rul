@@ -715,6 +715,19 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Races_Compilation/ZombieRace/inventory_ZOMBIE_SPITTER_BURNT.png
+  - type: inventory_BADASS_CHRYSSALID_ACID
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/inventory_BADASS_CHRYSSALID_ACID.png
+  - type: BADASS_CHRYSSALID_ACID.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/BADASS_CHRYSSALID_ACID.png
   - type: inventory_EGG_SAC
     singleImage: true
     files:
@@ -745,6 +758,106 @@ extraSprites:
     files:
       0: Resources/Races_Compilation/ZombieRace/ZOMBIE_SPITTER_PANTS.png
 items:
+  - type: STR_BADASS_CHRYSSALID_ACID_SPIT
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 0
+    floorSprite: 0 #this is 0
+    handSprite: 0 #this is 0
+    bulletSprite: 11
+    fireSound: 0
+    hitSound: 0
+    hitAnimation: 296
+    explosionHitSound: 19
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+      ResistType: 8
+      ToArmor: 0.25
+      ToArmorPre: 0.25
+      RadiusEffectiveness: 25
+      FireThreshold: 1000
+      SmokeThreshold: 40
+    damageType: 3
+    accuracyCloseQuarters: 100
+    accuracyAuto: 25
+    accuracySnap: 55
+    accuracyAimed: 85
+    tuAuto: 60
+    tuSnap: 40
+    tuAimed: 75
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    blastRadius: 3
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    arcingShot: false
+    autoShots: 2
+  - type: STR_BADASS_CHRYSSALID_ACID_CORPSE
+    name: STR_BADASS_CHRYSSALID_ACID_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    bigSprite: 0
+    floorSprite: 0
+    costSell: 150000
+    battleType: 11
+    power: 80
+    blastRadius: 5
+    damageType: 3
+    damageAlter:
+      ResistType: 8
+      FireThreshold: 1000
+      IgnoreOverKill: false
+      SmokeThreshold: 40
+      ToArmor: 1
+      ToArmorPre: 1
+      ToItem: 1
+      ToTile: 0.5
+    hitAnimation: 296
+    invHeight: 2
+    invWidth: 3
+    armor: 200
+    listOrder: 70010
+  - type: BADASS_CHRYSSALID_ACID_CORPSE_1
+    floorSprite: 442
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: BADASS_CHRYSSALID_ACID_CORPSE_2
+    floorSprite: 442
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: BADASS_CHRYSSALID_ACID_CORPSE_3
+    floorSprite: 442
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: BADASS_CHRYSSALID_ACID_CORPSE_4
+    floorSprite: 442
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 300000
+    listOrder: 135010
+  - type: STR_CHRYSSALID_ALPHA_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 200000
+    listOrder: 135000
   - type: STR_EGG_SAC
     categories: [STR_BEASTS]
     size: 0.0
@@ -787,6 +900,27 @@ items:
     recover: false
   - type: STR_BADASS_CHRYSSALID_WEAPON
     zombieUnit: STR_EGG_SAC
+  - type: STR_BADASS_CHRYSSALID_ACID_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 0
+    floorSprite: 31
+    handSprite: 104 #check this!
+    meleeSound: 0
+    meleeHitSound: 0
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ToTile: 0.55
+    accuracyMelee: 85
+    tuMelee: 18
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
   - type: STR_ALIEN_EGG
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -930,7 +1064,7 @@ items:
     floorSprite: 2
     hidePower: true
     power: 0
-    spawnUnit: STR_BADASS_CHRYSSALID_TERRORIST
+    spawnUnit: STR_BADASS_CHRYSSALID_ACID_TERRORIST
     spawnUnitFaction: 1
     damageType: 2
     blastRadius: 0
@@ -1139,6 +1273,37 @@ units:
     aggression: 0
     canSurrender: true
     energyRecovery: 40
+  - type: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+    race: STR_CHRYSSALID
+    rank: STR_LIVE_TERRORIST
+    liveAlien: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+    capturable: true
+    stats:
+      tu: 95
+      stamina: 60
+      health: 360
+      bravery: 90
+      reactions: 65
+      firing: 60
+      throwing: 60
+      strength: 120
+      psiStrength: 35
+      psiSkill: 0
+      melee: 55
+    armor: STR_BADASS_CHRYSSALID_ACID_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 35
+    aggroSound: 0
+    deathSound: 0
+    intelligence: 2
+    aggression: 2
+    energyRecovery: 34
+    livingWeapon: true
+    specab: 1
+    builtInWeaponSets:
+      - - STR_BADASS_CHRYSSALID_ACID_WEAPON
+        - STR_BADASS_CHRYSSALID_ACID_SPIT
   - type: STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
     race: STR_ZOMBIE_TEMPERED
     rank: STR_LIVE_TERRORIST
@@ -1466,3 +1631,111 @@ armors:
       - 2.0
       - 0.5
     loftempsSet: [ 3 ]
+  - type: STR_ALPHA_CHRYSSALID_ARMOR
+    spriteSheet: CHRYS.PCK
+    spriteInv: inventory_CHRYSSALID
+    allowInv: false
+    corpseBattle:
+      - STR_CHRYSSALID_CORPSE
+    visibilityAtDark: 25
+    heatVision: 45
+    psiVision: 6
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    frontArmor: 34
+    sideArmor: 34
+    rearArmor: 34
+    underArmor: 34
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 7
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 9.99
+      - 1.0
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+  - type: STR_BADASS_CHRYSSALID_ACID_ARMOR
+    spriteSheet: BADASS_CHRYSSALID_ACID.PCK
+    spriteInv: inventory_BADASS_CHRYSSALID_ACID
+    allowInv: false
+    bleedImmune: false
+    corpseBattle:
+      - BADASS_CHRYSSALID_ACID_CORPSE_1
+      - BADASS_CHRYSSALID_ACID_CORPSE_2
+      - BADASS_CHRYSSALID_ACID_CORPSE_3
+      - BADASS_CHRYSSALID_ACID_CORPSE_4
+    corpseGeo: STR_BADASS_CHRYSSALID_ACID_CORPSE
+    visibilityAtDark: 25
+    heatVision: 45
+    psiVision: 8
+    frontArmor: 46
+    sideArmor: 46
+    rearArmor: 46
+    underArmor: 46
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 5
+    size: 2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.4
+    createsMeleeThreat: true
+    allowsRunning: false
+    # specialWeapon: STR_BADASS_CHRYSSALID_ACID_SPIT
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.7
+      - 0.7
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 0.6
+      - 1.0
+      - 1.0
+      - 6.66
+      - 1.0
+    loftempsSet: [ 92, 89, 90, 91 ]

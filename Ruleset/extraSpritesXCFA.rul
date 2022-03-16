@@ -793,6 +793,7 @@ extraSprites:
       272: Resources/Weapons_Compilation/ExplosionAnimations/Flame_Skull2Outline2.png
       280: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Skull_exp.png
       288: Resources/Weapons_Compilation/ExplosionAnimations/Yellow_Skull_exp.png
+      296: Resources/Weapons_Compilation/ExplosionAnimations/Green_Skull_exp.png
   - type: Projectiles
     height: 3
     width: 65
