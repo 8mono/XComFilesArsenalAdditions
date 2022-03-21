@@ -12588,6 +12588,14 @@ items:
     recover: true
     costSell: 24000
     listOrder: 150241
+  - type: STR_ZSRR_RED_OPS_ELITE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 36000
+    listOrder: 150241
   - type: STR_ZSRR_UBEK_PROTOTYPE_SUIT
     categories: [STR_HUMANS]
     size: 0.0
@@ -12627,6 +12635,14 @@ items:
     prisonType: 1
     recover: true
     costSell: 24000
+    listOrder: 150241
+  - type: STR_EXALT_ELITE_REINFORCER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 32000
     listOrder: 150241
   - type: STR_EXALT_EXTERMINATOR
     categories: [STR_HUMANS]
@@ -12860,13 +12876,21 @@ items:
     recover: true
     recoverCorpse: false
     recoveryPoints: 1
-  - type: STR_HAND_OF_DAGON
+  - type: STR_PROPHET_OF_DAGON
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
     costSell: 25000
+    listOrder: 150012
+  - type: STR_HAND_OF_DAGON
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 36000
     listOrder: 150012
 #Muton
   - type: MUTON_WEAPON
@@ -13165,6 +13189,14 @@ items:
     recover: true
     recoverCorpse: false
     recoveryPoints: 1
+  - type: STR_BLACK_LOTUS_ELITE_FOOTMAN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 20000
+    listOrder: 150105
   - type: STR_BLACK_LOTUS_TORONJIN
     categories: [STR_HUMANS]
     size: 0.0
