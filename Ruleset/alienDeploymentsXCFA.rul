@@ -4341,7 +4341,7 @@ alienDeployments:
         highQty: 2
         dQty: 0
         percentageOutsideUfo: 100
-      - customUnitType: STR_EXALT_ELITE_REINFORCER
+      - customUnitType: STR_EXALT_EXTERMINATOR
         lowQty: 1
         highQty: 1
         dQty: 0

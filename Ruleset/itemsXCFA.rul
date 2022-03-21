@@ -87,7 +87,7 @@ items:
     attraction: 15
     listOrder: 21260
   - type: STR_RIFLE_M16_BEOWULF_HP_CLIP
-    nameAsAmmo: (HP)
+    nameAsAmmo: (SUBSONIC)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_RIFLE_M16_BEOWULF_BUY
@@ -107,7 +107,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.15
-      ToStun: 0.1
+      ToStun: 0.5
       ToHealth: 1.2
       ToTime: 0.4
       ToTile: 0.2
@@ -182,7 +182,7 @@ items:
     attraction: 15
     listOrder: 20272
   - type: STR_RSH12_HP_CLIP
-    nameAsAmmo: (HP)
+    nameAsAmmo: (SUBSONIC)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
       - STR_RSH12_BUY
@@ -199,7 +199,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.25
-      ToStun: 0.1
+      ToStun: 0.5
       ToHealth: 1.2
       ToTime: 0.4
       ToTile: 0.25
@@ -274,6 +274,7 @@ items:
     attraction: 20
     listOrder: 21229
   - type: STR_40MM_BATON
+    nameAsAmmo: (BLUNT)
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_SHAK12_BUY
@@ -300,6 +301,7 @@ items:
     attraction: 15
     listOrder: 21260
   - type: STR_40MM_TEARGAS
+    nameAsAmmo: (CS)
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_M16GL
@@ -321,7 +323,7 @@ items:
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
       ToHealth: 0.1
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -335,6 +337,7 @@ items:
     attraction: 15
     listOrder: 21260
   - type: STR_40MM_BUCKSHOT
+    nameAsAmmo: (BS)
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_SHAK12_BUY
@@ -354,7 +357,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.4
-      ToStun: 0.25
+      ToStun: 0.5
     clipSize: 1
     powerRangeThreshold: 6
     powerRangeReduction: 2
@@ -392,7 +395,7 @@ items:
     attraction: 15
     listOrder: 21260
   - type: STR_SHAK12_HP_CLIP
-    nameAsAmmo: (HP)
+    nameAsAmmo: (SUBSONIC)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_SHAK12_BUY
@@ -412,7 +415,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.15
-      ToStun: 0.2
+      ToStun: 0.5
       ToHealth: 1.2
       ToTime: 0.4
       ToTile: 0.25
@@ -483,7 +486,7 @@ items:
     attraction: 15
     listOrder: 21260
   - type: STR_VKS_HP_CLIP
-    nameAsAmmo: (HP)
+    nameAsAmmo: (SUBSONIC)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_VKS_BUY
@@ -502,7 +505,7 @@ items:
     damageAlter:
       RandomType: 7
       ArmorEffectiveness: 1.1
-      ToStun: 0.2
+      ToStun: 0.5
       ToHealth: 1.2
       ToTime: 0.4
       ToTile: 0.25
@@ -1416,7 +1419,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.25
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_JUDGE_AP_CLIP
     clipSize: 6
   - type: STR_QUILLBOW_HE_BOLTS
@@ -1438,7 +1441,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_LC_HE_AMMO
     damageAlter:
       IgnoreOverKill: false
@@ -1451,7 +1454,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_HC_HE_AMMO
     damageAlter:
       IgnoreOverKill: false
@@ -1464,14 +1467,14 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_HC_BS_AA_AMMO
     powerRangeThreshold: 30
     powerRangeReduction: 4
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_AC_HE_AMMO
     damageAlter:
       IgnoreOverKill: false
@@ -1484,14 +1487,14 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_AC_AA_BS_AMMO
     powerRangeThreshold: 27
     powerRangeReduction: 3
     damageAlter:
       RandomType: 7
       ToTime: 0.5
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_LASER_SHOTGUN
     powerRangeThreshold: 15
     powerRangeReduction: 1
@@ -1572,18 +1575,39 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.45
-      ToStun: 0.45
+      ToStun: 0.5
   - type: STR_UAC_SHOTGUN_AA_SHELLS
     powerRangeThreshold: 18
     powerRangeReduction: 2
     damageAlter:
       RandomType: 7
       ToTime: 0.45
-      ToStun: 0.45
+      ToStun: 0.5
   - type: STR_CAWS
     compatibleAmmo: !add
       - STR_CAWS_CLIP_DRAGONBREATH
       - STR_CAWS_CLIP_FRAG
+  - type: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      ToStun: 0.5
+      ToTime: 0.5
+      RandomType: 7
+      TileDamageMethod: 1
+  - type: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 7
+      TileDamageMethod: 1
+      ToStun: 0.4
+  - type: STR_CAWS_CLIP_AA
+    nameAsAmmo: (AA|SLUGS)
+    damageAlter:
+      ToStun: 0.33
+  - type: STR_CAWS_CLIP_AP
+    nameAsAmmo: (SLUGS)
+    damageAlter:
+      ToStun: 0.33
   - type: STR_CAWS_CLIP_BS
     powerRangeThreshold: 13
     powerRangeReduction: 1
@@ -1680,6 +1704,10 @@ items:
     compatibleAmmo: !add
       - STR_PANCOR_JACKHAMMER_BS_CLIP
       - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
+  - type: STR_PANCOR_JACKHAMMER_CLIP
+    nameAsAmmo: (SLUGS)
+    damageAlter:
+      ToStun: 0.33
   - type: STR_PANCOR_JACKHAMMER_BS_CLIP
     powerRangeThreshold: 15
     powerRangeReduction: 1
@@ -2397,7 +2425,7 @@ items:
     power: 35
     damageType: 1
     damageAlter:
-      ToStun: 0.4 #0.25
+      ToStun: 0.33 #0.25
     clipSize: 8
     battleType: 2
     armor: 20
@@ -3316,7 +3344,7 @@ items:
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
       ToHealth: 0.1
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -3357,7 +3385,7 @@ items:
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
       ToHealth: 0.1
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -3567,8 +3595,10 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.4
-      ToStun: 0.4
+      ToStun: 0.5
   - type: STR_SHOTGUN_SHELLS_AP
+    damageAlter:
+      ToStun: 0.33
     nameAsAmmo: (SLUGS)
   - type: STR_SHOTGUN_SHELLS_BATON
     nameAsAmmo: (BATON)
@@ -3577,11 +3607,14 @@ items:
     powerRangeReduction: 2
     nameAsAmmo: (AA|BS)
     damageAlter:
+      ToStun: 0.33
       RandomType: 7
       ToTime: *12BS
       ToStun: *12BS
   - type: STR_SHOTGUN_AA_SHELLS_AP
     nameAsAmmo: (AA|SLUGS)
+    damageAlter:
+      ToStun: 0.33
   - type: STR_SHOTGUN_SHELLS_BREACHING
     nameAsAmmo: (BREACHING)
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
@@ -3601,7 +3634,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.25
-      ToStun: 0.25
+      ToStun: 0.5
       ToHealth: 0.50
       IgnoreOverKill: false
       ToTile: 1.25 #2.75 might seem good
@@ -3940,6 +3973,8 @@ items:
     floorSprite: 329 #961
     hitSound: 13
     hitAnimation: 26
+    damageAlter:
+      ToStun: 0.33
     power: 40
     damageType: 1
     clipSize: 18
@@ -3983,6 +4018,8 @@ items:
     floorSprite: 329 #961
     hitSound: 13
     hitAnimation: 26
+    damageAlter:
+      ToStun: 0.33
     power: 50
     damageType: 1
     clipSize: 18
@@ -4495,14 +4532,14 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.4
-      ToStun: 0.25
+      ToStun: 0.5
   - type: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
     powerRangeThreshold: 9
     powerRangeReduction: 2
     damageAlter:
       RandomType: 7
       ToTime: 0.4
-      ToStun: 0.25
+      ToStun: 0.5
     listOrder: 22671
   - type: STR_HEAVY_LASER_MIB
     accuracyMultiplier:
@@ -4873,7 +4910,7 @@ items:
     damageAlter:
       ArmorEffectiveness: 0.90
       RandomType: 7
-      ToStun: 0.4
+      ToStun: 0.5
     clipSize: 80
     battleType: 2
     invWidth: 2
@@ -5267,7 +5304,7 @@ items:
       RandomWound: false
       ToHealth: 0.15
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -6274,7 +6311,12 @@ items:
     shotgunChoke: 100
     compatibleAmmo: !add
       - STR_SCOUT_DRONE_BS_AMMO
+  - type: STR_SCOUT_DRONE_AMMO
+    nameAsAmmo: (DOORBREAKER SLUG)
+    damageAlter:
+      ToStun: 0.4
   - type: STR_SCOUT_DRONE_BS_AMMO
+    nameAsAmmo: (BS)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
     requiresBuy:
       - STR_SCOUT_DRONE
@@ -6964,7 +7006,7 @@ items:
       RandomWound: false
       ToHealth: 0.15
       ToTime: 0.3
-      ToStun: 0.2
+      ToStun: 0.25
       ToMorale: 0.25
       ToWound: 0
       ToArmor: 0
@@ -8389,7 +8431,7 @@ items:
       RandomType: 2
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToHealth: 0
       ToArmor: 0
@@ -8426,7 +8468,7 @@ items:
       RandomWound: false
       ToHealth: 0.1
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -8471,7 +8513,7 @@ items:
       RandomWound: false
       ToHealth: 0
       ToTime: 0.25
-      ToStun: 0.15
+      ToStun: 0.25
       ToMorale: 0.25
       ToWound: 0
       ToArmor: 0
@@ -8513,7 +8555,7 @@ items:
       RandomWound: false
       ToHealth: 0
       ToTime: 0.25
-      ToStun: 0.15
+      ToStun: 0.25
       ToMorale: 0.25
       ToWound: 0
       ToArmor: 0
@@ -8572,7 +8614,7 @@ items:
       RandomWound: false
       ToHealth: 0.1
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -8611,6 +8653,8 @@ items:
       - STR_KS23_SHELLS_FLASHBANG
       - STR_KS23_SHELLS_DRAGONBREATH
   - type: STR_KS23_SHELLS_AP
+    damageAlter:
+      ToStun: 0.4
     nameAsAmmo: (BARRIKADA)
   - type: STR_KS23_SHELLS_BATON
     nameAsAmmo: (VOLNA-R)
@@ -8636,7 +8680,7 @@ items:
       RandomType: 2
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -8678,7 +8722,7 @@ items:
       RandomWound: false
       ToHealth: 0.1
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -9032,7 +9076,7 @@ items:
       RandomWound: false
       ToHealth: 0
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.5
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -9087,7 +9131,7 @@ items:
       RandomWound: false
       ToHealth: 0
       ToTime: 0.2
-      ToStun: 0.1
+      ToStun: 0.5
       ToMorale: 0.2
       ToWound: 0
       ToArmor: 0
@@ -11050,7 +11094,7 @@ items:
       RandomType: 2
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -11092,7 +11136,7 @@ items:
       IgnorePainImmunity: true
       ArmorEffectiveness: 0
       ToHealth: 0.1
-      ToStun: 0.1
+      ToStun: 0.25
       ToMorale: 0.1
       ToArmor: 0
       ToTile: 0
@@ -11542,7 +11586,7 @@ items:
     damageAlter:
       RandomType: 7
       ToTime: 0.25
-      ToStun: 0.25
+      ToStun: 0.5
     power: 12
     damageType: 1
     battleType: 2
@@ -12282,6 +12326,14 @@ items:
     recover: true
     costSell: 24000
     listOrder: 150241
+  - type: STR_ZSRR_RED_OPS_ELITE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 36000
+    listOrder: 150241
   - type: STR_ZSRR_UBEK_PROTOTYPE_SUIT
     categories: [STR_HUMANS]
     size: 0.0
@@ -12321,6 +12373,14 @@ items:
     prisonType: 1
     recover: true
     costSell: 24000
+    listOrder: 150241
+  - type: STR_EXALT_ELITE_REINFORCER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 32000
     listOrder: 150241
   - type: STR_EXALT_EXTERMINATOR
     categories: [STR_HUMANS]
@@ -12554,13 +12614,21 @@ items:
     recover: true
     recoverCorpse: false
     recoveryPoints: 1
-  - type: STR_HAND_OF_DAGON
+  - type: STR_PROPHET_OF_DAGON
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
     liveAlien: true
     prisonType: 1
     costSell: 25000
+    listOrder: 150012
+  - type: STR_HAND_OF_DAGON
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 36000
     listOrder: 150012
 #Muton
   - type: MUTON_WEAPON
@@ -12794,7 +12862,7 @@ items:
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.5
-      ToStun: 0.25
+      ToStun: 0.5
       ToHealth: 0.5
       ToTile: 1
     accuracyMelee: 100
@@ -12859,6 +12927,14 @@ items:
     recover: true
     recoverCorpse: false
     recoveryPoints: 1
+  - type: STR_BLACK_LOTUS_ELITE_FOOTMAN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 20000
+    listOrder: 150105
   - type: STR_BLACK_LOTUS_TORONJIN
     categories: [STR_HUMANS]
     size: 0.0
