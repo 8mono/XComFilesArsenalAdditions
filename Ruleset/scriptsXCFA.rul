@@ -1982,6 +1982,7 @@ extended:
             end;
             unit.setSpawnUnit unitRuleset;
             unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
           end;
 
           return;
@@ -1998,7 +1999,7 @@ extended:
           var text unitName;
           var text armorName;
 
-          weapon_item.getTag naniteTag Tag.NANITE_VIRUS;
+          damaging_item.getTag naniteTag Tag.NANITE_VIRUS;
           if eq naniteTag 0;
             return;
           end;
@@ -2026,6 +2027,7 @@ extended:
             rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
             unit.setSpawnUnit unitRuleset;
             unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
           end;
 
           return;
@@ -4408,6 +4410,7 @@ extended:
             rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
             unit.setSpawnUnit unitRuleset;
             unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
           end;
 
           return power part side;

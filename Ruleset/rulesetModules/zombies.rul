@@ -1064,7 +1064,7 @@ items:
     floorSprite: 2
     hidePower: true
     power: 0
-    spawnUnit: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+    spawnUnit: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST
     spawnUnitFaction: 1
     damageType: 2
     blastRadius: 0
@@ -1116,6 +1116,12 @@ items:
     recoveryPoints: 25
     battleType: 11
     power: 80
+    damageAlter:
+      ToStun: 8
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 1
     blastRadius: 10
     armor: 20
     listOrder: 62315
