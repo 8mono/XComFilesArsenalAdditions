@@ -245,6 +245,12 @@ items:
       HTAG_HEAL_TYPE: 2 #type of healing effect (1 is resuscitator, 2 bio stasis, 3 overdrive serum)
       HTAG_HEAL_POWER: 1 #power of the item
       HTAG_HEAL_DURATION: 4 #turns this will run for
+  - type: STR_METALLOID_BOMB
+    tags:
+      ITEM_IS_NANITE_VIRUS: 1
+  - type: STR_NANORIFLE_CLIP
+    tags:
+      ITEM_IS_NANITE_VIRUS: 1
 armors:
   # - type: STR_HOSTAGE_ARMOR
     # tags:
@@ -1786,6 +1792,7 @@ extended:
 #googles
       NTAG_NIGHT_VISION: int
       NTAG_THERMAL_VISION: int
+      ITEM_IS_NANITE_VIRUS: int
 #Hostage/Terrorists
     RuleArmor:
       TAG_IS_HOSTAGE: int
@@ -1835,6 +1842,8 @@ extended:
       ITEM_VEST_ARMOR: int
 
       ITEM_GASMASK_DURABILITY: int
+      
+      NANITE_VIRUS: int
     BattleUnit:
 #flare
       ITAG_ILLUMINATION_STATUS: int
@@ -1971,6 +1980,39 @@ extended:
             else le applyChance 100;
               rules.getRuleUnit unitRuleset "STR_ZOMBIE_INFECTOR_TERRORIST";
             end;
+            unit.setSpawnUnit unitRuleset;
+            unit.setSpawnUnitInstantRespawn 0;
+          end;
+
+          return;
+      - offset: 0.2 #Nanite blast infection
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr BattleItem battleItem;
+          var int unitFaction;
+          var int unitOriginalFaction;
+          var int victimHP;
+          var int victimMaxHP;
+          var int naniteTag;
+
+          weapon_item.getTag naniteTag Tag.NANITE_VIRUS;
+          if eq naniteTag 0;
+            return;
+          end;
+
+          unit.getOriginalFaction unitOriginalFaction;
+          unit.getFaction unitFaction;
+          unit.getHealth victimHP;
+          unit.getHealthMax victimMaxHP;
+          debug_log health_damage;
+          
+          if le victimHP health_damage;
+            debug_log "This kills the man";
+          end;
+
+          # if and neq unitOriginalFaction 1 le victimHP 0;
+          if neq unitOriginalFaction 1;
+            rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
             unit.setSpawnUnit unitRuleset;
             unit.setSpawnUnitInstantRespawn 0;
           end;
@@ -4362,7 +4404,17 @@ extended:
             # item.setFuseTimer 0;
           end;
           return;
-      - offset: 0.1 #testing 
+      - offset: 0.2 #gives Nanite weapons their infector properties
+        code: |
+          var ptr BattleItem glowItem;
+          var ptr RuleItem itemRuleset;
+          var int naniteTag;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag naniteTag Tag.ITEM_IS_NANITE_VIRUS;
+          item.setTag Tag.NANITE_VIRUS naniteTag;
+          return;
+      - offset: 0.3 #testing 
         code: |
           var int shieldTag;
           var int shieldArmorTag;

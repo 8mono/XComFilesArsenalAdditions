@@ -1,4 +1,100 @@
 items:
+  - type: STR_METALLOID_BOMB
+    categories: [STR_DIMENSION_X_TECH, STR_GRENADES, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 120000
+    weight: 80
+    bigSprite: 0
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 11
+    fireSound: 48
+    explosionHitSound: 19
+    hitAnimation: 0
+    power: 300
+    damageAlter:
+      ToStun: 0
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 0.15
+      FireThreshold: 10000
+      SmokeThreshold: 10000
+    damageType: 8
+    costThrow:
+      energy: 20
+    costUnprime:
+      time: 15
+    unprimeActionName: STR_UNPRIME_BOMB
+    unprimeActionMessage: STR_BOMB_IS_DEACTIVATED
+    battleType: 4
+    twoHanded: false
+    spawnUnit: "STR_METALLOID_SOLDIER" #Metalloid Goo Spawner comes here
+    spawnUnitFaction: 1
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 25
+    attraction: 6
+    armor: 255
+    listOrder: 39200
+  - type: STR_NANORIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costBuy: 75000
+    costSell: 60000
+    weight: 20
+    bigSprite: 0
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 0
+    compatibleAmmo:
+      - STR_NANORIFLE_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 40
+    accuracySnap: 65
+    accuracyAimed: 95
+    tuAuto: 33
+    tuSnap: 26
+    tuAimed: 60
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    snapRange: 17
+    autoRange: 11
+    shotgunChoke: 100
+    attraction: 20
+    listOrder: 21500
+  - type: STR_NANORIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    costBuy: 5000
+    costSell: 4000
+    weight: 5
+    bigSprite: 0
+    floorSprite: 2
+    handSprite: 0
+    hitAnimation: 26
+    hitSound: 22
+    costThrow:
+      energy: 10
+    power: 36
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      ToHealth: 1.25
+    damageType: 0
+    spawnUnit: "STR_METALLOID_SOLDIER"
+    spawnUnitFaction: 1
+    clipSize: 32
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 21510
   - type: STR_GIANT_RAT_WEAPON
     power: 4
     damageBonus:
