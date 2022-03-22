@@ -873,7 +873,7 @@ items:
     battleType: 11
     listOrder: 66670
   - type: EGG_SAC_CORPSE_1
-    name: STR_ANTMAN_QUEEN_CORPSE
+    name: STR_EGG_SAC_CORPSE
     floorSprite: 442
     invWidth: 0
     invHeight: 0

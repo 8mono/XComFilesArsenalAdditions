@@ -740,6 +740,10 @@ extraSprites:
       443: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_2.png
       444: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_3.png
       445: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_4.png
+      446: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_1.png
+      447: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_2.png
+      448: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_3.png
+      449: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_4.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.

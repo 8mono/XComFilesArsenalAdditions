@@ -29,7 +29,7 @@ items:
     unprimeActionMessage: STR_BOMB_IS_DEACTIVATED
     battleType: 4
     twoHanded: false
-    spawnUnit: "STR_METALLOID_SOLDIER" #Metalloid Goo Spawner comes here
+    spawnUnit: "STR_NANITE_GOO" #Metalloid Goo Spawner comes here
     spawnUnitFaction: 1
     invWidth: 2
     invHeight: 2

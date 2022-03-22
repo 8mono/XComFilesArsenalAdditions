@@ -1989,14 +1989,25 @@ extended:
         code: |
           var ptr RuleUnit unitRuleset;
           var ptr BattleItem battleItem;
+          var ptr RuleArmor armorRuleset;
           var int unitFaction;
           var int unitOriginalFaction;
           var int victimHP;
           var int victimMaxHP;
           var int naniteTag;
+          var text unitName;
+          var text armorName;
 
           weapon_item.getTag naniteTag Tag.NANITE_VIRUS;
           if eq naniteTag 0;
+            return;
+          end;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+          
+          if or eq armorName "STR_NANITE_GOO_ARMOR" eq armorName "STR_METALLOID_SOLDIER_ARMOR";
+            debug_log "Unit struck by nanite blast was metalloid soldier or nanite goo";
             return;
           end;
 
@@ -2006,9 +2017,9 @@ extended:
           unit.getHealthMax victimMaxHP;
           debug_log health_damage;
           
-          if le victimHP health_damage;
-            debug_log "This kills the man";
-          end;
+          # if le victimHP health_damage;
+            # debug_log "This kills the man";
+          # end;
 
           # if and neq unitOriginalFaction 1 le victimHP 0;
           if neq unitOriginalFaction 1;
@@ -2472,6 +2483,77 @@ extended:
             if and gt x 4 eq itemName "STR_BADASS_SAC_EGG";
               add previousMaxTimer 5;
               debug_log "SAC BADASS EGG FOUND!, priming for...";
+              debug_log previousMaxTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer previousMaxTimer;
+            end;
+          end;
+
+          return;
+      - offset: 0.2
+        code: |
+          var int fuseStatus;
+          var int randomTimer;
+          var int previousMaxTimer;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          var int loopCount;
+          set loopCount 0;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_NANITE_GOO_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_NANITE_GOO!";
+          rules.getRuleItem itemRuleset "STR_NANITE_SEED";
+          # unit.getInventoryItem eggItem itemRuleset;
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_NANITE_SEED" eq fuseStatus 0;
+              battle_game.randomRange randomTimer 1 5;
+              if eq x 0;
+                mul randomTimer 2;
+              else eq x 1;
+                mul randomTimer 3;
+              else eq x 2;
+                mul randomTimer 4;
+              else eq x 3;
+                mul randomTimer 5;
+              else eq x 4;
+                mul randomTimer 6;
+              end;
+              
+              debug_log "randomTimer and previousMaxTimer";
+              debug_log randomTimer;
+              debug_log previousMaxTimer;
+
+              if ge randomTimer previousMaxTimer;
+                set previousMaxTimer randomTimer;
+              end;
+
+              debug_log "NANITE SEED FOUND!, priming for...";
+              debug_log randomTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer randomTimer;
+            end;
+            if and gt x 4 eq itemName "STR_NANITE_MOTHER_SEED";
+              add previousMaxTimer 5;
+              debug_log "NANITE MOTHER SEED FOUND!, priming for...";
               debug_log previousMaxTimer;
               eggItem.setFuseEnabled 1;
               eggItem.setFuseTimer previousMaxTimer;
@@ -4283,6 +4365,50 @@ extended:
           shieldItem.setTag Tag.ITEM_SHIELD_DURABILITY shieldDurability;
           debug_log "Durability after";
           debug_log shieldDurability;
+
+          return power part side;
+      - offset: 8
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr BattleItem battleItem;
+          var ptr RuleArmor armorRuleset;
+          var int unitFaction;
+          var int unitOriginalFaction;
+          var int victimHP;
+          var int victimMaxHP;
+          var int naniteTag;
+          var text unitName;
+          var text armorName;
+
+          damaging_item.getTag naniteTag Tag.NANITE_VIRUS;
+          if eq naniteTag 0;
+            return power part side;
+          end;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+          
+          if or eq armorName "STR_NANITE_GOO_ARMOR" eq armorName "STR_METALLOID_SOLDIER_ARMOR";
+            debug_log "Unit struck by nanite blast was metalloid soldier or nanite goo";
+            set power 0;
+            return power part side;
+          end;
+
+          unit.getOriginalFaction unitOriginalFaction;
+          unit.getFaction unitFaction;
+          unit.getHealth victimHP;
+          unit.getHealthMax victimMaxHP;
+          
+          # if le victimHP health_damage;
+            # debug_log "This kills the man";
+          # end;
+
+          # if and neq unitOriginalFaction 1 le victimHP 0;
+          if neq unitOriginalFaction 1;
+            rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
+            unit.setSpawnUnit unitRuleset;
+            unit.setSpawnUnitInstantRespawn 0;
+          end;
 
           return power part side;
     recolorUnitSprite:

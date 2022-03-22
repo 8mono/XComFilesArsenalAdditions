@@ -1,4 +1,112 @@
 items:
+  - type: STR_NANITE_GOO
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 70000
+    listOrder: 143770
+  - type: STR_NANITE_GOO_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 22000
+    battleType: 11
+    listOrder: 66670
+  - type: NANITE_GOO_CORPSE_1
+    name: STR_NANITE_GOO_CORPSE
+    floorSprite: 446
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: NANITE_GOO_CORPSE_2
+    floorSprite: 447
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: NANITE_GOO_CORPSE_3
+    floorSprite: 448
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: NANITE_GOO_CORPSE_4
+    floorSprite: 449
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_NANITE_SEED
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 179
+    floorSprite: 22 #check this
+    handSprite: 0
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_METALLOID_SOLDIER
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
+  - type: STR_NANITE_MOTHER_SEED
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 179
+    floorSprite: 22 #check this
+    handSprite: 0
+    power: 10
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0
+      ToHealth: 1
+      ArmorEffectiveness: 0
+      ToWound: 100
+      RandomWound: false
+    damageType: 1
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_NANITE_GOO
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
   - type: STR_METALLOID_SPAWNER #adjust stock stats!
     categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_FLARE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.3
@@ -90,7 +198,55 @@ extraSprites:
     singleImage: true
     files:
       0: Resources/Races_Compilation/SyntheticRace/inventory_METALLOID.png
+  - type: inventory_NANITE_GOO
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SyntheticRace/inventory_NANITE_GOO.png
+  - type: UFOPEDIA_IMG_NANITE_GOO
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/SyntheticRace/ufopaedia_NANITE_GOO.png
+  - type: UFOPEDIA_IMG_NANITE_GOO_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Races_Compilation/SyntheticRace/ufopedia_NANITE_GOO_AUTOPSY.png
+  - type: NANITE_GOO.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Races_Compilation/SyntheticRace/NANITE_GOO.png
 units:
+  - type: STR_NANITE_GOO
+    race: STR_SYNTHETICS
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 50
+      stamina: 1
+      health: 100
+      bravery: 80
+      reactions: 36
+      firing: 70
+      throwing: 20
+      strength: 60
+      psiStrength: 60
+      psiSkill: 0
+      melee: 10
+      mana: 25
+    armor: STR_NANITE_GOO_ARMOR
+    standHeight: 13
+    kneelHeight: 10
+    value: 60
+    deathSound: 0
+    intelligence: 4
+    aggression: 0
+    canSurrender: true
+    energyRecovery: 40
   - type: STR_SUPER_CHRYSSALID_TERRORIST
     race: STR_CHRYSSALID
     rank: STR_LIVE_TERRORIST
@@ -172,6 +328,61 @@ units:
     sniper: 0
     spotter: 0
 armors:
+  - type: STR_NANITE_GOO_ARMOR
+    spriteSheet: NANITE_GOO.PCK
+    spriteInv: inventory_NANITE_GOO
+    allowInv: true
+    bleedImmune: false
+    corpseBattle:
+      - NANITE_GOO_CORPSE_1
+      - NANITE_GOO_CORPSE_2
+      - NANITE_GOO_CORPSE_3
+      - NANITE_GOO_CORPSE_4
+    corpseGeo: STR_NANITE_GOO_CORPSE
+    visibilityAtDay: 20
+    visibilityAtDark: 20
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.4
+      moraleCurrent: 0.33
+      bravery: 0.2
+    drawingRoutine: 3
+    size: 2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.01
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.7
+      - 1.0
+      - 1.2
+      - 1.0
+      - 0.75
+      - 1.0
+      - 0.5
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    builtInWeapons:
+      - STR_NANITE_SEED
+      - STR_NANITE_SEED
+      - STR_NANITE_SEED
+      - STR_NANITE_SEED
+      - STR_NANITE_MOTHER_SEED
+    loftempsSet: [ 105, 108, 102, 99 ]
   - type: STR_METALLOID_STANDARD_ARMOR
     spriteSheet: METALLOID.PCK
     spriteInv: inventory_METALLOID
@@ -184,11 +395,7 @@ armors:
     sideArmor: 14
     rearArmor: 14
     underArmor: 150
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       mana:
