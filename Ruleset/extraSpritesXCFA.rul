@@ -512,6 +512,16 @@ extraSprites:
       562: Resources/Weapons_Compilation/ClassicWeapons/bigob_Colt45APClip.png
       563: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMHPClip.png
       564: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMAPClip.png
+      565: Resources/Weapons_Compilation/ClassicWeapons/bigob_Galil_Arm.png
+      566: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK.png
+      567: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClip.png
+      568: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipBig.png
+      569: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipAP.png
+      570: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClipBigAP.png
+      571: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_Clip.png
+      572: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_Drum.png
+      573: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_ClipAP.png
+      574: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK_DrumAP.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -612,6 +622,8 @@ extraSprites:
       2704: Resources/Weapons_Compilation/ClassicWeapons/handob_VKS.png
       2712: Resources/Weapons_Compilation/ClassicWeapons/handob_SKS_SCOPED.png
       2720: Resources/Weapons_Compilation/ClassicWeapons/handob_M16Beowulf.png
+      2728: Resources/Weapons_Compilation/ClassicWeapons/handob_Galil_Arm.png
+      2736: Resources/Weapons_Compilation/ClassicWeapons/handob_RPK.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -736,6 +748,8 @@ extraSprites:
       439: Resources/Weapons_Compilation/ClassicWeapons/floorob_M16Beowulf.png
       440: Resources/Weapons_Compilation/ClassicWeapons/floorob_SKS_SCOPED.png
       441: Resources/Weapons_Compilation/BlackOpsWeapons/floorob_AssaultCannonClip.png
+      442: Resources/Weapons_Compilation/ClassicWeapons/floorob_Galil_Arm.png
+      443: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPK.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.

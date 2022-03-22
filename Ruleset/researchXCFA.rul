@@ -1,4 +1,181 @@
 research:
+  - name: STR_GALIL_ARM_BIG_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    unlocks: 
+      - STR_GALIL_ARM_CLIP_AP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_GALIL_ARM_BIG_CLIP_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_GALIL_ARM_BIG_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_GALIL_ARM
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GALIL_ARM_BIG_CLIP_BUY
+      - STR_GALIL_ARM_BIG_CLIP_AP_PREQ
+  - name: STR_GALIL_ARM_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_GALIL_ARM_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GALIL_ARM
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_GALIL_ARM_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_GALIL_ARM
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GALIL_ARM
+      - STR_GALIL_ARM_CLIP_AP_PREQ
+  - name: STR_RPK_DRUM_AP_PREQ
+    cost: 0
+    points: 0
+    unlocks: 
+      - STR_RPK_CLIP_AP_PREQ
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RPK_DRUM_AP
+    cost: 0
+    points: 0
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_RPK_DRUM_AP_BUY
+    cost: 1
+    lookup: STR_RPK
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RPK_DRUM_BUY
+      - STR_RPK_DRUM_AP_PREQ
+  - name: STR_RPK_CLIP_AP_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RPK_CLIP_AP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RPK
+    needItem: true
+    unlocks:
+      - STR_AP_CLIPS
+  - name: STR_RPK_CLIP_AP_BUY
+    cost: 1
+    lookup: STR_RPK
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RPK
+      - STR_RPK_CLIP_AP_PREQ
+  - name: STR_GALIL_ARM_BIG_CLIP
+    cost: 0
+    points: 0
+    lookup: STR_GALIL_ARM
+    needItem: true
+    listOrder: 21200
+  - name: STR_RPK_DRUM
+    cost: 0
+    points: 0
+    lookup: STR_RPK
+    needItem: true
+    listOrder: 21200
+  - name: STR_RPK_DRUM_BUY
+    cost: 10
+    points: 10
+    lookup: STR_RPK
+    dependencies:
+      - STR_ANY_CULT_HQ
+      - STR_RPK_BUY
+    listOrder: 21200
+  - name: STR_GALIL_ARM_BIG_CLIP_BUY
+    cost: 10
+    points: 10
+    lookup: STR_GALIL_ARM
+    dependencies:
+      - STR_ANY_CULT_HQ
+      - STR_GALIL_ARM_BUY
+    listOrder: 21200
+  - name: STR_GALIL_ARM
+    cost: 5
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_RIFLE_M16_CLIP
+    listOrder: 21200
+  - name: STR_GALIL_ARM_BUY
+    cost: 2
+    points: 1
+    lookup: STR_GALIL_ARM
+    unlocks:
+      - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_GALIL_ARM_BUY_PREQ_A
+      - STR_GALIL_ARM_BUY_PREQ_B
+    listOrder: 421200
+  - name: STR_GALIL_ARM_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_GALIL_ARM_BUY
+  - name: STR_GALIL_ARM_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GALIL_ARM
+    unlocks:
+      - STR_GALIL_ARM_BUY
+  - name: STR_RPK
+    cost: 5
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_WP_7_62_CLIP
+    listOrder: 21125
+  - name: STR_RPK_BUY
+    cost: 2
+    points: 1
+    lookup: STR_RPK
+    unlocks:
+      - STR_WP_7_62_CLIP
+      - STR_WP_7_62_CLIP_BUY
+    dependencies:
+      - STR_RPK_BUY_PREQ_A
+      - STR_RPK_BUY_PREQ_B
+    listOrder: 421125
+  - name: STR_RPK_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_RPK_BUY
+  - name: STR_RPK_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RPK
+    unlocks:
+      - STR_RPK_BUY
   - name: STR_COLT45_AP_CLIP_PREQ
     cost: 0
     points: 0

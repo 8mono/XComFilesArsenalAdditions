@@ -1,4 +1,291 @@
 items:
+  - type: STR_RPK
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_LAND]
+    requiresBuy:
+      - STR_RPK_BUY
+    size: 0.2
+    costBuy: 3100
+    costSell: 1950
+    weight: 12
+    bigSprite: 566
+    floorSprite: 443
+    handSprite: 2736
+    bulletSprite: 2
+    fireSound: [169,170]
+    reloadSound: 171
+    compatibleAmmo:
+      - STR_WP_7_62_CLIP
+      - STR_RPK_CLIP
+      - STR_RPK_DRUM
+      - STR_WP_7_62_CLIP_AP
+      - STR_RPK_CLIP_AP
+      - STR_RPK_DRUM_AP
+    accuracyCloseQuarters: 85
+    accuracyAuto: 45 #35
+    accuracySnap: 70 #65
+    accuracyAimed: 100 #105
+    tuAuto: 49
+    tuSnap: 37
+    tuAimed: 60 #70
+    autoRange: 18 #11
+    snapRange: 19 #16
+    kneelBonus: 125
+    autoShots: 5
+    confSnap:
+      shots: 3
+    sprayWaypoints: 2
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 20
+    listOrder: 21126
+  - type: STR_RPK_CLIP
+    nameAsAmmo: (FMJ)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_MACHINE_GUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPK_BUY
+    size: 0.1
+    costBuy: 250
+    costSell: 120
+    weight: 4
+    bigSprite: 571
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    damageType: 1
+    clipSize: 40
+    battleType: 2
+    invHeight: 1
+    invWidth: 2
+    attraction: 15
+    listOrder: 21129
+  - type: STR_RPK_CLIP_AP
+    nameAsAmmo: (AP)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_MACHINE_GUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPK_CLIP_AP_BUY
+    size: 0.1
+    costBuy: 350
+    costSell: 250
+    weight: 4
+    bigSprite: 573
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 40
+    battleType: 2
+    invHeight: 1
+    invWidth: 2
+    attraction: 15
+    listOrder: 21129
+  - type: STR_RPK_DRUM
+    nameAsAmmo: (FMJ)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPK_DRUM_BUY
+    size: 0.1
+    costBuy: 400
+    costSell: 190
+    weight: 5
+    bigSprite: 572
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    damageType: 1
+    clipSize: 75
+    battleType: 2
+    invHeight: 1
+    invWidth: 2
+    reloadSound: 227
+    attraction: 15
+    listOrder: 21129
+  - type: STR_RPK_DRUM_AP
+    nameAsAmmo: (AP)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPK_DRUM_AP_BUY
+    size: 0.1
+    costBuy: 700
+    costSell: 300
+    weight: 5
+    bigSprite: 574
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 75
+    reloadSound: 227
+    battleType: 2
+    invHeight: 1
+    invWidth: 2
+    attraction: 15
+    listOrder: 21129
+  - type: STR_GALIL_ARM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_LAND]
+    requiresBuy:
+      - STR_GALIL_ARM_BUY
+    size: 0.2
+    costBuy: 2600
+    costSell: 1600
+    weight: 11
+    bigSprite: 565
+    floorSprite: 442
+    handSprite: 2728
+    bulletSprite: 2
+    fireSound: [225, 226]
+    reloadSound: 224
+    compatibleAmmo:
+      - STR_RIFLE_M16_CLIP
+      - STR_GALIL_ARM_CLIP
+      - STR_GALIL_ARM_BIG_CLIP
+      - STR_RIFLE_M16_CLIP_AP
+      - STR_GALIL_ARM_CLIP_AP
+      - STR_GALIL_ARM_BIG_CLIP_AP
+    accuracyCloseQuarters: 85
+    accuracyAuto: 35
+    accuracySnap: 75
+    accuracyAimed: 100
+    tuAuto: 45
+    tuSnap: 34
+    tuAimed: 70
+    snapRange: 17
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 40
+    invWidth: 1
+    invHeight: 3
+    autoRange: 12
+    kneelBonus: 125
+    confSnap:
+      shots: 3
+    autoShots: 5
+    sprayWaypoints: 2
+    armor: 30
+    attraction: 20
+    listOrder: 21245
+  - type: STR_GALIL_ARM_CLIP
+    nameAsAmmo: (FMJ)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_GALIL_ARM_BUY
+    size: 0.05
+    costBuy: 300
+    costSell: 190
+    weight: 4
+    bigSprite: 567
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 50
+    costThrow:
+      energy: 6
+    battleType: 2
+    invHeight: 2
+    invWidth: 1
+    armor: 30
+    attraction: 15
+    listOrder: 21210
+  - type: STR_GALIL_ARM_CLIP_AP
+    nameAsAmmo: (AP)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_GALIL_ARM_CLIP_AP_BUY
+    size: 0.05
+    costBuy: 450
+    costSell: 250
+    weight: 4
+    bigSprite: 569
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.7
+    damageType: 1
+    clipSize: 50
+    costThrow:
+      energy: 6
+    battleType: 2
+    invHeight: 2
+    invWidth: 1
+    armor: 30
+    attraction: 15
+    listOrder: 21211
+  - type: STR_GALIL_ARM_BIG_CLIP
+    nameAsAmmo: (FMJ)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_GALIL_ARM_BIG_CLIP_BUY
+    size: 0.05
+    costBuy: 600
+    costSell: 300
+    weight: 5
+    bigSprite: 568
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 65
+    costThrow:
+    costThrow:
+      energy: 6
+    battleType: 2
+    invHeight: 2
+    invWidth: 1
+    armor: 30
+    attraction: 15
+    listOrder: 21210
+  - type: STR_GALIL_ARM_BIG_CLIP_AP
+    nameAsAmmo: (AP)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_GALIL_ARM_BIG_CLIP_AP_BUY
+    size: 0.05
+    costBuy: 750
+    costSell: 380
+    weight: 5
+    bigSprite: 570
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.7
+    damageType: 1
+    clipSize: 65
+    costThrow:
+      energy: 6
+    battleType: 2
+    invHeight: 2
+    invWidth: 1
+    armor: 30
+    attraction: 15
+    listOrder: 21211
   - type: STR_GIANT_RAT_WEAPON
     power: 4
     damageBonus:
@@ -2433,8 +2720,6 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21211
-  - type: STR_RIFLE_M16_CLIP
-    nameAsAmmo: (FMJ)
   - type: STR_HUNTING_RIFLE
     bigSprite: 505
   - type: STR_PUMP_ACTION
@@ -2607,6 +2892,7 @@ items:
       #name: STR_BURST_AUTO
       shots: 3
   - type: STR_RIFLE_M16_CLIP
+    nameAsAmmo: (FMJ)
     costBuy: 200
     costSell: 150
     power: 26

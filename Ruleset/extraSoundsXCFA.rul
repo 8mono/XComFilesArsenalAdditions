@@ -134,6 +134,19 @@ extraSounds:
       212: Resources/Weapons_Compilation/Resound/grenlau-4.wav
       213: Resources/Weapons_Compilation/Resound/grenlaur.wav
       214: Resources/Weapons_Compilation/Resound/grenlaur-2.wav
+      215: Resources/Weapons_Compilation/Resound/ccommando.wav
+      216: Resources/Weapons_Compilation/Resound/ccommando-2.wav
+      217: Resources/Weapons_Compilation/Resound/ccommandor.wav
+      218: Resources/Weapons_Compilation/Resound/famas.ogg
+      219: Resources/Weapons_Compilation/Resound/famas-2.ogg
+      220: Resources/Weapons_Compilation/Resound/famasr-2.ogg
+      221: Resources/Weapons_Compilation/Resound/famasr.ogg
+      222: Resources/Weapons_Compilation/Resound/galil.wav
+      223: Resources/Weapons_Compilation/Resound/galil-2.wav
+      224: Resources/Weapons_Compilation/Resound/galilr.ogg
+      225: Resources/Weapons_Compilation/Resound/minimi.wav
+      226: Resources/Weapons_Compilation/Resound/minimi-2.wav
+      227: Resources/Weapons_Compilation/Resound/minimir.ogg
 #Human 
       1135: Resources/Sounds_Compilation/HumanScreams/MaleScream01.wav
       1136: Resources/Sounds_Compilation/HumanScreams/MaleScream02.wav
