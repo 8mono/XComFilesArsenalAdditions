@@ -3039,9 +3039,9 @@ alienDeployments:
             - STR_LANDMINE
             - STR_ILLEGAL_REQUISITION_FILES
           -
-            - STR_MAKAROV
-            - STR_MAKAROV_CLIP
-            - STR_MAKAROV_CLIP
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
             - STR_DYNAMITE
             - STR_ILLEGAL_REQUISITION_FILES
           -
@@ -3073,9 +3073,9 @@ alienDeployments:
             - STR_LC_AP_AMMO
             - STR_LANDMINE
           -
-            - STR_MAKAROV
-            - STR_MAKAROV_CLIP
-            - STR_MAKAROV_CLIP
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
             - STR_DYNAMITE
           -
             - STR_MAUSER
@@ -3527,9 +3527,9 @@ alienDeployments:
             - STR_WP_5_45_CLIP
             - STR_WP_5_45_CLIP_AP
           -
-            - STR_MAGNUM
-            - STR_MAGNUM_DRUM
-            - STR_MAGNUM_DRUM
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
             - STR_ILLEGAL_REQUISITION_FILES
           -
             - STR_LIGHT_CANNON
@@ -3563,9 +3563,10 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_MAGNUM
-            - STR_MAGNUM_DRUM
-            - STR_MAGNUM_DRUM
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_DRUM_AP
+            - STR_DYNAMITE
           -
             - STR_LIGHT_CANNON
             - STR_LC_AP_AMMO
@@ -6110,16 +6111,16 @@ alienDeployments:
             - STR_SNUBNOSE_PISTOL_CLIP
             - STR_DYNAMITE
           -
-            - STR_GALIL
-            - STR_FN_FAL_CLIP
-            - STR_FN_FAL_CLIP_AP
+            - STR_GALIL_ARM
+            - STR_GALIL_ARM_BIG_CLIP
+            - STR_GALIL_ARM_BIG_CLIP_AP
             - STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON
           -
             - STR_UZI
             - STR_UZI_CLIP
             - STR_UZI_CLIP_AP
           -
-            - STR_FN_FAL
+            - STR_FN_FAL_SCOPED
             - STR_FN_FAL_CLIP
             - STR_FN_FAL_CLIP_AP
           -
@@ -6491,10 +6492,9 @@ alienDeployments:
             - STR_MANURHIN_REVOLVER_DRUM
             - STR_ILLEGAL_REQUISITION_FILES_CHURCH_OF_DAGON
           -
-            - STR_SNUBNOSE_PISTOL
-            - STR_SNUBNOSE_PISTOL_CLIP
-            - STR_SNUBNOSE_PISTOL_CLIP
-            - STR_GRENADE
+            - STR_GALIL_ARM
+            - STR_GALIL_ARM_CLIP_AP
+            - STR_GALIL_ARM_CLIP_AP
           -
             - STR_GALIL
             - STR_FN_FAL_CLIP_AP
@@ -6526,7 +6526,7 @@ alienDeployments:
             - STR_UZI_CLIP
             - STR_UZI_CLIP
           -
-            - STR_FN_FAL
+            - STR_FN_FAL_SCOPED
             - STR_FN_FAL_CLIP_AP
             - STR_FN_FAL_CLIP_AP
   - type: STR_MEDIUM_GROUND_CONVOY_CHURCH_OF_DAGON_XCFA
@@ -7115,9 +7115,9 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_AK47
-            - STR_WP_7_62_CLIP
-            - STR_WP_7_62_CLIP_AP
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
           -
             - STR_SWD
             - STR_SWD_CLIP
@@ -7167,9 +7167,9 @@ alienDeployments:
         percentageOutsideUfo: 0
         itemSets:
           -
-            - STR_MAGNUM
-            - STR_MAGNUM_DRUM
-            - STR_MAGNUM_DRUM
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
           -
             - STR_LIGHT_CANNON
             - STR_LC_AP_AMMO
@@ -7604,9 +7604,9 @@ alienDeployments:
         percentageOutsideUfo: 20
         itemSets:
           -
-            - STR_AK47
-            - STR_WP_7_62_CLIP
-            - STR_WP_7_62_CLIP_AP
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
           -
             - STR_SWD
             - STR_SWD_CLIP
@@ -7666,9 +7666,9 @@ alienDeployments:
             - STR_LC_AP_AMMO
             - STR_LANDMINE
           -
-            - STR_MAKAROV
-            - STR_MAKAROV_CLIP
-            - STR_MAKAROV_CLIP
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_DRUM_AP
             - STR_DYNAMITE
           -
             - STR_MAUSER
@@ -8068,9 +8068,9 @@ alienDeployments:
             - STR_TOKAREV_CLIP
             - STR_COMBAT_KNIFE
           -
-            - STR_AK47
-            - STR_WP_7_62_CLIP_AP
-            - STR_WP_7_62_CLIP_AP
+            - STR_RPK
+            - STR_RPK_CLIP
+            - STR_RPK_CLIP_AP
             - STR_GRENADE
           -
             - STR_UZI
@@ -8322,10 +8322,10 @@ alienDeployments:
             - STR_SKS_CLIP_AP
             - STR_ILLEGAL_REQUISITION_FILES_ZSRR
           -
-            - STR_TOKAREV
-            - STR_TOKAREV_CLIP
-            - STR_TOKAREV_CLIP
-            - STR_COMBAT_KNIFE
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
+            - STR_GRENADE
           -
             - STR_AKM
             - STR_WP_7_62_CLIP
@@ -8353,10 +8353,10 @@ alienDeployments:
             - STR_SKS_CLIP_AP
             - STR_ILLEGAL_REQUISITION_FILES_ZSRR
           -
-            - STR_TOKAREV
-            - STR_TOKAREV_CLIP
-            - STR_TOKAREV_CLIP
-            - STR_COMBAT_KNIFE
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_CLIP_AP
+            - STR_GRENADE
           -
             - STR_SHAK12
             - STR_SHAK12_AP_CLIP
@@ -8423,10 +8423,10 @@ alienDeployments:
             - STR_UZI_CLIP_AP
             - STR_WOODEN_CLUB
           -
-            - STR_MAKAROV
-            - STR_MAKAROV_CLIP
-            - STR_MAKAROV_CLIP
-            - STR_COMBAT_KNIFE
+            - STR_RPK
+            - STR_RPK_DRUM
+            - STR_RPK_DRUM_AP
+            - STR_GRENADE
           -
             - STR_SKS
             - STR_SKS_CLIP_AP
