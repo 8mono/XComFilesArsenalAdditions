@@ -21,9 +21,9 @@ items:
       - STR_RPK_CLIP_AP
       - STR_RPK_DRUM_AP
     accuracyCloseQuarters: 85
-    accuracyAuto: 45 #35
-    accuracySnap: 70 #65
-    accuracyAimed: 100 #105
+    accuracyAuto: 25 #35
+    accuracySnap: 55 #65
+    accuracyAimed: 90 #105
     tuAuto: 49
     tuSnap: 37
     tuAimed: 60 #70
@@ -32,7 +32,7 @@ items:
     kneelBonus: 125
     autoShots: 5
     confSnap:
-      shots: 3
+      shots: 2
     sprayWaypoints: 2
     costThrow:
       energy: 16
@@ -158,9 +158,9 @@ items:
       - STR_GALIL_ARM_CLIP_AP
       - STR_GALIL_ARM_BIG_CLIP_AP
     accuracyCloseQuarters: 85
-    accuracyAuto: 35
-    accuracySnap: 75
-    accuracyAimed: 100
+    accuracyAuto: 30
+    accuracySnap: 60
+    accuracyAimed: 90
     tuAuto: 45
     tuSnap: 34
     tuAimed: 70
@@ -176,7 +176,7 @@ items:
     kneelBonus: 125
     confSnap:
       shots: 3
-    autoShots: 5
+    autoShots: 6
     sprayWaypoints: 2
     armor: 30
     attraction: 20
