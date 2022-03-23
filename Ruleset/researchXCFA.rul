@@ -1896,7 +1896,7 @@ research:
   - name: STR_BLACKOPS_SCOPED_REVOLVER_BUY
     cost: 5
     points: 3
-    lookup: STR_BLACKOPS_SCOPED_REVOLVER
+    lookup: STR_BLACKOPS_PRECISION_REVOLVER
     dependencies:
       - STR_BLACKOPS_PRECISION_REVOLVER
       - STR_BLACKOPS_PREMIUM
