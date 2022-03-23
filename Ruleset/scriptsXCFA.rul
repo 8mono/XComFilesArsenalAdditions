@@ -11,6 +11,50 @@ items:
 # ITEM_RESIST_SLOT_INDEX: 7 - ???
 # ITEM_RESIST_SLOT_INDEX: 8 - ???
 # ITEM_RESIST_SLOT_INDEX: 9 - ???
+  - type: STR_ALLOY_SHOTGUN
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+      NEW_BIGOB_FOR_WEAPON: 208 #changes always, original
+      CURRENT_MOD_OFFSET: current
+  - type: STR_ALLOY_SHOTGUN_SHARDS
+    tags:
+      NEW_BIGOB_FOR_WEAPON: 208 #changes always, original
+      CURRENT_MOD_OFFSET: current
+  - type: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    tags:
+      NEW_BIGOB_FOR_WEAPON: 578 #changes always, tracite
+      CURRENT_MOD_OFFSET: current
+  - type: STR_WP_7_62_CLIP 
+    tags:
+      GENERIC_AMMO: 1
+      CURRENT_MOD_OFFSET: current
+      NEW_BIGOB_FOR_SLOT_0: 577 #bigob always changes, no other sprite change
+      WEAPON_SLOT_0: 566 #STR_RPK
+  - type: STR_WP_7_62_CLIP_AP
+    tags:
+      GENERIC_AMMO_AP: 1
+      CURRENT_MOD_OFFSET: current
+      NEW_BIGOB_FOR_SLOT_0: 577 #bigob always changes, no other sprite change
+      WEAPON_SLOT_0: 566 #STR_RPK
+  - type: STR_RPK
+    tags:
+      ALLOW_AMMO_TO_RESPRITE: 1
+      NEW_BIGOB_FOR_WEAPON: 576 #changes always, empty
+      NEW_FLOOROB_FOR_WEAPON: 445 #changes once, empty
+      NEW_HANDOB_FOR_WEAPON: 2752 #changes once, empty
+      CURRENT_MOD_OFFSET: current
+  - type: STR_RPK_CLIP
+    tags:
+      NEW_BIGOB_FOR_WEAPON: 566 #changes always, original
+      NEW_FLOOROB_FOR_WEAPON: 443 #changes once, original
+      NEW_HANDOB_FOR_WEAPON: 2736 #changes once, original
+      CURRENT_MOD_OFFSET: current
+  - type: STR_RPK_DRUM
+    tags:
+      NEW_BIGOB_FOR_WEAPON: 575 #changes always, big cilp/drum
+      NEW_FLOOROB_FOR_WEAPON: 444 #changes once, big clip/drum
+      NEW_HANDOB_FOR_WEAPON: 2744 #changes once, big clip/drum
+      CURRENT_MOD_OFFSET: current
   - type: STR_RIOT_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
@@ -1722,6 +1766,15 @@ armors:
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleItem:
+      GENERIC_AMMO: int
+      GENERIC_AMMO_AP: int
+      NEW_BIGOB_FOR_SLOT_0: int
+      WEAPON_SLOT_0: int
+      ALLOW_AMMO_TO_RESPRITE: int
+      NEW_BIGOB_FOR_WEAPON: int
+      NEW_FLOOROB_FOR_WEAPON: int
+      NEW_HANDOB_FOR_WEAPON: int
+      CURRENT_MOD_OFFSET: RuleList
       ITEM_IMPACT_VEST: int
       ITEM_RESIST_SLOT_INDEX: int
       ITEM_MUTON_BERSERKER: int
@@ -4054,6 +4107,140 @@ extended:
           debug_log shieldDurability;
 
           return power part side;
+    selectItemSprite:
+      - offset: 1 # Select weapon bigSprite based on ammo item
+        code: |
+          var ptr BattleItem ammoItem;
+          var ptr RuleItem weaponRuleset;
+          var ptr RuleItem ammoRuleset;
+          var int doResprite;
+          var int doEmptyResprite;
+          var int newSprite;
+          var int modOffset;
+
+          if eq blit_part blit_item_big;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag doResprite Tag.ALLOW_AMMO_TO_RESPRITE;
+            item.getAmmoItem ammoItem;
+            set doEmptyResprite 0;
+            if eq ammoItem null;
+              set doEmptyResprite 1;
+            end;
+
+            if and eq doResprite 1 eq doEmptyResprite 1; #Empty version
+              debug_log "I managed to get to doresprite 1 and emptyresprite 1 !";
+              weaponRuleset.getTag newSprite Tag.NEW_BIGOB_FOR_WEAPON;
+              if neq newSprite 0; #Empty version
+                debug_log "I managed to get newsprite not equal 0!";
+                weaponRuleset.getTag sprite_index Tag.NEW_BIGOB_FOR_WEAPON;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            else and eq doResprite 1 eq doEmptyResprite 0; #Non-empty version
+              item.getAmmoItem ammoItem;
+              ammoItem.getRuleItem ammoRuleset;
+              ammoRuleset.getTag newSprite Tag.NEW_BIGOB_FOR_WEAPON;
+              if neq newSprite 0; #Non-empty version
+                ammoRuleset.getTag sprite_index Tag.NEW_BIGOB_FOR_WEAPON;
+                ammoRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
+      - offset: 2 # Select weapon floorSprite based on ammo item
+        code: |
+          var ptr BattleItem ammoItem;
+          var ptr RuleItem weaponRuleset;
+          var ptr RuleItem ammoRuleset;
+          var int doResprite;
+          var int doEmptyResprite;
+          var int newSprite;
+          var int modOffset;
+
+          if eq blit_part blit_item_big;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag doResprite Tag.ALLOW_AMMO_TO_RESPRITE;
+            item.getAmmoItem ammoItem;
+            set doEmptyResprite 0;
+            if eq ammoItem null;
+              set doEmptyResprite 1;
+            end;
+
+            if and eq doResprite 1 eq doEmptyResprite 1; #Empty version
+              debug_log "I managed to get to doresprite 1 and emptyresprite 1 !";
+              weaponRuleset.getTag newSprite Tag.NEW_FLOOROB_FOR_WEAPON;
+              if neq newSprite 0; #Empty version
+                debug_log "I managed to get newsprite not equal 0!";
+                weaponRuleset.getTag sprite_index Tag.NEW_FLOOROB_FOR_WEAPON;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetFloorobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            else and eq doResprite 1 eq doEmptyResprite 0; #Non-empty version
+              item.getAmmoItem ammoItem;
+              ammoItem.getRuleItem ammoRuleset;
+              ammoRuleset.getTag newSprite Tag.NEW_FLOOROB_FOR_WEAPON;
+              if neq newSprite 0; #Non-empty version
+                ammoRuleset.getTag sprite_index Tag.NEW_FLOOROB_FOR_WEAPON;
+                ammoRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetFloorobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
+      - offset: 3 # Select weapon handSprite based on ammo item
+        code: |
+          var ptr BattleItem ammoItem;
+          var ptr RuleItem weaponRuleset;
+          var ptr RuleItem ammoRuleset;
+          var int doResprite;
+          var int doEmptyResprite;
+          var int newSprite;
+          var int modOffset;
+
+          if or eq blit_part blit_item_lefthand eq blit_part blit_item_righthand;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag doResprite Tag.ALLOW_AMMO_TO_RESPRITE;
+            item.getAmmoItem ammoItem;
+            set doEmptyResprite 0;
+            if eq ammoItem null;
+              set doEmptyResprite 1;
+            end;
+
+            if and eq doResprite 1 eq doEmptyResprite 1; #Empty version
+              debug_log "I managed to get to doresprite 1 and emptyresprite 1 !";
+              weaponRuleset.getTag newSprite Tag.NEW_HANDOB_FOR_WEAPON;
+              if neq newSprite 0; #Empty version
+                add newSprite sprite_offset;
+                set sprite_index newSprite;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            else and eq doResprite 1 eq doEmptyResprite 0; #Non-empty version
+              item.getAmmoItem ammoItem;
+              ammoItem.getRuleItem ammoRuleset;
+              ammoRuleset.getTag newSprite Tag.NEW_HANDOB_FOR_WEAPON;
+              if neq newSprite 0; #Non-empty version
+                add newSprite sprite_offset;
+                set sprite_index newSprite;
+                ammoRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
     recolorUnitSprite:
       - offset: 0.1 #Handles periodic recolors due to daze
         code: |
