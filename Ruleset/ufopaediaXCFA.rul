@@ -1,4 +1,96 @@
 ufopaedia:
+  - id: STR_GALIL_ARM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_GALIL_ARM_UFOPEDIA
+    requires:
+      - STR_GALIL_ARM
+    pages:
+      - title: STR_GALIL_ARM
+        text: STR_GALIL_ARM_UFOPEDIA
+      - title: STR_GALIL_ARM_CONT
+        text: STR_GALIL_ARM_UFOPEDIA
+    listOrder: 21246
+  - id: STR_GALIL_ARM_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_GALIL_ARM_BIG_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GALIL_ARM_BIG_CLIP
+  - id: STR_GALIL_ARM_CLIP_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GALIL_ARM_CLIP_AP
+  - id: STR_GALIL_ARM_CLIP_AP_PREQ
+    text: STR_GALIL_ARM_CLIP_AP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_GALIL_ARM_CLIP_AP_PREQ
+  - id: STR_GALIL_ARM_BIG_CLIP_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GALIL_ARM_BIG_CLIP_AP
+  - id: STR_GALIL_ARM_BIG_CLIP_AP_PREQ
+    text: STR_GALIL_ARM_BIG_CLIP_AP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_GALIL_ARM_BIG_CLIP_AP_PREQ
+  - id: STR_RPK
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_RPK_UFOPEDIA
+    requires:
+      - STR_RPK
+    pages:
+      - title: STR_RPK
+        text: STR_RPK_UFOPEDIA
+      - title: STR_RPK_CONT
+        text: STR_RPK_UFOPEDIA
+    listOrder: 21127
+  - id: STR_RPK_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+  - id: STR_RPK_DRUM
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RPK_DRUM
+  - id: STR_RPK_CLIP_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RPK_CLIP_AP
+  - id: STR_RPK_CLIP_AP_PREQ
+    text: STR_RPK_CLIP_AP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RPK_CLIP_AP_PREQ
+  - id: STR_RPK_DRUM_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_RPK_DRUM_AP
+  - id: STR_RPK_DRUM_AP_PREQ
+    text: STR_RPK_DRUM_AP_PREQ_UFOPEDIA
+    image_id: BLACKMARKETIMG
+    type_id: 7
+    text_width: 310
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_RPK_DRUM_AP_PREQ
   - id: STR_COLT45_HP_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
