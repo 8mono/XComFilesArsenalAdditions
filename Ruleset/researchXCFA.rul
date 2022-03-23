@@ -189,7 +189,6 @@ research:
       - STR_AP_CLIPS
   - name: STR_COLT45_AP_CLIP_BUY
     cost: 1
-    lookup: STR_COLT45
     points: 0
     dependencies:
       - STR_MILESTONE_1_SUMMARY
@@ -207,7 +206,6 @@ research:
       - STR_HP_CLIPS
   - name: STR_COLT45_HP_CLIP_BUY
     cost: 1
-    lookup: STR_COLT45
     points: 0
     dependencies:
       - STR_MILESTONE_1_SUMMARY
