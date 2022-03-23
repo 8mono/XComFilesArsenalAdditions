@@ -11,7 +11,7 @@ items:
     floorSprite: 443
     handSprite: 2736
     bulletSprite: 2
-    fireSound: [169,170]
+    fireSound: [166,167,168,169,170]
     reloadSound: 171
     compatibleAmmo:
       - STR_WP_7_62_CLIP
@@ -109,7 +109,7 @@ items:
     battleType: 2
     invHeight: 1
     invWidth: 2
-    reloadSound: 227
+    reloadSound: 217
     attraction: 15
     listOrder: 21129
   - type: STR_RPK_DRUM_AP
@@ -130,7 +130,7 @@ items:
       ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 75
-    reloadSound: 227
+    reloadSound: 217
     battleType: 2
     invHeight: 1
     invWidth: 2
@@ -148,8 +148,8 @@ items:
     floorSprite: 442
     handSprite: 2728
     bulletSprite: 2
-    fireSound: [225, 226]
-    reloadSound: 224
+    fireSound: [215, 216]
+    reloadSound: 217
     compatibleAmmo:
       - STR_RIFLE_M16_CLIP
       - STR_GALIL_ARM_CLIP
@@ -257,6 +257,7 @@ items:
     battleType: 2
     invHeight: 2
     invWidth: 1
+    reloadSound: 224
     armor: 30
     attraction: 15
     listOrder: 21210
@@ -283,6 +284,7 @@ items:
     battleType: 2
     invHeight: 2
     invWidth: 1
+    reloadSound: 224
     armor: 30
     attraction: 15
     listOrder: 21211
