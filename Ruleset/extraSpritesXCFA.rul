@@ -526,6 +526,14 @@ extraSprites:
       576: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPKempty.png
       577: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPKgeneric.png
       578: Resources/Weapons_Compilation/TraciteWeapons/bigob_Shard1T.png
+      579: Resources/Weapons_Compilation/ArmorWeapons/bigob_RiotCombatShieldPRIMED.png
+      580: Resources/Weapons_Compilation/ArmorWeapons/bigob_RiotCombatShieldBROKEN.png
+      581: Resources/Weapons_Compilation/ArmorWeapons/bigob_XenoCombatShieldPRIMED.png
+      582: Resources/Weapons_Compilation/ArmorWeapons/bigob_XenoAlloyShieldPRIMED.png
+      583: Resources/Weapons_Compilation/ArmorWeapons/bigob_AssaultShieldPRIMED.png
+      584: Resources/Weapons_Compilation/ArmorWeapons/bigob_AssaultShieldBROKEN.png
+      585: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldPRIMED.png
+      586: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldBROKEN.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -630,6 +638,12 @@ extraSprites:
       2736: Resources/Weapons_Compilation/ClassicWeapons/handob_RPK.png
       2744: Resources/Weapons_Compilation/ClassicWeapons/handob_RPKdrum.png
       2752: Resources/Weapons_Compilation/ClassicWeapons/handob_RPKempty.png
+      2760: Resources/Weapons_Compilation/ArmorWeapons/handob_RiotCombatShieldPRIMED.png
+      2768: Resources/Weapons_Compilation/ArmorWeapons/handob_RiotCombatShieldBROKEN.png
+      2776: Resources/Weapons_Compilation/ArmorWeapons/handob_XenoCombatShieldPRIMED.png
+      2784: Resources/Weapons_Compilation/ArmorWeapons/handob_XenoAlloyShieldPRIMED.png
+      2792: Resources/Weapons_Compilation/ArmorWeapons/handob_AssaultShieldPRIMED.png
+      2800: Resources/Weapons_Compilation/ArmorWeapons/handob_StormtrooperShieldPRIMED.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -758,6 +772,7 @@ extraSprites:
       443: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPK.png
       444: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKdrum.png
       445: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKempty.png
+      446: Resources/Weapons_Compilation/ArmorWeapons/floorob_RiotCombatShieldBROKEN.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.

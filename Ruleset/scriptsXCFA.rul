@@ -58,6 +58,12 @@ items:
   - type: STR_RIOT_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
+      CURRENT_MOD_OFFSET: current
+      BIGOB_FOR_PRIMED: 579
+      HANDOB_FOR_PRIMED: 2760
+      BIGOB_FOR_BROKEN: 580
+      HANDOB_FOR_BROKEN: 2768
+      FLOOROB_FOR_BROKEN: 446
       SHIELD_ARMOR: 8
       SHIELD_DURABILITY: 50
       SHIELD_MULTIPLIER: 200
@@ -68,6 +74,12 @@ items:
   - type: STR_XENO_COMBAT_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
+      CURRENT_MOD_OFFSET: current
+      BIGOB_FOR_PRIMED: 581
+      HANDOB_FOR_PRIMED: 2776
+      BIGOB_FOR_BROKEN: 580
+      HANDOB_FOR_BROKEN: 2768
+      FLOOROB_FOR_BROKEN: 446
       SHIELD_ARMOR: 10
       SHIELD_DURABILITY: 75
       SHIELD_MULTIPLIER: 200
@@ -78,6 +90,12 @@ items:
   - type: STR_XENO_ALLOY_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
+      CURRENT_MOD_OFFSET: current
+      BIGOB_FOR_PRIMED: 581
+      HANDOB_FOR_PRIMED: 2784
+      BIGOB_FOR_BROKEN: 582
+      HANDOB_FOR_BROKEN: 2768
+      FLOOROB_FOR_BROKEN: 446
       SHIELD_ARMOR: 12
       SHIELD_DURABILITY: 90
       SHIELD_MULTIPLIER: 200
@@ -89,6 +107,12 @@ items:
   - type: STR_ASSAULT_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
+      CURRENT_MOD_OFFSET: current
+      BIGOB_FOR_PRIMED: 583
+      HANDOB_FOR_PRIMED: 2792
+      BIGOB_FOR_BROKEN: 584
+      HANDOB_FOR_BROKEN: 2768
+      FLOOROB_FOR_BROKEN: 446
       SHIELD_ARMOR: 15
       SHIELD_DURABILITY: 100
       SHIELD_MULTIPLIER: 300
@@ -101,6 +125,12 @@ items:
   - type: STR_STORMTROOPER_WIELDABLE_SHIELD
     tags:     
       ITEM_IS_SHIELD: 1
+      CURRENT_MOD_OFFSET: current
+      BIGOB_FOR_PRIMED: 585
+      HANDOB_FOR_PRIMED: 2800
+      BIGOB_FOR_BROKEN: 586
+      HANDOB_FOR_BROKEN: 2768
+      FLOOROB_FOR_BROKEN: 446
       SHIELD_ARMOR: 15
       SHIELD_DURABILITY: 100
       SHIELD_MULTIPLIER: 200
@@ -1766,6 +1796,11 @@ armors:
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
     RuleItem:
+      BIGOB_FOR_PRIMED: int
+      HANDOB_FOR_PRIMED: int
+      BIGOB_FOR_BROKEN: int
+      HANDOB_FOR_BROKEN: int
+      FLOOROB_FOR_BROKEN: int
       GENERIC_AMMO: int
       GENERIC_AMMO_AP: int
       NEW_BIGOB_FOR_SLOT_0: int
@@ -4128,10 +4163,10 @@ extended:
             end;
 
             if and eq doResprite 1 eq doEmptyResprite 1; #Empty version
-              debug_log "I managed to get to doresprite 1 and emptyresprite 1 !";
+              # debug_log "I managed to get to doresprite 1 and emptyresprite 1 !";
               weaponRuleset.getTag newSprite Tag.NEW_BIGOB_FOR_WEAPON;
               if neq newSprite 0; #Empty version
-                debug_log "I managed to get newsprite not equal 0!";
+                # debug_log "I managed to get newsprite not equal 0!";
                 weaponRuleset.getTag sprite_index Tag.NEW_BIGOB_FOR_WEAPON;
                 weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
                 rules.getSpriteOffsetBigobs sprite_index modOffset;
@@ -4152,6 +4187,71 @@ extended:
             end;
           end;
           return sprite_index;
+      - offset: 1.5 # Select shield bigSprite based on status
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var int primedResprite; #Primed
+          var int brokenResprite; #Broken
+          var int newSprite;
+          var int modOffset;
+          var int shieldTag;
+          var int primedState;
+          var int brokenState;
+
+          if or eq blit_part blit_item_big;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag shieldTag Tag.ITEM_IS_SHIELD;
+            
+            if eq shieldTag 0;
+              return sprite_index;
+            end;
+            
+           item.isFuseEnabled primedState;
+           item.getTag brokenState Tag.ITEM_SHIELD_DURABILITY;
+           
+           # debug_log "Shiield durability was";
+           # debug_log brokenState;
+
+           if neq primedState 0;
+             set primedResprite 1;
+           end;
+
+           if le brokenState 0;
+             set brokenResprite 1;
+             set primedResprite 0;
+             # debug_log "Broken Resprite activated!";
+           end;
+ 
+           if and eq primedResprite 0 eq brokenResprite 0;
+             return sprite_index;
+           end;
+
+            if eq primedResprite 1; #Primed version
+              # debug_log "I managed to get to primedResprite 1!";
+              weaponRuleset.getTag newSprite Tag.BIGOB_FOR_PRIMED;
+              if neq newSprite 0; #Empty version
+                # debug_log "I managed to get newsprite not equal 0!";
+                weaponRuleset.getTag sprite_index Tag.BIGOB_FOR_PRIMED;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+            end;
+
+            if eq brokenResprite 1; #Broken version
+              # debug_log "I managed to get to brokenResprite 1!";
+              weaponRuleset.getTag newSprite Tag.BIGOB_FOR_BROKEN;
+              if neq newSprite 0; #Empty version
+                # debug_log "I managed to get newsprite not equal 0!";
+                weaponRuleset.getTag sprite_index Tag.BIGOB_FOR_BROKEN;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
       - offset: 2 # Select weapon floorSprite based on ammo item
         code: |
           var ptr BattleItem ammoItem;
@@ -4162,7 +4262,7 @@ extended:
           var int newSprite;
           var int modOffset;
 
-          if eq blit_part blit_item_big;
+          if eq blit_part blit_item_floor;
             item.getRuleItem weaponRuleset;
             weaponRuleset.getTag doResprite Tag.ALLOW_AMMO_TO_RESPRITE;
             item.getAmmoItem ammoItem;
@@ -4178,7 +4278,7 @@ extended:
                 debug_log "I managed to get newsprite not equal 0!";
                 weaponRuleset.getTag sprite_index Tag.NEW_FLOOROB_FOR_WEAPON;
                 weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
-                rules.getSpriteOffsetFloorobs sprite_index modOffset;
+                rules.getSpriteOffsetFloorob sprite_index modOffset;
                 return sprite_index;
               end;
 
@@ -4189,7 +4289,54 @@ extended:
               if neq newSprite 0; #Non-empty version
                 ammoRuleset.getTag sprite_index Tag.NEW_FLOOROB_FOR_WEAPON;
                 ammoRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
-                rules.getSpriteOffsetFloorobs sprite_index modOffset;
+                rules.getSpriteOffsetFloorob sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
+      - offset: 2.5 # Select shield floorob based on status
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var int primedResprite; #Primed
+          var int brokenResprite; #Broken
+          var int newSprite;
+          var int modOffset;
+          var int shieldTag;
+          var int brokenState;
+
+          if eq blit_part blit_item_floor;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag shieldTag Tag.ITEM_IS_SHIELD;
+            
+            if eq shieldTag 0;
+              return sprite_index;
+            end;
+
+           item.getTag brokenState Tag.ITEM_SHIELD_DURABILITY;
+           
+           # debug_log "Shiield durability was";
+           # debug_log brokenState;
+
+
+           if le brokenState 0;
+             set brokenResprite 1;
+             # debug_log "Broken Resprite activated!";
+           end;
+ 
+           if eq brokenResprite 0;
+             return sprite_index;
+           end;
+
+            if eq brokenResprite 1; #Broken version
+              debug_log "I managed to get to brokenResprite 1!";
+              weaponRuleset.getTag newSprite Tag.FLOOROB_FOR_BROKEN;
+              if neq newSprite 0;
+                debug_log "I managed to get newsprite not equal 0!";
+                weaponRuleset.getTag sprite_index Tag.FLOOROB_FOR_BROKEN;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetFloorob sprite_index modOffset;
                 return sprite_index;
               end;
 
@@ -4222,7 +4369,7 @@ extended:
                 add newSprite sprite_offset;
                 set sprite_index newSprite;
                 weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
-                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                rules.getSpriteOffsetHandob sprite_index modOffset;
                 return sprite_index;
               end;
 
@@ -4234,7 +4381,76 @@ extended:
                 add newSprite sprite_offset;
                 set sprite_index newSprite;
                 ammoRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
-                rules.getSpriteOffsetBigobs sprite_index modOffset;
+                rules.getSpriteOffsetHandob sprite_index modOffset;
+                return sprite_index;
+              end;
+
+            end;
+          end;
+          return sprite_index;
+      - offset: 3.5 # Select shield handSprite based on status
+        code: |
+          var ptr RuleItem weaponRuleset;
+          var int primedResprite; #Primed
+          var int brokenResprite; #Broken
+          var int newSprite;
+          var int modOffset;
+          var int shieldTag;
+          var int primedState;
+          var int brokenState;
+
+          if or eq blit_part blit_item_lefthand eq blit_part blit_item_righthand;
+            item.getRuleItem weaponRuleset;
+            weaponRuleset.getTag shieldTag Tag.ITEM_IS_SHIELD;
+            
+            if eq shieldTag 0;
+              return sprite_index;
+            end;
+            
+           item.isFuseEnabled primedState;
+           item.getTag brokenState Tag.ITEM_SHIELD_DURABILITY;
+           
+           # debug_log "Shiield durability was";
+           # debug_log brokenState;
+
+           if neq primedState 0;
+             set primedResprite 1;
+           end;
+
+           if le brokenState 0;
+             set brokenResprite 1;
+             set primedResprite 0;
+             # debug_log "Broken Resprite activated!";
+           end;
+ 
+           if and eq primedResprite 0 eq brokenResprite 0;
+             return sprite_index;
+           end;
+
+            if eq primedResprite 1; #Primed version
+              # debug_log "I managed to get to primedResprite 1!";
+              weaponRuleset.getTag newSprite Tag.HANDOB_FOR_PRIMED;
+              if neq newSprite 0; #Empty version
+                add newSprite sprite_offset;
+                set sprite_index newSprite;
+                # debug_log "I managed to get newsprite not equal 0!";
+                # weaponRuleset.getTag sprite_index Tag.HANDOB_FOR_PRIMED;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetHandob sprite_index modOffset;
+                return sprite_index;
+              end;
+            end;
+
+            if eq brokenResprite 1; #Broken version
+              # debug_log "I managed to get to brokenResprite 1!";
+              weaponRuleset.getTag newSprite Tag.HANDOB_FOR_BROKEN;
+              if neq newSprite 0; #Empty version
+                add newSprite sprite_offset;
+                set sprite_index newSprite;
+                # debug_log "I managed to get newsprite not equal 0!";
+                # weaponRuleset.getTag sprite_index Tag.HANDOB_FOR_BROKEN;
+                weaponRuleset.getTag modOffset Tag.CURRENT_MOD_OFFSET;
+                rules.getSpriteOffsetHandob sprite_index modOffset;
                 return sprite_index;
               end;
 
