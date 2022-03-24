@@ -862,5 +862,5 @@ Adjusted stats and nameAsAmmo for weapons
 Galil ARM and RPK added
 Experimenting with sprites changing based on ammo equipped/other effects
 RPK Now changes (bigob,handob and floorob) if the following happen (EMPTY, RPK Clip, RPK Drum equipped)
-Razor Shotgun when equipping Tracite infused shards
+Razor Shotgun (bigob only) when equipping Tracite infused shards
 Shield sprites now change depending on their primed state or if they're broken (Bigob, Floorob AND Handobs!)
