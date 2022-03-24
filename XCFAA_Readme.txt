@@ -850,3 +850,17 @@ Added slight stun damage to Slugs
 Added articles for Hollow point and Slugs
 Added DMR Article
 Added some more nameAsAmmo entries to the different ammo types (FMJ, AP, BS)
+Added Tracite Rocket ufopaedia
+Rats no longer can access Gilldog Gene therapy
+Added "Buckshot" type ammo to Assault Cannon (Regular and Tritanium)
+Added HP and AP ammo for Colt .45, Desert Eagle and MK23 Socom
+Added DMR and Hollow point articles
+Added a bit of stun to Slugs
+Fixed Riot Vest requiring STR_NIGHTOPS and Colt .45/Blackops Scoped revolver buy crash
+New units that show up in manors should be capturable now
+Adjusted stats and nameAsAmmo for weapons
+Galil ARM and RPK added
+Experimenting with sprites changing based on ammo equipped/other effects
+RPK Now changes (bigob,handob and floorob) if the following happen (EMPTY, RPK Clip, RPK Drum equipped)
+Razor Shotgun when equipping Tracite infused shards
+Shield sprites now change depending on their primed state or if they're broken (Bigob, Floorob AND Handobs!)
