@@ -1773,3 +1773,57 @@ armors:
       - 6.66
       - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_BADASS_CHRYSSALID_BROOD_ARMOR
+    spriteSheet: BADASS_CHRYSSALID_BROOD.PCK
+    spriteInv: inventory_BADASS_CHRYSSALID_BROOD
+    allowInv: false
+    bleedImmune: false
+    corpseBattle:
+      - BADASS_CHRYSSALID_BROOD_CORPSE_1
+      - BADASS_CHRYSSALID_BROOD_CORPSE_2
+      - BADASS_CHRYSSALID_BROOD_CORPSE_3
+      - BADASS_CHRYSSALID_BROOD_CORPSE_4
+    corpseGeo: STR_BADASS_CHRYSSALID_BROOD_CORPSE
+    visibilityAtDark: 25
+    heatVision: 45
+    psiVision: 8
+    frontArmor: 46
+    sideArmor: 46
+    rearArmor: 46
+    underArmor: 46
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 5
+    size: 2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.4
+    createsMeleeThreat: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.7
+      - 0.7
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 0.6
+      - 1.0
+      - 1.0
+      - 6.66
+      - 1.0
+    loftempsSet: [ 92, 89, 90, 91 ]
