@@ -134,6 +134,10 @@ extraSounds:
       212: Resources/Weapons_Compilation/Resound/grenlau-4.wav
       213: Resources/Weapons_Compilation/Resound/grenlaur.wav
       214: Resources/Weapons_Compilation/Resound/grenlaur-2.wav
+      215: Resources/XFilesMonsterResound/Chryssalid/chryssalidaggro.ogg
+      216: Resources/XFilesMonsterResound/Chryssalid/chryssaliddeath.ogg
+      217: Resources/XFilesMonsterResound/Chryssalid/chryssalidbadaggro.ogg
+      218: Resources/XFilesMonsterResound/Chryssalid/chryssalidbaddeath.ogg
 #Human 
       1135: Resources/Sounds_Compilation/HumanScreams/MaleScream01.wav
       1136: Resources/Sounds_Compilation/HumanScreams/MaleScream02.wav

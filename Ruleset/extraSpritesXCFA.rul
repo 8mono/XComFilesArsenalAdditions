@@ -512,8 +512,20 @@ extraSprites:
       562: Resources/Weapons_Compilation/ClassicWeapons/bigob_Colt45APClip.png
       563: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMHPClip.png
       564: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMAPClip.png
-      565: Resources/NaniteWeapons/bigob_NanoRifleExperimental1.png
-      566: Resources/NaniteWeapons/bigob_NanoRifleClip.png
+      565: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleExperimental1.png
+      566: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleClip.png
+      567: Resources/Weapons_Compilation/NaturalWeapons/bigob_ScorpionSting.png
+      568: Resources/Weapons_Compilation/NaturalWeapons/bigob_GreenBlob.png
+      569: Resources/Weapons_Compilation/NaturalWeapons/bigob_BlueBlob.png
+      570: Resources/Weapons_Compilation/NaturalWeapons/bigob_PurpleBlob.png
+      571: Resources/Weapons_Compilation/NaturalWeapons/bigob_RedBlob.png
+      572: Resources/Weapons_Compilation/NaturalWeapons/bigob_SilacoidBite.png
+      573: Resources/Weapons_Compilation/NaturalWeapons/bigob_ReaperAttack.png
+      574: Resources/Weapons_Compilation/NaturalWeapons/bigob_ChryssalidClaws.png
+      575: Resources/Weapons_Compilation/NaturalWeapons/bigob_ZombieAttack.png
+      576: Resources/Races_Compilation/ChryssalidRace/bigob_AlienEgg.png
+      577: Resources/Races_Compilation/ChryssalidRace/bigob_BadassAlienEgg.png
+      578: Resources/Races_Compilation/ChryssalidRace/bigob_CHRYSSALID_LARVA_CORPSE.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -614,7 +626,7 @@ extraSprites:
       2704: Resources/Weapons_Compilation/ClassicWeapons/handob_VKS.png
       2712: Resources/Weapons_Compilation/ClassicWeapons/handob_SKS_SCOPED.png
       2720: Resources/Weapons_Compilation/ClassicWeapons/handob_M16Beowulf.png
-      2728: Resources/NaniteWeapons/handob_NanoRifle.png
+      2728: Resources/Weapons_Compilation/NaniteWeapons/handob_NanoRifle.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -747,8 +759,14 @@ extraSprites:
       447: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_2.png
       448: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_3.png
       449: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_4.png
-      450: Resources/NaniteWeapons/floorob_NanoRifle.png
-      451: Resources/NaniteWeapons/floorob_NanoRifleClip.png
+      450: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifle.png
+      451: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifleClip.png
+      452: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c1.png
+      453: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c2.png
+      454: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c3.png
+      455: Resources/Races_Compilation/ChryssalidRace/floorob_AlienEgg.png
+      456: Resources/Races_Compilation/ChryssalidRace/floorob_BadassAlienEgg.png
+      457: Resources/Races_Compilation/ChryssalidRace/floorob_CHRYSSALID_LARVA_CORPSE.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.
@@ -803,6 +821,10 @@ extraSprites:
       280: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Skull_exp.png
       288: Resources/Weapons_Compilation/ExplosionAnimations/Yellow_Skull_exp.png
       296: Resources/Weapons_Compilation/ExplosionAnimations/Green_Skull_exp.png
+      304: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_exp.png
+      312: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_Partial_exp.png
+      320: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_exp.png
+      328: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_Partial_exp.png
   - type: Projectiles
     height: 3
     width: 65

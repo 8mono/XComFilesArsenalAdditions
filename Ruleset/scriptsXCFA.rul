@@ -1844,6 +1844,7 @@ extended:
       ITEM_GASMASK_DURABILITY: int
       
       NANITE_VIRUS: int
+      ITEM_CREATION_TURN: int
     BattleUnit:
 #flare
       ITAG_ILLUMINATION_STATUS: int
@@ -2615,6 +2616,25 @@ extended:
             unit.disableIndicators;
           end;
           return;
+      - offset: 0.6
+        code: |
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_BADASS_CHRYSSALID_BROOD_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_BADASS_CHRYSSALID_BROOD_ARMOR!";
+          return;
         #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
       - offset: 1
         code: |
@@ -3074,6 +3094,53 @@ extended:
             # itemOwner.setTag Tag.UNIT_THE_ONE 1;
             # itemOwner.setTag Tag.UNIT_THE_ONE_PATH_PROFFICIENCY profficencyTag;
             # end;
+          return;
+      - offset: 5
+        code: |
+          var ptre BattleUnit itemOwner;
+          var ptr RuleItem itemRuleset;
+          var text itemName;
+          var int ammoRemaining;
+          var int turnTag;
+
+          item.getOwner itemOwner;
+
+          # If no owner, skip script
+          if eq itemOwner null;
+            return;
+          end;
+          # Check the item's slot index; if it's already set on this unit, don't count this item
+          item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if eq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            if neq side 1;
+              return;
+            end;
+
+            item.getAmmoQuantity ammoRemaining;
+            debug_log ammoRemaining;
+            debug_log "Above was ammoRemaining";
+
+            if ge ammoRemaining 1;
+              debug_log "Brood mother still has at least 1 egg remaining, aborting";
+              return;
+            end;
+
+            item.getTag turnTag Tag.ITEM_CREATION_TURN;
+            add turnTag 5;
+            debug_log turnTag;
+            debug_log "Above was turn tag +5!";
+            if ge turn turnTag;
+              debug_log "Regenerating egg ammo for brood mother...";
+              set ammoRemaining 1;
+              item.setTag Tag.ITEM_CREATION_TURN turnTag;
+              debug_log "turn number that will be added to the creation tag";
+              debug_log "turn is equal to";
+              debug_log turn;
+            end;
+
+          end;
           return;
     accuracyMultiplierBonusStats:
       - offset: 1
@@ -4221,7 +4288,7 @@ extended:
           leftHandItem.getTag leftTag Tag.ITEM_IS_SHIELD;
           rightHandItem.getTag rightTag Tag.ITEM_IS_SHIELD;
           
-          debug_log "SHIELD DETECTION....";
+          # debug_log "SHIELD DETECTION....";
 
           if and neq leftTag 1 neq rightTag 1;
             return power part side;
@@ -4230,7 +4297,7 @@ extended:
           else eq rightTag 1;
             set shieldItem rightHandItem;
           end;
-          debug_log "SHIELD DETECTION SUCCESFUL!";
+          # debug_log "SHIELD DETECTION SUCCESFUL!";
 
           shieldItem.getTag shieldArmor Tag.ITEM_SHIELD_ARMOR;
           shieldItem.getTag shieldDurability Tag.ITEM_SHIELD_DURABILITY;
@@ -4414,6 +4481,65 @@ extended:
           end;
 
           return power part side;
+      - offset: 9 #No friendly fire with chryssalid brood mother's egg attack
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var ptr RuleItem itemRuleset;
+          var int unitFaction;
+          var int attackerFaction;
+          var text armorName;
+          var text itemName;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if neq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            return power part side;
+          end;
+          
+          attacker.getFaction attackerFaction;
+          unit.getFaction unitFaction;
+
+          if eq attackerFaction unitFaction; #Same faction on same faction
+            set power 0;
+            return power part side;
+          end;
+          if and eq attackerFaction 0 eq unitFaction 2; #Mind controlled by player against neutral
+            set power 0;
+            return power part side;
+          end;
+          if and eq attackerFaction 2 eq unitFaction 0; #Neutral against mind controlled ? for some reason
+            set power 0;
+            return power part side; #This all might change at some point if i decide to make these hurt regardless of faction and based more on unit types
+          end;
+
+          return power part side;
+      - offset: 10 #Chryssalid Larva life cycle
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var ptr RuleItem itemRuleset;
+          var int unitFaction;
+          var int attackerFaction;
+          var text armorName;
+          var text itemName;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if neq itemName "STR_CHRYSSALID_LARVA_WEAPON";
+            return power part side;
+          end;
+          
+          rules.getRuleUnit unitRuleset "STR_CHRYSSALID_TERRORIST";
+          unit.setSpawnUnit unitRuleset;
+          unit.setSpawnUnitInstantRespawn 0;
+          
+          attacker.disableIndicators;
+          attacker.setHealth -1;
+
+          return power part side;
     recolorUnitSprite:
       - offset: 0.1 #Handles periodic recolors due to daze
         code: |
@@ -4506,24 +4632,29 @@ extended:
           #debug_log "SKILL USE UNIT!";
           return;
     createItem:
-      - offset: 0.1 #makes all glowy zombies glow and alien eggs  grow!
+      - offset: 0.1 #makes all glowy zombies glow and alien eggs  grow, chryssalid brood eggs regrow!
         code: |
           var ptr BattleItem glowItem;
           var ptr RuleItem itemRuleset;
           var text itemName;
           var int randomTimer;
           var int fuseStatus;
+          var int creationTurn;
 
           item.getRuleItem itemRuleset;
           itemRuleset.getType itemName;
+          if eq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            item.setTag Tag.ITEM_CREATION_TURN creationTurn;
+            return;
+          end;
           if eq itemName "STR_ZOMBIE_BOOMER_TEMPERED_GLOW";
             # debug_log "GLOW FOUND!, priming!";
             item.setFuseEnabled 1;
             item.setFuseTimer 99;
           end;
           item.isFuseEnabled fuseStatus;
-          debug_log "Fuse status is";
-          debug_log fuseStatus;
+          # debug_log "Fuse status is";
+          # debug_log fuseStatus;
           if and eq itemName "STR_ALIEN_EGG" eq fuseStatus 0;
             battle_game.randomRange randomTimer 1 10;
             debug_log "EGG FOUND!, priming for...";

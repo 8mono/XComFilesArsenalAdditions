@@ -687,6 +687,29 @@ alienRaces:
         STR_ALIEN_BASE: 10
         # STR_ALIEN_INFILTRATION: 5
 extraSprites:
+  - type: CHRYSSALID_LARVA.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/CHRYSSALID_LARVA.png
+  - type: inventory_CHRYSSALID_LARVA
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/inventory_CHRYSSALID_LARVA.png
+  - type: UFOPEDIA_IMG_CHRYSSALID_LARVA_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/ufopedia_EGG_SAC_AUTOPSY.png
+  - type: UFOPEDIA_IMG_CHRYSSALID_LARVA
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/ufopaedia_CHRYSSALID_LARVA.png
   - type: UFOPEDIA_IMG_EGG_SAC_AUTOPSY
     singleImage: true
     width: 320
@@ -728,6 +751,19 @@ extraSprites:
     height: 840
     files:
       0: Resources/Races_Compilation/ChryssalidRace/BADASS_CHRYSSALID_ACID.png
+  - type: inventory_BADASS_CHRYSSALID_BROOD
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/inventory_BADASS_CHRYSSALID_BROOD.png
+  - type: BADASS_CHRYSSALID_BROOD.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Races_Compilation/ChryssalidRace/BADASS_CHRYSSALID_BROOD.png
   - type: inventory_EGG_SAC
     singleImage: true
     files:
@@ -761,14 +797,13 @@ items:
   - type: STR_BADASS_CHRYSSALID_ACID_SPIT
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 0
-    floorSprite: 0 #this is 0
-    handSprite: 0 #this is 0
-    bulletSprite: 11
-    fireSound: 0
-    hitSound: 0
+    bigSprite: 568
+    floorSprite: 31 #this is 0
+    handSprite: 104 #this is 0
+    bulletSprite: 8
+    fireSound: 51
     hitAnimation: 296
-    explosionHitSound: 19
+    explosionHitSound: 118
     power: 80
     damageAlter:
       IgnoreOverKill: false
@@ -851,6 +886,13 @@ items:
     liveAlien: true
     costSell: 300000
     listOrder: 135010
+  - type: STR_CHRYSSALID_LARVA_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 100000
+    listOrder: 135000
   - type: STR_CHRYSSALID_ALPHA_TERRORIST
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -898,16 +940,105 @@ items:
     invHeight: 0
     battleType: 11
     recover: false
+  - type: STR_BADASS_CHRYSSALID_BROOD_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 22000
+    battleType: 11
+    listOrder: 66670
+  - type: BADASS_CHRYSSALID_BROOD_CORPSE_1
+    name: STR_BADASS_CHRYSSALID_BROOD_CORPSE
+    floorSprite: 452
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: BADASS_CHRYSSALID_BROOD_CORPSE_2
+    floorSprite: 453
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: BADASS_CHRYSSALID_BROOD_CORPSE_3
+    floorSprite: 454
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: BADASS_CHRYSSALID_BROOD_CORPSE_4
+    floorSprite: 455
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
   - type: STR_BADASS_CHRYSSALID_WEAPON
     zombieUnit: STR_EGG_SAC
+  - type: STR_BADASS_CHRYSSALID_BROOD_EGG
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 571
+    floorSprite: 31 #this is 0
+    handSprite: 104 #this is 0
+    bulletSprite: 8
+    fireSound: 51
+    explosionHitSound: 118
+    hitAnimation: 192
+    power: 50
+    damageAlter:
+      IgnoreOverKill: false
+      ResistType: 9
+      ToHealth: 0.2
+      ToStun: 1
+      ToTime: 1
+      FireThreshold: 1000
+      SmokeThreshold: 40
+      ToTile: 0
+    damageType: 3
+    accuracyCloseQuarters: 100
+    accuracySnap: 55
+    accuracyAimed: 85
+    spawnUnit: STR_EGG_SAC
+    spawnUnitFaction: 1
+    tuSnap: 25
+    tuAimed: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    blastRadius: 2
+    invHeight: 3
+    clipSize: 3
+    recover: false
+    arcingShot: false
+  - type: STR_BADASS_CHRYSSALID_BROOD_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 574
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 49
+    # meleeHitSound: 0 #?
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ToTile: 0.55
+    accuracyMelee: 85
+    tuMelee: 18
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
   - type: STR_BADASS_CHRYSSALID_ACID_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 0
+    bigSprite: 574
     floorSprite: 31
-    handSprite: 104 #check this!
-    meleeSound: 0
-    meleeHitSound: 0
+    handSprite: 104
+    meleeSound: 49
+    # meleeHitSound: 0 #?
     clipSize: -1
     strengthApplied: true
     damageType: 7
@@ -926,9 +1057,11 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 179
-    floorSprite: 22 #check this
+    bigSprite: 576
+    floorSprite: 455 #check this
     handSprite: 0
+    hitAnimation: 312
+    explosionHitSound: 215
     power: 1
     damageAlter:
       IgnoreOverKill: false
@@ -947,7 +1080,7 @@ items:
     blastRadius: 1
     armor: 0
     attraction: 15
-    spawnUnit: STR_CHRYSSALID_TERRORIST
+    spawnUnit: STR_CHRYSSALID_LARVA_TERRORIST
     spawnUnitFaction: 1
     isExplodingInHands: true
     fixedWeapon: false
@@ -958,8 +1091,10 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 179
-    floorSprite: 22 #check this
+    hitAnimation: 312
+    explosionHitSound: 215
+    bigSprite: 576
+    floorSprite: 455 #check this
     handSprite: 0
     power: 1
     damageAlter:
@@ -979,7 +1114,7 @@ items:
     blastRadius: 1
     armor: 0
     attraction: 15
-    spawnUnit: STR_CHRYSSALID_TERRORIST
+    spawnUnit: STR_CHRYSSALID_LARVA_TERRORIST
     spawnUnitFaction: 1
     isExplodingInHands: true
     fixedWeapon: false
@@ -990,8 +1125,10 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 179
-    floorSprite: 22 #check this
+    bigSprite: 577
+    explosionHitSound: 217
+    hitAnimation: 328
+    floorSprite: 456 #check this
     handSprite: 0
     power: 10
     damageAlter:
@@ -1010,9 +1147,9 @@ items:
       time: 20
     unprimeActionName: STR_UNPRIME_GRENADE
     battleType: 4
-    invWidth: 1
-    invHeight: 1
-    blastRadius: 1
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 2
     armor: 0
     attraction: 15
     spawnUnit: STR_BADASS_CHRYSSALID_TERRORIST
@@ -1064,7 +1201,7 @@ items:
     floorSprite: 2
     hidePower: true
     power: 0
-    spawnUnit: STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST
+    spawnUnit: STR_BADASS_CHRYSSALID_ACID_TERRORIST
     spawnUnitFaction: 1
     damageType: 2
     blastRadius: 0
@@ -1138,6 +1275,19 @@ items:
     battleType: 11
     armor: 20
     listOrder: 62315
+  - type: STR_CHRYSSALID_LARVA_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 4000
+    weight: 5
+    bigSprite: 578
+    floorSprite: 457
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
   - type: STR_BOOMER_TEMPERED_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -1167,7 +1317,7 @@ items:
   - type: STR_INFECTOR_TEMPERED_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 179
+    bigSprite: 575
     meleeSound: 48
     meleeHitSound: 109
     strengthApplied: true
@@ -1186,11 +1336,36 @@ items:
     clipSize: -1
     recover: false
     flatRate: true
+  - type: STR_CHRYSSALID_LARVA_WEAPON #Fix all the properties of thsi! it should only stun maybe? not kill but infect
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 574
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    clipSize: -1
+    power: 10
+    strengthApplied: true
+    damageType: 8
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 0.33
+      ToStun: 1
+      RandomWound: false
+      ToWound: 10
+    accuracyMelee: 80
+    tuMelee: 5
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
   - type: STR_ZOMBIE_BOOMER_TEMPERED_GLOW
     categories: [STR_BUILT_INS]
     size: 0.1
     weight: 3
-    bigSprite: 0
+    bigSprite: 179
     floorSprite: 0
     power: 26
     battleType: 10
@@ -1218,15 +1393,13 @@ items:
   - type: STR_ZOMBIE_SPITTER_TEMPERED_SPIT
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 179
-    floorSprite: 0
-    handSprite: 0
-    bulletSprite: 22
-    fireSound: 0
-    hitSound: 0
-    hitAnimation: 240
-    explosionHitSound: 116
-    hitAnimation: 0
+    bigSprite: 568
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 51
+    hitAnimation: 240 #296?
+    explosionHitSound: 116 #118?
     clipSize: -1
     power: 25 #36
     damageType: 6
@@ -1279,6 +1452,35 @@ units:
     aggression: 0
     canSurrender: true
     energyRecovery: 40
+  - type: STR_CHRYSSALID_LARVA_TERRORIST
+    race: STR_CHRYSSALID
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 110
+      stamina: 140
+      health: 5
+      bravery: 100
+      reactions: 80
+      firing: 0
+      throwing: 0
+      strength: 5
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_CHRYSSALID_LARVA_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    aggroSound: 215
+    deathSound: 216
+    panicSound: 215
+    berserkSound: 215
+    intelligence: 3
+    aggression: 4
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CHRYSSALID_LARVA_WEAPON
   - type: STR_BADASS_CHRYSSALID_ACID_TERRORIST
     race: STR_CHRYSSALID
     rank: STR_LIVE_TERRORIST
@@ -1300,8 +1502,8 @@ units:
     standHeight: 23
     kneelHeight: 16
     value: 35
-    aggroSound: 0
-    deathSound: 0
+    aggroSound: 217
+    deathSound: 218
     intelligence: 2
     aggression: 2
     energyRecovery: 34
@@ -1319,7 +1521,7 @@ units:
       health: 500
       bravery: 90
       reactions: 56
-      firing: 0
+      firing: 50
       throwing: 0
       strength: 100
       psiStrength: 35
@@ -1329,15 +1531,12 @@ units:
     standHeight: 23
     kneelHeight: 16
     value: 40
-    aggroSound: 0
-    deathSound: 0
+    aggroSound: 217
+    deathSound: 218
     intelligence: 2
     aggression: 2
     energyRecovery: 34
     livingWeapon: true
-    builtInWeaponSets:
-      - - STR_BADASS_CHRYSSALID_BROOD_WEAPON
-        - STR_BADASS_CHRYSSALID_BROOD_EGG
   - type: STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
     race: STR_ZOMBIE_TEMPERED
     rank: STR_LIVE_TERRORIST
@@ -1508,6 +1707,57 @@ armors:
       - STR_SAC_EGG
       - STR_BADASS_SAC_EGG
     loftempsSet: [ 105, 108, 102, 99 ]
+  - type: STR_CHRYSSALID_LARVA_ARMOR
+    spriteSheet: CHRYSSALID_LARVA.PCK
+    spriteInv: inventory_CHRYSSALID_LARVA
+    allowInv: false
+    corpseBattle:
+      - STR_CHRYSSALID_LARVA_CORPSE
+    visibilityAtDark: 20
+    heatVision: 50
+    frontArmor: 3
+    sideArmor: 3
+    rearArmor: 3
+    underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    drawingRoutine: 4
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 9.99
+      - 1.0
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_ASTRONAUT_ARMOR_HUMAN
     spriteSheet: ASTRONAUT.PCK
     spriteInv: inventory_ASTRONAUT
@@ -1827,3 +2077,6 @@ armors:
       - 6.66
       - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
+    builtInWeapons:
+      - STR_BADASS_CHRYSSALID_BROOD_EGG
+      - STR_BADASS_CHRYSSALID_BROOD_WEAPON
