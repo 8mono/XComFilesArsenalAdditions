@@ -9523,6 +9523,42 @@ items:
     invWidth: 2
     invHeight: 2
     listOrder: 38603
+  - type: STR_CHRYSSALID_BEGONE #dont get too excited, most likely to be used for a scripted mission
+    size: 0.2
+    costSell: 300
+    weight: 20
+    bigSprite: 266
+    floorSprite: 327
+    handSprite: 249
+    hitSound: 80 #change this to explosion?
+    hitAnimation: 216
+    power: 6000
+    explosionHitSound: 80
+    damageType: 3
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: true
+      FireBlastCalc: false
+      ToTile: 1
+      ToItem: 1
+      FireThreshold: 5000
+      RadiusReduction: 250
+    fuseType: 1
+    costThrow:
+      energy: 17
+    costPrime:
+      time: 50
+    costUnprime:
+      time: 35
+    unprimeActionName: STR_UNPRIME_DOOMSDAY
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    attraction: 18
+    recover: false
+    blastRadius: 25
+    listOrder: 38111
+    isExplodingInHands: true 
   - type: STR_DOOMSDAY #dont get too excited, most likely to be used for a scripted mission
     size: 0.2
     costSell: 300

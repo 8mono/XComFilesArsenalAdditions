@@ -1,3 +1,14 @@
+events:
+  - name: STR_CHRYSSALID_UFO_PRELUDE
+    description: STR_CHRYSSALID_UFO_PRELUDE_DESCRIPTION
+    background: ABDUCTION_BACKGROUND.SCR
+    timer: 20
+    timerRandom: 43500
+eventScripts:
+  - type: STR_CHRYSSALID_UFO_PRELUDE #Need hyperwave decoder
+    oneTimeRandomEvents:
+      STR_CHRYSSALID_UFO_PRELUDE: 100
+    firstMonth: 25
 crafts:
   - type: DIMENSION_X_LANDING_PAD_MAGMA
     requires:
@@ -71,6 +82,39 @@ research:
       - STR_TROLLIUM
     listOrder: 180320 #change this to magma cosmonauts saved?
 mapScripts:
+  - type: MIB_UFO_DISTRESS_SIGNAL
+    commands:
+    - type: addUFO
+      UFOName: STR_ABDUCTOR_DISTRESS_SIGNAL
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 30
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
   - type: MoonOutpostMagmaPart1
     commands:
     - type: addCraft
@@ -109,6 +153,35 @@ mapScripts:
       canBeSkipped: true 
     - type: fillArea
 missionScripts:
+  - type: MIBDistressSignalSite
+    firstMonth: 9
+    lastMonth: 25
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_MIB_DISTRESS_SIGNAL: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 100
+        STR_ARCTIC: 100
+        STR_ANTARCTICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 100
+        STR_AUSTRALASIA: 100
+        STR_PACIFIC: 50
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 50
+    researchTriggers:
+      STR_MIB: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
   - type: MoonOutpostMagma
     firstMonth: 0
     executionOdds: 40
@@ -156,6 +229,21 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 alienMissions:
+  - type: STR_MIB_DISTRESS_SIGNAL
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 7
+    siteType: STR_MIB_DISTRESS_SIGNAL
+    raceWeights:
+      0:
+          STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_MUDRANGER_CONVOY_LOADED
+        count: 1
+        trajectory: P_CHWC1
+        timer: 500
+        objective: true
+        objectiveOnTheLandingSite: true
   - type: STR_MOON_OUTPOST_MAGMA_1 #STR_MAGMA_COSMONAUTS_RESCUE
     interruptResearch: STR_MOON_OUTPOST_MAGMA_1_VISITED
     despawnEvenIfTargeted: false
@@ -185,6 +273,63 @@ alienMissions:
         timer: 9000
         objective: true
 alienDeployments:
+  - type: STR_MIB_DISTRESS_SIGNAL
+    width: 70
+    length: 70
+    height: 10
+    alert: STR_ALERT_MIB_DISTRESS_SIGNAL
+    civiliansByType:
+      STR_MIB_AGENT_DISTRESS: 4
+      STR_MIB_PILOT_DISTRESS: 1
+      STR_MIB_SCIENTIST_DISTRESS: 1
+      STR_MIB_ENFORCER_DISTRESS: 2
+    alertBackground: BACKGROUND_MIB.SCR
+    alertDescription: STR_MIB_DISTRESS_SIGNAL_DESCRIPTION
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 2
+      music: UNR2_INTRO
+      desc: STR_MIB_DISTRESS_SIGNAL_DESCRIPTION_BRIEFING
+      showTarget: false
+    markerName: STR_MIB_DISTRESS_SIGNAL_DESCRIPTION
+    markerIcon: 4
+    shade: 15
+    duration: [18, 36]
+    despawnPenalty: 40
+    music:
+      - SR2_SPACE
+    script: MIB_UFO_DISTRESS_SIGNAL
+    terrains:
+      - CULTA
+      - RURAL
+    data: &MiBMudrangerConvoy
+      - alienRank: 5
+        customUnitType: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: &AnchorEmptyInventory
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
   - type: STR_MOON_OUTPOST_MAGMA_1 #STR_MOON_MAGMA_RESCUE
     width: 70
     length: 70
@@ -621,6 +766,49 @@ ufos:
         - name: HTHOUSE_03G
           width: 20
           length: 30
+  - type: STR_ABDUCTOR_DISTRESS_SIGNAL
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 4000
+    accel: 8
+    power: 40
+    range: 22
+    score: 250
+    reload: 70
+    breakOffTime: 1000
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_140
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_OPER2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: ABDUCTDISTRESS00
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_EGG:
+              - [14, 7, 1]
+              - [16, 10, 1]
+              - [14, 3, 2]
+              - [13, 3, 2]
+              - [5, 3, 2]
+              - [3, 13, 2]
+            STR_BADASS_BROOD_ALIEN_EGG:
+              - [8, 10, 2]
+            STR_CHRYSSALID_BEGONE:
+              - [8, 10, 0]
+          fuseTimers:
+            STR_ALIEN_EGG: [0, 2]
+            STR_SAC_EGG: [0, 2]
+            STR_BADASS_BROOD_ALIEN_EGG: [0, 2]
+            STR_CHRYSSALID_BEGONE: [0, 10]
+  - type: STR_STRIKER
 alienRaces:
   - id: STR_ZOMBIE_TEMPERED
     members:
@@ -1086,6 +1274,74 @@ items:
     fixedWeapon: false
     defaultInventorySlot: STR_BELT
     listOrder: 38220
+  - type: STR_BADASS_BROOD_ALIEN_EGG
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 577
+    floorSprite: 456 #check this
+    handSprite: 0
+    explosionHitSound: 217
+    hitAnimation: 328
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_BADASS_CHRYSSALID_BROOD_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
+  - type: STR_BADASS_ALIEN_EGG
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 577
+    floorSprite: 456 #check this
+    handSprite: 0
+    explosionHitSound: 217
+    hitAnimation: 328
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_BADASS_CHRYSSALID_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
   - type: STR_SAC_EGG
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -1427,6 +1683,251 @@ items:
     arcingShot: true
     recover: false
 units:
+  - type: STR_MIB_AGENT_DISTRESS
+    race: STR_MIB
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 56
+      stamina: 90
+      health: 30
+      bravery: 90
+      reactions: 46
+      firing: 55
+      throwing: 60
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 35
+      mana: 80
+    armor: STR_MIB_AGENT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: &MaleDeathSounds [41, 42, 43, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145]
+    panicSound: &MalePanicSounds [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    berserkSound: &MaleBerserkSounds [801, 802, 803, 804, 805]
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_BLACKOPS_MAGNUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+      - - STR_SMG
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+      - - STR_CAWS
+        - STR_CAWS_CLIP_BS
+        - STR_CAWS_CLIP_BS
+        - STR_CAWS_CLIP_BS
+      - - STR_CAWS
+        - STR_CAWS_CLIP_AP
+        - STR_CAWS_CLIP_AP
+        - STR_CAWS_CLIP_AP
+        - STR_CAWS_CLIP_AP
+      - - STR_BLACKOPS_SHOTGUN
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+        - STR_SHOTGUN_SHELLS_AP
+      - - STR_BLACKOPS_MAGNUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+        - STR_MAGNUM_DRUM
+      - - STR_SMG
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+        - STR_SMG_CLIP
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+      - - STR_CAWS
+        - STR_CAWS_CLIP_BS
+        - STR_CAWS_CLIP_BS
+        - STR_CAWS_CLIP_BS
+  - type: STR_MIB_ENFORCER_DISTRESS
+    race: STR_MIB
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 60
+      stamina: 90
+      health: 30
+      bravery: 90
+      reactions: 49
+      firing: 58
+      throwing: 64
+      strength: 45
+      psiStrength: 35
+      psiSkill: 0
+      melee: 50
+      mana: 80
+    armor: STR_MIB_ENFORCER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_RIFLE
+        - STR_RIFLE_AA_CLIP
+        - STR_RIFLE_AA_CLIP
+        - STR_GRENADE
+      - - STR_BLACKOPS_SMARTRIFLE
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_GAS_GRENADE
+        - STR_MONEY_5000
+      - - STR_LASER_RIFLE_MIB
+        - STR_LASER_RIFLE_MIB_CLIP
+        - STR_LASER_RIFLE_MIB_CLIP
+      - - STR_MASS_DRIVER_RIFLE
+        - STR_MASS_DRIVER_RIFLE_CLIP
+        - STR_MASS_DRIVER_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+      - - STR_RIFLE
+        - STR_RIFLE_AA_CLIP
+        - STR_RIFLE_AA_CLIP
+        - STR_GAS_GRENADE
+      - - STR_FLAMETHROWER
+        - STR_FLAMETHROWER_CLIP
+        - STR_FLAMETHROWER_CLIP
+      - - STR_CAWS
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+      - - STR_BLACKOPS_SMARTRIFLE
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_GRENADE
+        - STR_MONEY_5000
+      - - STR_LIGHT_MINIGUN
+        - STR_LIGHT_MINIGUN_CLIP
+        - STR_LIGHT_MINIGUN_CLIP
+        - STR_LIGHT_MINIGUN_CLIP
+      - - STR_CAWS
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+  - type: STR_MIB_SCIENTIST_DISTRESS
+    race: STR_MIB
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 64
+      stamina: 90
+      health: 40
+      bravery: 90
+      reactions: 52
+      firing: 61
+      throwing: 68
+      strength: 49
+      psiStrength: 40
+      psiSkill: 0
+      melee: 25
+      mana: 80
+    armor: STR_MIB_COMBAT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 60
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 5
+    aggression: 0
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_RIFLE
+        - STR_RIFLE_AA_CLIP
+        - STR_RIFLE_AA_CLIP
+        - STR_GRENADE
+      - - STR_BLACKOPS_SMARTRIFLE
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_GAS_GRENADE
+        - STR_MONEY_5000
+      - - STR_LASER_RIFLE_MIB
+        - STR_LASER_RIFLE_MIB_CLIP
+        - STR_LASER_RIFLE_MIB_CLIP
+      - - STR_MASS_DRIVER_RIFLE
+        - STR_MASS_DRIVER_RIFLE_CLIP
+        - STR_MASS_DRIVER_RIFLE_CLIP
+        - STR_ALIEN_GRENADE
+      - - STR_RIFLE
+        - STR_RIFLE_AA_CLIP
+        - STR_RIFLE_AA_CLIP
+        - STR_GAS_GRENADE
+      - - STR_TOXIGUN
+        - STR_TOXIGUN_FLASK
+        - STR_TOXIGUN_FLASK
+      - - STR_CAWS
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+        - STR_CAWS_CLIP_AA
+      - - STR_BLACKOPS_SMARTRIFLE
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+        - STR_GRENADE
+        - STR_MONEY_5000
+      - - STR_SMALL_LAUNCHER
+        - STR_STUN_BOMB
+        - STR_STUN_BOMB
+        - STR_STUN_BOMB
+      - - STR_ELECTRIC_PROD
+        - STR_PISTOL
+        - STR_PISTOL_AA_CLIP
+        - STR_PISTOL_AA_CLIP
+  - type: STR_MIB_PILOT_DISTRESS
+    race: STR_MIB
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 53
+      stamina: 110
+      health: 40
+      bravery: 90
+      reactions: 66
+      firing: 70
+      throwing: 42
+      strength: 45
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+      mana: 80
+    armor: STR_MIB_PILOT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 0
+    sniper: 25
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_MASS_DRIVER_PISTOL
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_ALIEN_COMMUNICATOR
   - type: STR_EGG_SAC
     race: STR_CHRYSSALID
     rank: STR_LIVE_COMMANDER
@@ -1711,6 +2212,8 @@ armors:
     spriteSheet: CHRYSSALID_LARVA.PCK
     spriteInv: inventory_CHRYSSALID_LARVA
     allowInv: false
+    camouflageAtDark: 6
+    camouflageAtDay: 15
     corpseBattle:
       - STR_CHRYSSALID_LARVA_CORPSE
     visibilityAtDark: 20
