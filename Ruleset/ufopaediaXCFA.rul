@@ -2063,6 +2063,8 @@ ufopaedia:
         text: STR_MINI_MORTAR_UFOPEDIA
       - title: STR_MINI_MORTAR_CONT
         text: STR_MINI_MORTAR_UFOPEDIA
+      - title: STR_MINI_MORTAR_CONT
+        text: STR_MINI_MORTAR_UFOPEDIA
     listOrder: 34204
   - id: STR_MINI_MORTAR_SHELL_HE
     type_id: 4
@@ -2078,13 +2080,15 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_GAS_GRENADE_MANUFACTURING
+  - id: STR_MINI_MORTAR_TRISHELL_GAS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
   - id: STR_MINI_MORTAR_TRISHELL_SMOKE
     type_id: 4
     section: STR_NOT_AVAILABLE
   - id: STR_MINI_MORTAR_SHELL_I
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-  - id: STR_MINI_MORTAR_TRISHELL_I
     type_id: 4
     section: STR_NOT_AVAILABLE
   - id: STR_NIGHTOPS
