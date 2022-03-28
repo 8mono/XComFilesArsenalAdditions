@@ -1,11 +1,33 @@
 events:
+  - name: STR_TEMPERED_ZOMBIES_PRELUDE
+    description: STR_TEMPERED_ZOMBIES_PRELUDE_DESCRIPTION
+    background: ZOMBIES_BACKGROUND.SCR
+    regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC, STR_NORTH_ATLANTIC, STR_INDIAN_OCEAN]
+    city: true
+    timer: 20
+    timerRandom: 43500
   - name: STR_CHRYSSALID_UFO_PRELUDE
     description: STR_CHRYSSALID_UFO_PRELUDE_DESCRIPTION
     background: ABDUCTION_BACKGROUND.SCR
+    researchList: [STR_CHRYSSALID_UFO_PRELUDE]
     timer: 20
     timerRandom: 43500
 eventScripts:
+  - type: STR_TEMPERED_ZOMBIES_PRELUDE
+    eventWeights:
+      0:
+        STR_TEMPERED_ZOMBIES_PRELUDE: 100
+    researchTriggers:
+       STR_TEMPERED_ZOMBIES_PRELUDE: false
+       STR_MONSTERS_FINAL_ALTERNATIVE: true
+    firstMonth: 0
+    executionOdds: 15
   - type: STR_CHRYSSALID_UFO_PRELUDE #Need hyperwave decoder
+    researchTriggers:
+       STR_MIB_COMMANDER: true
+       STR_CHRYSSALID_UFO_PRELUDE: false
+    facilityTriggers:
+      STR_HYPER_WAVE_DECODER
     oneTimeRandomEvents:
       STR_CHRYSSALID_UFO_PRELUDE: 100
     firstMonth: 25
@@ -67,15 +89,25 @@ crafts:
       - [9, 10, 0, 5]
     craftInventoryTile: [10, 10, 0]
 research:
+  - name: STR_TEMPERED_ZOMBIES_PRELUDE
+    cost: 0
+    points: -100
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320 #change this to magma cosmonauts saved?
+  - name: STR_CHRYSSALID_UFO_PRELUDE
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320 #change this to magma cosmonauts saved?
   - name: STR_MOON_OUTPOST_MAGMA_1_VISITED
-    requiresBaseFunc: [INTLAB]
     cost: 0
     points: 20
     dependencies:
       - STR_TROLLIUM
     listOrder: 180320 #change this to magma cosmonauts saved?
   - name: STR_MOON_OUTPOST_MAGMA_2_VISITED
-    requiresBaseFunc: [INTLAB]
     cost: 0
     points: 30
     dependencies:
@@ -179,6 +211,7 @@ missionScripts:
         STR_INDIAN_OCEAN: 50
     researchTriggers:
       STR_MIB: true
+      STR_CHRYSSALID_UFO_PRELUDE: true
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -293,7 +326,7 @@ alienDeployments:
       showTarget: false
     markerName: STR_MIB_DISTRESS_SIGNAL_DESCRIPTION
     markerIcon: 4
-    shade: 15
+    shade: 14
     duration: [18, 36]
     despawnPenalty: 40
     music:
@@ -406,7 +439,7 @@ alienDeployments:
     startingCondition: STR_SPACE
     enviroEffects: STR_SPACE
     duration: [10, 12]
-    shade: 15
+    shade: 14
     despawnPenalty: 500
     cheatTurn: 10
     turnLimit: 20
@@ -792,6 +825,11 @@ ufos:
           width: 20
           length: 20
           items:
+            STR_MIB_AGENT_SPAWNER:
+              - [14, 7, 1]
+              - [16, 10, 1]
+              - [14, 3, 2]
+              - [13, 3, 2]
             STR_ALIEN_EGG:
               - [14, 7, 1]
               - [16, 10, 1]
@@ -799,28 +837,32 @@ ufos:
               - [13, 3, 2]
               - [5, 3, 2]
               - [3, 13, 2]
+              - [7, 10, 2]
+              - [8, 11, 2]
+              - [7, 11, 2]
             STR_BADASS_BROOD_ALIEN_EGG:
               - [8, 10, 2]
             STR_CHRYSSALID_BEGONE:
-              - [8, 10, 0]
+              - [8, 10, 2]
           fuseTimers:
-            STR_ALIEN_EGG: [0, 2]
-            STR_SAC_EGG: [0, 2]
-            STR_BADASS_BROOD_ALIEN_EGG: [0, 2]
+            STR_ALIEN_EGG: [0, 1]
+            STR_BADASS_BROOD_ALIEN_EGG: [1, 2]
             STR_CHRYSSALID_BEGONE: [0, 10]
+            STR_MIB_AGENT_SPAWNER: [0, 0]
   - type: STR_STRIKER
 alienRaces:
   - id: STR_ZOMBIE_TEMPERED
+    baseCustomDeploy: STR_ALIEN_BASE_ASSAULT_SECTOID
     members:
       - STR_VAMPIRE_QUEEN_COMMANDER
       - STR_VAMPIRE_KNIGHT_LEADER
       - STR_TOMB_GUARD_FEMALE_TERRORIST
-      - STR_ZOMBIE_INFECTOR_TERRORIST
-      - STR_ZOMBIE_GRUBAS_TERRORIST
-      - STR_ZOMBIE_STERILE_TERRORIST
-      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_ZOMBIE_INFECTOR_TEMPERED_TERRORIST
+      - STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST
+      - STR_ZOMBIE_FLESHER_TERRORIST
+      - STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
       - STR_MEGAZOMBIE_TERRORIST
-      - STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST #Zombie trooper 1 Terrorist
+      - STR_ZOMBIE_TROOPER_1_TERRORIST #Zombie trooper 1 Terrorist
       - STR_GHOUL_SOLDIER
       - STR_GHOUL_WARRIOR
       - STR_STRIX_TERRORIST
@@ -831,12 +873,12 @@ alienRaces:
       - [STR_VAMPIRE_QUEEN_COMMANDER]
       - [STR_VAMPIRE_KNIGHT_LEADER]
       - [STR_TOMB_GUARD_FEMALE_TERRORIST, STR_TOMB_GUARD_MALE_TERRORIST]
-      - [STR_ZOMBIE_INFECTOR_TERRORIST]
-      - [STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_GRUBAS_TERRORIST, STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST]
-      - [STR_ZOMBIE_STERILE_TERRORIST]
-      - [STR_ZOMBIE_STERILE_TERRORIST]
+      - [STR_ZOMBIE_INFECTOR_TEMPERED_TERRORIST]
+      - [STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST, STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST]
+      - [STR_ZOMBIE_FLESHER_TERRORIST]
+      - [STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST]
       - [STR_MEGAZOMBIE_TERRORIST]
-      - [STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST] #Zombie trooper 1 Terrorist
+      - [STR_ZOMBIE_TROOPER_1_TERRORIST] #Zombie trooper 1 Terrorist
       - [STR_GHOUL_SOLDIER]
       - [STR_GHOUL_WARRIOR]
       - [STR_STRIX_TERRORIST]
@@ -875,6 +917,75 @@ alienRaces:
         STR_ALIEN_BASE: 10
         # STR_ALIEN_INFILTRATION: 5
 extraSprites:
+  - type: ZOMBIE_FLESHER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1360
+    files:
+      0: Resources/Races_Compilation/ZombieRace/FLESHER.png
+  - type: UFOPEDIA_IMG_ZOMBIE_FLESHER_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_ZOMBIE_BOOMER_TEMPERED_AUTOPSY.png
+  - type: UFOPEDIA_IMG_ZOMBIE_FLESHER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_unit.png
+  - type: ZOMBIE_GRUBAS_TEMPERED.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ZOMBIE_GRUBAS_TEMPERED.png
+  - type: ZOMBIE_INFECTOR_TEMPERED.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ZOMBIE_GRUBAS_TEMPERED.png
+  - type: UFOPEDIA_IMG_ZOMBIE_GRUBAS_TEMPERED_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_ZOMBIE_BOOMER_TEMPERED_AUTOPSY.png
+  - type: UFOPEDIA_IMG_ZOMBIE_GRUBAS_TEMPERED
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_unit.png
+  - type: inventory_ZOMBIE_GRUBAS_TEMPERED
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ZombieRace/inventory_ZOMBIE_GRUBAS_TEMPERED.png
+  - type: UFOPEDIA_IMG_ZOMBIE_INFECTOR_TEMPERED_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_ZOMBIE_BOOMER_TEMPERED_AUTOPSY.png
+  - type: UFOPEDIA_IMG_ZOMBIE_INFECTOR_TEMPERED
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/ZombieRace/ufopedia_unit.png
+  - type: inventory_ZOMBIE_INFECTOR_TEMPERED
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ZombieRace/inventory_ZOMBIE_INFECTOR_TEMPERED.png
+  - type: inventory_ZOMBIE_FLESHER
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ZombieRace/inventory_FLESHER.png
   - type: CHRYSSALID_LARVA.PCK
     subX: 32
     subY: 40
@@ -1081,6 +1192,13 @@ items:
     liveAlien: true
     costSell: 100000
     listOrder: 135000
+  - type: STR_ZOMBIE_PARASITE_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 10000
+    listOrder: 135000
   - type: STR_CHRYSSALID_ALPHA_TERRORIST
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -1240,6 +1358,74 @@ items:
     invHeight: 3
     recover: false
     flatRate: true
+  - type: STR_TEMPERED_GRUBAS_GIFT
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 576
+    floorSprite: 455 #check this
+    handSprite: 0
+    hitAnimation: 312
+    explosionHitSound: 215 #change this to zombie
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66 #0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_ZOMBIE_FLESHER_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BELT
+    listOrder: 38220
+  - type: STR_TEMPERED_INFECTOR_GIFT
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 576
+    floorSprite: 455 #check this
+    handSprite: 0
+    hitAnimation: 312
+    explosionHitSound: 215 #change this to zombie
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66 #0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_ZOMBIE_PARASITE_TERRORIST
+    spawnUnitFaction: 1
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BELT
+    listOrder: 38220
   - type: STR_ALIEN_EGG
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -1253,7 +1439,7 @@ items:
     power: 1
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 50000 #0.66
     damageType: 3
     costThrow:
       energy: 16
@@ -1287,7 +1473,7 @@ items:
     power: 1
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 50000 #0.66
     damageType: 3
     costThrow:
       energy: 16
@@ -1321,7 +1507,7 @@ items:
     power: 1
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 50000 #0.66
     damageType: 3
     costThrow:
       energy: 16
@@ -1342,6 +1528,40 @@ items:
     fixedWeapon: false
     defaultInventorySlot: STR_BACK_PACK
     listOrder: 38220
+  - type: STR_MIB_AGENT_SPAWNER
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 81000
+    weight: 8
+    bigSprite: 197
+    floorSprite: 0 #check this
+    handSprite: 0
+    explosionHitSound: 217
+    hitAnimation: 0
+    power: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66 #0.66
+    damageType: 3
+    costThrow:
+      energy: 16
+    costPrime:
+      time: 45
+    costUnprime:
+      time: 20
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 1
+    armor: 0
+    attraction: 15
+    spawnUnit: STR_MIB_AGENT_DISTRESS
+    spawnUnitFaction: 2
+    isExplodingInHands: true
+    fixedWeapon: false
+    defaultInventorySlot: STR_BACK_PACK
+    listOrder: 38220
   - type: STR_SAC_EGG
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -1355,7 +1575,7 @@ items:
     power: 1
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0.66
+      ToTile: 50000 #0.66
     damageType: 3
     costThrow:
       energy: 16
@@ -1389,7 +1609,7 @@ items:
     power: 10
     damageAlter:
       IgnoreOverKill: false
-      ToTile: 0
+      ToTile: 50000 #0.66
       ToHealth: 1
       ArmorEffectiveness: 0
       ToWound: 100
@@ -1427,6 +1647,7 @@ items:
     reloadSound: 190
     compatibleAmmo:
       - STR_ZOMBIE_SPAWNER_CLIP
+      - STR_ZOMBIE_INFECTOR_SPAWNER_CLIP
     accuracyCloseQuarters: 100 #ADJUST THESE STATS PLEASE 
     accuracyAimed: 40
     tuAimed: 40
@@ -1457,7 +1678,36 @@ items:
     floorSprite: 2
     hidePower: true
     power: 0
-    spawnUnit: STR_BADASS_CHRYSSALID_ACID_TERRORIST
+    spawnUnit: STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST
+    spawnUnitFaction: 1
+    damageType: 2
+    blastRadius: 0
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    attraction: 16
+    listOrder: 34462 #check this
+  - type: STR_ZOMBIE_INFECTOR_SPAWNER_CLIP
+    nameAsAmmo: (ZOMBIE)
+    categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_FLARE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    requiresBuy:
+      - STR_FLARE_PISTOL_BUY
+    costBuy: 50
+    costSell: 20
+    weight: 2
+    bigSprite: 293 #get a new sprite soon please
+    floorSprite: 2
+    hidePower: true
+    power: 0
+    spawnUnit: STR_ZOMBIE_INFECTOR_TEMPERED_TERRORIST
     spawnUnitFaction: 1
     damageType: 2
     blastRadius: 0
@@ -1480,6 +1730,30 @@ items:
     liveAlien: true
     prisonType: 2
     costSell: 90000
+    listOrder: 115415
+  - type: STR_ZOMBIE_FLESHER_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 70000
+    listOrder: 115415
+  - type: STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 100000
+    listOrder: 115415
+  - type: STR_ZOMBIE_INFECTOR_TEMPERED_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 100000
     listOrder: 115415
   - type: STR_ZOMBIE_SPITTER_TEMPERED_TERRORIST
     categories: [STR_BEASTS]
@@ -1531,7 +1805,59 @@ items:
     battleType: 11
     armor: 20
     listOrder: 62315
+  - type: STR_ZOMBIE_FLESHER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 10000
+    weight: 30
+    bigSprite: 0
+    floorSprite: 0
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
+  - type: STR_ZOMBIE_GRUBAS_TEMPERED_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 40000
+    weight: 30
+    bigSprite: 0
+    floorSprite: 0
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
+  - type: STR_ZOMBIE_INFECTOR_TEMPERED_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 50000
+    weight: 30
+    bigSprite: 0
+    floorSprite: 0
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
   - type: STR_CHRYSSALID_LARVA_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 4000
+    weight: 5
+    bigSprite: 578
+    floorSprite: 457
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 20
+    battleType: 11
+    armor: 20
+    listOrder: 62315
+  - type: STR_ZOMBIE_PARASITE_CORPSE
     categories: [STR_CORPSES]
     size: 0.3
     costSell: 4000
@@ -1570,7 +1896,7 @@ items:
     blastRadius: 15 #10
     recover: false
     flatRate: true
-  - type: STR_INFECTOR_TEMPERED_WEAPON
+  - type: STR_ZOMBIE_INFECTOR_TEMPERED_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 575
@@ -1593,6 +1919,31 @@ items:
     recover: false
     flatRate: true
   - type: STR_CHRYSSALID_LARVA_WEAPON #Fix all the properties of thsi! it should only stun maybe? not kill but infect
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 574
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    clipSize: -1
+    power: 10
+    strengthApplied: true
+    damageType: 8
+    damageAlter:
+      ArmorEffectiveness: 0.5
+      ToTile: 0.33
+      ToStun: 1
+      RandomWound: false
+      ToWound: 10
+    accuracyMelee: 80
+    tuMelee: 5
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+  - type: STR_ZOMBIE_PARASITE_WEAPON #Fix all the properties of thsi! it should only stun maybe? not kill but infect
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 574
@@ -1982,6 +2333,35 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_CHRYSSALID_LARVA_WEAPON
+  - type: STR_ZOMBIE_PARASITE_TERRORIST
+    race: STR_ZOMBIE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 110
+      stamina: 140
+      health: 5
+      bravery: 100
+      reactions: 80
+      firing: 0
+      throwing: 0
+      strength: 5
+      psiStrength: 50
+      psiSkill: 0
+      melee: 70
+    armor: STR_CHRYSSALID_LARVA_ARMOR
+    standHeight: 18
+    kneelHeight: 12
+    value: 10
+    aggroSound: 215
+    deathSound: 216
+    panicSound: 215
+    berserkSound: 215
+    intelligence: 3
+    aggression: 4
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ZOMBIE_PARASITE_WEAPON
   - type: STR_BADASS_CHRYSSALID_ACID_TERRORIST
     race: STR_CHRYSSALID
     rank: STR_LIVE_TERRORIST
@@ -2097,6 +2477,90 @@ units:
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
         - STR_ZOMBIE_BOOMER_TEMPERED_GLOW
+  - type: STR_ZOMBIE_FLESHER_TERRORIST
+    race: STR_ZOMBIE_TEMPERED
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 100
+      stamina: 140
+      health: 100
+      bravery: 110
+      reactions: 50
+      firing: 0
+      throwing: 0
+      strength: 84
+      psiStrength: 80
+      psiSkill: 0
+      melee: 80
+      mana: 70
+    armor: STR_ZOMBIE_FLESHER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 4
+    intelligence: 3
+    aggression: 6
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 0
+    deathSound: 0
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+  - type: STR_ZOMBIE_GRUBAS_TEMPERED_TERRORIST
+    race: STR_ZOMBIE_TEMPERED
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 50
+      stamina: 160
+      health: 200
+      bravery: 120
+      reactions: 50
+      firing: 0
+      throwing: 0
+      strength: 110
+      psiStrength: 80
+      psiSkill: 0
+      melee: 90
+      mana: 70
+    armor: STR_ZOMBIE_GRUBAS_TEMPERED_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 7
+    intelligence: 4
+    aggression: 5
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 0
+    deathSound: 0
+    builtInWeaponSets:
+      - - STR_ZOMBIE_WEAPON
+  - type: STR_ZOMBIE_INFECTOR_TEMPERED_TERRORIST
+    race: STR_ZOMBIE_TEMPERED
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 85
+      stamina: 150
+      health: 150
+      bravery: 120
+      reactions: 55
+      firing: 0
+      throwing: 0
+      strength: 88
+      psiStrength: 80
+      psiSkill: 0
+      melee: 85
+      mana: 70
+    armor: STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    intelligence: 3
+    aggression: 5
+    isLeeroyJenkins: true
+    livingWeapon: true
+    aggroSound: 0
+    deathSound: 0
+    builtInWeaponSets:
+      - - STR_ZOMBIE_INFECTOR_TEMPERED_WEAPON
   - type: STR_MAGMA_COSMONAUT_HUMAN
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
@@ -2529,7 +2993,7 @@ armors:
   - type: STR_BADASS_CHRYSSALID_BROOD_ARMOR
     spriteSheet: BADASS_CHRYSSALID_BROOD.PCK
     spriteInv: inventory_BADASS_CHRYSSALID_BROOD
-    allowInv: false
+    allowInv: true
     bleedImmune: false
     corpseBattle:
       - BADASS_CHRYSSALID_BROOD_CORPSE_1
@@ -2583,3 +3047,123 @@ armors:
     builtInWeapons:
       - STR_BADASS_CHRYSSALID_BROOD_EGG
       - STR_BADASS_CHRYSSALID_BROOD_WEAPON
+      - STR_ALIEN_EGG
+      - STR_ALIEN_EGG
+  - type: STR_ZOMBIE_FLESHER_ARMOR
+    spriteSheet: ZOMBIE_FLESHER.PCK
+    spriteInv: inventory_ZOMBIE_FLESHER
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_FLESHER_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: true
+    zombiImmune: true
+    allowsRunning: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+      - 0.5
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+  - type: STR_ZOMBIE_GRUBAS_TEMPERED_ARMOR
+    spriteSheet: ZOMBIE_GRUBAS_TEMPERED.PCK
+    spriteInv: inventory_ZOMBIE_GRUBAS_TEMPERED
+    allowInv: true
+    corpseBattle:
+      - STR_ZOMBIE_GRUBAS_TEMPERED_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.5
+      - 1.0
+      - 3.0
+      - 0.5
+    loftempsSet: [ 4 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+    builtInWeapons:
+      - STR_TEMPERED_GRUBAS_GIFT
+  - type: STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR
+    spriteSheet: ZOMBIE_INFECTOR_TEMPERED.PCK
+    spriteInv: inventory_ZOMBIE_INFECTOR_TEMPERED
+    allowInv: true
+    corpseBattle:
+      - STR_ZOMBIE_INFECTOR_TEMPERED_CORPSE
+    visibilityAtDark: 14
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.65
+      - 1.0
+      - 4.0
+      - 0.5
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+    builtInWeapons:
+      - STR_TEMPERED_INFECTOR_GIFT
+      - STR_TEMPERED_INFECTOR_GIFT
+      - STR_TEMPERED_INFECTOR_GIFT
+      - STR_TEMPERED_INFECTOR_GIFT
+      - STR_TEMPERED_INFECTOR_GIFT
+      - STR_TEMPERED_INFECTOR_GIFT

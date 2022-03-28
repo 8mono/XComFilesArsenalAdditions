@@ -9532,7 +9532,7 @@ items:
     handSprite: 249
     hitSound: 80 #change this to explosion?
     hitAnimation: 216
-    power: 6000
+    power: 600
     explosionHitSound: 80
     damageType: 3
     damageAlter:
@@ -9541,8 +9541,11 @@ items:
       FireBlastCalc: false
       ToTile: 1
       ToItem: 1
-      FireThreshold: 5000
-      RadiusReduction: 250
+      RandomTile: true
+      FireThreshold: 250
+      SmokeThreshold: 400
+      RadiusReduction: 50
+      FixRadius: 20
     fuseType: 1
     costThrow:
       energy: 17

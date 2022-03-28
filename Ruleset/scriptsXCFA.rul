@@ -2099,6 +2099,166 @@ extended:
             end;
           end;
 
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+              debug_log "GRUBAS GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT";
+              debug_log "INFECTOR GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+              debug_log "GRUBAS GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+          return;
+      - offset: 6
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptre BattleItem inventoryItem;
+          var ptr RuleArmor armorRuleset;
+          var text armorName;
+          var text itemName;
+          var int ownerHP;
+          var int ownerMaxHP;
+          var int ownerStun;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_GRUBAS_TEMPERED_ARMOR";
+            return;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          unit.getInventoryItem inventoryItem itemRuleset;
+          if eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+            debug_log "Item is grubas gift!";
+            unit.getHealth ownerHP;
+            unit.getHealthMax ownerMaxHP;
+            unit.getStun ownerStun;
+            div ownerMaxHP 2;
+            debug_log "This is grubas current stun, HP and the max HP threshold";
+            debug_log ownerStun;
+            debug_log ownerHP;
+            debug_log ownerMaxHP;
+            if le ownerHP ownerMaxHP;
+              debug_log "Grubas is at half HP or less, priming!";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+            end;
+            if ge ownerStun ownerHP;
+              debug_log "Grubas is stunned, priming!";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+            end;
+          end;
+          return;
+      - offset: 7
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptre BattleItem inventoryItem;
+          var text itemName;
+          var text armorName;
+          var ptr RuleArmor armorRuleset;
+          var int ownerHP;
+          var int ownerMaxHP;
+          var int ownerStun;
+          var int loopCount;
+          var int fuseTimer;
+          var int collapsing;
+          var int criticalStatus;
+
+          set criticalStatus 0;
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR";
+            return;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          itemRuleset.getType itemName;
+          debug_log "Unit damaged was an infector priming one of their gifts";
+          unit.getHealth ownerHP;
+          unit.getHealthMax ownerMaxHP;
+          unit.getStun ownerStun;
+          unit.isCollapsing collapsing;
+          debug_log "Unit is collapsing value";
+          debug_log collapsing;
+          
+          div ownerMaxHP 2;
+          
+          if or le ownerHP ownerMaxHP le ownerHP 1 le ownerHP ownerStun;
+            set criticalStatus 1;
+            debug_log "unit is in critical status";
+          end;
+
+          set loopCount 6;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem inventoryItem x;
+            debug_log inventoryItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" neq criticalStatus 1;
+              debug_log "infector gift FOUND!, checking if timer is 1 or more!";
+              inventoryItem.getFuseTimer fuseTimer;
+              debug_log fuseTimer;
+              debug_log "Above was fuse timer for this one";
+              if ge fuseTimer 1;
+                inventoryItem.setFuseEnabled 1;
+                inventoryItem.setFuseTimer 0;
+                debug_log "This should only run once!";
+                return;
+              end;
+            end;
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" eq criticalStatus 1;
+              debug_log "infector gift FOUND!, CRITICAL STATUS";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+              return;
+            end;
+          end;
+
           return;
       - offset: 0.1 #Support Grenades healing effect
         code: |
@@ -2560,6 +2720,69 @@ extended:
               debug_log previousMaxTimer;
               eggItem.setFuseEnabled 1;
               eggItem.setFuseTimer previousMaxTimer;
+            end;
+          end;
+          return;
+      - offset: 0.3
+        code: |
+          var int fuseStatus;
+          var int randomTimer;
+          var int previousMaxTimer;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          var int loopCount;
+          set loopCount 0;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_ZOMBIE_INFECTOR_TEMPERED!";
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          # unit.getInventoryItem eggItem itemRuleset;
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" eq fuseStatus 0;
+              battle_game.randomRange randomTimer 1 5;
+              if eq x 0;
+                mul randomTimer 2;
+              else eq x 1;
+                mul randomTimer 3;
+              else eq x 2;
+                mul randomTimer 4;
+              else eq x 3;
+                mul randomTimer 5;
+              else eq x 4;
+                mul randomTimer 6;
+              end;
+              
+              debug_log "randomTimer and previousMaxTimer";
+              debug_log randomTimer;
+              debug_log previousMaxTimer;
+
+              if ge randomTimer previousMaxTimer;
+                set previousMaxTimer randomTimer;
+              end;
+
+              debug_log "INFECTOR GIFT FOUND!, priming for...";
+              debug_log randomTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer randomTimer;
             end;
           end;
 
