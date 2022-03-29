@@ -89,6 +89,12 @@ crafts:
       - [9, 10, 0, 5]
     craftInventoryTile: [10, 10, 0]
 research:
+  - name: STR_MONSTERS_FINAL_ALTERNATIVE
+    cost: 0
+    points: -100
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 180320 #change this to magma cosmonauts saved?
   - name: STR_TEMPERED_ZOMBIES_PRELUDE
     cost: 0
     points: -100
