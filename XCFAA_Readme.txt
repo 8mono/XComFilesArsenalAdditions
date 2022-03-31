@@ -866,3 +866,7 @@ Razor Shotgun (bigob only) when equipping Tracite infused shards
 Shield sprites now change depending on their primed state or if they're broken (Bigob, Floorob AND Handobs!)
 Added missing Mini Mortar Gas Shell bundle article
 Added extra page to Mini Mortar's ufopaedia
+Retouched some of the old sprites for Convoy cultists
+Added strings to elite cultists
+Added proper combat analysis and ufopaedia article to elite cultists
+Added proper repair/armor extraction for Heavy Riot and Prototype Tactical Suits
