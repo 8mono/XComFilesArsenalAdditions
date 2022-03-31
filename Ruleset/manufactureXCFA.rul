@@ -2428,7 +2428,7 @@ manufacture:
       STR_ALIEN_ALLOYS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 22561
-  - name: STR_HEAVY_RIOT_SUIT_REPAIR
+  - name: STR_EXALT_RIOT_SUIT_REPAIR
     category: STR_MAINTENANCE
     requires:
       - STR_EXALT_WAREHOUSE_RAIDED
@@ -2437,6 +2437,18 @@ manufacture:
     cost: 1000
     requiredItems:
       STR_EXALT_EXTERMINATOR_CORPSE: 1
+    producedItems:
+      STR_HEAVY_RIOT_SUIT: 1
+    listOrder: 220061
+  - name: STR_HEAVY_RIOT_SUIT_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_EXALT_WAREHOUSE_RAIDED
+    space: 2
+    time: 20
+    cost: 1000
+    requiredItems:
+      STR_HEAVY_RIOT_SUIT_CORPSE: 1
     producedItems:
       STR_HEAVY_RIOT_SUIT: 1
     listOrder: 220061
@@ -2480,6 +2492,22 @@ manufacture:
     randomProducedItems:
       - [67, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1}]
       - [33, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1, STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS: 1}]
+    requiresBaseFunc: [WORKS]
+    listOrder: 27010
+  - name: STR_REPAIR_PROTOTYPE_TACTICAL_SUIT
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
+    space: 12
+    time: 200
+    cost: 5000
+    requiredItems:
+      STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_CORPSE: 1
+      STR_DURATHREAD: 5
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [10, {STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1}]
     requiresBaseFunc: [WORKS]
     listOrder: 27010
   - name: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE

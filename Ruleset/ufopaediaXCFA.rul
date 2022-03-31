@@ -3200,6 +3200,21 @@ ufopaedia:
     requires:
       - STR_EXALT_EXTERMINATOR_ARMOR
     listOrder: 150242 #FIX LIST ORDERS
+  - id: STR_EXALT_ELITE_REINFORCER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: ufopedia_IMG_EXALT_EXTERMINATOR
+    text: STR_EXALT_ELITE_REINFORCER_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_EXALT_ELITE_REINFORCER
+    listOrder: 150231
+  - id: STR_EXALT_ELITE_REINFORCER_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_EXALT_ELITE_REINFORCER_ARMOR
+    listOrder: 150242 #FIX LIST ORDERS
 #RED DAWN
   - id: STR_ZSRR_LOGISTICS
     type_id: 7
@@ -3246,6 +3261,22 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_UC
+    listOrder: 150242
+  - id: STR_ZSRR_RED_OPS_ELITE
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: ufopedia_IMG_RED_OPS_JUGGERNAUT
+    text: STR_ZSRR_RED_OPS_ELITE_UFOPEDIA
+    text_width: 158
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZSRR_RED_OPS_ELITE
+    listOrder: 150269
+  - id: STR_ZSRR_RED_OPS_ELITE_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ZSRR_RED_OPS_ELITE_ARMOR
     listOrder: 150242
   - id: STR_IMPACT_VEST
     type_id: 4
@@ -3301,6 +3332,22 @@ ufopaedia:
     requires:
       - STR_BLACK_LOTUS_TORONJIN_ARMOR
     listOrder: 150137
+  - id: STR_BLACK_LOTUS_ELITE_FOOTMAN
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_BLACK_LOTUS_TORONJIN
+    text: STR_BLACK_LOTUS_ELITE_FOOTMAN_UFOPEDIA
+    text_width: 158
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BLACK_LOTUS_ELITE_FOOTMAN
+    listOrder: 150136
+  - id: STR_BLACK_LOTUS_ELITE_FOOTMAN_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BLACK_LOTUS_ELITE_FOOTMAN_ARMOR
+    listOrder: 150137
 #CHURCH OF DAGON fix list orders 
   - id: STR_ACOLYTE_OF_DAGON
     type_id: 7
@@ -3347,6 +3394,22 @@ ufopaedia:
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_HAND_OF_DAGON_ARMOR
+    listOrder: 150137
+  - id: STR_PROPHET_OF_DAGON
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_HAND_OF_DAGON
+    text: STR_PROPHET_OF_DAGON_UFOPEDIA
+    text_width: 158
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROPHET_OF_DAGON
+    listOrder: 150136
+  - id: STR_PROPHET_OF_DAGON_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_PROPHET_OF_DAGON_ARMOR
     listOrder: 150137
   - id: STR_IMPACT_VEST
     type_id: 4

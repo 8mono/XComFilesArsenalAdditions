@@ -3263,6 +3263,11 @@ research:
     points: 0
     dependencies:
       - STR_ZSRR_UBEK_PROTOTYPE_SUIT
+  - name: STR_ZSRR_RED_OPS_ELITE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZSRR_RED_OPS_ELITE
 #Black Lotus Convoys
   - name: STR_BLACK_LOTUS_KNIGHT_ARMOR
     cost: 0
@@ -3279,6 +3284,11 @@ research:
     points: 0
     dependencies:
       - STR_BLACK_LOTUS_TORONJIN
+  - name: STR_BLACK_LOTUS_ELITE_FOOTMAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_ELITE_FOOTMAN
 #GIVE CONVOYS(GENERAL AND THEIR SIZE SPECIFIC ENTRIES TOO) A UFOPEDIA ARTICLE, AS WELL AS THEIR TERMINATION ENTRIES
 #EXALT Convoys
   - name: STR_EXALT_LOGISTICS_ARMOR
@@ -3296,6 +3306,11 @@ research:
     points: 0
     dependencies:
       - STR_EXALT_EXTERMINATOR
+  - name: STR_EXALT_ELITE_REINFORCER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_EXALT_ELITE_REINFORCER
   - name: STR_EXALT_CONVOYS
     cost: 0
     points: 5
@@ -3760,7 +3775,7 @@ research:
     cost: 35
     points: 100
     needItem: true
-    spawnedItem: STR_WEAPON_BOX_REINFORCED_ZSRR
+    spawnedItem: STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_SCHEMATICS
     unlocks:
       - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE
       - STR_ZSRR_HQ
@@ -3780,6 +3795,11 @@ research:
     points: 0
     dependencies:
       - STR_HAND_OF_DAGON
+  - name: STR_PROPHET_OF_DAGON_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PROPHET_OF_DAGON
   - name: STR_CHURCH_OF_DAGON_CONVOYS
     cost: 0
     points: 5

@@ -52,6 +52,56 @@ armors:
       - 1.0
     specialWeapon: STR_UNARMED_THE_ONE
     loftempsSet: [ 3 ]
+  - type: STR_BLACK_LOTUS_ELITE_FOOTMAN_ARMOR
+    spriteSheet: BLACK_LOTUS_TORONJIN.PCK
+    spriteInv: inventory_BLACK_LOTUS_TORONJIN
+    corpseBattle:
+      - STR_BLACK_LOTUS_TORONJIN_CORPSE
+    visibilityAtDark: 12
+    camouflageAtDay: 4
+    camouflageAtDark: 4
+    psiVision: 3
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_THE_ONE
+    loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_TORONJIN_ARMOR
     spriteSheet: BLACK_LOTUS_TORONJIN.PCK
     spriteInv: inventory_BLACK_LOTUS_TORONJIN
@@ -160,11 +210,7 @@ armors:
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -253,7 +299,7 @@ armors:
       - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
-  - type: STR_HAND_OF_DAGON_ARMOR
+  - type: STR_PROPHET_OF_DAGON_ARMOR
     spriteInv: inventory_HAND_OF_DAGON
     spriteSheet: PROSELYTE_OF_DAGON.PCK
     corpseBattle:
@@ -309,7 +355,7 @@ armors:
       - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
-  - type: STR_PROPHET_OF_DAGON_ARMOR
+  - type: STR_HAND_OF_DAGON_ARMOR
     spriteInv: inventory_HAND_OF_DAGON
     spriteSheet: PROSELYTE_OF_DAGON.PCK
     corpseBattle:
@@ -446,11 +492,7 @@ armors:
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
       TTAG_TEARGAS_RESISTANCE: 0
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     recovery:
@@ -463,11 +505,7 @@ armors:
       energy:
         manaNormalized: 5 # very slow
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -571,8 +609,7 @@ armors:
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
       TTAG_TEARGAS_RESISTANCE: 100
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -766,23 +803,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -869,8 +890,7 @@ armors:
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -933,8 +953,7 @@ armors:
     sideArmor: 70
     rearArmor: 60
     underArmor: 40
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1011,8 +1030,7 @@ armors:
     sideArmor: 70
     rearArmor: 60
     underArmor: 40
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1072,8 +1090,7 @@ armors:
     sideArmor: 70
     rearArmor: 60
     underArmor: 40
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1134,8 +1151,7 @@ armors:
     sideArmor: 70
     rearArmor: 60
     underArmor: 40
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1196,8 +1212,7 @@ armors:
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1235,23 +1250,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -1276,8 +1275,7 @@ armors:
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1315,23 +1313,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -1355,8 +1337,7 @@ armors:
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1419,8 +1400,7 @@ armors:
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1482,8 +1462,7 @@ armors:
     sideArmor: 65
     rearArmor: 57
     underArmor: 36
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1521,23 +1500,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -1561,8 +1524,7 @@ armors:
     sideArmor: 65
     rearArmor: 57
     underArmor: 36
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1600,23 +1562,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -1640,8 +1586,7 @@ armors:
     sideArmor: 65
     rearArmor: 57
     underArmor: 36
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1679,23 +1624,7 @@ armors:
     moveSound: 147
     deathMale: [148, 149]
     deathFemale: [148, 149]
-    damageModifier: &ArmoredCarResists
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.05
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.35
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *ArmoredCarResists
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -1719,8 +1648,7 @@ armors:
     sideArmor: 75
     rearArmor: 62
     underArmor: 41
-    psiDefence: &MachineDynamicPsiDefence
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -1778,11 +1706,7 @@ armors:
     sideArmor: 20
     rearArmor: 22
     underArmor: 14
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     recovery:
@@ -1795,11 +1719,7 @@ armors:
       energy:
         manaNormalized: 10
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -1890,11 +1810,7 @@ armors:
     rearArmor: 14
     underArmor: 10
     drawingRoutine: 0
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.15
@@ -1908,11 +1824,7 @@ armors:
       energy:
         manaNormalized: 10 # penalty for discomfort
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
@@ -2391,11 +2303,7 @@ armors:
     rearArmor: 14
     underArmor: 10
     drawingRoutine: 0
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.15
@@ -2409,31 +2317,11 @@ armors:
       energy:
         manaNormalized: 10 # penalty for discomfort
         healthCurrent: 0.25
-      stun: &StandardAgentStunRes
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+      stun: *StandardAgentStunRes
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &RiotVestResists
-      - 1.0
-      - 0.75	
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.85
-      - 1.0
-      - 1.0
-      - 3.5
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *RiotVestResists
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
@@ -2637,23 +2525,7 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &JumpsuitResists
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.1
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
@@ -3155,11 +3027,7 @@ armors:
     tags:
       FTAG_FLASHBANG_RESISTANCE: 0
       TTAG_TEARGAS_RESISTANCE: 0
-    psiDefence: &StandardDynamicPsiDefence
-      psiStrength: 1.0
-      psiSkill: 0.4
-      moraleCurrent: 0.33
-      bravery: 0.2
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -3248,6 +3116,46 @@ armors:
       - 0.0
       - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
+  - type: STR_ZSRR_RED_OPS_ELITE_ARMOR
+    spriteSheet: XCOM_67.PCK
+    spriteInv: MAN_67
+    corpseBattle:
+      - STR_HEAVY_TACTICAL_SUIT_PROTOTYPE_RIGGED_CORPSE
+    visibilityAtDark: 6
+    personalLight: 5
+    weight: 17
+    stats:
+      tu: -20
+      stamina: -25
+      reactions: -20
+      melee: -20
+    frontArmor: 30
+    sideArmor: 22
+    rearArmor: 24
+    underArmor: 16
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+      TTAG_TEARGAS_RESISTANCE: 0
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 5 # very slow
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *HeavyTacticalSuitPrototypeResists
+    specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
 #EXALT 
   - type: STR_EXALT_LOGISTICS_ARMOR
@@ -3353,6 +3261,43 @@ armors:
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_EXALT_EXTERMINATOR_ARMOR
+    spriteSheet: XCOM_69.PCK
+    spriteInv: inventory_EXALT_EXTERMINATOR
+    corpseBattle: #CHANGE THIS TO EXTERMINATOR CORPSE SINCE WE MIGHT GET HEAVY RIOT SUITS FROM HIM
+      - STR_EXALT_EXTERMINATOR_CORPSE
+    visibilityAtDark: 11
+    frontArmor: 30
+    sideArmor: 20
+    rearArmor: 22
+    underArmor: 14
+    stats:
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HeavyRiotSuitResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    loftempsSet: [ 3 ]
+  - type: STR_EXALT_ELITE_REINFORCER_ARMOR
     spriteSheet: XCOM_69.PCK
     spriteInv: inventory_EXALT_EXTERMINATOR
     corpseBattle: #CHANGE THIS TO EXTERMINATOR CORPSE SINCE WE MIGHT GET HEAVY RIOT SUITS FROM HIM
