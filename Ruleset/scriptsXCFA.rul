@@ -1,7 +1,7 @@
 items:
 #Uses alphabetical order for resistances stacking, names should go worst to best; unique Index should follow that
 #Unique index slots do not stack with each other, alphabetically first is used
-#Slots breakdown:
+#Slots
 # ITEM_RESIST_SLOT_INDEX: 1 - Back
 # ITEM_RESIST_SLOT_INDEX: 2 - Belt
 # ITEM_RESIST_SLOT_INDEX: 3 - ???
