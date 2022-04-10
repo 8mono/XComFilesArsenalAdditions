@@ -872,3 +872,5 @@ Added proper combat analysis and ufopaedia article to elite cultists
 Added proper repair/armor extraction for Heavy Riot and Prototype Tactical Suits
 0.8b
 Fixed compatibility issues with XCF 2.4 (Removed Synthsuit underwater tag defiinitions)
+0.8.1
+Fixed Repair projects for Heavy Riot Suit from both your dead agents and dead EXALT Elite Units, now both drop the appropiate corpse

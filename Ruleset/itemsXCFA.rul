@@ -8866,7 +8866,7 @@ items:
     invHeight: 3
     battleType: 11
     armor: 60
-    recover: false
+    recover: true
   - type: STR_RIOT_VEST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

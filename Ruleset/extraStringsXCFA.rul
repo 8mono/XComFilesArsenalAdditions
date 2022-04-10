@@ -306,6 +306,7 @@ extraStrings:
       STR_HEAVY_RIOT_SUIT_UC: "HEAVY RIOT SUIT"
       STR_HEAVY_RIOT_SUIT_H_UC: "HEAVY RIOT SUIT (H)"
       STR_HEAVY_RIOT_SUIT: "Heavy Riot Suit"
+      STR_HEAVY_RIOT_SUIT_CORPSE: "Damaged Heavy Riot Suit "
       STR_XCOM_LIQUIDATOR_ARMOR_SHIELD_UC: "LIQUIDATOR/SHIELD"
       STR_XCOM_LIQUIDATOR_ARMOR_SHIELD_H_UC: "LIQUIDATOR/SHIELD (H)"
       STR_XCOM_LIQUIDATOR_ARMOR_SHIELD_PROTEAN_UC: "LIQUIDATOR/SHIELD (PRO)"
@@ -787,6 +788,7 @@ extraStrings:
       STR_EXALT_WAREHOUSE_RAIDED: "EXALT Warehouse Raided"
       
       STR_HEAVY_RIOT_SUIT_REPAIR: "Heavy Riot Suit Repair"
+      STR_EXALT_RIOT_SUIT_REPAIR: "EXALT Heavy Riot Suit Repair"
 
       STR_EXALT_CONVOY_SMALL_UFOPEDIA: "We've located small convoys of EXALT cultists carrying weapons"
       
@@ -846,7 +848,7 @@ extraStrings:
       STR_EXALT_EXTERMINATOR: "EXALT Exterminator "
       STR_EXALT_EXTERMINATOR_ARMOR: "EXALT Exterminator Combat Analysis"
       STR_EXALT_EXTERMINATOR_UFOPEDIA: "You may NOT speak to the manager."
-      STR_EXALT_EXTERMINATOR_CORPSE: "Damaged Heavy Riot Suit"
+      STR_EXALT_EXTERMINATOR_CORPSE: "Damaged EXALT Heavy Riot Suit"
       STR_EXALT_ELITE_REINFORCER: "EXALT Negotiator "
       STR_EXALT_ELITE_REINFORCER_ARMOR: "EXALT Negotiator Combat Analysis"
       STR_EXALT_ELITE_REINFORCER_UFOPEDIA: "EXALT's finally rolled out some of their newly acquired heavy suits, besides their armor they have undergone rigorous training."
@@ -1628,6 +1630,8 @@ extraStrings:
       STR_FN_FAL_SCOPED_UFOPEDIA: "Reliable, accurate and powerful weapon, feeding 7.62 NATO ammunition. Not the best choice for a beginner. Equipped with a high-magnification scope.{NEWLINE}Purchasing this weapon requires: Promotion II."
       STR_GALIL_ARM: "Galil-ARM"
       STR_GALIL_ARM_BUY: "Galil-ARM Acquisition"
+      STR_GALIL_ARM_BUY_PREQ_A: "Galil-ARM Acquisition Prerequisite A"
+      STR_GALIL_ARM_BUY_PREQ_B: "Galil-ARM Acquisition Prerequisite B"
       STR_GALIL_ARM_UFOPEDIA: "This Galil variant is chambered in 5.56 and used as a squad automatic weapon. Bipod provides stability when kneeled."
       STR_GALIL_ARM_CONT: "Galil-ARM (Continued)"
       STR_GALIL_ARM_CLIP: "5.56 mm NATO Extended Clip"
@@ -1643,6 +1647,8 @@ extraStrings:
       STR_GALIL_ARM_BIG_CLIP_AP_BUY: "5.56 mm NATO Large Extended Clip/AP Acqusition"
       STR_RPK: "RPK"
       STR_RPK_BUY: "RPK Acquisition"
+      STR_RPK_BUY_PREQ_A: "RPK Acquisition Prerequisite A"
+      STR_RPK_BUY_PREQ_B: "RPK Acquisition Prerequisite B"
       STR_RPK_UFOPEDIA: "This Kalashnikov based light machine gun can use regular AK magazines as well as larger capacity ones for a larger suppressive effect while mantaining decent mobility. Bipod provides stability when kneeled."
       STR_RPK_CONT: "RPK (Continued)"
       STR_RPK_CLIP: "WP 7.62 mm Extended Clip"
