@@ -1670,6 +1670,7 @@ items:
       ToTile: 0
       ToItem: 0
       ToWound: 0
+      FixRadius: 8 #check this !
     clipSize: 1
     battleType: 2
     invWidth: 1
@@ -5044,7 +5045,7 @@ items:
     bigSprite: 348
     floorSprite: 323
     hitSound: 54 #check if this works
-    hitAnimation: 96
+    hitAnimation: 296
     explosionHitSound: 54
     blastRadius: 1
     power: 66
@@ -5065,6 +5066,7 @@ items:
       RadiusReduction: 33
       FireThreshold: 33
       ToTile: 0.0
+      FixRadius: 2
     clipSize: 3 #check if this is too op
     battleType: 2
     armor: 20
@@ -5109,7 +5111,7 @@ items:
     bigSprite: 254
     floorSprite: 325
     hitSound: 54 #check if thsi works
-    hitAnimation: 401
+    hitAnimation: 431
     invWidth: 2
     invHeight: 2
     blastRadius: 0
@@ -5141,8 +5143,8 @@ items:
     bigSprite: 347
     floorSprite: 325
     hitSound: 54 #check if thsi works
-    hitAnimation: 96
-    explosionHitSound: 54
+    hitAnimation: 296
+    explosionHitSound: 54 #change this?
     invWidth: 2
     invHeight: 2
     blastRadius: 2
@@ -5163,6 +5165,7 @@ items:
       ArmorEffectiveness: 0.5
       RadiusReduction: 45
       FireThreshold: 45
+      FixRadius: 3
       ToTile: 0.0
     clipSize: 3 #check if this isnt too op
     battleType: 2
@@ -5721,13 +5724,12 @@ items:
     costSell: 8000
     transferTime: 48
     weight: 25
-    bigSprite: 261
+    bigSprite: 514
     floorSprite: 12
     hitSound: 54 #check if thsi works
-    hitAnimation: 96
+    hitAnimation: 296
     explosionHitSound: 54
     damageType: 2
-    blastRadius: 0
     power: 86
     damageAlter:
       ResistType: 11
@@ -5744,6 +5746,7 @@ items:
       ArmorEffectiveness: 0.5
       RadiusReduction: 45
       FireThreshold: 45
+      FixRadius: 4
       ToTile: 0.0
     clipSize: 5 #check if this is OP
     battleType: 2

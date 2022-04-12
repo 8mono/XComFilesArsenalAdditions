@@ -549,6 +549,7 @@ extraSprites:
       511: Resources/Weapon_Overhaul/bigob_AK47_Clip_AP3.png
       512: Resources/Weapon_Overhaul/bigob_AKM_Clip_AP2.png    # This is actually the AKSU74 clip.
       513: Resources/Weapon_Overhaul/bigob_M16Clip_AP2.png
+      514: Resources/Tanks_Compilation/TankWeapons/bigob_TaserCannonClipTank2.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -803,6 +804,7 @@ extraSprites:
       401: Resources/Weapons_Compilation/HitAnimations/Taser_hit.png
       411: Resources/Weapons_Compilation/HitAnimations/OrangeSkull_hit.png
       421: Resources/Weapons_Compilation/HitAnimations/Light_hit.png
+      431: Resources/Weapons_Compilation/HitAnimations/GreenTaser_hit.png
   - type: X1.PCK #Explosive type damage uses this (smoke, incendiary, stun, & High Explosive)
     width: 1024
     height: 64
@@ -826,6 +828,8 @@ extraSprites:
       272: Resources/Weapons_Compilation/ExplosionAnimations/Flame_Skull2Outline2.png
       280: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Skull_exp.png
       288: Resources/Weapons_Compilation/ExplosionAnimations/Yellow_Skull_exp.png
+      296: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_ExplosionDense.png
+      304: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_Explosion.png
   - type: Projectiles
     height: 3
     width: 65
