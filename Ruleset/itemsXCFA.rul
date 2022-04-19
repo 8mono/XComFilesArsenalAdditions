@@ -1,4 +1,83 @@
 items:
+  - type: STR_LASER_HEAVY_PISTOL_MIB
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 12000
+    weight: 11
+    bigSprite: 587
+    floorSprite: 447
+    handSprite: 2808
+    bulletSprite: 5
+    fireSound: [228, 229, 230]
+    compatibleAmmo:
+      - STR_LASER_HEAVY_PISTOL_MIB_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuSnap: 32
+    tuAimed: 55
+    tuLoad: 25
+    aimRange: 25
+    dropoff: 3
+    kneelBonus: 110
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    armor: 30
+    attraction: 15
+    listOrder: 20500
+  - type: STR_LASER_HEAVY_PISTOL_MIB_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 15000
+    weight: 3
+    bigSprite: 588
+    floorSprite: 449
+    hitSound: 86 #Fix this
+    hitAnimation: 36 #Check this
+    reloadSound: 231
+    power: 46
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 10
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 20510
+  - type: STR_NUCLEAR_LASER_HEAVY_PISTOL
+    categories: [STR_XCOM_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_ADVANCED_LASER_WEAPONS
+    size: 0.1
+    costSell: 90000
+    weight: 14
+    bigSprite: 589
+    floorSprite: 448
+    handSprite: 2816
+    bulletSprite: 28
+    fireSound: [228, 229, 230]
+    reloadSound: 231
+    hitSound: 86 #Fix this
+    hitAnimation: 186 #Check this
+    power: 55
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    accuracyCloseQuarters: 125
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuSnap: 32
+    tuAimed: 55
+    clipSize: -1
+    battleType: 1
+    aimRange: 25
+    dropoff: 3
+    kneelBonus: 110
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20520
   - type: STR_RPK
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_MACHINE_GUNS, STR_RIFLES, STR_LAND]
     requiresBuy:
@@ -603,7 +682,7 @@ items:
     fireSound: [209, 210, 211, 212]
     reloadSound: [213, 214]
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 30
     hidePower: true
     damageType: 6
@@ -1325,7 +1404,7 @@ items:
   - type: STR_NUCLEAR_HEAVY_LASER
     accuracyMultiplier:
       strength: *HeavyWeaponStrenghtMultiplier
-    hitAnimation: 232
+    hitAnimation: 104
     damageType: 3
     blastRadius: 1
     damageAlter:
@@ -2194,7 +2273,7 @@ items:
     floorSprite: 0 #turret? or invisible?
     handSprite: 0 #no, probably
     bulletSprite: 5 #consider a blue fireball?
-    fireSound: 92 #flare sound
+    fireSound: 64 #flare sound
     ammo:
       0:
         compatibleAmmo: [STR_CRAFT_FLARE_TURRET_WEAPON_CLIP]
@@ -2261,7 +2340,7 @@ items:
     bigSprite: 212 #get a new sprite soon please
     floorSprite: 2
     hitSound: 129
-    hitAnimation: 168 #check this
+    hitAnimation: 88 #check this
     power: 60
     damageType: 9
     blastRadius: 6
@@ -3536,7 +3615,7 @@ items:
     bigSprite: 425
     floorSprite: 4
     explosionHitSound: 93
-    hitAnimation: 224
+    hitAnimation: 120
     power: 55
     damageType: 2
     damageAlter:
@@ -3560,7 +3639,7 @@ items:
     bigSprite: 426
     floorSprite: 4
     explosionHitSound: 129
-    hitAnimation: 168
+    hitAnimation: 88
     power: 55
     damageType: 9
     clipSize: 1
@@ -3575,7 +3654,7 @@ items:
     weight: 3
     bigSprite: 427 #check this
     floorSprite: 412 #check this
-    hitAnimation: 232
+    hitAnimation: 104
     power: 70
     damageType: 3
     damageAlter:
@@ -3670,7 +3749,7 @@ items:
     reloadSound: [213, 214]
     floorSprite: 2
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 35
     hidePower: true
     damageType: 6
@@ -3711,7 +3790,7 @@ items:
     reloadSound: [213, 214]
     hitSound: 54 #check this
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 35
     hidePower: true
     damageType: 6
@@ -4939,7 +5018,7 @@ items:
     bigSprite: 201
     floorSprite: 2
     hitSound: 86
-    hitAnimation: 232
+    hitAnimation: 104
     power: 85
     blastRadius: 2
     damageAlter:
@@ -4960,7 +5039,7 @@ items:
     bigSprite: 204
     floorSprite: 2
     hitSound: 86
-    hitAnimation: 232
+    hitAnimation: 104
     power: 92
     blastRadius: 2
     fireSound: 85
@@ -4987,7 +5066,7 @@ items:
     floorSprite: 322
     handSprite: 2152
     bulletSprite: 13
-    fireSound: 102
+    fireSound: 61
     compatibleAmmo:
       - STR_TASER_CLIP
       - STR_TASER_BIOELECTRIC_CLIP
@@ -5081,7 +5160,7 @@ items:
     floorSprite: 324
     handSprite: 2176
     bulletSprite: 13 #check if this works
-    fireSound: 102
+    fireSound: 61
     invWidth: 2
     invHeight: 3
     compatibleAmmo:
@@ -5572,7 +5651,7 @@ items:
     bigSprite: 258
     floorSprite: 0
     handSprite: 0
-    fireSound: 102
+    fireSound: 61
     bulletSprite: 3 #make sure this works!
     compatibleAmmo:
       - STR_LWP_RIOT_LAUNCHER_RUBBER_CLIP
@@ -5630,7 +5709,7 @@ items:
     floorSprite: 12 #check this 
     hitSound: 0 #check this
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 60
     damageType: 1
     damageAlter:
@@ -5667,7 +5746,7 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 13 #check this
-    fireSound: 102
+    fireSound: 61
     compatibleAmmo:
       - STR_LWP_RIOT_TASER_CANNON_CLIP
       - STR_LWP_RIOT_TASER_CANNON_DENSE_CLIP
@@ -5724,7 +5803,7 @@ items:
     costSell: 8000
     transferTime: 48
     weight: 25
-    bigSprite: 514
+    bigSprite: 590
     floorSprite: 12
     hitSound: 54 #check if thsi works
     hitAnimation: 296
@@ -5984,7 +6063,7 @@ items:
     clipSize: 8
     battleType: 2
     hitSound: 129
-    hitAnimation: 168
+    hitAnimation: 88
     invHeight: 1
     invWidth: 2
     recover: false
@@ -5992,7 +6071,7 @@ items:
     weight: 0
     bigSprite: 483
     bulletSprite: 4
-    fireSound: 92
+    fireSound: 64
     compatibleAmmo:
       - STR_LWP_FLARE_CLIP
       # - STR_LWP_STAR_CLIP
@@ -6012,7 +6091,7 @@ items:
     bigSprite: 484
     floorSprite: 316
     hitSound: 93
-    hitAnimation: 224
+    hitAnimation: 120
     power: 20
     damageType: 2
     damageAlter:
@@ -6096,7 +6175,7 @@ items:
     weight: 0
     bigSprite: 483
     bulletSprite: 4
-    fireSound: 92
+    fireSound: 64
     compatibleAmmo:
       - STR_HWP_FLARE_CLIP
       # - STR_HWP_STAR_CLIP
@@ -6116,7 +6195,7 @@ items:
     bigSprite: 484
     floorSprite: 316
     hitSound: 12
-    hitAnimation: 224
+    hitAnimation: 120
     power: 30
     damageType: 2
     damageAlter:
@@ -6155,7 +6234,7 @@ items:
     clipSize: 4
     battleType: 2
     hitSound: 129
-    hitAnimation: 168
+    hitAnimation: 88
     invWidth: 2
     invHeight: 1
     recover: false
@@ -6416,7 +6495,7 @@ items:
     floorSprite: 2
     handSprite: 0
     explosionHitSound: 93
-    hitAnimation: 224
+    hitAnimation: 120
     power: 40
     damageAlter:
       ToHealth: 1.1
@@ -7332,7 +7411,7 @@ items:
     bigSprite: 187
     floorSprite: 393 #update this
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 80
     damageType: 1
     damageAlter:
@@ -7768,7 +7847,7 @@ items:
     floorSprite: 3
     handSprite: 96
     bulletSprite: 1
-    fireSound: 77
+    fireSound: 78
     twoHanded: true
     oneHandedPenalty: 80
     compatibleAmmo:
@@ -7806,7 +7885,7 @@ items:
     floorSprite: 358
     handSprite: 2344
     bulletSprite: 1
-    fireSound: 77
+    fireSound: 78
     twoHanded: true
     blockBothHands: false
     oneHandedPenalty: 85
@@ -8054,7 +8133,7 @@ items:
     floorSprite: 382
     handSprite: 2440
     bulletSprite: 1
-    fireSound: 77
+    fireSound: 78
     compatibleAmmo:
       - STR_MAKAROV_CLIP
       - STR_MAKAROV_BIG_CLIP
@@ -8087,7 +8166,7 @@ items:
     floorSprite: 382
     handSprite: 2448
     bulletSprite: 1
-    fireSound: 77
+    fireSound: 78
     twoHanded: true
     blockBothHands: false
     oneHandedPenalty: 85
@@ -8165,7 +8244,7 @@ items:
     floorSprite: 383
     handSprite: 2456
     bulletSprite: 1
-    fireSound: 77
+    fireSound: 78
     compatibleAmmo:
       - STR_MAUSER_CLIP
       - STR_MAUSER_BIG_CLIP
@@ -8201,7 +8280,7 @@ items:
     twoHanded: true
     blockBothHands: false
     oneHandedPenalty: 85
-    fireSound: 77
+    fireSound: 78
     compatibleAmmo:
       - STR_MAUSER_CLIP
       - STR_MAUSER_BIG_CLIP
@@ -8943,7 +9022,7 @@ items:
     bulletSprite: 0 #18
     fireSound: 0 #39
     hitAnimation: 248 #88
-    explosionHitSound: 116 #284
+    explosionhitSound: 71 #284
     power: 40
     hidePower: true
     damageType: 1
@@ -8977,7 +9056,7 @@ items:
     bulletSprite: 0 #18 check this!
     fireSound: 0 #39 check this!
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 40
     damageType: 1
     damageAlter:
@@ -9022,7 +9101,7 @@ items:
     bulletSprite: 0 #18 check this!
     fireSound: 0 #39 check this!
     hitAnimation: 192 #check this!
-    explosionHitSound: 116 #check this!
+    explosionhitSound: 71 #check this!
     power: 50
     damageType: 1
     damageAlter:
@@ -9064,7 +9143,7 @@ items:
     bulletSprite: 0 #18 check this!
     fireSound: 0 #39 check this!
     hitAnimation: 192 #check this!
-    explosionHitSound: 116 #check this!
+    explosionhitSound: 71 #check this!
     power: 50
     damageType: 1
     damageAlter:
@@ -9123,7 +9202,7 @@ items:
     bulletSprite: 0 #18 check this!
     fireSound: 0 #39 check this!
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 40
     damageType: 1
     damageAlter:
@@ -9230,7 +9309,7 @@ items:
     floorSprite: 329
     hitSound: 13
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     power: 25
     hidePower: true
     damageType: 1
@@ -9583,7 +9662,7 @@ items:
     floorSprite: 330
     bulletSprite: 0 #18 check this!
     fireSound: 54 #39 check this!
-    hitAnimation: 168 #not working was 324 Green_Hellish_Hit?
+    hitAnimation: 88 #not working was 324 Green_Hellish_Hit?
     explosionHitSound: 54 #284 maybe add a cool sound
     power: 40
     hidePower: true
@@ -9638,7 +9717,7 @@ items:
     floorSprite: 337
     bulletSprite: 0 #18 check this!
     fireSound: 54 #39 check this!
-    hitAnimation: 168 #check thsi change color  was 324
+    hitAnimation: 88 #check thsi change color  was 324
     explosionHitSound: 54 #284 maybe add a cool sound
     power: 40
     hidePower: true
@@ -10700,7 +10779,7 @@ items:
     fixedWeapon: false
   - type: STR_LIVING_FLARE_SMOKE_I
     refNode: *STR_LIVING_FLARE_R
-    hitAnimation: 168
+    hitAnimation: 88
     power: 30
     battleType: 4
     damageType: 9
@@ -10726,7 +10805,7 @@ items:
     fixedWeapon: false
   - type: STR_LIVING_MINI_MORTAR_SHELL_SMOKE_I
     refNode: *STR_LIVING_FLARE_R
-    hitAnimation: 168
+    hitAnimation: 88
     power: 35
     battleType: 4
     damageType: 9
@@ -10752,7 +10831,7 @@ items:
     fixedWeapon: false
   - type: STR_LIVING_MORTAR_SHELL_SMOKE_I
     refNode: *STR_LIVING_FLARE_R
-    hitAnimation: 168
+    hitAnimation: 88
     power: 60
     battleType: 4
     damageType: 9
@@ -10778,7 +10857,7 @@ items:
     fixedWeapon: false
   - type: STR_LIVING_M3_CARL_GUSTAV_SMOKE_I
     refNode: *STR_LIVING_FLARE_R
-    hitAnimation: 168
+    hitAnimation: 88
     power: 45
     battleType: 4
     damageType: 9
@@ -10905,7 +10984,7 @@ items:
     size: 0.1
     weight: 7
     bigSprite: 179
-    hitAnimation: 168
+    hitAnimation: 88
     floorSprite: 100
     handSprite: 0
     power: 40
@@ -11667,7 +11746,7 @@ items:
       ResistType: 8
     hitSound: 54 #check this
     hitAnimation: 192
-    explosionHitSound: 116
+    explosionhitSound: 71
     blastRadius: 5 #5
     clipSize: 8
     battleType: 2
@@ -13161,8 +13240,8 @@ items:
     handSprite: 104 #104
     bulletSprite: 5
     meleeAnimation: 0
-    meleeSound: 115 #49
-    meleeHitSound: 115 #107
+    meleeSound: 49 #49
+    meleeHitSound: 70 #107
     meleeType: 3
     meleePower: 25
     meleeBonus:
@@ -13188,9 +13267,9 @@ items:
     costMelee:
       time: 14
       energy: 8
-    hitSound: 115
-    hitAnimation: 256
-    fireSound: 115
+    hitSound: 70
+    hitAnimation: 80
+    fireSound: 49
     damageType: 3
     damageBonus:
       strength: 0.5

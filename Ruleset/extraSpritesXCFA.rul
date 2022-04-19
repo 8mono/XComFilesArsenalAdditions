@@ -1,4 +1,12 @@
 extraSprites:
+  - type: SPICONS.DAT
+    width: 32
+    height: 24  
+    files:  
+      108: Resources/Doge/SpIcon_Smell.png
+      109: Resources/Races_Compilation/ZombieRace/SpIcon_VampireBite.png
+      110: Resources/Races_Compilation/DeepOneRace/SpIcon_GillmanArc.png
+      111: Resources/Races_Compilation/SkeletonRace/SpIcon_SkeletalHand.png
   - type: INTICON.PCK
     files:
       888: Resources/Vessels/Inticon/STRATOFORTRESS_minimised.png
@@ -534,6 +542,10 @@ extraSprites:
       584: Resources/Weapons_Compilation/ArmorWeapons/bigob_AssaultShieldBROKEN.png
       585: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldPRIMED.png
       586: Resources/Weapons_Compilation/ArmorWeapons/bigob_StormtrooperShieldBROKEN.png
+      587: Resources/Weapons_Compilation/LaserWeaponry/bigob_LaserHeavyPistolMIB.png
+      588: Resources/Weapons_Compilation/LaserWeaponry/Laser_Heavy_Pistol_Clip.png
+      589: Resources/Weapons_Compilation/LaserWeaponry/Laser_Heavy_Pistol_MiB.png
+      590: Resources/Tanks_Compilation/TankWeapons/bigob_TaserCannonClipTank2.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
@@ -549,7 +561,6 @@ extraSprites:
       511: Resources/Weapon_Overhaul/bigob_AK47_Clip_AP3.png
       512: Resources/Weapon_Overhaul/bigob_AKM_Clip_AP2.png    # This is actually the AKSU74 clip.
       513: Resources/Weapon_Overhaul/bigob_M16Clip_AP2.png
-      514: Resources/Tanks_Compilation/TankWeapons/bigob_TaserCannonClipTank2.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -645,6 +656,8 @@ extraSprites:
       2784: Resources/Weapons_Compilation/ArmorWeapons/handob_XenoAlloyShieldPRIMED.png
       2792: Resources/Weapons_Compilation/ArmorWeapons/handob_AssaultShieldPRIMED.png
       2800: Resources/Weapons_Compilation/ArmorWeapons/handob_StormtrooperShieldPRIMED.png
+      2808: Resources/Weapons_Compilation/LaserWeaponry/handob_Laser_Heavy_PistolMIB.png
+      2816: Resources/Weapons_Compilation/LaserWeaponry/handob_Laser_Heavy_Pistol.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -774,6 +787,9 @@ extraSprites:
       444: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKdrum.png
       445: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPKempty.png
       446: Resources/Weapons_Compilation/ArmorWeapons/floorob_RiotCombatShieldBROKEN.png
+      447: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistolMIB.png
+      448: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistol.png
+      449: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistolClip.png
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.
@@ -790,6 +806,26 @@ extraSprites:
     subX: 32
     subY: 40
     files:
+      56: Resources/Weapons_Compilation/HitAnimations/Taser_hit.png
+      66: Resources/Weapons_Compilation/HitAnimations/Toxic_hit.png
+      76: Resources/Weapons_Compilation/HitAnimations/PsiBeam_hit.png
+      86: Resources/Weapons_Compilation/HitAnimations/BlueLaser_hit.png
+      96: Resources/Weapons_Compilation/HitAnimations/DagonStaff_hit.png
+      106: Resources/Weapons_Compilation/HitAnimations/SonicPistol_hit.png
+      116: Resources/Weapons_Compilation/HitAnimations/Gauss_hit.png
+      126: Resources/Weapons_Compilation/HitAnimations/PurpleLaser_hit.png
+      136: Resources/Weapons_Compilation/HitAnimations/Electro_hit.png
+      146: Resources/Weapons_Compilation/HitAnimations/OrangeSkull_hit.png
+      156: Resources/Weapons_Compilation/HitAnimations/RedSkull_hit.png
+      166: Resources/Weapons_Compilation/HitAnimations/GreenSkull_hit.png
+      176: Resources/Weapons_Compilation/HitAnimations/BlackSkull_hit.png
+      186: Resources/Weapons_Compilation/HitAnimations/RedLaser_hit.png
+      196: Resources/Weapons_Compilation/HitAnimations/Flames_hit.png
+      206: Resources/Weapons_Compilation/HitAnimations/Sound_hit.png
+      216: Resources/Weapons_Compilation/HitAnimations/LaserCutter_hit.png
+      226: Resources/Weapons_Compilation/HitAnimations/Green_Hellish_hit.png
+#XCFAA
+      186: Resources/Weapons_Compilation/HitAnimations/RedLaser_hit.png
       227: Resources/Weapons_Compilation/HitAnimations/Flames_hit.png
       237: Resources/Weapons_Compilation/HitAnimations/Tracite_hit.png
       247: Resources/Weapons_Compilation/HitAnimations/Flame1_hit.png
@@ -811,19 +847,30 @@ extraSprites:
     subX: 128
     subY: 64
     files:
+      80: Resources/Weapons_Compilation/ExplosionAnimations/Triple_Ripple_exp.png
+      88: Resources/Weapons_Compilation/ExplosionAnimations/Grey_Skull_exp.png
       96: Resources/Weapons_Compilation/ExplosionAnimations/EMP_Explosion.png
-      168: Resources/Weapons_Compilation/ExplosionAnimations/Grey_Skull_exp.png
+      104: Resources/Weapons_Compilation/ExplosionAnimations/Red_Skull_exp.png
+      112: Resources/Weapons_Compilation/ExplosionAnimations/Green_Skull_exp.png
+      120: Resources/Weapons_Compilation/ExplosionAnimations/Flames_exp.png
+      128: Resources/Weapons_Compilation/ExplosionAnimations/Purple_Skull_exp.png
+      136: Resources/Weapons_Compilation/ExplosionAnimations/Flames2b_exp.png
+      144: Resources/Weapons_Compilation/ExplosionAnimations/Flames3_exp.png
+      152: Resources/Weapons_Compilation/ExplosionAnimations/Arcanoid_exp.png
+      160: Resources/Weapons_Compilation/ExplosionAnimations/Sonic_exp.png
+      168: Resources/Weapons_Compilation/ExplosionAnimations/Blue_Skull_exp.png
+#XCFAA
       176: Resources/Weapons_Compilation/ExplosionAnimations/Tracite_Flames_exp.png #170
       184: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Slur_Skull_exp.png #171
       192: Resources/Weapons_Compilation/ExplosionAnimations/XCF_White_Powdery_Skull_exp.png #172
       200: Resources/Weapons_Compilation/ExplosionAnimations/Infernite_Slur_Skull_exp.png #173
       208: Resources/Weapons_Compilation/ExplosionAnimations/Flame_Skull_exp.png #174 Flame_Skull_exp originally
       216: Resources/Weapons_Compilation/ExplosionAnimations/Infernite_Flames_exp.png #190
-      224: Resources/Weapons_Compilation/ExplosionAnimations/Flames_exp.png #403
-      232: Resources/Weapons_Compilation/ExplosionAnimations/Red_Skull_exp.png 
+#Unused      224: Resources/Weapons_Compilation/ExplosionAnimations/Flames_exp.png #403
+#Unused      232: Resources/Weapons_Compilation/ExplosionAnimations/Red_Skull_exp.png 
       240: Resources/Weapons_Compilation/ExplosionAnimations/XCF_Green_Powdery_Skull_exp.png 
       248: Resources/Weapons_Compilation/ExplosionAnimations/Light_exp.png 
-      256: Resources/Weapons_Compilation/ExplosionAnimations/Triple_Ripple_exp.png 
+#Unused  256: Resources/Weapons_Compilation/ExplosionAnimations/Triple_Ripple_exp.png 
       264: Resources/Weapons_Compilation/ExplosionAnimations/Purple_Slur_Skull_exp.png
       272: Resources/Weapons_Compilation/ExplosionAnimations/Flame_Skull2Outline2.png
       280: Resources/Weapons_Compilation/ExplosionAnimations/Cyan_Skull_exp.png
@@ -864,6 +911,22 @@ extraSprites:
       1260: Resources/Weapons_Compilation/Projectiles/Harpoon_bullet.png
       1295: Resources/Weapons_Compilation/Projectiles/Purple_Fireball_bullet.png
       1330: Resources/Weapons_Compilation/Projectiles/Green_Hellish_bullet.png
+  - type: HIT.PCK
+    height: 40
+    width: 128
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/Weapons_Compilation/MeleeAnimations/StunRod.png
+      8: Resources/Weapons_Compilation/MeleeAnimations/Sword.png
+      12: Resources/Weapons_Compilation/MeleeAnimations/Claws.png
+      16: Resources/Weapons_Compilation/MeleeAnimations/Hit_PlasmaBlade.png
+      20: Resources/Weapons_Compilation/MeleeAnimations/Hit_PlasmaSword.png
+      24: Resources/Weapons_Compilation/MeleeAnimations/Hit_BloodBlade.png
+      28: Resources/Weapons_Compilation/MeleeAnimations/Hit_BloodSword.png
+      32: Resources/Weapons_Compilation/MeleeAnimations/Hit_EnergySword.png
+      36: Resources/Weapons_Compilation/MeleeAnimations/SwordRed.png
+      40: Resources/Weapons_Compilation/MeleeAnimations/SwordOrange.png
   - type: inventory_LIGHT_TANK
     singleImage: true
     files:

@@ -1,8 +1,44 @@
 extraSounds:
+  - type: GEO.CAT
+    files:
+      139: Resources/Weapons_Compilation/WeaponSounds/MG3.wav
+      140: Resources/Weapons_Compilation/WeaponSounds/MinigunFire.wav
+      141: Resources/Weapons_Compilation/WeaponSounds/LaserRepeaterFire.wav
+      142: Resources/Weapons_Compilation/WeaponSounds/Minigun_alt.wav
+      143: Resources/Weapons_Compilation/WeaponSounds/Chaingun3.wav
+      144: Resources/Weapons_Compilation/WeaponSounds/armoredCarMachinegun01.wav
+      145: Resources/Weapons_Compilation/WeaponSounds/uziBurst.wav
+      146: Resources/Weapons_Compilation/WeaponSounds/rocketlaunchsmall.wav
+      200: Resources/Sounds_Compilation/VehicleSounds/Helicopter_135.wav
+      201: Resources/Sounds_Compilation/VehicleSounds/CarMove.wav
+      202: Resources/Sounds_Compilation/VehicleSounds/JetPlane.wav
   - type: BATTLE.CAT
     files:
-      77: Resources/Weapons_Compilation/WeaponSounds/PistolFire2.wav
-      78: Resources/Weapons_Compilation/WeaponSounds/HumanRifleFire.wav
+      55: Resources/Weapons_Compilation/WeaponSounds/ChaingunFire.wav
+      56: Resources/Weapons_Compilation/Minigun/Sounds/fire_light.wav
+      57: Resources/Weapons_Compilation/WeaponSounds/LMG.wav
+      58: Resources/Weapons_Compilation/BlackopsWeapons/Sounds/Fire.wav
+      59: Resources/Weapons_Compilation/WeaponSounds/Magnumfire.wav
+      60: Resources/Weapons_Compilation/WeaponSounds/MinigunFire.wav
+      61: Resources/Weapons_Compilation/ClassicWeapons/Sounds/TaserZap.wav
+      62: Resources/Weapons_Compilation/WeaponSounds/SniperFire2.wav
+      63: Resources/Weapons_Compilation/WeaponSounds/ShotgunFire.wav
+      64: Resources/Weapons_Compilation/WeaponSounds/FlameThrower.wav
+      65: Resources/Weapons_Compilation/WeaponSounds/HeavyMassDriver_fire.wav
+      66: Resources/Weapons_Compilation/WeaponSounds/MassDriverHit.wav
+      67: Resources/Weapons_Compilation/WeaponSounds/MassDriverRifle_fire.wav
+      68: Resources/Weapons_Compilation/WeaponSounds/MassDriverPistol_fire.wav
+      69: Resources/Weapons_Compilation/AquaticWeapons/Sounds/DartFire.wav
+      70: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
+      71: Resources/Weapons_Compilation/WeaponSounds/AlienAcid.wav
+      72: Resources/Weapons_Compilation/WeaponSounds/AssaultCannon_fire.wav
+      73: Resources/Weapons_Compilation/WeaponSounds/PsiBlast.wav
+      74: Resources/Races_Compilation/ReptoidRace/Sounds/SALAMANDRON_DEATH.wav
+      75: Resources/Weapons_Compilation/WeaponSounds/HumanPistolFire.wav
+      76: Resources/Weapons_Compilation/WeaponSounds/HumanRifleFire.wav
+      77: Resources/Weapons_Compilation/WeaponSounds/HumanBulletHit.wav
+#XCFAA
+      78: Resources/Weapons_Compilation/WeaponSounds/PistolFire2.wav
       79: Resources/Weapons_Compilation/WeaponSounds/HumanCannonCanisterFire.wav
       80: Resources/Weapons_Compilation/WeaponSounds/HumanCannonCanisterHit.wav
       81: Resources/Weapons_Compilation/WeaponSounds/LaserRifleWVFire.wav
@@ -16,7 +52,7 @@ extraSounds:
       89: Resources/Weapons_Compilation/WeaponSounds/ShotgunFireFaster.wav
       90: Resources/Weapons_Compilation/WeaponSounds/StabHit.wav
       91: Resources/Weapons_Compilation/WeaponSounds/AlloyShotgunFireLouder.wav
-      92: Resources/Weapons_Compilation/WeaponSounds/FlameThrower.wav
+#Unused      92: Resources/Weapons_Compilation/WeaponSounds/FlameThrower.wav
       93: Resources/Weapons_Compilation/WeaponSounds/Ex_Fire.wav
       94: Resources/Weapons_Compilation/WeaponSounds/TMGFire.wav
       95: Resources/Weapons_Compilation/WeaponSounds/HumanACHit.wav
@@ -25,12 +61,23 @@ extraSounds:
       98: Resources/Weapons_Compilation/WeaponSounds/hwpexp.wav
       99: Resources/Weapons_Compilation/WeaponSounds/PlasmaRifleFire.wav
       100: Resources/Weapons_Compilation/WeaponSounds/PlasmaHit.wav
-      101: Resources/Weapons_Compilation/WeaponSounds/Magnumfire.wav
-      102: Resources/Weapons_Compilation/ClassicWeapons/Sounds/TaserZap.wav
+#Unused      101: Resources/Weapons_Compilation/WeaponSounds/Magnumfire.wav
+#Unused      102: Resources/Weapons_Compilation/ClassicWeapons/Sounds/TaserZap.wav
       103: Resources/Weapons_Compilation/WeaponSounds/ClubHit.wav
       104: Resources/Weapons_Compilation/WeaponSounds/AlienBubbles.wav
-      115: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
-      116: Resources/Weapons_Compilation/WeaponSounds/AlienAcid.wav
+#From X-Com X-Files Resound Mod
+      105: Resources/Weapons_Compilation/Resound/ptrd.ogg
+      106: Resources/Weapons_Compilation/Resound/ptrs.ogg
+      107: Resources/Weapons_Compilation/Resound/ptrr.ogg
+      108: Resources/Weapons_Compilation/Resound/mosinr.wav
+      109: Resources/Weapons_Compilation/Resound/flamer.wav
+      110: Resources/Weapons_Compilation/Resound/flamerr.wav
+      111: Resources/Weapons_Compilation/Resound/shotgun.wav
+      112: Resources/Weapons_Compilation/Resound/shotgunr.wav
+      113: Resources/Weapons_Compilation/Resound/blosh.wav
+      114: Resources/Weapons_Compilation/Resound/bloshr.wav
+#Unused      115: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
+#Unused      116: Resources/Weapons_Compilation/WeaponSounds/AlienAcid.wav
       117: Resources/Weapons_Compilation/WeaponSounds/Flashbang.wav
       118: Resources/Sounds_Compilation/ItemSounds/Ex_Acid.wav
       119: Resources/Weapons_Compilation/WeaponSounds/CannonHit.wav
@@ -147,6 +194,12 @@ extraSounds:
       225: Resources/Weapons_Compilation/Resound/minimi.wav
       226: Resources/Weapons_Compilation/Resound/minimi-2.wav
       227: Resources/Weapons_Compilation/Resound/minimir.ogg
+      228: Resources/Weapons_Compilation/Resound/lpm.wav
+      229: Resources/Weapons_Compilation/Resound/lpm-2.wav
+      230: Resources/Weapons_Compilation/Resound/lpm-3.wav
+      231: Resources/Weapons_Compilation/Resound/lpmr.wav
+#Muton
+      290: Resources/Races_Compilation/MutonRace/MutonShaderDeath.wav
 #Human 
       1135: Resources/Sounds_Compilation/HumanScreams/MaleScream01.wav
       1136: Resources/Sounds_Compilation/HumanScreams/MaleScream02.wav
@@ -191,19 +244,6 @@ extraSounds:
       831: Resources/Sounds_Compilation/HumanScreams/FemaleBerserk01.wav
       832: Resources/Sounds_Compilation/HumanScreams/FemaleBerserk02.wav
       833: Resources/Sounds_Compilation/HumanScreams/FemaleBerserk03.wav
-#Muton
-      290: Resources/Races_Compilation/MutonRace/MutonShaderDeath.wav
-#From X-Com X-Files Resound Mod
-      105: Resources/Weapons_Compilation/Resound/ptrd.ogg
-      106: Resources/Weapons_Compilation/Resound/ptrs.ogg
-      107: Resources/Weapons_Compilation/Resound/ptrr.ogg
-      108: Resources/Weapons_Compilation/Resound/mosinr.wav
-      109: Resources/Weapons_Compilation/Resound/flamer.wav
-      110: Resources/Weapons_Compilation/Resound/flamerr.wav
-      111: Resources/Weapons_Compilation/Resound/shotgun.wav
-      112: Resources/Weapons_Compilation/Resound/shotgunr.wav
-      113: Resources/Weapons_Compilation/Resound/blosh.wav
-      114: Resources/Weapons_Compilation/Resound/bloshr.wav
 #Offset
       2050: Resources/Weapons_Compilation/Resound/magmarif.wav
       2547: Resources/Weapons_Compilation/Resound/magmar.wav
@@ -212,3 +252,42 @@ extraSounds:
       2051: Resources/Weapons_Compilation/Resound/magmap.wav
       2377: Resources/Weapons_Compilation/Resound/Ammo/magmarifaaammo.wav	
       2209: Resources/Weapons_Compilation/Resound/Explosives/medgasexplosion.wav
+#Vanilla
+      999: Resources/Sounds_Compilation/ItemSounds/Blank.wav
+      1501: Resources/Sounds_Compilation/AnimalSounds/BIRDS1.wav
+      1502: Resources/Sounds_Compilation/AnimalSounds/BIRDS2.wav
+      1503: Resources/Sounds_Compilation/AnimalSounds/BIRDS3.wav
+      1504: Resources/Sounds_Compilation/AnimalSounds/BIRDS4.wav
+      1505: Resources/Sounds_Compilation/AnimalSounds/BIRDS5.wav
+      1506: Resources/Sounds_Compilation/AnimalSounds/BIRDS6.wav
+      1507: Resources/Sounds_Compilation/AnimalSounds/BIRDS7.wav
+      1508: Resources/Sounds_Compilation/AnimalSounds/BIRDS8.wav
+      1509: Resources/Sounds_Compilation/AnimalSounds/BIRDS9.wav
+      1510: Resources/Sounds_Compilation/AnimalSounds/BIRDS10.wav
+      1511: Resources/Sounds_Compilation/AnimalSounds/BIRDS11.wav
+      1512: Resources/Sounds_Compilation/AnimalSounds/BIRDS12.wav
+      1513: Resources/Sounds_Compilation/AnimalSounds/BIRDS13.wav
+      1514: Resources/Sounds_Compilation/AnimalSounds/BIRDS14.wav
+      1515: Resources/Sounds_Compilation/AnimalSounds/BIRDS15.wav
+      1516: Resources/Sounds_Compilation/AnimalSounds/BIRDCRY.wav
+      1517: Resources/Sounds_Compilation/AnimalSounds/BIRDTALK_1.wav
+      1518: Resources/Sounds_Compilation/AnimalSounds/BIRDTALK_2.wav
+      1519: Resources/Sounds_Compilation/AnimalSounds/Bluebird_1.wav
+      1520: Resources/Sounds_Compilation/AnimalSounds/Bluebird_2.wav
+      1521: Resources/Sounds_Compilation/AnimalSounds/Loon.wav
+      1522: Resources/Sounds_Compilation/AnimalSounds/Mockingbird.wav
+      1523: Resources/Sounds_Compilation/AnimalSounds/Parrot_Cockatiel_1.wav
+      1524: Resources/Sounds_Compilation/AnimalSounds/Parrot_Cockatiel_2.wav
+      1525: Resources/Sounds_Compilation/AnimalSounds/Parrot_Cockatiel_3.wav
+      1526: Resources/Sounds_Compilation/AnimalSounds/Cuckoo.wav
+      1527: Resources/Sounds_Compilation/AnimalSounds/Woodpecker_1.wav
+      1528: Resources/Sounds_Compilation/AnimalSounds/Woodpecker_2.wav
+      1529: Resources/Sounds_Compilation/AnimalSounds/Woodpecker_3.wav
+      1531: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_1.wav
+      1532: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_2.wav
+      1533: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_3.wav
+      1534: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_4.wav
+      1535: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_5.wav
+      1536: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_6.wav
+      1537: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_7.wav
+      1538: Resources/Sounds_Compilation/AnimalSounds/Parrot_Rosella_8.wav
