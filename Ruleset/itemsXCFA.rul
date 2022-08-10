@@ -2593,6 +2593,8 @@ items:
   - type: STR_GROZA
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
+      - STR_RPK_CLIP
+      - STR_RPK_CLIP_AP
     accuracyAuto: 45 #35
     accuracySnap: 65
     accuracyAimed: 95 #105
@@ -2630,6 +2632,8 @@ items:
     costSell: 800 #1550
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
+      - STR_RPK_CLIP
+      - STR_RPK_CLIP_AP
     accuracyAuto: 42 #30
     accuracySnap: 65 #60
     accuracyAimed: 105 #100
@@ -2644,6 +2648,8 @@ items:
     costSell: 1000 #1550
     compatibleAmmo: !add
       - STR_WP_7_62_CLIP_AP
+      - STR_RPK_CLIP
+      - STR_RPK_CLIP_AP
     accuracyAuto: 45 #35
     accuracySnap: 70 #65
     accuracyAimed: 110 #105
@@ -3003,8 +3009,8 @@ items:
     accuracyAimed: 120 #175
     tuSnap: 28
     tuAimed: 45 #48
-    snapRange: 6 #3
-    aimRange: 10 #3
+    snapRange: 5 #3
+    aimRange: 8 #3
     dropoff: 8 #6
     twoHanded: true
     blockBothHands: true #false   It's a pump-action. Using it with one hand would severely slow down fire rate.
