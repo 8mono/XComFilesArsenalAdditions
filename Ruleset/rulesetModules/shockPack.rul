@@ -1,0 +1,296 @@
+items:
+  - type: STR_OBLI_TASER
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 24000
+    weight: 8
+    bigSprite: 591
+    floorSprite: 322
+    handSprite: 2152
+    bulletSprite: 13
+    fireSound: 61
+    compatibleAmmo:
+      - STR_OBLI_TASER_CLIP
+      - STR_OBLI_TASER_DENSE_CLIP
+    accuracyCloseQuarters: 125
+    accuracyAimed: 65
+    tuAimed: 32
+    tuLoad: 20
+    battleType: 1
+    twoHanded: false
+    invWidth: 1
+    invHeight: 2
+    armor: 20
+    maxRange: 10
+    powerRangeReduction: 999
+    experienceTrainingMode: 4
+    attraction: 15
+    listOrder: 18912
+  - type: STR_OBLI_TASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 4000
+    weight: 3
+    bigSprite: 252
+    floorSprite: 323
+    hitSound: 54 #check if this works
+    hitAnimation: 401
+    blastRadius: 0
+    power: 65
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.25
+      ToTile: 0.0
+    clipSize: 3 #check if this is too op
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 18922
+  - type: STR_OBLI_TASER_DENSE_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 8000
+    weight: 5
+    bigSprite: 348
+    floorSprite: 323
+    hitSound: 54 #check if this works
+    hitAnimation: 296
+    explosionHitSound: 54
+    blastRadius: 1
+    power: 72
+    damageType: 2
+    damageAlter:
+      ResistType: 11
+      ToHealth: 0.44
+      ToStun: 0.85
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0
+      RadiusReduction: 33
+      FireThreshold: 33
+      ToTile: 0.0
+      FixRadius: 2
+    clipSize: 3 #check if this is too op
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 18922
+  - type: STR_SHOCKGUN
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_UNDERWATER, STR_LAND]
+    size: 0.3
+    costSell: 300000
+    weight: 10
+    bigSprite: 592
+    floorSprite: 324
+    handSprite: 2176
+    bulletSprite: 13 #check if this works
+    fireSound: 61
+    invWidth: 1
+    invHeight: 2
+    compatibleAmmo:
+      - STR_SHOCKGUN_CLIP
+      - STR_SHOCKGUN_DENSE_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 50
+    tuSnap: 35
+    tuLoad: 22
+    snapRange: 20
+    dropoff: 5
+    shotgunChoke: 100
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 80
+    armor: 18
+    maxRange: 12 #CHECK THIS
+    powerRangeReduction: 999
+    experienceTrainingMode: 4
+    attraction: 24
+    listOrder: 18926
+  - type: STR_SHOCKGUN_CLIP
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_SHOTGUN, STR_HEAVY_WEAPONS, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 3200
+    weight: 5
+    bigSprite: 593
+    floorSprite: 325
+    hitSound: 54 #check if thsi works
+    hitAnimation: 431
+    invWidth: 2
+    invHeight: 1
+    blastRadius: 0
+    power: 40
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 0.95
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.6
+      ToTile: 0.0
+    clipSize: 4 #check if this isnt too op
+    battleType: 2
+    armor: 16
+    attraction: 15
+    listOrder: 18927
+  - type: STR_SHOCKGUN_DENSE_CLIP
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_SHOTGUN, STR_HEAVY_WEAPONS, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 5000
+    weight: 6
+    bigSprite: 593
+    floorSprite: 325
+    hitSound: 54 #check if thsi works
+    hitAnimation: 296
+    explosionHitSound: 54 #change this?
+    invWidth: 2
+    invHeight: 1
+    blastRadius: 1
+    power: 50
+    damageType: 2
+    damageAlter:
+      ResistType: 11
+      ToHealth: 0.5
+      ToStun: 0.5
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.5
+      RadiusReduction: 45
+      FireThreshold: 15
+      FixRadius: 2
+      ToTile: 0.0
+    clipSize: 4 #check if this isnt too op
+    battleType: 2
+    armor: 16
+    attraction: 15
+    listOrder: 18928
+  - type: STR_OBLI_RIFLE
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 115000
+    weight: 16
+    bigSprite: 595
+    floorSprite: 29
+    handSprite: 40
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_OBLI_RIFLE_CLIP
+    accuracyCloseQuarters: 95
+    accuracyAuto: 50
+    accuracySnap: 82
+    accuracyAimed: 115
+    tuAuto: 35
+    tuSnap: 30
+    tuAimed: 80
+    aimRange: 25
+    snapRange: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 50
+    attraction: 20
+    listOrder: 21900
+  - type: STR_OBLI_RIFLE_CLIP
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_HEAVY_WEAPONS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 48000
+    weight: 3
+    bigSprite: 0
+    handSprite: 0
+    floorSprite: 0
+    hitSound: 89
+    hitAnimation: 46
+    power: 115
+    damageType: 5
+    damageAlter:
+      ResistType: 10
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 35
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 15
+    listOrder: 21910
+  - type: STR_OBLI_DESTROYER
+    categories: [STR_CANNONS, STR_ELECTRIC, STR_XCOM_TECH, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 140000
+    weight: 22
+    bigSprite: 594
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 18
+    compatibleAmmo:
+      - STR_OBLI_DESTROYER_CLIP
+    accuracyCloseQuarters: 66
+    accuracySnap: 55
+    accuracyAimed: 95
+    aimRange: 25
+    tuSnap: 45
+    tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 50
+    attraction: 25
+    listOrder: 30690
+  - type: STR_OBLI_DESTROYER_CLIP
+    categories: [STR_CANNONS, STR_ELECTRIC, STR_XCOM_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.4
+    costSell: 61000
+    weight: 4
+    bigSprite: 465 #change this
+    floorSprite: 421 #change this
+    hitAnimation: 96 #change this
+    power: 100
+    damageType: 3
+    damageAlter:
+      ResistType: 11
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      FixRadius: 4
+    clipSize: 7
+    battleType: 2
+    recoveryPoints: 1
+    blastRadius: 3
+    attraction: 15
+    listOrder: 30700

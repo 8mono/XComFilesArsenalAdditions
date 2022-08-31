@@ -546,6 +546,11 @@ extraSprites:
       588: Resources/Weapons_Compilation/LaserWeaponry/Laser_Heavy_Pistol_Clip.png
       589: Resources/Weapons_Compilation/LaserWeaponry/Laser_Heavy_Pistol_MiB.png
       590: Resources/Tanks_Compilation/TankWeapons/bigob_TaserCannonClipTank2.png
+      591: Resources/Weapons_Compilation/XComWeapons/bigob_ObliTaser.png
+      592: Resources/Weapons_Compilation/XComWeapons/bigob_ShockGun.png
+      593: Resources/Weapons_Compilation/XComWeapons/bigob_ShockGun_Clip.png
+      594: Resources/Weapons_Compilation/XComWeapons/bigob_ObliCannon.png
+      595: Resources/Weapons_Compilation/XComWeapons/bigob_ObliRifle.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
