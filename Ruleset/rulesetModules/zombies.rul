@@ -1966,8 +1966,8 @@ items:
       ToStun: 1
       RandomWound: false
       ToWound: 10
-    accuracyMelee: 80
-    tuMelee: 5
+    accuracyMelee: 75 #80
+    tuMelee: 25 #way too much at 5
     battleType: 3
     fixedWeapon: true
     invWidth: 2

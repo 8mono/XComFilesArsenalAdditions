@@ -198,7 +198,7 @@ items:
     floorSprite: 2
     handSprite: 0
     hitSound: 22
-    fireSound: [202, 203, 204, 205]
+    fireSound: [191,192,193,194,195,196]
     hitAnimation: 26
     power: 36
     damageBonus:
