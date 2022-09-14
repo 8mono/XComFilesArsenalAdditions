@@ -31,7 +31,7 @@ items:
     size: 0.1
     costSell: 4000
     weight: 3
-    bigSprite: 252
+    bigSprite: 596
     floorSprite: 323
     hitSound: 54 #check if this works
     hitAnimation: 401
@@ -61,7 +61,7 @@ items:
     size: 0.1
     costSell: 8000
     weight: 5
-    bigSprite: 348
+    bigSprite: 599
     floorSprite: 323
     hitSound: 54 #check if this works
     hitAnimation: 296
@@ -225,7 +225,7 @@ items:
     size: 0.3
     costSell: 48000
     weight: 3
-    bigSprite: 0
+    bigSprite: 598
     handSprite: 0
     floorSprite: 0
     hitSound: 89
@@ -278,7 +278,7 @@ items:
     size: 0.4
     costSell: 61000
     weight: 4
-    bigSprite: 465 #change this
+    bigSprite: 597 #change this
     floorSprite: 421 #change this
     hitAnimation: 96 #change this
     hitSound: 54 #check if thsi works
@@ -301,4 +301,6 @@ items:
     recoveryPoints: 1
     blastRadius: 3
     attraction: 15
+    invHeight: 1
+    invWidth: 2
     listOrder: 30700

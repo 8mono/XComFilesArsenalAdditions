@@ -551,6 +551,10 @@ extraSprites:
       593: Resources/Weapons_Compilation/XComWeapons/bigob_ShockGun_Clip.png
       594: Resources/Weapons_Compilation/XComWeapons/bigob_ObliCannon3.png
       595: Resources/Weapons_Compilation/XComWeapons/bigob_ObliRifle3.png
+      596: Resources/Weapons_Compilation/XComWeapons/bigob_ObliTaser_Clip.png
+      597: Resources/Weapons_Compilation/XComWeapons/bigob_ObliCannon_Clip.png
+      598: Resources/Weapons_Compilation/XComWeapons/bigob_ObliRifle_Clip.png
+      599: Resources/Weapons_Compilation/XComWeapons/bigob_ObliTaserDense_Clip.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
