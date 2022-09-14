@@ -97,7 +97,7 @@ extraStrings:
       STR_OBLI_TASER_CLIP: "Arc Discharge Battery"
       STR_OBLI_TASER_DENSE_CLIP: "Arc Discharge Hypervolted Battery"
       STR_OBLI_RIFLE: "Arc Discharge Rifle"
-      STR_OBLI_RIFLE: "An upscaled Arc Discharge Pistol meant for general neutralization of targets rather than capture. Posseses a longer range and more shots per battery."
+      STR_OBLI_RIFLE_UFOPEDIA: "An upscaled Arc Discharge Pistol meant for general neutralization of targets rather than capture. Posseses a longer range and more shots per battery."
       STR_OBLI_RIFLE_CLIP: "Arc Discharge Large Battery"
       STR_OBLI_DESTROYER: "Arc Destroyer"
       STR_OBLI_DESTROYER_UFOPEDIA: "Nicknamed 'Thor's Hammer' it utilizes one of the Obliterator's full-sized capacitors as the source of its destructive power."

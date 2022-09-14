@@ -4068,6 +4068,13 @@ research:
     getOneFree:
       - STR_PLASMA_GATLER
     listOrder: 138057
+  - name: STR_OBLITERATOR_WEAPONRY
+    requiresBaseFunc: [BIOLAB]
+    cost: 250
+    points: 50
+    dependencies:
+      - STR_OBLITERATOR_TERRORIST
+    listOrder: 138058
   - name: STR_GILLDOG_BIOMOD
     cost: 40
     points: 50

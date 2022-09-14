@@ -255,7 +255,7 @@ items:
     floorSprite: 0
     handSprite: 0
     bulletSprite: 8
-    fireSound: 18
+    fireSound: 61
     compatibleAmmo:
       - STR_OBLI_DESTROYER_CLIP
     accuracyCloseQuarters: 66
@@ -269,6 +269,7 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
+    shotgunChoke: 0
     armor: 50
     attraction: 25
     listOrder: 30690
@@ -280,6 +281,11 @@ items:
     bigSprite: 465 #change this
     floorSprite: 421 #change this
     hitAnimation: 96 #change this
+    hitSound: 54 #check if thsi works
+    explosionHitSound: 54 #change this?
+    shotgunBehavior: 1
+    shotgunSpread: 100 #Need to adjust both spread and range of this thing! I need it to still be deadly while spreading a lot through the field
+    shotgunPellets: 3 #10
     power: 100
     damageType: 3
     damageAlter:
@@ -288,6 +294,8 @@ items:
       ToArmorPre: 0.05
       ToStun: 0.75
       FixRadius: 4
+      FireThreshold: 125
+      ToTile: 0
     clipSize: 7
     battleType: 2
     recoveryPoints: 1
