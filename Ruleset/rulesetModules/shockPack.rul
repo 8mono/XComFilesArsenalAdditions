@@ -199,22 +199,30 @@ items:
     bigSprite: 595
     floorSprite: 29
     handSprite: 40
-    bulletSprite: 8
-    fireSound: 88
+    bulletSprite: 5
+    fireSound: 61
+    reloadSound: 188
     compatibleAmmo:
       - STR_OBLI_RIFLE_CLIP
     accuracyCloseQuarters: 95
     accuracyAuto: 50
     accuracySnap: 82
     accuracyAimed: 115
+    powerRangeReduction: 999
+    arcingShot: true
+    autoShots: 6
+    bulletSpeed: 80
+    sprayWaypoints: 2
+    shotgunChoke: 100
+    maxRange: 13
     tuAuto: 35
     tuSnap: 30
     tuAimed: 80
-    aimRange: 25
-    snapRange: 16
+    aimRange: 13
+    snapRange: 8
     battleType: 1
     twoHanded: true
-    invWidth: 2
+    invWidth: 1
     invHeight: 3
     recoveryPoints: 5
     armor: 50
@@ -228,12 +236,14 @@ items:
     bigSprite: 598
     handSprite: 0
     floorSprite: 0
-    hitSound: 89
-    hitAnimation: 46
-    power: 115
+    explosionHitSound: 93
+    hitAnimation: 56
+    explosionHitSound: 54
+    hitSound: 54
+    power: 25
     damageType: 5
     damageAlter:
-      ResistType: 10
+      ResistType: 11
       RandomType: 6
       IgnoreOverKill: false
       ToArmorPre: 0.05
@@ -241,7 +251,10 @@ items:
       RandomWound: false
       ToWound: 0.12
       FireThreshold: 25.0
-    clipSize: 35
+    clipSize: 12
+    shotgunBehavior: 1
+    shotgunSpread: 25 #Need to adjust both spread and range of this thing! I need it to still be deadly while spreading a lot through the field
+    shotgunPellets: 6 #10
     battleType: 2
     recoveryPoints: 1
     attraction: 15
@@ -269,7 +282,7 @@ items:
     invWidth: 2
     invHeight: 3
     recoveryPoints: 5
-    shotgunChoke: 0
+    shotgunChoke: 25
     armor: 50
     attraction: 25
     listOrder: 30690
@@ -284,16 +297,16 @@ items:
     hitSound: 54 #check if thsi works
     explosionHitSound: 54 #change this?
     shotgunBehavior: 1
-    shotgunSpread: 100 #Need to adjust both spread and range of this thing! I need it to still be deadly while spreading a lot through the field
-    shotgunPellets: 3 #10
-    power: 100
+    shotgunSpread: 75 #Need to adjust both spread and range of this thing! I need it to still be deadly while spreading a lot through the field
+    shotgunPellets: 4 #10
+    power: 50
     damageType: 3
     damageAlter:
       ResistType: 11
       IgnoreOverKill: false
       ToArmorPre: 0.05
       ToStun: 0.75
-      FixRadius: 4
+      FixRadius: 3
       FireThreshold: 125
       ToTile: 0
     clipSize: 7

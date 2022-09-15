@@ -227,7 +227,7 @@ items:
     floorSprite: 442
     handSprite: 2728
     bulletSprite: 2
-    fireSound: [215, 216]
+    fireSound: [166,167,168,169,170]
     reloadSound: 171
     compatibleAmmo:
       - STR_RIFLE_M16_CLIP

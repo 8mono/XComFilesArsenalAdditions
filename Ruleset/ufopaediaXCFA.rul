@@ -2214,6 +2214,47 @@ ufopaedia:
     requires:
       - STR_OBLITERATOR_WEAPONRY
     listOrder: 39999
+  - id: STR_OBLI_TASER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_OBLI_TASER_UFOPEDIA
+    requires:
+      - STR_OBLI_TASER
+    listOrder: 39999
+  - id: STR_OBLI_TASER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_OBLI_TASER
+  - id: STR_OBLI_TASER_DENSE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_OBLI_TASER
+  - id: STR_OBLI_RIFLE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_OBLI_RIFLE_UFOPEDIA
+    requires:
+      - STR_OBLI_RIFLE
+    listOrder: 39999
+  - id: STR_OBLI_RIFLE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_OBLI_RIFLE
+  - id: STR_OBLI_DESTROYER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_OBLI_DESTROYER_UFOPEDIA
+    requires:
+      - STR_OBLI_DESTROYER
+    listOrder: 39999
+  - id: STR_OBLI_DESTROYER_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_OBLI_DESTROYER
   - id: STR_BERETTA_92FS
     pages:
       - title: STR_BERETTA_92FS

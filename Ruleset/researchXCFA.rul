@@ -4075,6 +4075,45 @@ research:
     dependencies:
       - STR_OBLITERATOR_TERRORIST
     listOrder: 138058
+  - name: STR_PLASMA_GATLER
+    requiresBaseFunc: [IMPLAB]
+    cost: 1000
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_PLASMA_WEAPONS_CALIBRATION
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    #needItem: true
+    #destroyItem: true
+    listOrder: 30700
+  - name: STR_OBLI_TASER
+    requiresBaseFunc: [IMPLAB]
+    cost: 500
+    points: 10
+    #needItem: false
+    #destroyItem: true
+    listOrder: 30710
+    dependencies:
+      - STR_OBLITERATOR_WEAPONRY
+  - name: STR_OBLI_RIFLE
+    requiresBaseFunc: [IMPLAB]
+    cost: 650
+    points: 12
+    #needItem: false
+    #destroyItem: true
+    listOrder: 30711
+    dependencies:
+      - STR_OBLITERATOR_WEAPONRY
+  - name: STR_OBLI_DESTROYER
+    requiresBaseFunc: [IMPLAB]
+    cost: 750
+    points: 15
+    #needItem: false
+    #destroyItem: true
+    listOrder: 30712
+    dependencies:
+      - STR_OBLITERATOR_WEAPONRY
   - name: STR_GILLDOG_BIOMOD
     cost: 40
     points: 50
