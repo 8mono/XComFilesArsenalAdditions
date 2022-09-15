@@ -183,6 +183,12 @@ extraSounds:
       214: Resources/Weapons_Compilation/Resound/grenlaur-2.wav
       215: Resources/Weapons_Compilation/Resound/ccommando.wav
       216: Resources/Weapons_Compilation/Resound/ccommando-2.wav
+#215-218 from workshop
+      1215: Resources/XFilesMonsterResound/Chryssalid/chryssalidaggro.ogg
+      1216: Resources/XFilesMonsterResound/Chryssalid/chryssaliddeath.ogg
+      1217: Resources/XFilesMonsterResound/Chryssalid/chryssalidbadaggro.ogg
+      1218: Resources/XFilesMonsterResound/Chryssalid/chryssalidbaddeath.ogg
+#215-218 from workshop
       217: Resources/Weapons_Compilation/Resound/ccommandor.wav
       218: Resources/Weapons_Compilation/Resound/famas.ogg
       219: Resources/Weapons_Compilation/Resound/famas-2.ogg

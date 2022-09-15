@@ -520,6 +520,22 @@ extraSprites:
       562: Resources/Weapons_Compilation/ClassicWeapons/bigob_Colt45APClip.png
       563: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMHPClip.png
       564: Resources/Weapons_Compilation/ClassicWeapons/bigob_HKMK23SOCOMAPClip.png
+#565-578 workshop
+      1565: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleExperimental1.png
+      1566: Resources/Weapons_Compilation/NaniteWeapons/bigob_NanoRifleClip.png
+      1567: Resources/Weapons_Compilation/NaturalWeapons/bigob_ScorpionSting.png
+      1568: Resources/Weapons_Compilation/NaturalWeapons/bigob_GreenBlob.png
+      1569: Resources/Weapons_Compilation/NaturalWeapons/bigob_BlueBlob.png
+      1570: Resources/Weapons_Compilation/NaturalWeapons/bigob_PurpleBlob.png
+      1571: Resources/Weapons_Compilation/NaturalWeapons/bigob_RedBlob.png
+      1572: Resources/Weapons_Compilation/NaturalWeapons/bigob_SilacoidBite.png
+      1573: Resources/Weapons_Compilation/NaturalWeapons/bigob_ReaperAttack.png
+      1574: Resources/Weapons_Compilation/NaturalWeapons/bigob_ChryssalidClaws.png
+      1575: Resources/Weapons_Compilation/NaturalWeapons/bigob_ZombieAttack.png
+      1576: Resources/Races_Compilation/ChryssalidRace/bigob_AlienEgg.png
+      1577: Resources/Races_Compilation/ChryssalidRace/bigob_BadassAlienEgg.png
+      1578: Resources/Races_Compilation/ChryssalidRace/bigob_CHRYSSALID_LARVA_CORPSE.png
+#565-578 workshop
       565: Resources/Weapons_Compilation/ClassicWeapons/bigob_Galil_Arm.png
       566: Resources/Weapons_Compilation/ClassicWeapons/bigob_RPK.png
       567: Resources/Weapons_Compilation/ClassicWeapons/bigob_GalilArmClip.png
@@ -667,6 +683,7 @@ extraSprites:
       2800: Resources/Weapons_Compilation/ArmorWeapons/handob_StormtrooperShieldPRIMED.png
       2808: Resources/Weapons_Compilation/LaserWeaponry/handob_Laser_Heavy_PistolMIB.png
       2816: Resources/Weapons_Compilation/LaserWeaponry/handob_Laser_Heavy_Pistol.png
+      2824: Resources/Weapons_Compilation/NaniteWeapons/handob_NanoRifle.png
   - type: FLOOROB.PCK
     files:
       100: Resources/Invisible/floorob_invisible.png
@@ -799,6 +816,24 @@ extraSprites:
       447: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistolMIB.png
       448: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistol.png
       449: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserHeavyPistolClip.png
+#workshop 442-457
+      1442: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_1.png
+      1443: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_2.png
+      1444: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_3.png
+      1445: Resources/Races_Compilation/ChryssalidRace/floorob_EGG_SAC_4.png
+      1446: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_1.png
+      1447: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_2.png
+      1448: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_3.png
+      1449: Resources/Races_Compilation/SyntheticRace/floorob_NANITE_GOO_4.png
+      1450: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifle.png
+      1451: Resources/Weapons_Compilation/NaniteWeapons/floorob_NanoRifleClip.png
+      1452: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c1.png
+      1453: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c2.png
+      1454: Resources/Races_Compilation/ChryssalidRace/floorob_BADASS_CHRYSSALID_c3.png
+      1455: Resources/Races_Compilation/ChryssalidRace/floorob_AlienEgg.png
+      1456: Resources/Races_Compilation/ChryssalidRace/floorob_BadassAlienEgg.png
+      1457: Resources/Races_Compilation/ChryssalidRace/floorob_CHRYSSALID_LARVA_CORPSE.png
+#workshop 442-457
 #Weapon Overhaul
       400: Resources/Weapon_Overhaul/floorob_Calico_2.png
       401: Resources/Weapon_Overhaul/floorob_Mac10.png    # Already in the mod. Somehow this was not used.
@@ -886,6 +921,13 @@ extraSprites:
       288: Resources/Weapons_Compilation/ExplosionAnimations/Yellow_Skull_exp.png
       296: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_ExplosionDense.png
       304: Resources/Weapons_Compilation/ExplosionAnimations/GreenEMP_Explosion.png
+#workshop 296-328
+      312: Resources/Weapons_Compilation/ExplosionAnimations/Green_Skull_exp.png
+      320: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_exp.png
+      328: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Skull_Partial_exp.png
+      336: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_exp.png
+      344: Resources/Weapons_Compilation/ExplosionAnimations/Hellish_Red_Skull_Partial_exp.png
+#workshop 296-328
   - type: Projectiles
     height: 3
     width: 65

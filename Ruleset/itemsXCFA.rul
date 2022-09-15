@@ -1,4 +1,103 @@
 items:
+  - type: STR_METALLOID_BOMB
+    categories: [STR_DIMENSION_X_TECH, STR_GRENADES, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 120000
+    weight: 80
+    bigSprite: 367
+    floorSprite: 371
+    bulletSprite: 11
+    fireSound: 48
+    explosionHitSound: 19
+    hitAnimation: 0
+    power: 300
+    damageAlter:
+      ToStun: 0
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 0.15
+      FireThreshold: 10000
+      SmokeThreshold: 10000
+    damageType: 8
+    costThrow:
+      energy: 20
+    costUnprime:
+      time: 15
+    unprimeActionName: STR_UNPRIME_BOMB
+    unprimeActionMessage: STR_BOMB_IS_DEACTIVATED
+    battleType: 4
+    twoHanded: false
+    spawnUnit: "STR_NANITE_GOO" #Metalloid Goo Spawner comes here
+    spawnUnitFaction: 1
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 25
+    attraction: 6
+    armor: 255
+    listOrder: 39200
+  - type: STR_NANORIFLE
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costBuy: 75000
+    costSell: 60000
+    weight: 20
+    bigSprite: 565
+    floorSprite: 450
+    handSprite: 2728
+    bulletSprite: 2
+    fireSound: 0
+    compatibleAmmo:
+      - STR_NANORIFLE_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 40
+    accuracySnap: 65
+    accuracyAimed: 95
+    tuAuto: 33
+    tuSnap: 26
+    tuAimed: 60
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    snapRange: 17
+    autoRange: 11
+    shotgunChoke: 100
+    attraction: 20
+    listOrder: 21500
+  - type: STR_NANORIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    costBuy: 5000
+    costSell: 4000
+    weight: 5
+    bigSprite: 566
+    floorSprite: 451
+    handSprite: 0
+    hitAnimation: 26
+    hitSound: 22
+    costThrow:
+      energy: 10
+    power: 50
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      ToStun: 0
+      ToMorale: 400.0
+      ToHealth: 0
+      RandomWound: false
+      ToWound: 0.15
+      FireThreshold: 10000
+      SmokeThreshold: 10000
+    damageType: 8
+    clipSize: 32
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 21510
   - type: STR_LASER_HEAVY_PISTOL_MIB
     categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
@@ -1578,6 +1677,7 @@ items:
       - STR_NAPALM_ROCKET
       - STR_EMP_ROCKET
       - STR_TRACITE_ROCKET
+      - STR_ANTI_E115_ROCKET
     accuracyCloseQuarters: 33
     accuracySnap: 55
     accuracyAimed: 115
@@ -1592,6 +1692,37 @@ items:
     armor: 32
     attraction: 24
     listOrder: 33970
+  - type: STR_ANTI_E115_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CHEMICALS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_LAUNCHER_BUY
+      - STR_MAGMA_GAS_AMMO_BUY
+    size: 0.2
+    costBuy: 9000
+    costSell: 4300
+    weight: 9
+    bigSprite: 446
+    floorSprite: 422
+    handSprite: 0
+    explosionHitSound: 118
+    hitAnimation: 192
+    power: 90
+    damageType: 14
+    damageAlter:
+      RandomType: 7
+      FixRadius: 8
+      ToHealth: 1
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 16
+    listOrder: 34000
   - type: STR_STUN_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_INCAPACITATE, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:

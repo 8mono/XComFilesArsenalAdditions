@@ -1373,7 +1373,7 @@ items:
     floorSprite: 455 #check this
     handSprite: 0
     hitAnimation: 312
-    explosionHitSound: 215 #change this to zombie
+    explosionHitSound: 1215 #change this to zombie
     power: 1
     damageAlter:
       IgnoreOverKill: false
@@ -1407,7 +1407,7 @@ items:
     floorSprite: 455 #check this
     handSprite: 0
     hitAnimation: 312
-    explosionHitSound: 215 #change this to zombie
+    explosionHitSound: 1215 #change this to zombie
     power: 1
     damageAlter:
       IgnoreOverKill: false
@@ -1441,7 +1441,7 @@ items:
     floorSprite: 455 #check this
     handSprite: 0
     hitAnimation: 312
-    explosionHitSound: 215
+    explosionHitSound: 1215
     power: 1
     damageAlter:
       IgnoreOverKill: false
@@ -1474,7 +1474,7 @@ items:
     bigSprite: 577
     floorSprite: 456 #check this
     handSprite: 0
-    explosionHitSound: 217
+    explosionHitSound: 1217
     hitAnimation: 328
     power: 1
     damageAlter:
@@ -1508,7 +1508,7 @@ items:
     bigSprite: 577
     floorSprite: 456 #check this
     handSprite: 0
-    explosionHitSound: 217
+    explosionHitSound: 1217
     hitAnimation: 328
     power: 1
     damageAlter:
@@ -1542,7 +1542,7 @@ items:
     bigSprite: 197
     floorSprite: 0 #check this
     handSprite: 0
-    explosionHitSound: 217
+    explosionHitSound: 1217
     hitAnimation: 0
     power: 1
     damageAlter:
@@ -1574,7 +1574,7 @@ items:
     costSell: 81000
     weight: 8
     hitAnimation: 312
-    explosionHitSound: 215
+    explosionHitSound: 1215
     bigSprite: 576
     floorSprite: 455 #check this
     handSprite: 0
@@ -1608,7 +1608,7 @@ items:
     costSell: 81000
     weight: 8
     bigSprite: 577
-    explosionHitSound: 217
+    explosionHitSound: 1217
     hitAnimation: 328
     floorSprite: 456 #check this
     handSprite: 0

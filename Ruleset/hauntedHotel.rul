@@ -1,0 +1,178 @@
+missionScripts:
+  - type: HauntedHotel
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_HAUNTED_HOTEL_ALTERNATE: 100
+    regionWeights: &EXALTCityRegions
+      0:
+        STR_NORTH_AMERICA: 100
+        STR_SOUTH_AMERICA: 100
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+  - type: HauntedHotel1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_HAUNTED_HOTEL_ALTERNATE: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_ECTOPLASM: false
+    startDelay: 20
+    randomDelay: 43500
+alienMissions:
+  - type: STR_HAUNTED_HOTEL_ALTERNATE
+    interruptResearch: STR_ECTOPLASM
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_CULT_OF_SPIRITS: 100
+    waves:
+      - ufo: STR_HAUNTED_HOTEL_ALTERNATE
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+mapScripts:
+  - type: HauntedHotel
+    commands:
+    - type: addUFO
+      UFOName: STR_HAUNTED_HOTEL
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 7
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 7
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 10
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+alienDeployments:
+  - type: STR_HAUNTED_HOTEL_ALTERNATE
+    width: 40
+    length: 50
+    height: 7
+    alert: STR_ALERT_HAUNTED 
+    alertBackground: EXALT_BACKGROUND.SCR 
+    alertDescription: STR_HAUNTED_DESCRIPTION
+    briefing:
+      background: EXALT_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      desc: STR_HAUNTED_BRIEFING
+      showTarget: false
+    markerName: STR_HAUNTED 
+    duration: [60, 120]
+    despawnPenalty: 100
+    abortPenalty: 50
+    music:
+      - FAL_16_ALLCLEAR
+    script: HauntedHotel
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 9
+        highQty: 22
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_ELECTRIC_CLUB
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_TONFA
+            - STR_MONEY_5000
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_WOODEN_CLUB
+          -
+            - STR_SLEDGEHAMMER
+            - STR_MONEY_5000
+          -
+            - STR_GOLF_STICK
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_PIPE
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+ufos:
+  - type: STR_HAUNTED_HOTEL
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_HAUNTED_HOTEL_ALTERNATE
+      mapDataSets:
+        - BLANKS
+        - COMMERCE
+        - CATACDECOR
+        - DUNGEON
+        - MANSIONFLOOR
+        - MANSIONFURNITURE
+        - MANSION_PAINTINGS
+        - MANSIONBITS
+        - MANSIONGARDEN
+      mapBlocks:
+        - name: HAUNTEDHOUSE01
+          width: 40
+          length: 40
