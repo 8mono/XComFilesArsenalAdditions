@@ -1102,12 +1102,12 @@ items:
   - type: STR_BADASS_CHRYSSALID_ACID_SPIT
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 568
+    bigSprite: 1568
     floorSprite: 31 #this is 0
     handSprite: 104 #this is 0
     bulletSprite: 8
     fireSound: 51
-    hitAnimation: 296
+    hitAnimation: 312
     explosionHitSound: 118
     power: 80
     damageAlter:
@@ -1155,31 +1155,31 @@ items:
       ToArmorPre: 1
       ToItem: 1
       ToTile: 0.5
-    hitAnimation: 296
+    hitAnimation: 312
     invHeight: 2
     invWidth: 3
     armor: 200
     listOrder: 70010
   - type: BADASS_CHRYSSALID_ACID_CORPSE_1
-    floorSprite: 442
+    floorSprite: 1442
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: BADASS_CHRYSSALID_ACID_CORPSE_2
-    floorSprite: 442
+    floorSprite: 1442
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: BADASS_CHRYSSALID_ACID_CORPSE_3
-    floorSprite: 442
+    floorSprite: 1442
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: BADASS_CHRYSSALID_ACID_CORPSE_4
-    floorSprite: 442
+    floorSprite: 1442
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -1228,26 +1228,26 @@ items:
     listOrder: 66670
   - type: EGG_SAC_CORPSE_1
     name: STR_EGG_SAC_CORPSE
-    floorSprite: 442
+    floorSprite: 1442
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: true
     recoveryPoints: 3
   - type: EGG_SAC_CORPSE_2
-    floorSprite: 443
+    floorSprite: 1443
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: EGG_SAC_CORPSE_3
-    floorSprite: 444
+    floorSprite: 1444
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: EGG_SAC_CORPSE_4
-    floorSprite: 445
+    floorSprite: 1445
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -1260,26 +1260,26 @@ items:
     listOrder: 66670
   - type: BADASS_CHRYSSALID_BROOD_CORPSE_1
     name: STR_BADASS_CHRYSSALID_BROOD_CORPSE
-    floorSprite: 452
+    floorSprite: 1452
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: true
     recoveryPoints: 3
   - type: BADASS_CHRYSSALID_BROOD_CORPSE_2
-    floorSprite: 453
+    floorSprite: 1453
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: BADASS_CHRYSSALID_BROOD_CORPSE_3
-    floorSprite: 454
+    floorSprite: 1454
     invWidth: 0
     invHeight: 0
     battleType: 11
     recover: false
   - type: BADASS_CHRYSSALID_BROOD_CORPSE_4
-    floorSprite: 455
+    floorSprite: 1455
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -1289,7 +1289,7 @@ items:
   - type: STR_BADASS_CHRYSSALID_BROOD_EGG
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 571
+    bigSprite: 1571
     floorSprite: 31 #this is 0
     handSprite: 104 #this is 0
     bulletSprite: 8
@@ -1325,7 +1325,7 @@ items:
   - type: STR_BADASS_CHRYSSALID_BROOD_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 574
+    bigSprite: 1574
     floorSprite: 31
     handSprite: 104
     meleeSound: 49
@@ -1346,7 +1346,7 @@ items:
   - type: STR_BADASS_CHRYSSALID_ACID_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 574
+    bigSprite: 1574
     floorSprite: 31
     handSprite: 104
     meleeSound: 49
@@ -1369,8 +1369,8 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 576
-    floorSprite: 455 #check this
+    bigSprite: 1576
+    floorSprite: 1455 #check this
     handSprite: 0
     hitAnimation: 312
     explosionHitSound: 1215 #change this to zombie
@@ -1403,8 +1403,8 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 576
-    floorSprite: 455 #check this
+    bigSprite: 1576
+    floorSprite: 1455 #check this
     handSprite: 0
     hitAnimation: 312
     explosionHitSound: 1215 #change this to zombie
@@ -1437,8 +1437,8 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 576
-    floorSprite: 455 #check this
+    bigSprite: 1576
+    floorSprite: 1455 #check this
     handSprite: 0
     hitAnimation: 312
     explosionHitSound: 1215
@@ -1446,6 +1446,8 @@ items:
     damageAlter:
       IgnoreOverKill: false
       ToTile: 50000 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 1
     damageType: 3
     costThrow:
       energy: 16
@@ -1471,15 +1473,17 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 577
-    floorSprite: 456 #check this
+    bigSprite: 1577
+    floorSprite: 1456 #check this
     handSprite: 0
     explosionHitSound: 1217
-    hitAnimation: 328
+    hitAnimation: 344
     power: 1
     damageAlter:
       IgnoreOverKill: false
       ToTile: 50000 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 1
     damageType: 3
     costThrow:
       energy: 16
@@ -1505,15 +1509,17 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 577
-    floorSprite: 456 #check this
+    bigSprite: 1577
+    floorSprite: 1456 #check this
     handSprite: 0
     explosionHitSound: 1217
-    hitAnimation: 328
+    hitAnimation: 344
     power: 1
     damageAlter:
       IgnoreOverKill: false
       ToTile: 50000 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 1
     damageType: 3
     costThrow:
       energy: 16
@@ -1548,6 +1554,8 @@ items:
     damageAlter:
       IgnoreOverKill: false
       ToTile: 0.66 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 1
     damageType: 3
     costThrow:
       energy: 16
@@ -1575,13 +1583,15 @@ items:
     weight: 8
     hitAnimation: 312
     explosionHitSound: 1215
-    bigSprite: 576
-    floorSprite: 455 #check this
+    bigSprite: 1576
+    floorSprite: 1455 #check this
     handSprite: 0
     power: 1
     damageAlter:
       IgnoreOverKill: false
       ToTile: 50000 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 1
     damageType: 3
     costThrow:
       energy: 16
@@ -1607,15 +1617,17 @@ items:
     size: 0.2
     costSell: 81000
     weight: 8
-    bigSprite: 577
+    bigSprite: 1577
     explosionHitSound: 1217
-    hitAnimation: 328
-    floorSprite: 456 #check this
+    hitAnimation: 344
+    floorSprite: 1456 #check this
     handSprite: 0
     power: 10
     damageAlter:
       IgnoreOverKill: false
       ToTile: 50000 #0.66
+      FireThreshold: 9999
+      SmokeThreshold: 5
       ToHealth: 1
       ArmorEffectiveness: 0
       ToWound: 100
@@ -1855,8 +1867,8 @@ items:
     size: 0.3
     costSell: 4000
     weight: 5
-    bigSprite: 578
-    floorSprite: 457
+    bigSprite: 1578
+    floorSprite: 1457
     invWidth: 2
     invHeight: 3
     recoveryPoints: 20
@@ -1868,8 +1880,8 @@ items:
     size: 0.3
     costSell: 4000
     weight: 5
-    bigSprite: 578
-    floorSprite: 457
+    bigSprite: 1578
+    floorSprite: 1457
     invWidth: 2
     invHeight: 3
     recoveryPoints: 20
@@ -1905,7 +1917,7 @@ items:
   - type: STR_ZOMBIE_INFECTOR_TEMPERED_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 575
+    bigSprite: 1575
     meleeSound: 48
     meleeHitSound: 109
     strengthApplied: true
@@ -1927,7 +1939,7 @@ items:
   - type: STR_CHRYSSALID_LARVA_WEAPON #Fix all the properties of thsi! it should only stun maybe? not kill but infect
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 574
+    bigSprite: 1574
     floorSprite: 31
     handSprite: 104
     meleeSound: 48
@@ -1952,7 +1964,7 @@ items:
   - type: STR_ZOMBIE_PARASITE_WEAPON #Fix all the properties of thsi! it should only stun maybe? not kill but infect
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 574
+    bigSprite: 1574
     floorSprite: 31
     handSprite: 104
     meleeSound: 48
@@ -2006,7 +2018,7 @@ items:
   - type: STR_ZOMBIE_SPITTER_TEMPERED_SPIT
     categories: [STR_BUILT_INS]
     weight: 3
-    bigSprite: 568
+    bigSprite: 1568
     floorSprite: 31
     handSprite: 104
     bulletSprite: 8
@@ -2329,10 +2341,10 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: 215
-    deathSound: 216
-    panicSound: 215
-    berserkSound: 215
+    aggroSound: 1215
+    deathSound: 1216
+    panicSound: 1215
+    berserkSound: 1215
     intelligence: 3
     aggression: 4
     energyRecovery: 40
@@ -2358,10 +2370,10 @@ units:
     standHeight: 18
     kneelHeight: 12
     value: 10
-    aggroSound: 215
-    deathSound: 216
-    panicSound: 215
-    berserkSound: 215
+    aggroSound: 1215
+    deathSound: 1216
+    panicSound: 1215
+    berserkSound: 1215
     intelligence: 3
     aggression: 4
     energyRecovery: 40
