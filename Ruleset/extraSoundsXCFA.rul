@@ -77,7 +77,7 @@ extraSounds:
       113: Resources/Weapons_Compilation/Resound/blosh.wav
       114: Resources/Weapons_Compilation/Resound/bloshr.wav
 #Unused      115: Resources/Weapons_Compilation/WeaponSounds/Heavy_hit.wav
-#Unused      116: Resources/Weapons_Compilation/WeaponSounds/AlienAcid.wav
+      116: Resources/Weapons_Compilation/WeaponSounds/AlienAcid.wav
       117: Resources/Weapons_Compilation/WeaponSounds/Flashbang.wav
       118: Resources/Sounds_Compilation/ItemSounds/Ex_Acid.wav
       119: Resources/Weapons_Compilation/WeaponSounds/CannonHit.wav
