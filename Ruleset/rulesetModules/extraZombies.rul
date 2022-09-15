@@ -1,0 +1,2328 @@
+alienDeployments:
+  - type: STR_MONSTER_TERROR_TEMPERED
+    width: 60
+    length: 60
+    height: 6
+    civilians: 20
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+      - PORTTFTD_PIER
+    alert: STR_MONSTERS_TERRORISE
+    alertBackground: MONSTER_TERROR_BACKGROUND.SCR
+    alertDescription: STR_MONSTER_TERROR_DESCRIPTION
+    briefing:
+      background: MONSTER_BACKGROUND.SCR
+      palette: 2
+      music: DW_SHOCK
+    enviroEffects: STR_INSANITY_1
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MONSTER_SITE
+    duration: [18, 30]
+    despawnPenalty: 700
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 15
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: &AnchorEmptyInventory
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 4
+        lowQty: 2
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+  - type: STR_ZOMBIE_INFESTATION_BASIC_TEMPERED
+    width: 60
+    length: 60
+    height: 10
+    civilians: 3
+    alert: STR_ZOMBIE_INFESTATION
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_ZOMBIE_INFESTATION_BASIC_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+      desc: STR_ZOMBIE_INFESTATION_BASIC_BRIEFING
+    music:
+      - THING
+    markerName: STR_ZOMBIE_INFESTATION
+    duration: [72, 144]
+    despawnPenalty: 200
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 12
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+  - type: STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERED
+    width: 60
+    length: 60
+    height: 10
+    civilians: 3
+    alert: STR_ZOMBIE_INFESTATION
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_ZOMBIE_INFESTATION_MEDIUM_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      desc: STR_ZOMBIE_INFESTATION_MEDIUM_BRIEFING
+    music:
+      - THING
+    markerName: STR_ZOMBIE_INFESTATION
+    duration: [72, 144]
+    despawnPenalty: 200
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 12
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 4
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+  - type: STR_ZOMBIE_CATACOMBS_TEMPERED
+    width: 60
+    length: 60
+    height: 4
+    shade: 9
+    alert: STR_ALERT_ZOMBIE_CATACOMBS
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_ZOMBIE_CATACOMBS_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+    enviroEffects: STR_INSANITY_1
+    music:
+      - THING
+    markerName: STR_ZOMBIE_CATACOMBS
+    duration: [200, 444]
+    despawnPenalty: 30
+    abortPenalty: 10
+    terrains:
+      - CATACOMBS
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 2
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+  - type: STR_ZOMBIE_HIVE_TEMPERED
+    width: 60
+    length: 60
+    height: 4
+    shade: 9
+    alert: STR_ALERT_ZOMBIE_HIVE
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_ZOMBIE_HIVE_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+    music:
+      - THING
+    markerName: STR_ZOMBIE_HIVE
+    duration: [200, 444]
+    despawnPenalty: 30
+    abortPenalty: 10
+    enviroEffects: STR_INSANITY_1
+    mapScripts: [STRIX_HIVE_A, STRIX_HIVE_B, STRIX_HIVE_C, STRIX_HIVE_D]
+    terrains:
+      - BLACKCAVE
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 2
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+      - alienRank: 11
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 13
+        lowQty: 0
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+  - type: STR_VAMPIRE_CASTLE_TEMPERED
+    width: 60
+    length: 60
+    height: 10
+    shade: 9
+    alert: STR_ALERT_VAMPIRE_CASTLE
+    alertBackground: CASTLE_GRIMSKULL_BACKGROUND.SCR
+    alertDescription: STR_VAMPIRE_CASTLE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+      background: CASTLE_GRIMSKULL_BACKGROUND.SCR
+    music:
+      - THING
+    markerName: STR_VAMPIRE_CASTLE
+    duration: [150, 240]
+    despawnPenalty: 30
+    abortPenalty: 10
+    enviroEffects: STR_INSANITY_3
+    terrains:
+      - VAMPIRE_CASTLE
+    data:
+      - alienRank: 9
+        lowQty: 3
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 2
+        highQty: 4
+        dQty: 4
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+      - alienRank: 11
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 15
+        highQty: 35
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 5
+        highQty: 11
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 1
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 2
+        highQty: 9
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+      - alienRank: 1
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+  - type: STR_MUMMY_ABODE_TEMPERED
+    width: 60
+    length: 80
+    height: 10
+    shade: 6
+    alert: STR_ALERT_MUMMY_ABODE
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_MUMMY_ABODE_DESCRIPTION
+    terrains:
+      - MUMMY_VILLAGE_SETTLEMENT
+    script: MUMMY_ABODE_SETTLEMENT
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      textOffset: -16
+      showTarget: false
+    markerName: STR_MUMMY_ABODE
+    duration: [200, 300]
+    despawnPenalty: 150
+    abortPenalty: 50
+    enviroEffects: STR_INSANITY_3
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 4
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+      - alienRank: 4
+        lowQty: 2
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 5
+        highQty: 11
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 0
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 3
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 4
+        highQty: 9
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SHOGG_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_M60_CLIP
+      - alienRank: 11
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 12
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+      - alienRank: 13
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+  - type: STR_MUMMY_ABODE_ALTAR_TEMPERED
+    width: 60
+    length: 80
+    height: 10
+    shade: 6
+    alert: STR_ALERT_MUMMY_ABODE_ALTAR
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_MUMMY_ABODE_ALTAR_DESCRIPTION
+    terrains:
+      - MUMMY_VILLAGE_SETTLEMENT
+    script: MUMMY_ABODE_SETTLEMENT_ALTAR
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      textOffset: -16
+      showTarget: false
+    markerName: STR_MUMMY_ABODE_ALTAR
+    duration: [200, 300]
+    despawnPenalty: 75
+    abortPenalty: 25
+    enviroEffects: STR_INSANITY_3
+    data:
+      - alienRank: 1
+        lowQty: 4
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 6
+        highQty: 13
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+      - alienRank: 3
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 4
+        highQty: 11
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 8
+        highQty: 16
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 6
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 5
+        highQty: 11
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SHOGG_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_M60_CLIP
+      - alienRank: 11
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 12
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+      - alienRank: 13
+        lowQty: 1
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+  - type: STR_ANCIENT_MUMMY_ABODE_TEMPERED
+    width: 60
+    length: 80
+    height: 10
+    shade: 6
+    alert: STR_ALERT_ANCIENT_MUMMY_ABODE
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_ANCIENT_MUMMY_ABODE_DESCRIPTION
+    terrains:
+      - MUMMY_VILLAGE_SETTLEMENT
+    script: MUMMY_ABODE_SETTLEMENT
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      textOffset: -16
+      showTarget: false
+    markerName: STR_ANCIENT_MUMMY_ABODE
+    duration: [200, 300]
+    despawnPenalty: 150
+    enviroEffects: STR_INSANITY_1
+    civiliansByType:
+      STR_ANCIENT_MUMMY_MATRIARCH: 1
+      STR_VAMPIRE_KNIGHT_LEADER: 3
+      STR_ANCIENT_TOMB_GUARD_FEMALE_TERRORIST: 7
+      STR_STRIX_TERRORIST: 1
+      STR_ANCIENT_GHOUL_WARRIOR: 14
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 7
+        highQty: 16
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+      - alienRank: 4
+        lowQty: 4
+        highQty: 10
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 10
+        highQty: 20
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 5
+        highQty: 11
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 5
+        highQty: 9
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SHOGG_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_M60_CLIP
+      - alienRank: 11
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 12
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+  - type: STR_PHARAOH_TOMB_TEMPERED
+    width: 60
+    length: 80
+    height: 10
+    shade: 6
+    alert: STR_PHARAOH_TOMB_ALTAR
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_PHARAOH_TOMB_DESCRIPTION
+    terrains:
+      - MUMMY_VILLAGE_SETTLEMENT
+    script: MUMMY_ABODE_SETTLEMENT_ALTAR
+    winCutscene: zombiesAtPeace
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      textOffset: -16
+      showTarget: false
+    markerName: STR_PHARAOH_TOMB
+    duration: [200, 300]
+    despawnPenalty: 30
+    unlockedResearch: STR_PHARAOH_HAS_FALLEN
+    enviroEffects: STR_INSANITY_3
+    civiliansByType:
+      STR_VAMPIRE_QUEEN_COMMANDER: 1
+      STR_VAMPIRE_KNIGHT_LEADER: 12
+    data:
+      - alienRank: 2
+        lowQty: 19
+        highQty: 40
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+          -
+            - STR_GREATSWORD
+          -
+            - STR_BARDICHE
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_KATANA
+          -
+            - STR_BARDICHE
+      - alienRank: 3
+        lowQty: 2
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 7
+        highQty: 14
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 5
+        lowQty: 15
+        highQty: 28
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 4
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 10
+        highQty: 25
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_BONE_CLUB
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 8
+        highQty: 20
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SHOGG_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_M60_CLIP
+      - alienRank: 11
+        lowQty: 7
+        highQty: 15
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 12
+        lowQty: 1
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+          -
+            - STR_SHOGG_CUDGEL
+            - STR_SHOGG_LANTERN
+          -
+            - STR_SHOGG_CUDGEL
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_HAMMER
+          -
+            - STR_SHOGG_STAFF
+      - alienRank: 13
+        lowQty: 1
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 14
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+          -
+            - STR_SKULL_STAFF
+  - type: STR_CROP_CIRCLES_ZOMBIE_TEMPERED
+    width: 40
+    length: 40
+    height: 6
+    alert: STR_ALERT_CROP_CIRCLES
+    alertBackground: CROPCIRCLES_BRIEFING_BACKGROUND.SCR
+    alertDescription: STR_CROP_CIRCLES_ZOMBIE_DESCRIPTION
+    briefing:
+      palette: 2
+      background: CROPCIRCLES_BRIEFING_BACKGROUND.SCR
+      music: GMENBASE
+      showTarget: false
+    music:
+      - ZIZZ_STUDIO_SPOOKY_SCAPE
+    markerName: STR_CROP_CIRCLES
+    duration: [80, 104]
+    despawnPenalty: 75
+    abortPenalty: 25
+    terrains:
+      - CULTA
+      - RURAL
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_KNIFE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_AXE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_KNIFE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_AXE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+  - type: STR_MAGMA_LAB_TEMPERED
+    width: 60
+    length: 60
+    height: 8
+    terrains:
+      - CHEMTOWN
+      - CHEMTOWN_ROADS
+    script: MAGMALAB
+    alert: STR_ALERT_MAGMA_LAB
+    alertBackground: ZOMBIES_BACKGROUND.SCR
+    alertDescription: STR_MAGMA_LAB_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    markerName: STR_MAGMA_LAB
+    duration: [130, 180]
+    despawnPenalty: 150
+    abortPenalty: 50
+    unlockedResearch: STR_MESSAGE_FROM_MAGMA_02
+    music:
+      - AS_2_AMBIENT_01
+    data:
+      - alienRank: 5
+        lowQty: 7
+        highQty: 12
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 5
+        highQty: 11
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 1
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 1
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 8
+        lowQty: 5
+        highQty: 11
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_THRASHER_SHOTGUN
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+          -
+            - STR_THRASHER_SHOTGUN
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+          -
+            - STR_THRASHER_SHOTGUN
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_GRENADE
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_GRENADE
+          -
+            - STR_THRASHER_SHOTGUN
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+          -
+            - STR_THRASHER_SHOTGUN
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+            - STR_THRASHER_SHOTGUN_BUCKSHOT
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_GRENADE
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_BS_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_GRENADE
+          -
+            - STR_HEAVY_CANNON
+            - STR_HC_AP_AMMO
+            - STR_HC_BS_AMMO
+            - STR_HC_AP_AMMO
+            - STR_HC_BS_AMMO
+            - STR_HC_AP_AMMO
+            - STR_GRENADE
+  - type: STR_MONSTER_VS_MILITARY_TEMPERED
+    width: 80
+    length: 80
+    height: 10
+    civiliansByType:
+      STR_MALE_SOLDIER: 20
+      STR_MALE_OFFICER_SOLDIER: 5
+      STR_CRISIS_TROOPER: 3
+      STR_ARMY_ARMORED_CAR: 1
+    alert: STR_ALERT_MONSTER_VS_MILITARY
+    alertBackground: MONSTER_TERROR_BACKGROUND.SCR
+    alertDescription: STR_MONSTER_VS_MILITARY_DESCRIPTION
+    briefing:
+      background: MONSTER_BACKGROUND.SCR
+      palette: 2
+      music: DW_SHOCK
+      showTarget: false
+    music:
+      - TENKA_RAZOR
+    markerName: STR_MONSTER_VS_MILITARY
+    duration: [18, 50]
+    despawnPenalty: 700
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 10
+        highQty: 28
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 6
+        highQty: 16
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 1
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+  - type: STR_MONSTER_VS_POLICE_TEMPERED
+    width: 70
+    length: 70
+    height: 10
+    civiliansByType:
+      STR_POLICEMAN: 20
+      STR_POLICEWOMAN: 7
+      STR_DOGE: 5
+    alert: STR_ALERT_MONSTER_VS_POLICE
+    alertBackground: MONSTER_TERROR_BACKGROUND.SCR
+    alertDescription: STR_MONSTER_VS_POLICE_DESCRIPTION
+    briefing:
+      background: MONSTER_BACKGROUND.SCR
+      palette: 2
+      music: DW_SHOCK
+      showTarget: false
+    duration: [18, 42]
+    markerName: STR_MONSTER_VS_POLICE
+    despawnPenalty: 480
+    music:
+      - TENKA_RAZOR
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 6
+        highQty: 19
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 4
+        highQty: 12
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 1
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+alienMissions:
+  - type: STR_MONSTER_TERROR
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MONSTER_TERROR_TEMPERED
+    despawnEvenIfTargeted: true
+    points: 10
+    objective: 3
+    spawnZone: 3
+    raceWeights:
+      0:
+          STR_MEGASCORPION: 30
+          STR_GIANT_BEETLE: 30
+          STR_MONGORN: 10
+          STR_SHADOWBAT: 20
+          STR_MUCKSTAR: 10
+          STR_GIANT_RAT: 15
+          STR_ZOMBIE_TEMPERED: 50
+      6:
+          STR_MEGASCORPION: 10
+          STR_GIANT_BEETLE: 10
+          STR_SHADOWBAT: 10
+          STR_CHUPACABRA: 5
+          STR_MONGORN: 10
+          STR_SPIKEBOAR: 10
+          STR_SHAMBLER: 10
+          STR_WEREWOLF: 10
+          STR_OWLMAN: 2
+          STR_WERECAT: 10
+          STR_MUCKSTAR: 10
+          STR_GIANT_RAT: 15
+          STR_BULLFROG: 7
+          STR_ASMODEAN_COBRA: 10
+          STR_ZOMBIE_TEMPERED: 60
+      26:
+          STR_CHRYSSALID: 10
+          STR_GIANT_BEETLE: 10
+          STR_MEGASCORPION: 10
+          STR_SHADOWBAT: 10
+          STR_CHUPACABRA: 10
+          STR_MONGORN: 10
+          STR_SPIKEBOAR: 10
+          STR_SHAMBLER: 10
+          STR_WEREWOLF: 10
+          STR_WERECAT: 10
+          STR_OWLMAN: 2
+          STR_MUCKSTAR: 10
+          STR_GIANT_RAT: 10
+          STR_BULLFROG: 10
+          STR_ASMODEAN_COBRA: 10
+          STR_ZOMBIE_TEMPERED: 70
+    waves:
+      - ufo: STR_MONSTER_TERROR_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ZOMBIE_INFESTATION_BASIC
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_ZOMBIE_INFESTATION_BASIC_TEMPERED
+    interruptResearch: STR_ZOMBIE_ARE_BREEDING
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_ZOMBIE_INFESTATION_BASIC_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ZOMBIE_INFESTATION_MEDIUM
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERED
+    interruptResearch: STR_SENTIENT_ZOMBIE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ZOMBIE_CATACOMBS
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_ZOMBIE_CATACOMBS_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_ZOMBIE_CATACOMBS_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ZOMBIE_HIVE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_ZOMBIE_HIVE_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_ZOMBIE_HIVE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_VAMPIRE_CASTLE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_VAMPIRE_CASTLE_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_VAMPIRE_CASTLE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_MUMMY_ABODE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MUMMY_ABODE_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_MUMMY_ABODE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ANCIENT_MUMMY_ABODE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_ANCIENT_MUMMY_ABODE_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_ANCIENT_MUMMY_ABODE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_MUMMY_ABODE_ALTAR
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MUMMY_ABODE_ALTAR_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_MUMMY_ABODE_ALTAR_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_PHARAOH_TOMB
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_PHARAOH_TOMB_TEMPERED
+    interruptResearch: STR_PHARAOH_HAS_FALLEN
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_PHARAOH_TOMB_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_CROP_CIRCLES_ZOMBIE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_CROP_CIRCLES_ZOMBIE_TEMPERED #make a special one?
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 1
+    raceWeights:
+      0:
+          STR_ZOMBIE_FARMER: 100
+    waves:
+      - ufo: STR_CROP_CIRCLES_ZOMBIE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_MAGMA_LAB
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MAGMA_LAB_TEMPERED #change this a bit?
+    interruptResearch: STR_ZOMBIE_IMPLANT
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 100
+    waves:
+      - ufo: STR_MAGMA_LAB_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_MONSTER_VS_POLICE
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MONSTER_VS_POLICE_TEMPERED
+    interruptResearch: STR_MONSTERS_FINAL_SOLUTION #???
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_GIANT_SPIDER: 25
+          STR_GIANT_BEETLE: 25
+          STR_ZOMBIE_TEMPERED: 50
+          STR_MONGORN: 15
+          STR_CHUPACABRA: 5
+          STR_SPIKEBOAR: 3
+    waves:
+      - ufo: STR_MONSTER_VS_POLICE_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_MONSTER_VS_MILITARY
+    interruptResearch: STR_MONSTERS_FINAL_ALTERNATIVE
+  - type: STR_MONSTER_VS_MILITARY_TEMPERED
+    interruptResearch: STR_MONSTERS_FINAL_SOLUTION #??
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZOMBIE_TEMPERED: 50
+          STR_MONGORN: 10
+          STR_GIANT_SPIDER: 25
+          STR_GIANT_BEETLE: 15
+          STR_MUCKSTAR: 5
+          STR_CHUPACABRA: 5
+          STR_SPIKEBOAR: 5
+    waves:
+      - ufo: STR_MONSTER_VS_MILITARY_TEMPERED
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+missionScripts:
+  - type: monsterTerrorTempered
+    firstMonth: 11
+    missionWeights:
+      0:
+        STR_MONSTER_TERROR_TEMPERED: 100
+    useTable: false
+    executionOdds: 33
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationBasicTempered
+    firstMonth: 3
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_BASIC_TEMPERED: 100
+    useTable: false
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationBasicTempered1
+    firstMonth: 3
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_BASIC_TEMPERED: 100
+    useTable: false
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationBasicTempered2
+    firstMonth: 3
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_BASIC_TEMPERED: 100
+    useTable: false
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationBasicTempered3
+    firstMonth: 3
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_BASIC_TEMPERED: 100
+    useTable: false
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationMediumTempered
+    firstMonth: 6
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERED: 100
+    researchTriggers:
+      STR_SENTIENT_ZOMBIE: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieInfestationMediumTempered1
+    firstMonth: 6
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERED: 100
+    researchTriggers:
+      STR_SENTIENT_ZOMBIE: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ZombieCatacombsTempered
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_ZOMBIE_CATACOMBS_TEMPERED: 100
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: zombieHiveTempered
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_ZOMBIE_HIVE_TEMPERED: 100
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: vampireCastleTempered
+    firstMonth: 0
+    executionOdds: 12
+    missionWeights:
+      0:
+        STR_VAMPIRE_CASTLE_TEMPERED: 100
+    researchTriggers:
+      STR_FOLLOW_THE_ZOMBIES: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: mummyAbodeEarlyTempered
+    firstMonth: 0
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE_TEMPERED: 100
+    researchTriggers:
+      STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: false
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: mummyAbodeTempered
+    firstMonth: 0
+    executionOdds: 12
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE_TEMPERED: 100
+    researchTriggers:
+      STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ancientMummyAbodeEarlyTempered
+    firstMonth: 0
+    executionOdds: 65
+    missionWeights:
+      0:
+        STR_ANCIENT_MUMMY_ABODE_TEMPERED: 100
+    researchTriggers:
+      STR_ANCIENT_ZOMBIES: true
+      STR_ANEXIS_OFFER: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: ancientMummyAbodeLateTempered
+    firstMonth: 0
+    executionOdds: 8
+    missionWeights:
+      0:
+        STR_ANCIENT_MUMMY_ABODE_TEMPERED: 100
+    researchTriggers:
+      STR_ANEXIS_OFFER: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MummyAbodeAltarEarlyTempered
+    firstMonth: 0
+    executionOdds: 80
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE_ALTAR_TEMPERED: 100
+    researchTriggers:
+      STR_HOLY_TRIAL: true
+      STR_GOLDEN_ANKH: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MummyAbodeAltarLateTempered
+    firstMonth: 0
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE_ALTAR_TEMPERED: 100
+    researchTriggers:
+      STR_GOLDEN_ANKH: true
+      STR_HOLY_TRIAL: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: pharaohTombTempered
+    firstMonth: 0
+    executionOdds: 70
+    missionWeights:
+      0:
+        STR_PHARAOH_TOMB_TEMPERED: 100
+    researchTriggers:
+      STR_MEET_THE_COVEN: true
+      STR_PHARAOH_HAS_FALLEN: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: cropCirclesZombieTempered
+    firstMonth: 0
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_CROP_CIRCLES_ZOMBIE_TEMPERED: 100
+    researchTriggers:
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    regionWeights: &CropCircleRegions
+      0:
+        STR_NORTH_AMERICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 100
+        STR_AUSTRALASIA: 100
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: cropCirclesZombieTempered1
+    firstMonth: 0
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_CROP_CIRCLES_ZOMBIE_TEMPERED: 100
+    regionWeights: *CropCircleRegions
+    researchTriggers:
+      STR_ZOMBIE_ARE_BREEDING: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: zombieLabTempered
+    firstMonth: 0
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_MAGMA_LAB_TEMPERED: 100
+    useTable: false
+    regionWeights:
+      0:
+        STR_SIBERIA: 100
+    researchTriggers:
+      STR_MAGMA_MISSION_MAGMA_LAB: true
+      STR_MESSAGE_FROM_MAGMA_02: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+    
+  - type: MonstersVsPoliceTempered
+    firstMonth: 3
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_MONSTER_VS_POLICE_TEMPERED: 100
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MonstersVsPoliceTempered1
+    firstMonth: 3
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_MONSTER_VS_POLICE_TEMPERED: 100
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MonstersVsMilitaryTempered
+    firstMonth: 3
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_MONSTER_VS_MILITARY_TEMPERED: 100
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MonstersVsMilitaryTempered1
+    firstMonth: 3
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_MONSTER_VS_MILITARY_TEMPERED: 100
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
+      STR_MONSTERS_FINAL_ALTERNATIVE: true
+    startDelay: 20
+    randomDelay: 43500

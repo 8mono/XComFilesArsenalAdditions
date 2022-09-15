@@ -316,6 +316,12 @@ items:
       HTAG_HEAL_TYPE: 2 #type of healing effect (1 is resuscitator, 2 bio stasis, 3 overdrive serum)
       HTAG_HEAL_POWER: 1 #power of the item
       HTAG_HEAL_DURATION: 4 #turns this will run for
+  - type: STR_METALLOID_BOMB
+    tags:
+      ITEM_IS_NANITE_VIRUS: 1
+  - type: STR_NANORIFLE_CLIP
+    tags:
+      ITEM_IS_NANITE_VIRUS: 1
 armors:
   # - type: STR_HOSTAGE_ARMOR
     # tags:
@@ -1286,6 +1292,15 @@ armors:
   - type: STR_SYNTHSUIT_H_UC
     tags:
       TTAG_TEARGAS_RESISTANCE: 75
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_SYNTHSUIT_H_UC
+    tags:
+      TTAG_TEARGAS_RESISTANCE: 75
+      FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POWER_ARMOR_UC
     tags:
       TTAG_TEARGAS_RESISTANCE: 100
@@ -1546,6 +1561,7 @@ extended:
 #googles
       NTAG_NIGHT_VISION: int
       NTAG_THERMAL_VISION: int
+      ITEM_IS_NANITE_VIRUS: int
 #Hostage/Terrorists
     RuleArmor:
       TAG_IS_HOSTAGE: int
@@ -1595,6 +1611,9 @@ extended:
       ITEM_VEST_ARMOR: int
       
       ITEM_GASMASK_DURABILITY: int
+      
+      NANITE_VIRUS: int
+      ITEM_CREATION_TURN: int
     BattleUnit:
 #flare
       ITAG_ILLUMINATION_STATUS: int
@@ -1690,6 +1709,326 @@ extended:
       UNIT_ORIGINAL_UNDER_ARMOR: int
   scripts:
     damageUnit:
+      - offset: 0.2
+        code: |
+          var int fuseStatus;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var text itemName;
+          var int loopCount;
+          var int unitCurrentHP;
+          var int unitMaxHP;
+          var int unitThresholdHP;
+          set loopCount 0;
+          
+          if and neq damaging_type 14 neq damaging_type 2;
+            return;
+          end;
+          
+          unit.getHealth unitCurrentHP;
+          unit.getHealthMax unitMaxHP;
+          set unitThresholdHP unitMaxHP;
+          div unitThresholdHP 2;
+          debug_log "currentHP and maxHP";
+          debug_log unitCurrentHP;
+          debug_log unitMaxHP;
+          debug_log unitThresholdHP;
+
+          if and gt unitCurrentHP unitThresholdHP eq damaging_type 2;
+            return;
+          end;
+          
+          debug_log damaging_type;
+          debug_log "Damaging type should be 14 or 2 and passed check!";
+
+          rules.getRuleItem itemRuleset "STR_SAC_EGG";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if eq itemName "STR_SAC_EGG";
+              debug_log "SAC EGG FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_ALIEN_EGG";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_ALIEN_EGG";
+              debug_log "ALIEN EGG FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+              debug_log "GRUBAS GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT";
+              debug_log "INFECTOR GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 3;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+              debug_log "GRUBAS GIFT FOUND!, unpriming.";
+              eggItem.setFuseEnabled 0;
+              eggItem.setFuseTimer -1;
+            end;
+          end;
+          return;
+      - offset: 6
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptre BattleItem inventoryItem;
+          var ptr RuleArmor armorRuleset;
+          var text armorName;
+          var text itemName;
+          var int ownerHP;
+          var int ownerMaxHP;
+          var int ownerStun;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_GRUBAS_TEMPERED_ARMOR";
+            return;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_GRUBAS_GIFT";
+          itemRuleset.getType itemName;
+          unit.getInventoryItem inventoryItem itemRuleset;
+          if eq itemName "STR_TEMPERED_GRUBAS_GIFT";
+            debug_log "Item is grubas gift!";
+            unit.getHealth ownerHP;
+            unit.getHealthMax ownerMaxHP;
+            unit.getStun ownerStun;
+            div ownerMaxHP 2;
+            debug_log "This is grubas current stun, HP and the max HP threshold";
+            debug_log ownerStun;
+            debug_log ownerHP;
+            debug_log ownerMaxHP;
+            if le ownerHP ownerMaxHP;
+              debug_log "Grubas is at half HP or less, priming!";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+            end;
+            if ge ownerStun ownerHP;
+              debug_log "Grubas is stunned, priming!";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+            end;
+          end;
+          return;
+      - offset: 7
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptre BattleItem inventoryItem;
+          var text itemName;
+          var text armorName;
+          var ptr RuleArmor armorRuleset;
+          var int ownerHP;
+          var int ownerMaxHP;
+          var int ownerStun;
+          var int loopCount;
+          var int fuseTimer;
+          var int collapsing;
+          var int criticalStatus;
+
+          set criticalStatus 0;
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR";
+            return;
+          end;
+
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          itemRuleset.getType itemName;
+          debug_log "Unit damaged was an infector priming one of their gifts";
+          unit.getHealth ownerHP;
+          unit.getHealthMax ownerMaxHP;
+          unit.getStun ownerStun;
+          unit.isCollapsing collapsing;
+          debug_log "Unit is collapsing value";
+          debug_log collapsing;
+          
+          div ownerMaxHP 2;
+          
+          if or le ownerHP ownerMaxHP le ownerHP 1 le ownerHP ownerStun;
+            set criticalStatus 1;
+            debug_log "unit is in critical status";
+          end;
+
+          set loopCount 6;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem inventoryItem x;
+            debug_log inventoryItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" neq criticalStatus 1;
+              debug_log "infector gift FOUND!, checking if timer is 1 or more!";
+              inventoryItem.getFuseTimer fuseTimer;
+              debug_log fuseTimer;
+              debug_log "Above was fuse timer for this one";
+              if ge fuseTimer 1;
+                inventoryItem.setFuseEnabled 1;
+                inventoryItem.setFuseTimer 0;
+                debug_log "This should only run once!";
+                return;
+              end;
+            end;
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" eq criticalStatus 1;
+              debug_log "infector gift FOUND!, CRITICAL STATUS";
+              inventoryItem.setFuseEnabled 1;
+              inventoryItem.setFuseTimer 0;
+              return;
+            end;
+          end;
+
+          return;
+    damageSpecialUnit:
+      - offset: 0.1 #Infectious Boomer blast
+        code: |
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var int testVar;
+          var text unitName;
+          var text armorName;
+          var text itemName;
+          var int unitFaction;
+          var int unitOriginalFaction;
+          var int armorReference;
+          var int attackerHP;
+          var int originalTransformation;
+          var int applyChance;
+
+          attacker.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+          attacker.getHealth attackerHP;
+          # debug_log "Attacker hp is";
+          # debug_log attackerHP;
+          unit.getOriginalFaction unitOriginalFaction;
+          unit.getFaction unitFaction;
+          # unit.getTag originalTransformation Tag.UNIT_ORIGINAL_TRANSFORMATION;
+          # debug_log originalTransformation;
+          # debug_log "Above was original unit! transformation!";
+          # rules.getRuleItem itemRuleset "STR_BOOMER_TEMPERED_WEAPON";
+          # weapon_item.getRuleItem itemRuleset;
+          # itemRuleset.getType itemName;
+          if and eq armorName "STR_ZOMBIE_BOOMER_TEMPERED_ARMOR" neq unitOriginalFaction 1 le attackerHP 0;
+            # debug_log "Attacker is Infector Boomer has 0 or less HP and target is NOT enemy";
+            battle_game.randomRange applyChance 1 100;
+            if le applyChance 25;
+              rules.getRuleUnit unitRuleset "STR_ZOMBIE_BOOMER_TEMPERED_TERRORIST";
+            else le applyChance 50;
+              rules.getRuleUnit unitRuleset "STR_ZOMBIE_BOOMER_TERRORIST";
+            else le applyChance 75;
+              rules.getRuleUnit unitRuleset "STR_ZOMBIE_BOOMER_TERRORIST";
+            else le applyChance 100;
+              rules.getRuleUnit unitRuleset "STR_ZOMBIE_INFECTOR_TERRORIST";
+            end;
+            unit.setSpawnUnit unitRuleset;
+            unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
+          end;
+
+          return;
+      - offset: 0.2 #Nanite blast infection
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr BattleItem battleItem;
+          var ptr RuleArmor armorRuleset;
+          var int unitFaction;
+          var int unitOriginalFaction;
+          var int victimHP;
+          var int victimMaxHP;
+          var int naniteTag;
+          var text unitName;
+          var text armorName;
+
+          damaging_item.getTag naniteTag Tag.NANITE_VIRUS;
+          if eq naniteTag 0;
+            return;
+          end;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+          
+          if or eq armorName "STR_NANITE_GOO_ARMOR" eq armorName "STR_METALLOID_SOLDIER_ARMOR";
+            debug_log "Unit struck by nanite blast was metalloid soldier or nanite goo";
+            return;
+          end;
+
+          unit.getOriginalFaction unitOriginalFaction;
+          unit.getFaction unitFaction;
+          unit.getHealth victimHP;
+          unit.getHealthMax victimMaxHP;
+          debug_log health_damage;
+          
+          # if le victimHP health_damage;
+            # debug_log "This kills the man";
+          # end;
+
+          # if and neq unitOriginalFaction 1 le victimHP 0;
+          if neq unitOriginalFaction 1;
+            rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
+            unit.setSpawnUnit unitRuleset;
+            unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
+          end;
+
+          return;
       - offset: 0.1 #Support Grenades healing effect
         code: |
           var ptr RuleItem itemRuleset;
@@ -2012,6 +2351,211 @@ extended:
             end;
           return;
     createUnit:
+      - offset: 0.1
+        code: |
+          var int fuseStatus;
+          var int randomTimer;
+          var int previousMaxTimer;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          var int loopCount;
+          set loopCount 0;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_EGG_SAC_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_EGG_SAC!";
+          rules.getRuleItem itemRuleset "STR_SAC_EGG";
+          # unit.getInventoryItem eggItem itemRuleset;
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_SAC_EGG" eq fuseStatus 0;
+              battle_game.randomRange randomTimer 1 5;
+              if eq x 0;
+                mul randomTimer 2;
+              else eq x 1;
+                mul randomTimer 3;
+              else eq x 2;
+                mul randomTimer 4;
+              else eq x 3;
+                mul randomTimer 5;
+              else eq x 4;
+                mul randomTimer 6;
+              end;
+              
+              debug_log "randomTimer and previousMaxTimer";
+              debug_log randomTimer;
+              debug_log previousMaxTimer;
+
+              if ge randomTimer previousMaxTimer;
+                set previousMaxTimer randomTimer;
+              end;
+
+              debug_log "SAC EGG FOUND!, priming for...";
+              debug_log randomTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer randomTimer;
+            end;
+            if and gt x 4 eq itemName "STR_BADASS_SAC_EGG";
+              add previousMaxTimer 5;
+              debug_log "SAC BADASS EGG FOUND!, priming for...";
+              debug_log previousMaxTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer previousMaxTimer;
+            end;
+          end;
+
+          return;
+      - offset: 0.2
+        code: |
+          var int fuseStatus;
+          var int randomTimer;
+          var int previousMaxTimer;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          var int loopCount;
+          set loopCount 0;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_NANITE_GOO_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_NANITE_GOO!";
+          rules.getRuleItem itemRuleset "STR_NANITE_SEED";
+          # unit.getInventoryItem eggItem itemRuleset;
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_NANITE_SEED" eq fuseStatus 0;
+              battle_game.randomRange randomTimer 1 5;
+              if eq x 0;
+                mul randomTimer 2;
+              else eq x 1;
+                mul randomTimer 3;
+              else eq x 2;
+                mul randomTimer 4;
+              else eq x 3;
+                mul randomTimer 5;
+              else eq x 4;
+                mul randomTimer 6;
+              end;
+              
+              debug_log "randomTimer and previousMaxTimer";
+              debug_log randomTimer;
+              debug_log previousMaxTimer;
+
+              if ge randomTimer previousMaxTimer;
+                set previousMaxTimer randomTimer;
+              end;
+
+              debug_log "NANITE SEED FOUND!, priming for...";
+              debug_log randomTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer randomTimer;
+            end;
+            if and gt x 4 eq itemName "STR_NANITE_MOTHER_SEED";
+              add previousMaxTimer 5;
+              debug_log "NANITE MOTHER SEED FOUND!, priming for...";
+              debug_log previousMaxTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer previousMaxTimer;
+            end;
+          end;
+          return;
+      - offset: 0.3
+        code: |
+          var int fuseStatus;
+          var int randomTimer;
+          var int previousMaxTimer;
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          var int loopCount;
+          set loopCount 0;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_ZOMBIE_INFECTOR_TEMPERED_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_ZOMBIE_INFECTOR_TEMPERED!";
+          rules.getRuleItem itemRuleset "STR_TEMPERED_INFECTOR_GIFT";
+          # unit.getInventoryItem eggItem itemRuleset;
+          itemRuleset.getType itemName;
+          eggItem.isFuseEnabled fuseStatus;
+
+          set loopCount 5;
+          loop var x loopCount;
+            debug_log x;
+            unit.getInventoryItem eggItem x;
+            debug_log eggItem;
+
+            if and eq itemName "STR_TEMPERED_INFECTOR_GIFT" eq fuseStatus 0;
+              battle_game.randomRange randomTimer 1 5;
+              if eq x 0;
+                mul randomTimer 2;
+              else eq x 1;
+                mul randomTimer 3;
+              else eq x 2;
+                mul randomTimer 4;
+              else eq x 3;
+                mul randomTimer 5;
+              else eq x 4;
+                mul randomTimer 6;
+              end;
+              
+              debug_log "randomTimer and previousMaxTimer";
+              debug_log randomTimer;
+              debug_log previousMaxTimer;
+
+              if ge randomTimer previousMaxTimer;
+                set previousMaxTimer randomTimer;
+              end;
+
+              debug_log "INFECTOR GIFT FOUND!, priming for...";
+              debug_log randomTimer;
+              eggItem.setFuseEnabled 1;
+              eggItem.setFuseTimer randomTimer;
+            end;
+          end;
+
+          return;
       - offset: 0.5
         code: |
           var int flareLivingTag;
@@ -2063,6 +2607,25 @@ extended:
             unit.addStun 25;
             unit.disableIndicators;
           end;
+          return;
+      - offset: 0.6
+        code: |
+          var ptre BattleItem eggItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var text itemName;
+          var text unitName;
+          var text armorName;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+
+          if neq armorName "STR_BADASS_CHRYSSALID_BROOD_ARMOR";
+            return;
+          end;
+          
+          debug_log "Unit WAS STR_BADASS_CHRYSSALID_BROOD_ARMOR!";
           return;
         #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
       - offset: 1
@@ -2523,6 +3086,53 @@ extended:
             # itemOwner.setTag Tag.UNIT_THE_ONE 1;
             # itemOwner.setTag Tag.UNIT_THE_ONE_PATH_PROFFICIENCY profficencyTag;
             # end;
+          return;
+      - offset: 5
+        code: |
+          var ptre BattleUnit itemOwner;
+          var ptr RuleItem itemRuleset;
+          var text itemName;
+          var int ammoRemaining;
+          var int turnTag;
+
+          item.getOwner itemOwner;
+
+          # If no owner, skip script
+          if eq itemOwner null;
+            return;
+          end;
+          # Check the item's slot index; if it's already set on this unit, don't count this item
+          item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if eq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            if neq side 1;
+              return;
+            end;
+
+            item.getAmmoQuantity ammoRemaining;
+            debug_log ammoRemaining;
+            debug_log "Above was ammoRemaining";
+
+            if ge ammoRemaining 1;
+              debug_log "Brood mother still has at least 1 egg remaining, aborting";
+              return;
+            end;
+
+            item.getTag turnTag Tag.ITEM_CREATION_TURN;
+            add turnTag 5;
+            debug_log turnTag;
+            debug_log "Above was turn tag +5!";
+            if ge turn turnTag;
+              debug_log "Regenerating egg ammo for brood mother...";
+              set ammoRemaining 1;
+              item.setTag Tag.ITEM_CREATION_TURN turnTag;
+              debug_log "turn number that will be added to the creation tag";
+              debug_log "turn is equal to";
+              debug_log turn;
+            end;
+
+          end;
           return;
     accuracyMultiplierBonusStats:
       - offset: 1
@@ -3670,7 +4280,7 @@ extended:
           leftHandItem.getTag leftTag Tag.ITEM_IS_SHIELD;
           rightHandItem.getTag rightTag Tag.ITEM_IS_SHIELD;
           
-          debug_log "SHIELD DETECTION....";
+          # debug_log "SHIELD DETECTION....";
 
           if and neq leftTag 1 neq rightTag 1;
             return power part side;
@@ -3679,7 +4289,7 @@ extended:
           else eq rightTag 1;
             set shieldItem rightHandItem;
           end;
-          debug_log "SHIELD DETECTION SUCCESFUL!";
+          # debug_log "SHIELD DETECTION SUCCESFUL!";
 
           shieldItem.getTag shieldArmor Tag.ITEM_SHIELD_ARMOR;
           shieldItem.getTag shieldDurability Tag.ITEM_SHIELD_DURABILITY;
@@ -4133,6 +4743,110 @@ extended:
             end;
           end;
           return sprite_index;
+      - offset: 8
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr BattleItem battleItem;
+          var ptr RuleArmor armorRuleset;
+          var int unitFaction;
+          var int unitOriginalFaction;
+          var int victimHP;
+          var int victimMaxHP;
+          var int naniteTag;
+          var text unitName;
+          var text armorName;
+
+          damaging_item.getTag naniteTag Tag.NANITE_VIRUS;
+          if eq naniteTag 0;
+            return power part side;
+          end;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getType armorName;
+          
+          if or eq armorName "STR_NANITE_GOO_ARMOR" eq armorName "STR_METALLOID_SOLDIER_ARMOR";
+            debug_log "Unit struck by nanite blast was metalloid soldier or nanite goo";
+            set power 0;
+            return power part side;
+          end;
+
+          unit.getOriginalFaction unitOriginalFaction;
+          unit.getFaction unitFaction;
+          unit.getHealth victimHP;
+          unit.getHealthMax victimMaxHP;
+          
+          # if le victimHP health_damage;
+            # debug_log "This kills the man";
+          # end;
+
+          # if and neq unitOriginalFaction 1 le victimHP 0;
+          if neq unitOriginalFaction 1;
+            rules.getRuleUnit unitRuleset "STR_METALLOID_SOLDIER";
+            unit.setSpawnUnit unitRuleset;
+            unit.setSpawnUnitInstantRespawn 0;
+            unit.disableIndicators;
+          end;
+
+          return power part side;
+      - offset: 9 #No friendly fire with chryssalid brood mother's egg attack
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var ptr RuleItem itemRuleset;
+          var int unitFaction;
+          var int attackerFaction;
+          var text armorName;
+          var text itemName;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if neq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            return power part side;
+          end;
+          
+          attacker.getFaction attackerFaction;
+          unit.getFaction unitFaction;
+
+          if eq attackerFaction unitFaction; #Same faction on same faction
+            set power 0;
+            return power part side;
+          end;
+          if and eq attackerFaction 0 eq unitFaction 2; #Mind controlled by player against neutral
+            set power 0;
+            return power part side;
+          end;
+          if and eq attackerFaction 2 eq unitFaction 0; #Neutral against mind controlled ? for some reason
+            set power 0;
+            return power part side; #This all might change at some point if i decide to make these hurt regardless of faction and based more on unit types
+          end;
+
+          return power part side;
+      - offset: 10 #Chryssalid Larva life cycle
+        code: |
+          var ptr RuleUnit unitRuleset;
+          var ptr RuleArmor armorRuleset;
+          var ptr RuleItem itemRuleset;
+          var int unitFaction;
+          var int attackerFaction;
+          var text armorName;
+          var text itemName;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          
+          if neq itemName "STR_CHRYSSALID_LARVA_WEAPON";
+            return power part side;
+          end;
+          
+          rules.getRuleUnit unitRuleset "STR_CHRYSSALID_TERRORIST";
+          unit.setSpawnUnit unitRuleset;
+          unit.setSpawnUnitInstantRespawn 0;
+          
+          attacker.disableIndicators;
+          attacker.setHealth -1;
+
+          return power part side;
     recolorUnitSprite:
       - offset: 0.1 #Handles periodic recolors due to daze
         code: |
@@ -4225,7 +4939,7 @@ extended:
           #debug_log "SKILL USE UNIT!";
           return;
     createItem:
-      - offset: 0.1 #testing 
+      - offset: 0.15 #testing 
         code: |
           var int lightValue;
           var int lightPower;
@@ -4248,8 +4962,49 @@ extended:
           #debug_log tileZ;
           #debug_log "CreateItem script";
 
+      - offset: 0.1 #makes all glowy zombies glow and alien eggs  grow, chryssalid brood eggs regrow!
+        code: |
+          var ptr BattleItem glowItem;
+          var ptr RuleItem itemRuleset;
+          var text itemName;
+          var int randomTimer;
+          var int fuseStatus;
+          var int creationTurn;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getType itemName;
+          if eq itemName "STR_BADASS_CHRYSSALID_BROOD_EGG";
+            item.setTag Tag.ITEM_CREATION_TURN creationTurn;
+            return;
+          end;
+          if eq itemName "STR_ZOMBIE_BOOMER_TEMPERED_GLOW";
+            # debug_log "GLOW FOUND!, priming!";
+            item.setFuseEnabled 1;
+            item.setFuseTimer 99;
+          end;
+          item.isFuseEnabled fuseStatus;
+          # debug_log "Fuse status is";
+          # debug_log fuseStatus;
+          if and eq itemName "STR_ALIEN_EGG" eq fuseStatus 0;
+            battle_game.randomRange randomTimer 1 10;
+            debug_log "EGG FOUND!, priming for...";
+            debug_log randomTimer;
+            item.setFuseEnabled 1;
+            item.setFuseTimer randomTimer;
+            # item.setFuseTimer 0;
+          end;
           return;
-      - offset: 0.1 #testing 
+      - offset: 0.2 #gives Nanite weapons their infector properties
+        code: |
+          var ptr BattleItem glowItem;
+          var ptr RuleItem itemRuleset;
+          var int naniteTag;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag naniteTag Tag.ITEM_IS_NANITE_VIRUS;
+          item.setTag Tag.NANITE_VIRUS naniteTag;
+          return;
+      - offset: 0.3 #testing 
         code: |
           var int shieldTag;
           var int shieldArmorTag;

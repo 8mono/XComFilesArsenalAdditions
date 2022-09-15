@@ -200,6 +200,12 @@ extraSounds:
       231: Resources/Weapons_Compilation/Resound/lpmr.wav
 #Muton
       290: Resources/Races_Compilation/MutonRace/MutonShaderDeath.wav
+
+      1215: Resources/XFilesMonsterResound/Chryssalid/chryssalidaggro.ogg
+      1216: Resources/XFilesMonsterResound/Chryssalid/chryssaliddeath.ogg
+      1217: Resources/XFilesMonsterResound/Chryssalid/chryssalidbadaggro.ogg
+      1218: Resources/XFilesMonsterResound/Chryssalid/chryssalidbaddeath.ogg
+
 #Human 
       1135: Resources/Sounds_Compilation/HumanScreams/MaleScream01.wav
       1136: Resources/Sounds_Compilation/HumanScreams/MaleScream02.wav
