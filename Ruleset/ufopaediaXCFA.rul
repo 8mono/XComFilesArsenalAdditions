@@ -945,6 +945,29 @@ ufopaedia:
     requires:
       - STR_DO_NOT_SHARE_EMP_TECH
     listOrder: 300647
+  - id: STR_MESSAGE_FROM_MAGMA_ANTI_E115_TECH
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: MAGMA
+    text: STR_MESSAGE_FROM_MAGMA_ANTI_E115_TECH_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_MESSAGE_FROM_MAGMA_ANTI_E115_TECH
+    listOrder: 300657
+  - id: STR_SHARE_ANTI_E115_TECH
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_SHARE_ANTI_E115_TECH_UFOPEDIA
+    requires:
+      - STR_SHARE_ANTI_E115_TECH
+    listOrder: 300647
+  - id: STR_DO_NOT_SHARE_ANTI_E115_TECH
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_DO_NOT_SHARE_ANTI_E115_TECH_UFOPEDIA
+    requires:
+      - STR_DO_NOT_SHARE_ANTI_E115_TECH
+    listOrder: 300647
   - id: STR_PIANO_WIRE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -1066,6 +1089,12 @@ ufopaedia:
     requires:
       - STR_MAGMA_LAUNCHER
       - STR_GAS_GRENADE_MANUFACTURING
+  - id: STR_ANTI_E115_ROCKET
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MAGMA_LAUNCHER
+      - STR_SHARE_ANTI_E115_TECH
   - id: STR_TRACITE_ROCKET
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -1090,6 +1119,12 @@ ufopaedia:
     requires:
       - STR_TACTICAL_GRENADE_LAUNCHER
       - STR_EMP_GRENADE
+  - id: STR_TACTICAL_GRENADE_LAUNCHER_ANTI_E115
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TACTICAL_GRENADE_LAUNCHER
+      - STR_SHARE_ANTI_E115_TECH
 #Weapon Overhaul
   - id: STR_PUMP_ACTION_SLUGS
     type_id: 4

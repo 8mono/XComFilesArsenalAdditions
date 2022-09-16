@@ -541,7 +541,7 @@ items:
     handSprite: 0
     hitSound: 22
     hitAnimation: 26
-    power: 36
+    power: 35
     damageBonus:
       firing: 0.1
     damageAlter:
@@ -567,7 +567,7 @@ items:
     handSprite: 0
     hitSound: 22
     hitAnimation: 26
-    power: 36
+    power: 35
     damageBonus:
       firing: 0.1
     damageAlter:
@@ -848,7 +848,7 @@ items:
     handSprite: 0
     hitSound: 22
     hitAnimation: 26
-    power: 40
+    power: 38
     damageBonus:
       firing: 0.1
     damageAlter:
@@ -875,7 +875,7 @@ items:
     hitSound: 22
     fireSound: [202, 203, 204, 205]
     hitAnimation: 26
-    power: 40
+    power: 38
     damageBonus:
       firing: 0.1
     damageAlter:
@@ -1697,15 +1697,16 @@ items:
     requiresBuy:
       - STR_MAGMA_LAUNCHER_BUY
       - STR_MAGMA_GAS_AMMO_BUY
+      - STR_MAGMA_ANTI_E115_BUY
     size: 0.2
-    costBuy: 9000
-    costSell: 4300
+    costBuy: 90000
+    costSell: 43000
     weight: 9
-    bigSprite: 446
+    bigSprite: 600
     floorSprite: 422
     handSprite: 0
     explosionHitSound: 118
-    hitAnimation: 192
+    hitAnimation: 328
     power: 90
     damageType: 14
     damageAlter:
@@ -11622,6 +11623,7 @@ items:
   - type: STR_TACTICAL_GRENADE_LAUNCHER
     compatibleAmmo: !add
       - STR_TACTICAL_GRENADE_LAUNCHER_EMP
+      - STR_TACTICAL_GRENADE_LAUNCHER_ANTI_E115
   - type: STR_TACTICAL_GRENADE_LAUNCHER_EMP
     nameAsAmmo: (EMP)
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EMP, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
@@ -11650,6 +11652,38 @@ items:
       ToWound: 0
       FixRadius: 6
     damageType: 3
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 6
+    attraction: 15
+    listOrder: 34180
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_ANTI_E115
+    nameAsAmmo: (ANTI-E115)
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_EMP, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+      - STR_MAGMA_ANTI_E115_BUY
+    size: 0.2
+    costBuy: 150000
+    costSell: 7000
+    weight: 8
+    bigSprite: 601 #fix these!
+    floorSprite: 2
+    power: 80
+    explosionHitSound: 118
+    hitAnimation: 328
+    damageType: 14
+    damageAlter:
+      RandomType: 7
+      FixRadius: 6
+      ToHealth: 1
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
     clipSize: 3
     battleType: 2
     invWidth: 2

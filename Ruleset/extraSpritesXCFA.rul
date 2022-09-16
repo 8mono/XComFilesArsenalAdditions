@@ -571,6 +571,8 @@ extraSprites:
       597: Resources/Weapons_Compilation/XComWeapons/bigob_ObliCannon_Clip.png
       598: Resources/Weapons_Compilation/XComWeapons/bigob_ObliRifle_Clip.png
       599: Resources/Weapons_Compilation/XComWeapons/bigob_ObliTaserDense_Clip.png
+      600: Resources/Weapons_Compilation/MagmaWeapons/bigob_AntiE115Missile.png
+      600: Resources/Weapons_Compilation/MagmaWeapons/bigob_TGL_AntiE115.png
 #Weapon overhaul
       500: Resources/Weapon_Overhaul/bigob_Calico_2.png
       501: Resources/Weapon_Overhaul/bigob_CalicoClip_2.png
