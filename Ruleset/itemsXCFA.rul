@@ -1714,6 +1714,7 @@ items:
       FixRadius: 8
       ToHealth: 1
       ToStun: 0.8
+      ToTile: 0
       ToEnergy: 4.0
       ToMorale: 3.0
       RandomStun: false
@@ -11681,6 +11682,7 @@ items:
       FixRadius: 6
       ToHealth: 1
       ToStun: 0.8
+      ToTile: 0
       ToEnergy: 4.0
       ToMorale: 3.0
       RandomStun: false

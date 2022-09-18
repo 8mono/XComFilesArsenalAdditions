@@ -14,6 +14,9 @@ items:
   - type: STR_ANTI_E115_ROCKET
     tags:
       ITEM_IS_ANTI_E115: 1
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_ANTI_E115
+    tags:
+      ITEM_IS_ANTI_E115: 1
   - type: STR_ALLOY_SHOTGUN
     tags:
       ALLOW_AMMO_TO_RESPRITE: 1
