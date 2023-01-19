@@ -935,6 +935,7 @@ manufacture:
     # space: 20
     # time: 400
     # cost: 50000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_CANNON_RECOVER: 1
     # producedItems:
@@ -947,6 +948,7 @@ manufacture:
     # space: 20
     # time: 425
     # cost: 75000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_AUTOCANNON_RECOVER: 1
     # producedItems:
@@ -959,6 +961,7 @@ manufacture:
     space: 20
     time: 375
     cost: 40000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_MACHINEGUN_RECOVER: 1
     producedItems:
@@ -972,6 +975,7 @@ manufacture:
     # space: 20
     # time: 1 #see if being instant doesn't make it too op
     # cost: 10000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_CANNON: 1
       # STR_ALIEN_ALLOYS: 6
@@ -986,6 +990,7 @@ manufacture:
     # space: 20
     # time: 1 #see if being instant doesn't make it too op
     # cost: 500
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_PLATED_CANNON: 1
     # producedItems:
@@ -1000,6 +1005,7 @@ manufacture:
     # space: 20
     # time: 400
     # cost: 125000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_PLATED_CANNON_RECOVER: 1
       # STR_ALIEN_ALLOYS: 3
@@ -1014,6 +1020,7 @@ manufacture:
     # space: 20
     # time: 1 #see if being instant doesn't make it too op
     # cost: 10000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_AUTOCANNON: 1
       # STR_ALIEN_ALLOYS: 6
@@ -1028,6 +1035,7 @@ manufacture:
     # space: 20
     # time: 1 #see if being instant doesn't make it too op
     # cost: 500
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_PLATED_AUTOCANNON: 1
     # producedItems:
@@ -1042,6 +1050,7 @@ manufacture:
     # space: 20
     # time: 425
     # cost: 137500
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_PLATED_AUTOCANNON_RECOVER: 1
       # STR_ALIEN_ALLOYS: 3
@@ -1056,6 +1065,7 @@ manufacture:
     space: 20
     time: 1 #see if being instant doesn't make it too op
     cost: 10000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_MACHINEGUN: 1
       STR_ALIEN_ALLOYS: 6
@@ -1070,6 +1080,7 @@ manufacture:
     space: 20
     time: 1 #see if being instant doesn't make it too op
     cost: 500
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_PLATED_MACHINEGUN: 1
     producedItems:
@@ -1084,6 +1095,7 @@ manufacture:
     space: 20
     time: 400
     cost: 100000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_PLATED_MACHINEGUN_RECOVER: 1
       STR_ALIEN_ALLOYS: 3
@@ -1098,6 +1110,7 @@ manufacture:
     # space: 15
     # time: 1 #see if being instant doesn't make it too op
     # cost: 1000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_CANNON: 1
     # producedItems:
@@ -1111,6 +1124,7 @@ manufacture:
     # space: 15
     # time: 1 #see if being instant doesn't make it too op
     # cost: 50
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_NIGHT_CANNON: 1
     # producedItems:
@@ -1124,6 +1138,7 @@ manufacture:
     # space: 20
     # time: 400
     # cost: 125000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_NIGHT_CANNON_RECOVER: 1
     # producedItems:
@@ -1137,6 +1152,7 @@ manufacture:
     # space: 15
     # time: 1 #see if being instant doesn't make it too op
     # cost: 1000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_AUTOCANNON: 1
     # producedItems:
@@ -1150,6 +1166,7 @@ manufacture:
     # space: 15
     # time: 1 #see if being instant doesn't make it too op
     # cost: 50
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_NIGHT_AUTOCANNON: 1
     # producedItems:
@@ -1163,6 +1180,7 @@ manufacture:
     # space: 20
     # time: 400
     # cost: 125000
+    # requiresBaseFunc: [WORKS]
     # requiredItems:
       # STR_LIGHT_TANK_NIGHT_AUTOCANNON_RECOVER: 1
     # producedItems:
@@ -1176,6 +1194,7 @@ manufacture:
     space: 15
     time: 1 #see if being instant doesn't make it too op
     cost: 1000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_MACHINEGUN: 1
     producedItems:
@@ -1189,6 +1208,7 @@ manufacture:
     space: 15
     time: 1 #see if being instant doesn't make it too op
     cost: 50
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_NIGHT_MACHINEGUN: 1
     producedItems:
@@ -1202,6 +1222,7 @@ manufacture:
     space: 20
     time: 400
     cost: 100000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_NIGHT_MACHINEGUN_RECOVER: 1
     producedItems:
@@ -1215,6 +1236,7 @@ manufacture:
     space: 20
     time: 400
     cost: 125000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_RIOT_LAUNCHER_RECOVER: 1
     producedItems:
@@ -1227,6 +1249,7 @@ manufacture:
     space: 20
     time: 400
     cost: 137500
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_RIOT_TASER_RECOVER: 1
     producedItems:
@@ -1240,6 +1263,7 @@ manufacture:
     space: 20
     time: 1 #see if being instant doesn't make it too op
     cost: 10000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_RIOT_TASER: 1
       STR_ALIEN_ALLOYS: 6
@@ -1254,6 +1278,7 @@ manufacture:
     space: 20
     time: 1 #see if being instant doesn't make it too op
     cost: 500
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_PLATED_RIOT_TASER: 1
     producedItems:
@@ -1268,6 +1293,7 @@ manufacture:
     space: 20
     time: 400
     cost: 137500
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_LIGHT_TANK_PLATED_RIOT_TASER_RECOVER: 1
       STR_ALIEN_ALLOYS: 3
@@ -2435,6 +2461,7 @@ manufacture:
     space: 2
     time: 20
     cost: 1000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_EXALT_EXTERMINATOR_CORPSE: 1
     producedItems:
@@ -2447,6 +2474,7 @@ manufacture:
     space: 2
     time: 20
     cost: 1000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_HEAVY_RIOT_SUIT_CORPSE: 1
     producedItems:
@@ -2459,6 +2487,7 @@ manufacture:
     space: 2
     time: 20
     cost: 50
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ZSRR_UBEK_PROTOTYPE_SUIT: 1
     producedItems: {} # empty
@@ -2473,6 +2502,7 @@ manufacture:
     space: 2
     time: 20
     cost: 5000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_HEAVY_TACTICAL_SUIT_PROTOTYPE: 1
     producedItems:

@@ -1,4 +1,1625 @@
 items:
+#BALLISTIC SHOTGUNS
+  # - type: STR_SMALL_SHOTGUN
+    # accuracyMultiplier:
+      # firing: 0.5
+      # flatHundred: 0.5
+    # accuracySnap: 110 #150
+    # accuracyAimed: 120 #175
+    # tuSnap: 28
+    # tuAimed: 45 #48
+    # snapRange: 5 #3
+    # aimRange: 8 #3
+    # dropoff: 8 #6
+    # twoHanded: true
+    # blockBothHands: true #false   It's a pump-action. Using it with one hand would severely slow down fire rate.
+    # oneHandedPenalty: 80
+    # shotgunChoke: 70 #50
+    # tuLoad: 20
+  - type: STR_SMALL_SHOTGUN_SHELLS
+    powerRangeThreshold: 10
+    powerRangeReduction: 1
+    power: 15
+    shotgunPellets: 5 #7
+    damageAlter:
+      RandomType: 7
+      ToTime: &12BS 0.4
+      ToStun: *12BS
+  - type: STR_PUMP_ACTION
+    floorSprite: 409
+    compatibleAmmo: !add
+      - STR_PUMP_ACTION_SLUGS
+    # accuracySnap: 110
+    # accuracyAimed: 130 #160
+    # tuSnap: 32
+    # tuAimed: 55 #60
+    # aimRange: 12
+    # snapRange: 8
+    # dropoff: 5 #6
+    # shotgunChoke: 80 #70
+    # tuLoad: 30
+  - type: STR_PUMP_ACTION_SHELLS
+    powerRangeThreshold: 14
+    powerRangeReduction: 1
+    power: 15
+    clipSize: 6 #8
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_PUMP_ACTION_SLUGS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.05
+    costBuy: 60
+    costSell: 35
+    weight: 3
+    bigSprite: 509
+    floorSprite: 2
+    hitSound: 13
+    hitAnimation: 26
+    power: 35
+    damageType: 1
+    damageAlter:
+      ToStun: 0.33 #0.25
+    clipSize: 6 #8
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22450
+  - type: STR_SMART_SHOTGUN_BUCKSHOT
+    powerRangeThreshold: 11
+    powerRangeReduction: 1
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+      RandomType: 7
+  - type: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT
+    powerRangeThreshold: 15
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  # - type: STR_SAWED_OFF
+    # categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    # accuracyMultiplier:
+      # firing: 0.5
+      # flatHundred: 0.5
+    # accuracySnap: 130
+    # accuracyAuto: 105
+    # tuSnap: 23
+    # tuAuto: 28
+    # snapRange: 4
+    # autoRange: 4
+    # dropoff: 11
+    # autoShots: 2
+    # tuLoad: 10 #15      Same as double barrel.
+    # shotgunChoke: 70 #100
+    # kneelBonus: 105 #110
+  - type: STR_DOUBLE_BARRELED_BUCKSHOT
+    powerRangeThreshold: 5
+    powerRangeReduction: 1
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
+    powerRangeThreshold: 9
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_SHOTGUN
+    powerRangeThreshold: 15
+    powerRangeReduction: 1
+    compatibleAmmo: !add
+      - STR_SHOTGUN_FLECHETTE_SHELLS
+      - STR_SHOTGUN_AA_SHELLS_FLAK
+  - type: STR_WINCHESTER_1901
+    compatibleAmmo: !add
+      - STR_SHOTGUN_FLECHETTE_SHELLS
+    # accuracyCloseQuarters: 95
+    # accuracySnap: 115
+    # accuracyAimed: 135
+    # tuSnap: 30
+    # tuAimed: 64
+    # aimRange: 12
+    # snapRange: 6
+    powerRangeThreshold: 13
+    powerRangeReduction: 1
+  - type: STR_SHOTGUN_FLECHETTE_SHELLS
+    nameAsAmmo: (FLECHETTE)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_EXOTIC_AMMUNITION
+      - STR_SHOTGUN_BUY
+      - STR_SHOTGUN_FLECHETTE_SHELLS_BUY
+    size: 0.1
+    costBuy: 120
+    costSell: 70
+    weight: 3
+    bigSprite: 264
+    floorSprite: 2 #add one
+    hitSound: 13
+    hitAnimation: 26
+    power: 12 #15
+    damageAlter:
+      ToTile: 0.25
+      ArmorEffectiveness: 0.75
+      RandomType: 7
+      ToTime: 0.25
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 50 #25
+    shotgunPellets: 6 #7
+    attraction: 15
+    listOrder: 22571
+    powerRangeThreshold: 18
+    powerRangeReduction: 1
+  - type: STR_SHOTGUN_AA_SHELLS_FLAK
+    nameAsAmmo: (AA|FLAK)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 8700
+    weight: 3
+    bigSprite: 265
+    floorSprite: 2 #add one 
+    hitSound: 13
+    hitAnimation: 26
+    power: 16 #20
+    damageAlter:
+      ToTile: 0.33
+      ArmorEffectiveness: 0.75
+      RandomType: 7
+      ToTime: 0.25
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 6
+    attraction: 15
+    listOrder: 22572
+    powerRangeThreshold: 21
+    powerRangeReduction: 1
+  - type: STR_BLACKOPS_SHOTGUN
+    powerRangeThreshold: 15
+    powerRangeReduction: 1
+    compatibleAmmo: !add
+      - STR_SHOTGUN_FLECHETTE_SHELLS
+      - STR_SHOTGUN_AA_SHELLS_FLAK
+  - type: STR_USAS_12
+    compatibleAmmo: !add
+      - STR_USAS_12_DRAGONBREATH_DRUM
+  - type: STR_USAS_12_DRAGONBREATH_DRUM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_USAS_12_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_USAS_12_DRAGONBREATH_DRUM_BUY
+    size: 0.1
+    costBuy: 320
+    costSell: 200
+    weight: 4
+    bigSprite: 491
+    floorSprite: 339 #recolor these eventually
+    hitSound: 93
+    hitAnimation: 287
+    power: 15
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 8
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    damageType: 1
+    clipSize: 20
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22452
+    powerRangeThreshold: 13
+    powerRangeReduction: 2
+  - type: STR_USAS_12_DRUM
+    powerRangeThreshold: 13
+    powerRangeReduction: 1
+    nameAsAmmo: (BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_KS23_SHELLS_BS
+    powerRangeThreshold: 12
+    powerRangeReduction: 1
+    nameAsAmmo: (SHRAPNEL-25)
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.5
+      ToStun: 0.5
+  - type: STR_AUTO_SHOTGUN_SHELLS
+    powerRangeThreshold: 13
+    powerRangeReduction: 1
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_AUTO_SHOTGUN_AA_SHELLS
+    powerRangeThreshold: 18
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_UAC_SHOTGUN_SHELLS
+    powerRangeThreshold: 13
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.45
+      ToStun: 0.5
+  - type: STR_UAC_SHOTGUN_AA_SHELLS
+    powerRangeThreshold: 18
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.45
+      ToStun: 0.5
+  - type: STR_CAWS
+    compatibleAmmo: !add
+      - STR_CAWS_CLIP_DRAGONBREATH
+      - STR_CAWS_CLIP_FRAG
+  - type: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      ToStun: 0.5
+      ToTime: 0.5
+      RandomType: 7
+      TileDamageMethod: 1
+  - type: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 7
+      TileDamageMethod: 1
+      ToStun: 0.4
+  - type: STR_CAWS_CLIP_AA
+    nameAsAmmo: (AA|SLUGS)
+    damageAlter:
+      ToStun: 0.33
+  - type: STR_CAWS_CLIP_AP
+    nameAsAmmo: (SLUGS)
+    damageAlter:
+      ToStun: 0.33
+  - type: STR_CAWS_CLIP_BS
+    powerRangeThreshold: 13
+    powerRangeReduction: 1
+    nameAsAmmo: (BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_CAWS_CLIP_AA_BS
+    powerRangeThreshold: 18
+    powerRangeReduction: 2
+    nameAsAmmo: (AA|BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_CAWS_CLIP_FRAG
+    nameAsAmmo: (FRAG-12)
+    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_CAWS_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_CAWS_CLIP_FRAG_BUY
+    size: 0.05
+    costBuy: 950
+    costSell: 550
+    weight: 3
+    bigSprite: 489
+    floorSprite: 2
+    explosionHitSound: 179
+    damageType: 3
+    damageAlter:
+      RandomType: 7
+      FixRadius: 2
+      RadiusReduction: 20
+      RandomType: 2
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToTime: 0.25
+      ToTile: 0.5
+    hitAnimation: 0
+    power: 44
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 35
+    attraction: 15
+    listOrder: 22655
+  - type: STR_CAWS_CLIP_DRAGONBREATH
+    nameAsAmmo: (D.BREATH)
+    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_CAWS_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_CAWS_CLIP_DRAGONBREATH_BUY
+    size: 0.05
+    costBuy: 700
+    costSell: 350
+    weight: 3
+    bigSprite: 488
+    floorSprite: 2
+    hitSound: 93
+    hitAnimation: 287
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 8
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    power: 18
+    damageType: 1
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunSpread: 20
+    shotgunPellets: 5
+    armor: 35
+    attraction: 15
+    listOrder: 22656
+    powerRangeThreshold: 13
+    powerRangeReduction: 2
+  - type: STR_XCOM_BUZZER_UNIT_WEAPON
+    damageAlter:
+      RandomType: 7
+      FixRadius: 0
+      ToArmorPre: 0.1
+      RandomArmorPre: true
+  - type: STR_PANCOR_JACKHAMMER
+    compatibleAmmo: !add
+      - STR_PANCOR_JACKHAMMER_BS_CLIP
+      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
+  - type: STR_PANCOR_JACKHAMMER_CLIP
+    nameAsAmmo: (SLUGS)
+    damageAlter:
+      ToStun: 0.33
+  - type: STR_PANCOR_JACKHAMMER_BS_CLIP
+    powerRangeThreshold: 15
+    powerRangeReduction: 1
+    nameAsAmmo: (BS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_PANCOR_JACKHAMMER_BUY
+    size: 0.1
+    costBuy: 350
+    costSell: 280
+    weight: 4
+    bigSprite: 466 #change this
+    floorSprite: 2 #change this
+    handSprite: 0 #change this
+    hitSound: 22 #is this right?
+    hitAnimation: 26 #is this right?
+    power: 15
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    damageType: 1
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    attraction: 15
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 7
+    listOrder: 22682
+  - type: STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
+    powerRangeThreshold: 15
+    powerRangeReduction: 2
+    nameAsAmmo: (D.BREATH)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_PANCOR_JACKHAMMER_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_BUY
+    size: 0.1
+    costBuy: 520
+    costSell: 3500
+    weight: 4
+    bigSprite: 467 #change this
+    floorSprite: 2 #change this
+    handSprite: 0 #change this
+    hitSound: 93
+    hitAnimation: 287
+    power: 15
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 8
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    damageType: 1
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    attraction: 15
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 7
+    listOrder: 22682
+  - type: STR_KS23
+    compatibleAmmo: !add
+      - STR_KS23_SHELLS_TEARGAS
+      - STR_KS23_SHELLS_FLASHBANG
+      - STR_KS23_SHELLS_DRAGONBREATH
+  - type: STR_KS23_SHELLS_AP
+    damageAlter:
+      ToStun: 0.4
+    nameAsAmmo: (BARRIKADA)
+  - type: STR_KS23_SHELLS_BATON
+    nameAsAmmo: (VOLNA-R)
+  - type: STR_KS23_SHELLS_FLASHBANG
+    nameAsAmmo: (ZVEZDA)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_EXOTIC_AMMUNITION
+      - STR_KS23_BUY
+    size: 0.1
+    costBuy: 150
+    costSell: 70
+    weight: 4
+    bigSprite: 263
+    floorSprite: 329
+    hitSound: 13
+    hitAnimation: 248 #make sure this is cool as fuck
+    explosionHitSound: 117
+    power: 25
+    hidePower: true
+    damageType: 6
+    damageAlter:
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToStun: 0.25
+      ToMorale: 0.1
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 3
+    clipSize: 4
+    costThrow:
+      energy: 8
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22457
+  - type: STR_KS23_SHELLS_TEARGAS
+    nameAsAmmo: (SIREN-7)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_EXOTIC_AMMUNITION
+      - STR_CROWD_CONTROL_GEAR_BUY
+      - STR_KS23_BUY
+    size: 0.1
+    costBuy: 140
+    costSell: 60
+    weight: 4
+    bigSprite: 262
+    floorSprite: 329
+    hitSound: 13
+    hitAnimation: 192
+    explosionhitSound: 71
+    power: 25
+    hidePower: true
+    damageType: 1
+    damageAlter:
+      ResistType: 8
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      IgnoreDirection: true
+      RandomWound: false
+      ToHealth: 0.1
+      ToTime: 0.2
+      ToStun: 0.25
+      ToMorale: 0.2
+      ToWound: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      FixRadius: 3
+      IgnoreSelfDestruct: true
+      SmokeThreshold: 25
+    clipSize: 4
+    costThrow:
+      energy: 8
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22458
+  - type: STR_KS23_SHELLS_DRAGONBREATH
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_KS23_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_KS23_SHELLS_DRAGONBREATH_BUY
+    size: 0.1
+    costBuy: 120
+    costSell: 70
+    weight: 4
+    bigSprite: 468 #check
+    floorSprite: 329 #check or make 2
+    hitSound: 93
+    hitAnimation: 287 #check this
+    power: 19
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 10
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    damageType: 1
+    clipSize: 4
+    costThrow:
+      energy: 8
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 40
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22458
+    powerRangeThreshold: 12
+    powerRangeReduction: 2
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+    size: 0.2
+    costBuy: 45000
+    costSell: 20000
+    weight: 20
+    bigSprite: 211
+    floorSprite: 340 #367
+    handSprite: 2208 #1912 fix this
+    bulletSprite: 3
+    fireSound: 89 #63
+    compatibleAmmo:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_SLUGS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
+    accuracyCloseQuarters: 95 #95
+    accuracyAuto: 75 #70
+    accuracySnap: 105 #100
+    accuracyAimed: 130 #125
+    tuAuto: 35 #40
+    tuSnap: 25 #28
+    tuAimed: 60 #65
+    aimRange: 15 #14
+    snapRange: 9 #8
+    autoRange: 8 #8
+    dropoff: 5 #6
+    tuLoad: 25 #20
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100 #100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 20
+    listOrder: 22620
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BS
+    nameAsAmmo: (BS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+    size: 0.1
+    costBuy: 2200
+    costSell: 800
+    weight: 5
+    bigSprite: 213
+    floorSprite: 329 #960
+    hitSound: 13
+    hitAnimation: 26
+    power: 18
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 45
+    shotgunPellets: 6
+    attraction: 15
+    listOrder: 22621
+    powerRangeThreshold: 14
+    powerRangeReduction: 1
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_SLUGS
+    nameAsAmmo: (SLUGS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.1
+    requiresBuy:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+    costBuy: 2600
+    costSell: 1000
+    weight: 5
+    bigSprite: 214
+    floorSprite: 329 #961
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      ToStun: 0.33
+    power: 40
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22622
+  # - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BATON
+    # nameAsAmmo: (BATON)
+    # categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    # size: 0.1
+    # requiresBuy:
+      # - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+    # costBuy: 4000
+    # costSell: 1600
+    # weight: 2
+    # bigSprite: 212
+    # floorSprite: 329 #961
+    # hitSound: 13
+    # hitAnimation: 26
+    # power: 25
+    # damageType: 6
+    # damageAlter:
+      # ToHealth: 0.4
+      # ToTile: 0.225
+      # ArmorEffectiveness: 1.3
+    # blastRadius: 0
+    # clipSize: 6
+    # battleType: 2
+    # armor: 20
+    # attraction: 15
+    # tuLoad: 30
+    # listOrder: 22623
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
+    nameAsAmmo: (AA|SLUGS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 9500
+    weight: 5
+    bigSprite: 216
+    floorSprite: 329 #961
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      ToStun: 0.33
+    power: 50
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22624
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
+    nameAsAmmo: (AA|BS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 9500
+    weight: 5
+    bigSprite: 215
+    floorSprite: 329 #960
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    power: 22
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 45
+    shotgunPellets: 6
+    attraction: 15
+    listOrder: 22625
+    powerRangeThreshold: 19
+    powerRangeReduction: 2
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS
+    nameAsAmmo: (FLECHETTE)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS_BUY
+    size: 0.1
+    costBuy: 2200
+    costSell: 800
+    weight: 5
+    bigSprite: 470
+    floorSprite: 329 #960
+    hitSound: 13
+    hitAnimation: 26
+    power: 15 #18
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    damageAlter:
+      ToTile: 0.25
+      ArmorEffectiveness: 0.75
+      RandomType: 7
+      ToTime: 0.25
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 75 #45
+    shotgunPellets: 5
+    attraction: 15
+    listOrder: 22621
+    powerRangeThreshold: 18
+    powerRangeReduction: 1
+  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
+    nameAsAmmo: (AA|FLAK)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 9500
+    weight: 5
+    bigSprite: 471
+    floorSprite: 329 #960
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      ToTile: 0.33
+      ArmorEffectiveness: 0.75
+      RandomType: 7
+      ToTime: 0.25
+    power: 18 #22
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 75 #45
+    shotgunPellets: 5
+    attraction: 15
+    listOrder: 22625
+    powerRangeThreshold: 21
+    powerRangeReduction: 1
+  - type: STR_AUTO_SHOTGUN
+    compatibleAmmo: !add
+      - STR_AUTO_SHOTGUN_FRAG_SHELLS
+      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+  - type: STR_AUTO_SHOTGUN_SHELLS
+    nameAsAmmo: (BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_AUTO_SHOTGUN_AA_SHELLS
+    nameAsAmmo: (AA|BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_AUTO_SHOTGUN_FRAG_SHELLS
+    nameAsAmmo: (FRAG-12)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_EXOTIC_AMMUNITION
+      - STR_AUTO_SHOTGUN_BUY
+      - STR_AUTO_SHOTGUN_FRAG_SHELLS_BUY
+    size: 0.1
+    costBuy: 750
+    costSell: 250
+    weight: 4
+    bigSprite: 188
+    bulletSprite: 5 #make sure this doesnt explode
+    floorSprite: 339
+    explosionHitSound: 179
+    hitAnimation: 0
+    power: 35
+    explosionHitSound: 80
+    damageType: 3
+    damageAlter:
+      RandomType: 7
+      FixRadius: 2
+      RadiusReduction: 20
+      RandomType: 2
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToArmor: 0.2
+      ToTime: 0.25
+      ToTile: 0.5
+    clipSize: 16
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22611
+  - type: STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
+    nameAsAmmo: (D.BREATH)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_EXOTIC_AMMUNITION
+      - STR_AUTO_SHOTGUN_BUY
+      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_BUY
+    size: 0.1
+    costBuy: 600
+    costSell: 200
+    weight: 4
+    bigSprite: 217
+    bulletSprite: 5
+    floorSprite: 339 #recolor these eventually
+    hitSound: 93
+    hitAnimation: 287
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 8
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    power: 15
+    damageType: 1
+    clipSize: 16
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22612
+  - type: STR_TRACITE
+    bigSprite: 184
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_JUDGE
+    compatibleAmmo: !add
+      - STR_JUDGE_DRAGONBREATH_CLIP
+  - type: STR_JUDGE_DRAGONBREATH_CLIP
+    nameAsAmmo: (D.BREATH)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS,  STR_INCENDIARIES, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_JUDGE_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_JUDGE_DRAGONBREATH_CLIP_BUY
+    size: 0.1
+    costBuy: 230
+    costSell: 140
+    weight: 3
+    bigSprite: 464
+    floorSprite: 2
+    hitSound: 93
+    bulletSprite: 5
+    hitAnimation: 287
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 6
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    power: 12
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 32
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 5
+    attraction: 15
+    listOrder: 20270
+    powerRangeThreshold: 8
+    powerRangeReduction: 2
+  - type: STR_AA12
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_AA12_BUY
+    size: 0.2
+    costBuy: 3500
+    costSell: 2000
+    weight: 14
+    bigSprite: 374
+    floorSprite: 378
+    handSprite: 2432
+    bulletSprite: 3
+    fireSound: [120, 121, 122, 123]
+    reloadSound: 124
+    compatibleAmmo:
+      - STR_AA12_SHELLS
+      - STR_AA12_DRUM
+      - STR_AA12_DRAGONBREATH_DRUM
+    accuracyCloseQuarters: 95
+    accuracyAuto: 70
+    accuracySnap: 100
+    accuracyAimed: 125
+    tuAuto: 48
+    tuSnap: 34
+    tuAimed: 60
+    aimRange: 12
+    snapRange: 7
+    autoRange: 5
+    dropoff: 6
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 20
+    listOrder: 22590
+  - type: STR_AA12_SHELLS
+    nameAsAmmo: (BS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_AA12_BUY
+    size: 0.1
+    costBuy: 120
+    costSell: 90
+    weight: 3
+    bigSprite: 190
+    floorSprite: 335
+    hitSound: 13
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 12
+    battleType: 2
+    armor: 20
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22591
+    powerRangeThreshold: 12
+    powerRangeReduction: 1
+  - type: STR_AA12_DRUM
+    nameAsAmmo: (BS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_AA12_DRUM_BUY
+    size: 0.1
+    costBuy: 120
+    costSell: 90
+    weight: 3
+    bigSprite: 375
+    floorSprite: 379
+    hitSound: 13
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22592
+    powerRangeThreshold: 12
+    powerRangeReduction: 1
+  - type: STR_JUDGE_7
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_JUDGE_7_BUY
+    size: 0.1
+    costBuy: 6500
+    costSell: 3000
+    weight: 9
+    bigSprite: 534
+    floorSprite: 351
+    handSprite: 2288
+    bulletSprite: 1
+    fireSound: [198,199,200]
+    reloadSound: 201
+    compatibleAmmo:
+      - STR_JUDGE_7_AP_CLIP
+      - STR_JUDGE_7_BS_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuSnap: 24 #22
+    tuAimed: 39 #38
+    tuLoad: 25
+    aimRange: 15
+    dropoff: 4
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    shotgunChoke: 50
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20271
+  - type: STR_JUDGE_7_AP_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_JUDGE_7_BUY
+    size: 0.1
+    costBuy: 200
+    costSell: 100
+    weight: 3
+    bigSprite: 535
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    power: 32
+    damageType: 1
+    clipSize: 7
+    battleType: 2
+    armor: 32
+    attraction: 15
+    listOrder: 20272
+  - type: STR_JUDGE_7_BS_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_JUDGE_7_BUY
+    size: 0.1
+    costBuy: 180
+    costSell: 90
+    weight: 3
+    bigSprite: 536
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    powerRangeThreshold: 8
+    powerRangeReduction: 1
+    clipSize: 7
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.25
+      ToStun: 0.5
+    power: 12
+    damageType: 1
+    battleType: 2
+    armor: 32
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 5
+    attraction: 15
+    listOrder: 20272
+  - type: STR_UAC_SMG
+    accuracyCloseQuarters: 120
+    accuracyAuto: 40
+    accuracySnap: 65
+    accuracyAimed: 85
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 40
+    autoShots: 2
+    autoRange: 11
+    aimRange: 25
+    dropoff: 3
+    kneelBonus: 105
+    shotgunChoke: 90
+  - type: STR_AA12_DRAGONBREATH_DRUM
+    nameAsAmmo: (D.BREATH)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_AA12_DRUM_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_AA12_DRAGONBREATH_DRUM_BUY
+    size: 0.1
+    costBuy: 240
+    costSell: 120
+    weight: 3
+    bigSprite: 490
+    floorSprite: 379
+    hitSound: 93
+    hitAnimation: 287
+    power: 15
+    damageType: 1
+    clipSize: 18
+    battleType: 2
+    armor: 20
+    damageAlter:
+      FireBlastCalc: false
+      FireThreshold: 8
+      ArmorEffectiveness: 1.15
+      ToMorale: 0.5
+      ToTime: 0.1
+      RandomType: 7
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22592
+    powerRangeThreshold: 12
+    powerRangeReduction: 2
+  - type: STR_SHOTGUN_SHELLS
+    powerRangeThreshold: 15
+    powerRangeReduction: 1
+    nameAsAmmo: (BS)
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.4
+      ToStun: 0.5
+  - type: STR_SHOTGUN_SHELLS_AP
+    damageAlter:
+      ToStun: 0.33
+    nameAsAmmo: (SLUGS)
+  - type: STR_SHOTGUN_SHELLS_BATON
+    nameAsAmmo: (BATON)
+  - type: STR_SHOTGUN_AA_SHELLS
+    powerRangeThreshold: 20
+    powerRangeReduction: 2
+    nameAsAmmo: (AA|BS)
+    damageAlter:
+      ToStun: 0.33
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+  - type: STR_SHOTGUN_AA_SHELLS_AP
+    nameAsAmmo: (AA|SLUGS)
+    damageAlter:
+      ToStun: 0.33
+  - type: STR_SHOTGUN_SHELLS_BREACHING
+    nameAsAmmo: (BREACHING)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_BREACHING_CHARGE_BUY
+      - STR_EXOTIC_AMMUNITION
+      - STR_M16MK
+    size: 0.1
+    costBuy: 250
+    costSell: 120
+    weight: 3
+    bigSprite: 479
+    floorSprite: 2 #add one
+    hitSound: 13
+    hitAnimation: 26
+    power: 40 #20
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.25
+      ToStun: 0.5
+      ToHealth: 0.50
+      IgnoreOverKill: false
+      ToTile: 1.25 #2.75 might seem good
+      FixRadius: 0
+    damageType: 1
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22550
+  - type: STR_ACCURIZED_SHOTGUN
+    powerRangeThreshold: 17
+    powerRangeReduction: 1
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_ACCURIZED_SHOTGUN_BUY
+    size: 0.2
+    costBuy: 4400
+    costSell: 2800
+    weight: 15
+    bigSprite: 350
+    floorSprite: 357
+    handSprite: 2336
+    bulletSprite: 3
+    fireSound: 111
+    reloadSound: 112
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_AA_SHELLS_AP
+      - STR_SHOTGUN_AA_SHELLS
+      - STR_SHOTGUN_FLECHETTE_SHELLS
+      - STR_SHOTGUN_AA_SHELLS_FLAK
+    accuracyCloseQuarters: 75
+    accuracySnap: 95
+    accuracyAimed: 165
+    tuSnap: 45
+    tuAimed: 74
+    aimRange: 16 #14
+    snapRange: 8 #8
+    dropoff: 4
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    kneelBonus: 125
+    attraction: 20
+    listOrder: 22521
+  - type: STR_BLACKOPS_ACCURIZED_SHOTGUN
+    powerRangeThreshold: 17
+    powerRangeReduction: 1
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_ACCURIZED_SHOTGUN_BUY
+    size: 0.2
+    costBuy: 6500
+    costSell: 4900
+    weight: 16
+    bigSprite: 349
+    floorSprite: 356
+    handSprite: 2328
+    bulletSprite: 3
+    fireSound: 113
+    reloadSound: 114
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+      - STR_SHOTGUN_AA_SHELLS_AP
+      - STR_SHOTGUN_AA_SHELLS
+      - STR_SHOTGUN_FLECHETTE_SHELLS
+      - STR_SHOTGUN_AA_SHELLS_FLAK
+    accuracyCloseQuarters: 75
+    accuracySnap: 75
+    accuracyAimed: 155
+    tuSnap: 37
+    tuAimed: 66
+    aimRange: 16
+    snapRange: 8
+    dropoff: 4
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    kneelBonus: 125
+    attraction: 20
+    listOrder: 22531
+  - type: STR_ALLOY_SHOTGUN
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND, STR_SPACE]
+    size: 0.3
+    costSell: 10000
+    weight: 25
+    bigSprite: 208
+    floorSprite: 355 #371 color change maybe
+    handSprite: 2320 #1536 change the color or sprite
+    bulletSprite: 22
+    fireSound: 91
+    compatibleAmmo:
+      - STR_ALLOY_SHOTGUN_SHARDS
+      - STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    accuracyCloseQuarters: 100
+    accuracySnap: 110
+    accuracyAimed: 150
+    accuracyAuto: 85
+    tuSnap: 35
+    tuAimed: 70
+    tuAuto: 45
+    snapRange: 10
+    aimRange: 15
+    autoRange: 7
+    dropoff: 10
+    autoShots: 2
+    tuLoad: 15
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 45
+    attraction: 22
+    listOrder: 22679
+  - type: STR_ALLOY_SHOTGUN_SHARDS
+    nameAsAmmo: (SHARDS)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND, STR_SPACE]
+    size: 0.1
+    costSell: 16500 #check manufacture
+    weight: 4
+    bigSprite: 209
+    floorSprite: 329 #75 change this
+    hitSound: 90
+    hitAnimation: 26
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      RandomType: 7
+      ToTime: 0.25
+    power: 25
+    damageType: 1
+    clipSize: 7
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 50
+    shotgunPellets: 7
+    attraction: 15
+    listOrder: 22680
+    powerRangeThreshold: 16
+    powerRangeReduction: 2
+  - type: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
+    nameAsAmmo: (TRACITE)
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    size: 0.01
+    costSell: 21000 #check manufacture
+    weight: 4
+    bigSprite: 210
+    floorSprite: 329 #75 change this
+    hitSound: 90
+    hitAnimation: 184
+    explosionHitSound: 0
+    power: 40
+    damageType: 3
+    damageAlter:
+      FireThreshold: 0
+      RandomType: 2
+      ToArmorPre: 0.25
+      ArmorEffectiveness: 0.70
+      ToMorale: 0.2
+      ToTile: 0.25
+      FireBlastCalc: false
+      FixRadius: 2
+      ResistType: 2
+    clipSize: 7
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 22681
+    powerRangeThreshold: 16
+    powerRangeReduction: 6
+  - type: STR_THRASHER_SHOTGUN_BUCKSHOT
+    powerRangeThreshold: 5
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.4
+      ToStun: 0.5
+  - type: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
+    powerRangeThreshold: 9
+    powerRangeReduction: 2
+    damageAlter:
+      RandomType: 7
+      ToTime: 0.4
+      ToStun: 0.5
+    listOrder: 22671
+  - type: STR_BLACKOPS_JUDGE #5 rounds, .454 casull and 28 gauge
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_JUDGE_BUY
+    size: 0.1
+    costBuy: 9000
+    costSell: 4000
+    weight: 9
+    bigSprite: 497
+    floorSprite: 351
+    handSprite: 2624
+    bulletSprite: 1
+    fireSound: [198,199,200]
+    reloadSound: 201
+    compatibleAmmo:
+      - STR_BLACKOPS_JUDGE_AP_CLIP
+      - STR_BLACKOPS_JUDGE_BS_CLIP
+    accuracyCloseQuarters: 130
+    accuracySnap: 55
+    accuracyAimed: 80
+    tuSnap: 28 #24
+    tuAimed: 40
+    tuLoad: 20
+    aimRange: 16
+    dropoff: 4
+    kneelBonus: 110
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 80
+    shotgunChoke: 50
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20271
+  - type: STR_BLACKOPS_JUDGE_AP_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_JUDGE_BUY
+    size: 0.1
+    costBuy: 500
+    costSell: 200
+    weight: 3
+    bigSprite: 498
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      ArmorEffectiveness: 1.4 #1.2
+    power: 42 #32
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 32
+    attraction: 15
+    listOrder: 20272
+  - type: STR_BLACKOPS_JUDGE_BS_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_JUDGE_BUY
+    size: 0.1
+    costBuy: 450
+    costSell: 300
+    weight: 3
+    bigSprite: 499
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    powerRangeThreshold: 10
+    powerRangeReduction: 1
+    damageAlter:
+      RandomType: 7
+      ToTime: &28BS 0.33
+      ToStun: *28BS
+    power: 13
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 32
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 6
+    attraction: 15
+    listOrder: 20272
+  - type: STR_BLACKOPS_EXECUTIONER #7 rounds, longer barrel tighter choke, more armor effectiveness, obviously going for 5 for balance
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_EXECUTIONER_BUY
+    size: 0.1
+    costBuy: 12000
+    costSell: 7700
+    weight: 12
+    bigSprite: 514
+    floorSprite: 351
+    handSprite: 2312
+    bulletSprite: 1
+    fireSound: [198,199,200]
+    reloadSound: 201
+    compatibleAmmo:
+      - STR_BLACKOPS_EXECUTIONER_AP_CLIP
+      - STR_BLACKOPS_EXECUTIONER_BS_CLIP
+    accuracyCloseQuarters: 115
+    accuracySnap: 65
+    accuracyAimed: 95
+    tuSnap: 35 #32
+    tuAimed: 46 #45
+    tuLoad: 22
+    aimRange: 18
+    dropoff: 3
+    kneelBonus: 110
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 65
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20273
+  - type: STR_BLACKOPS_EXECUTIONER_AP_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_EXECUTIONER_BUY
+    size: 0.1
+    costBuy: 600
+    costSell: 300
+    weight: 5
+    bigSprite: 515
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    damageAlter:
+      ArmorEffectiveness: 1.3 #1.2
+    power: 42 #32
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 32
+    attraction: 15
+    listOrder: 20274
+  - type: STR_BLACKOPS_EXECUTIONER_BS_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_BLACKOPS_EXECUTIONER_BUY
+    size: 0.1
+    costBuy: 550
+    costSell: 250
+    weight: 5
+    bigSprite: 516
+    floorSprite: 321
+    hitSound: 13
+    hitAnimation: 26
+    powerRangeThreshold: 12
+    powerRangeReduction: 1
+    damageAlter:
+      RandomType: 7
+      ToTime: *28BS
+      ToStun: *28BS
+    power: 13
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 32
+    shotgunBehavior: 1
+    shotgunSpread: 10
+    shotgunPellets: 6
+    attraction: 15
+    listOrder: 20274
+  - type: STR_SCOUT_DRONE_SHOTGUN
+    tuSnap: 29
+    snapRange: 4
+    accuracySnap: 90
+    shotgunChoke: 100
+    compatibleAmmo: !add
+      - STR_SCOUT_DRONE_BS_AMMO
+  - type: STR_SCOUT_DRONE_AMMO
+    nameAsAmmo: (DOORBREAKER SLUG)
+    damageAlter:
+      ToStun: 0.4
+  - type: STR_SCOUT_DRONE_BS_AMMO
+    nameAsAmmo: (BS)
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    requiresBuy:
+      - STR_SCOUT_DRONE
+    size: 0.1
+    costBuy: 90
+    costSell: 45
+    transferTime: 12
+    weight: 4
+    bigSprite: 533
+    floorSprite: 12
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    clipSize: 6
+    damageType: 1
+    powerRangeReduction: 2
+    powerRangeThreshold: 8
+    shotgunBehavior: 1
+    shotgunSpread: 35
+    shotgunPellets: 7
+    damageAlter:
+      RandomType: 7
+      ToTime: *12BS
+      ToStun: *12BS
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10920
   - type: STR_METALLOID_BOMB
     categories: [STR_DIMENSION_X_TECH, STR_GRENADES, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
     size: 0.1
@@ -1071,172 +2692,6 @@ items:
   - type: STR_ADS
     compatibleAmmo: !add
       - STR_WP_5_45_CLIP_AP
-  - type: STR_BLACKOPS_JUDGE #5 rounds, .454 casull and 28 gauge
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_JUDGE_BUY
-    size: 0.1
-    costBuy: 9000
-    costSell: 4000
-    weight: 9
-    bigSprite: 497
-    floorSprite: 351
-    handSprite: 2624
-    bulletSprite: 1
-    fireSound: [198,199,200]
-    reloadSound: 201
-    compatibleAmmo:
-      - STR_BLACKOPS_JUDGE_AP_CLIP
-      - STR_BLACKOPS_JUDGE_BS_CLIP
-    accuracyCloseQuarters: 130
-    accuracySnap: 55
-    accuracyAimed: 80
-    tuSnap: 24
-    tuAimed: 40
-    tuLoad: 20
-    aimRange: 16
-    dropoff: 4
-    kneelBonus: 110
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 80
-    shotgunChoke: 50
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    listOrder: 20271
-  - type: STR_BLACKOPS_JUDGE_AP_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_JUDGE_BUY
-    size: 0.1
-    costBuy: 500
-    costSell: 200
-    weight: 3
-    bigSprite: 498
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      ArmorEffectiveness: 1.4 #1.2
-    power: 42 #32
-    damageType: 1
-    clipSize: 5
-    battleType: 2
-    armor: 32
-    attraction: 15
-    listOrder: 20272
-  - type: STR_BLACKOPS_JUDGE_BS_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_JUDGE_BUY
-    size: 0.1
-    costBuy: 450
-    costSell: 300
-    weight: 3
-    bigSprite: 499
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    powerRangeThreshold: 10
-    powerRangeReduction: 1
-    damageAlter:
-      RandomType: 7
-      ToTime: &28BS 0.33
-      ToStun: *28BS
-    power: 13
-    damageType: 1
-    clipSize: 5
-    battleType: 2
-    armor: 32
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 6
-    attraction: 15
-    listOrder: 20272
-  - type: STR_BLACKOPS_EXECUTIONER #7 rounds, longer barrel tighter choke, more armor effectiveness, obviously going for 5 for balance
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_EXECUTIONER_BUY
-    size: 0.1
-    costBuy: 12000
-    costSell: 7700
-    weight: 12
-    bigSprite: 514
-    floorSprite: 351
-    handSprite: 2312
-    bulletSprite: 1
-    fireSound: [198,199,200]
-    reloadSound: 201
-    compatibleAmmo:
-      - STR_BLACKOPS_EXECUTIONER_AP_CLIP
-      - STR_BLACKOPS_EXECUTIONER_BS_CLIP
-    accuracyCloseQuarters: 115
-    accuracySnap: 65
-    accuracyAimed: 95
-    tuSnap: 32
-    tuAimed: 45
-    tuLoad: 22
-    aimRange: 18
-    dropoff: 3
-    kneelBonus: 110
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 65
-    oneHandedPenalty: 70
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    listOrder: 20273
-  - type: STR_BLACKOPS_EXECUTIONER_AP_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_EXECUTIONER_BUY
-    size: 0.1
-    costBuy: 600
-    costSell: 300
-    weight: 5
-    bigSprite: 515
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      ArmorEffectiveness: 1.3 #1.2
-    power: 42 #32
-    damageType: 1
-    clipSize: 5
-    battleType: 2
-    armor: 32
-    attraction: 15
-    listOrder: 20274
-  - type: STR_BLACKOPS_EXECUTIONER_BS_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_EXECUTIONER_BUY
-    size: 0.1
-    costBuy: 550
-    costSell: 250
-    weight: 5
-    bigSprite: 516
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    powerRangeThreshold: 12
-    powerRangeReduction: 1
-    damageAlter:
-      RandomType: 7
-      ToTime: *28BS
-      ToStun: *28BS
-    power: 13
-    damageType: 1
-    clipSize: 5
-    battleType: 2
-    armor: 32
-    shotgunBehavior: 1
-    shotgunSpread: 10
-    shotgunPellets: 6
-    attraction: 15
-    listOrder: 20274
   - type: STR_PLASMA_CASTER_CLIP
     powerRangeThreshold: 30
     powerRangeReduction: 3
@@ -2068,280 +3523,6 @@ items:
       ToTime: 0.25
       IgnoreOverKill: false
       RandomType: 7
-  - type: STR_USAS_12
-    compatibleAmmo: !add
-      - STR_USAS_12_DRAGONBREATH_DRUM
-  - type: STR_USAS_12_DRAGONBREATH_DRUM
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_USAS_12_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_USAS_12_DRAGONBREATH_DRUM_BUY
-    size: 0.1
-    costBuy: 320
-    costSell: 200
-    weight: 4
-    bigSprite: 491
-    floorSprite: 339 #recolor these eventually
-    hitSound: 93
-    hitAnimation: 287
-    power: 15
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 8
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    damageType: 1
-    clipSize: 20
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22452
-    powerRangeThreshold: 13
-    powerRangeReduction: 2
-  - type: STR_USAS_12_DRUM
-    powerRangeThreshold: 13
-    powerRangeReduction: 1
-    nameAsAmmo: (BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: &12BS 0.4
-      ToStun: *12BS
-  - type: STR_KS23_SHELLS_BS
-    powerRangeThreshold: 12
-    powerRangeReduction: 1
-    nameAsAmmo: (SHRAPNEL-25)
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.5
-      ToStun: 0.5
-  - type: STR_AUTO_SHOTGUN_SHELLS
-    powerRangeThreshold: 13
-    powerRangeReduction: 1
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_AUTO_SHOTGUN_AA_SHELLS
-    powerRangeThreshold: 18
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_UAC_SHOTGUN_SHELLS
-    powerRangeThreshold: 13
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.45
-      ToStun: 0.5
-  - type: STR_UAC_SHOTGUN_AA_SHELLS
-    powerRangeThreshold: 18
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.45
-      ToStun: 0.5
-  - type: STR_CAWS
-    compatibleAmmo: !add
-      - STR_CAWS_CLIP_DRAGONBREATH
-      - STR_CAWS_CLIP_FRAG
-  - type: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
-    damageAlter:
-      ArmorEffectiveness: 0.9
-      ToStun: 0.5
-      ToTime: 0.5
-      RandomType: 7
-      TileDamageMethod: 1
-  - type: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
-    damageAlter:
-      ArmorEffectiveness: 0.9
-      RandomType: 7
-      TileDamageMethod: 1
-      ToStun: 0.4
-  - type: STR_CAWS_CLIP_AA
-    nameAsAmmo: (AA|SLUGS)
-    damageAlter:
-      ToStun: 0.33
-  - type: STR_CAWS_CLIP_AP
-    nameAsAmmo: (SLUGS)
-    damageAlter:
-      ToStun: 0.33
-  - type: STR_CAWS_CLIP_BS
-    powerRangeThreshold: 13
-    powerRangeReduction: 1
-    nameAsAmmo: (BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_CAWS_CLIP_AA_BS
-    powerRangeThreshold: 18
-    powerRangeReduction: 2
-    nameAsAmmo: (AA|BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_CAWS_CLIP_FRAG
-    nameAsAmmo: (FRAG-12)
-    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_CAWS_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_CAWS_CLIP_FRAG_BUY
-    size: 0.05
-    costBuy: 950
-    costSell: 550
-    weight: 3
-    bigSprite: 489
-    floorSprite: 2
-    explosionHitSound: 179
-    damageType: 3
-    damageAlter:
-      RandomType: 7
-      FixRadius: 2
-      RadiusReduction: 20
-      RandomType: 2
-      IgnoreOverKill: false
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToTime: 0.25
-      ToTile: 0.5
-    hitAnimation: 0
-    power: 44
-    clipSize: 10
-    costThrow:
-      energy: 6
-    battleType: 2
-    armor: 35
-    attraction: 15
-    listOrder: 22655
-  - type: STR_CAWS_CLIP_DRAGONBREATH
-    nameAsAmmo: (D.BREATH)
-    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_CAWS_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_CAWS_CLIP_DRAGONBREATH_BUY
-    size: 0.05
-    costBuy: 700
-    costSell: 350
-    weight: 3
-    bigSprite: 488
-    floorSprite: 2
-    hitSound: 93
-    hitAnimation: 287
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 8
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    power: 18
-    damageType: 1
-    clipSize: 10
-    costThrow:
-      energy: 6
-    battleType: 2
-    shotgunBehavior: 1
-    shotgunSpread: 20
-    shotgunPellets: 5
-    armor: 35
-    attraction: 15
-    listOrder: 22656
-    powerRangeThreshold: 13
-    powerRangeReduction: 2
-  - type: STR_XCOM_BUZZER_UNIT_WEAPON
-    damageAlter:
-      RandomType: 7
-      FixRadius: 0
-      ToArmorPre: 0.1
-      RandomArmorPre: true
-  - type: STR_PANCOR_JACKHAMMER
-    compatibleAmmo: !add
-      - STR_PANCOR_JACKHAMMER_BS_CLIP
-      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
-  - type: STR_PANCOR_JACKHAMMER_CLIP
-    nameAsAmmo: (SLUGS)
-    damageAlter:
-      ToStun: 0.33
-  - type: STR_PANCOR_JACKHAMMER_BS_CLIP
-    powerRangeThreshold: 15
-    powerRangeReduction: 1
-    nameAsAmmo: (BS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_PANCOR_JACKHAMMER_BUY
-    size: 0.1
-    costBuy: 350
-    costSell: 280
-    weight: 4
-    bigSprite: 466 #change this
-    floorSprite: 2 #change this
-    handSprite: 0 #change this
-    hitSound: 22 #is this right?
-    hitAnimation: 26 #is this right?
-    power: 15
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    damageType: 1
-    clipSize: 10
-    costThrow:
-      energy: 6
-    battleType: 2
-    armor: 30
-    attraction: 15
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 7
-    listOrder: 22682
-  - type: STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP
-    powerRangeThreshold: 15
-    powerRangeReduction: 2
-    nameAsAmmo: (D.BREATH)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_PANCOR_JACKHAMMER_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_PANCOR_JACKHAMMER_DRAGONBREATH_CLIP_BUY
-    size: 0.1
-    costBuy: 520
-    costSell: 3500
-    weight: 4
-    bigSprite: 467 #change this
-    floorSprite: 2 #change this
-    handSprite: 0 #change this
-    hitSound: 93
-    hitAnimation: 287
-    power: 15
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 8
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    damageType: 1
-    clipSize: 10
-    costThrow:
-      energy: 6
-    battleType: 2
-    armor: 30
-    attraction: 15
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 7
-    listOrder: 22682
   - type: STR_OICW
     ammo:
       0:
@@ -2942,46 +4123,6 @@ items:
     listOrder: 21211
   - type: STR_HUNTING_RIFLE
     bigSprite: 505
-  - type: STR_PUMP_ACTION
-    floorSprite: 409
-    compatibleAmmo: !add
-      - STR_PUMP_ACTION_SLUGS
-    accuracySnap: 110
-    accuracyAimed: 130 #160
-    tuSnap: 32
-    tuAimed: 45 #60
-    aimRange: 13 #12
-    snapRange: 9 #8
-    dropoff: 4 #6
-    shotgunChoke: 90 #70
-    tuLoad: 30
-  - type: STR_PUMP_ACTION_SHELLS
-    powerRangeThreshold: 14
-    powerRangeReduction: 1
-    power: 15
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_PUMP_ACTION_SLUGS
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.05
-    costBuy: 60
-    costSell: 35
-    weight: 3
-    bigSprite: 509
-    floorSprite: 2
-    hitSound: 13
-    hitAnimation: 26
-    power: 35
-    damageType: 1
-    damageAlter:
-      ToStun: 0.33 #0.25
-    clipSize: 8
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22450
   - type: STR_MPK
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_LAND, STR_CONCEALABLE]
     requiresBuy:
@@ -3118,46 +4259,6 @@ items:
     power: 26
     damageAlter:
       ArmorEffectiveness: 0.85 #0.9
-  - type: STR_SMART_SHOTGUN_BUCKSHOT
-    powerRangeThreshold: 11
-    powerRangeReduction: 1
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-      RandomType: 7
-  - type: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT
-    powerRangeThreshold: 15
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_SMALL_SHOTGUN
-    accuracyMultiplier:
-      firing: 0.5
-      flatHundred: 0.5
-    accuracySnap: 110 #150
-    accuracyAimed: 120 #175
-    tuSnap: 28
-    tuAimed: 45 #48
-    snapRange: 5 #3
-    aimRange: 8 #3
-    dropoff: 8 #6
-    twoHanded: true
-    blockBothHands: true #false   It's a pump-action. Using it with one hand would severely slow down fire rate.
-    oneHandedPenalty: 80
-    shotgunChoke: 70 #50
-    tuLoad: 20
-  - type: STR_SMALL_SHOTGUN_SHELLS
-    powerRangeThreshold: 10
-    powerRangeReduction: 1
-    power: 15
-    shotgunPellets: 5 #7
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
     # This should be the 1928 model. Wiki says it has a fire rate of 700 to 800. It's 750, so that fits.
   - type: STR_TOMMYGUN
     costBuy: 2800 #1900  Wiki says the price equivalent in 2019 would be 3350$. A bit lower in 1997 then.
@@ -4140,63 +5241,6 @@ items:
     armor: 30
     attraction: 16
     listOrder: 34514
-  - type: STR_SHOTGUN_SHELLS
-    powerRangeThreshold: 15
-    powerRangeReduction: 1
-    nameAsAmmo: (BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.4
-      ToStun: 0.5
-  - type: STR_SHOTGUN_SHELLS_AP
-    damageAlter:
-      ToStun: 0.33
-    nameAsAmmo: (SLUGS)
-  - type: STR_SHOTGUN_SHELLS_BATON
-    nameAsAmmo: (BATON)
-  - type: STR_SHOTGUN_AA_SHELLS
-    powerRangeThreshold: 20
-    powerRangeReduction: 2
-    nameAsAmmo: (AA|BS)
-    damageAlter:
-      ToStun: 0.33
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_SHOTGUN_AA_SHELLS_AP
-    nameAsAmmo: (AA|SLUGS)
-    damageAlter:
-      ToStun: 0.33
-  - type: STR_SHOTGUN_SHELLS_BREACHING
-    nameAsAmmo: (BREACHING)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_BREACHING_CHARGE_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_M16MK
-    size: 0.1
-    costBuy: 250
-    costSell: 120
-    weight: 3
-    bigSprite: 479
-    floorSprite: 2 #add one
-    hitSound: 13
-    hitAnimation: 26
-    power: 40 #20
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.25
-      ToStun: 0.5
-      ToHealth: 0.50
-      IgnoreOverKill: false
-      ToTile: 1.25 #2.75 might seem good
-      FixRadius: 0
-    damageType: 1
-    clipSize: 6
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22550
   - type: STR_LAUNCHER_BREACHING
     nameAsAmmo: (BREACHING)
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
@@ -4227,182 +5271,6 @@ items:
     armor: 20
     attraction: 15
     listOrder: 34110
-  - type: STR_ACCURIZED_SHOTGUN
-    powerRangeThreshold: 17
-    powerRangeReduction: 1
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
-    requiresBuy:
-      - STR_ACCURIZED_SHOTGUN_BUY
-    size: 0.2
-    costBuy: 4400
-    costSell: 2800
-    weight: 15
-    bigSprite: 350
-    floorSprite: 357
-    handSprite: 2336
-    bulletSprite: 3
-    fireSound: 111
-    reloadSound: 112
-    compatibleAmmo:
-      - STR_SHOTGUN_SHELLS
-      - STR_SHOTGUN_SHELLS_AP
-      - STR_SHOTGUN_SHELLS_BATON
-      - STR_SHOTGUN_AA_SHELLS_AP
-      - STR_SHOTGUN_AA_SHELLS
-      - STR_SHOTGUN_FLECHETTE_SHELLS
-      - STR_SHOTGUN_AA_SHELLS_FLAK
-    accuracyCloseQuarters: 75
-    accuracySnap: 95
-    accuracyAimed: 165
-    tuSnap: 45
-    tuAimed: 74
-    aimRange: 16 #14
-    snapRange: 8 #8
-    dropoff: 4
-    tuLoad: 25
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 40
-    kneelBonus: 125
-    attraction: 20
-    listOrder: 22521
-  - type: STR_BLACKOPS_ACCURIZED_SHOTGUN
-    powerRangeThreshold: 17
-    powerRangeReduction: 1
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_ACCURIZED_SHOTGUN_BUY
-    size: 0.2
-    costBuy: 6500
-    costSell: 4900
-    weight: 16
-    bigSprite: 349
-    floorSprite: 356
-    handSprite: 2328
-    bulletSprite: 3
-    fireSound: 113
-    reloadSound: 114
-    compatibleAmmo:
-      - STR_SHOTGUN_SHELLS
-      - STR_SHOTGUN_SHELLS_AP
-      - STR_SHOTGUN_SHELLS_BATON
-      - STR_SHOTGUN_AA_SHELLS_AP
-      - STR_SHOTGUN_AA_SHELLS
-      - STR_SHOTGUN_FLECHETTE_SHELLS
-      - STR_SHOTGUN_AA_SHELLS_FLAK
-    accuracyCloseQuarters: 75
-    accuracySnap: 75
-    accuracyAimed: 155
-    tuSnap: 37
-    tuAimed: 66
-    aimRange: 16
-    snapRange: 8
-    dropoff: 4
-    tuLoad: 25
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 40
-    kneelBonus: 125
-    attraction: 20
-    listOrder: 22531
-  - type: STR_ALLOY_SHOTGUN
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND, STR_SPACE]
-    size: 0.3
-    costSell: 10000
-    weight: 25
-    bigSprite: 208
-    floorSprite: 355 #371 color change maybe
-    handSprite: 2320 #1536 change the color or sprite
-    bulletSprite: 22
-    fireSound: 91
-    compatibleAmmo:
-      - STR_ALLOY_SHOTGUN_SHARDS
-      - STR_ALLOY_SHOTGUN_TRACITE_SHARDS
-    accuracyCloseQuarters: 100
-    accuracySnap: 110
-    accuracyAimed: 150
-    accuracyAuto: 85
-    tuSnap: 35
-    tuAimed: 70
-    tuAuto: 45
-    snapRange: 10
-    aimRange: 15
-    autoRange: 7
-    dropoff: 10
-    autoShots: 2
-    tuLoad: 15
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 45
-    attraction: 22
-    listOrder: 22679
-  - type: STR_ALLOY_SHOTGUN_SHARDS
-    nameAsAmmo: (SHARDS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND, STR_SPACE]
-    size: 0.1
-    costSell: 16500 #check manufacture
-    weight: 4
-    bigSprite: 209
-    floorSprite: 329 #75 change this
-    hitSound: 90
-    hitAnimation: 26
-    damageAlter:
-      ArmorEffectiveness: 0.85
-      RandomType: 7
-      ToTime: 0.25
-    power: 25
-    damageType: 1
-    clipSize: 7
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22680
-    powerRangeThreshold: 16
-    powerRangeReduction: 2
-  - type: STR_ALLOY_SHOTGUN_TRACITE_SHARDS
-    nameAsAmmo: (TRACITE)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.01
-    costSell: 21000 #check manufacture
-    weight: 4
-    bigSprite: 210
-    floorSprite: 329 #75 change this
-    hitSound: 90
-    hitAnimation: 184
-    explosionHitSound: 0
-    power: 40
-    damageType: 3
-    damageAlter:
-      FireThreshold: 0
-      RandomType: 2
-      ToArmorPre: 0.25
-      ArmorEffectiveness: 0.70
-      ToMorale: 0.2
-      ToTile: 0.25
-      FireBlastCalc: false
-      FixRadius: 2
-      ResistType: 2
-    clipSize: 7
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22681
-    powerRangeThreshold: 16
-    powerRangeReduction: 6
   - type: STR_AN94_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -4443,358 +5311,11 @@ items:
      followProjectiles: false
     attraction: 20
     listOrder: 21133
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
-    size: 0.2
-    costBuy: 45000
-    costSell: 20000
-    weight: 20
-    bigSprite: 211
-    floorSprite: 340 #367
-    handSprite: 2208 #1912 fix this
-    bulletSprite: 3
-    fireSound: 89 #63
-    compatibleAmmo:
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BS
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_SLUGS
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
-    accuracyCloseQuarters: 95 #95
-    accuracyAuto: 75 #70
-    accuracySnap: 105 #100
-    accuracyAimed: 130 #125
-    tuAuto: 35 #40
-    tuSnap: 25 #28
-    tuAimed: 60 #65
-    aimRange: 15 #14
-    snapRange: 9 #8
-    autoRange: 8 #8
-    dropoff: 5 #6
-    tuLoad: 25 #20
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100 #100
-    invWidth: 1
-    invHeight: 3
-    armor: 40
-    attraction: 20
-    listOrder: 22620
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BS
-    nameAsAmmo: (BS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
-    size: 0.1
-    costBuy: 2200
-    costSell: 800
-    weight: 5
-    bigSprite: 213
-    floorSprite: 329 #960
-    hitSound: 13
-    hitAnimation: 26
-    power: 18
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 45
-    shotgunPellets: 6
-    attraction: 15
-    listOrder: 22621
-    powerRangeThreshold: 14
-    powerRangeReduction: 1
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_SLUGS
-    nameAsAmmo: (SLUGS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.1
-    requiresBuy:
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
-    costBuy: 2600
-    costSell: 1000
-    weight: 5
-    bigSprite: 214
-    floorSprite: 329 #961
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      ToStun: 0.33
-    power: 40
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22622
-  # - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_BATON
-    # nameAsAmmo: (BATON)
-    # categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    # size: 0.1
-    # requiresBuy:
-      # - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
-    # costBuy: 4000
-    # costSell: 1600
-    # weight: 2
-    # bigSprite: 212
-    # floorSprite: 329 #961
-    # hitSound: 13
-    # hitAnimation: 26
-    # power: 25
-    # damageType: 6
-    # damageAlter:
-      # ToHealth: 0.4
-      # ToTile: 0.225
-      # ArmorEffectiveness: 1.3
-    # blastRadius: 0
-    # clipSize: 6
-    # battleType: 2
-    # armor: 20
-    # attraction: 15
-    # tuLoad: 30
-    # listOrder: 22623
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_SLUGS
-    nameAsAmmo: (AA|SLUGS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.1
-    costSell: 9500
-    weight: 5
-    bigSprite: 216
-    floorSprite: 329 #961
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      ToStun: 0.33
-    power: 50
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22624
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_SHELLS_AA_BS
-    nameAsAmmo: (AA|BS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.1
-    costSell: 9500
-    weight: 5
-    bigSprite: 215
-    floorSprite: 329 #960
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    power: 22
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 45
-    shotgunPellets: 6
-    attraction: 15
-    listOrder: 22625
-    powerRangeThreshold: 19
-    powerRangeReduction: 2
   - type: STR_EXOTIC_AMMUNITION
     bigSprite: 188
     weight: 0
     invWidth: 2
     invHeight: 3  
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS
-    nameAsAmmo: (FLECHETTE)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_BLACKOPS_SMART_AUTO_SHOTGUN_FLECHETTE_SHELLS_BUY
-    size: 0.1
-    costBuy: 2200
-    costSell: 800
-    weight: 5
-    bigSprite: 470
-    floorSprite: 329 #960
-    hitSound: 13
-    hitAnimation: 26
-    power: 15 #18
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    damageAlter:
-      ToTile: 0.25
-      ArmorEffectiveness: 0.75
-      RandomType: 7
-      ToTime: 0.25
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 75 #45
-    shotgunPellets: 5
-    attraction: 15
-    listOrder: 22621
-    powerRangeThreshold: 18
-    powerRangeReduction: 1
-  - type: STR_BLACKOPS_SMART_AUTO_SHOTGUN_AA_SHELLS_FLAK
-    nameAsAmmo: (AA|FLAK)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.1
-    costSell: 9500
-    weight: 5
-    bigSprite: 471
-    floorSprite: 329 #960
-    hitSound: 13
-    hitAnimation: 26
-    damageAlter:
-      ToTile: 0.33
-      ArmorEffectiveness: 0.75
-      RandomType: 7
-      ToTime: 0.25
-    power: 18 #22
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 75 #45
-    shotgunPellets: 5
-    attraction: 15
-    listOrder: 22625
-    powerRangeThreshold: 21
-    powerRangeReduction: 1
-  - type: STR_AUTO_SHOTGUN
-    compatibleAmmo: !add
-      - STR_AUTO_SHOTGUN_FRAG_SHELLS
-      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
-  - type: STR_AUTO_SHOTGUN_SHELLS
-    nameAsAmmo: (BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_AUTO_SHOTGUN_AA_SHELLS
-    nameAsAmmo: (AA|BS)
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_AUTO_SHOTGUN_FRAG_SHELLS
-    nameAsAmmo: (FRAG-12)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_EXOTIC_AMMUNITION
-      - STR_AUTO_SHOTGUN_BUY
-      - STR_AUTO_SHOTGUN_FRAG_SHELLS_BUY
-    size: 0.1
-    costBuy: 750
-    costSell: 250
-    weight: 4
-    bigSprite: 188
-    bulletSprite: 5 #make sure this doesnt explode
-    floorSprite: 339
-    explosionHitSound: 179
-    hitAnimation: 0
-    power: 35
-    explosionHitSound: 80
-    damageType: 3
-    damageAlter:
-      RandomType: 7
-      FixRadius: 2
-      RadiusReduction: 20
-      RandomType: 2
-      IgnoreOverKill: false
-      ToArmorPre: 0.1
-      ToArmor: 0.2
-      ToTime: 0.25
-      ToTile: 0.5
-    clipSize: 16
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22611
-  - type: STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS
-    nameAsAmmo: (D.BREATH)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_EXOTIC_AMMUNITION
-      - STR_AUTO_SHOTGUN_BUY
-      - STR_AUTO_SHOTGUN_DRAGONBREATH_SHELLS_BUY
-    size: 0.1
-    costBuy: 600
-    costSell: 200
-    weight: 4
-    bigSprite: 217
-    bulletSprite: 5
-    floorSprite: 339 #recolor these eventually
-    hitSound: 93
-    hitAnimation: 287
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 8
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    power: 15
-    damageType: 1
-    clipSize: 16
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22612
-  - type: STR_TRACITE
-    bigSprite: 184
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_JUDGE
-    compatibleAmmo: !add
-      - STR_JUDGE_DRAGONBREATH_CLIP
-  - type: STR_JUDGE_DRAGONBREATH_CLIP
-    nameAsAmmo: (D.BREATH)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS,  STR_INCENDIARIES, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_JUDGE_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_JUDGE_DRAGONBREATH_CLIP_BUY
-    size: 0.1
-    costBuy: 230
-    costSell: 140
-    weight: 3
-    bigSprite: 464
-    floorSprite: 2
-    hitSound: 93
-    bulletSprite: 5
-    hitAnimation: 287
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 6
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    power: 12
-    damageType: 1
-    clipSize: 6
-    battleType: 2
-    armor: 32
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 5
-    attraction: 15
-    listOrder: 20270
-    powerRangeThreshold: 8
-    powerRangeReduction: 2
   - type: STR_FLARE_PISTOL
     categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_FLARE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     compatibleAmmo: !add
@@ -5078,21 +5599,6 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21810
-  - type: STR_THRASHER_SHOTGUN_BUCKSHOT
-    powerRangeThreshold: 5
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.4
-      ToStun: 0.5
-  - type: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
-    powerRangeThreshold: 9
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.4
-      ToStun: 0.5
-    listOrder: 22671
   - type: STR_HEAVY_LASER_MIB
     accuracyMultiplier:
       strength: *HeavyWeaponStrenghtMultiplier
@@ -6461,7 +6967,7 @@ items:
     damageType: 1
     damageAlter:
       RandomType: 7
-      ToTime: *12BS
+      ToTime: &12BS 0.4
       ToStun: *12BS
     clipSize: 2
     battleType: 2
@@ -6858,47 +7364,6 @@ items:
     invHeight: 1
     attraction: 16
     listOrder: 23330
-  - type: STR_SCOUT_DRONE_SHOTGUN
-    tuSnap: 29
-    snapRange: 4
-    accuracySnap: 90
-    shotgunChoke: 100
-    compatibleAmmo: !add
-      - STR_SCOUT_DRONE_BS_AMMO
-  - type: STR_SCOUT_DRONE_AMMO
-    nameAsAmmo: (DOORBREAKER SLUG)
-    damageAlter:
-      ToStun: 0.4
-  - type: STR_SCOUT_DRONE_BS_AMMO
-    nameAsAmmo: (BS)
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
-    requiresBuy:
-      - STR_SCOUT_DRONE
-    size: 0.1
-    costBuy: 90
-    costSell: 45
-    transferTime: 12
-    weight: 4
-    bigSprite: 533
-    floorSprite: 12
-    hitSound: 13
-    hitAnimation: 26
-    power: 20
-    clipSize: 6
-    damageType: 1
-    powerRangeReduction: 2
-    powerRangeThreshold: 8
-    shotgunBehavior: 1
-    shotgunSpread: 35
-    shotgunPellets: 7
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    listOrder: 10920
   - type: STR_MANURHIN_REVOLVER
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -9385,132 +9850,6 @@ items:
     kneelBonus: 100
     experienceTrainingMode: 7
     listOrder: 38601
-  - type: STR_KS23
-    compatibleAmmo: !add
-      - STR_KS23_SHELLS_TEARGAS
-      - STR_KS23_SHELLS_FLASHBANG
-      - STR_KS23_SHELLS_DRAGONBREATH
-  - type: STR_KS23_SHELLS_AP
-    damageAlter:
-      ToStun: 0.4
-    nameAsAmmo: (BARRIKADA)
-  - type: STR_KS23_SHELLS_BATON
-    nameAsAmmo: (VOLNA-R)
-  - type: STR_KS23_SHELLS_FLASHBANG
-    nameAsAmmo: (ZVEZDA)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_EXOTIC_AMMUNITION
-      - STR_KS23_BUY
-    size: 0.1
-    costBuy: 150
-    costSell: 70
-    weight: 4
-    bigSprite: 263
-    floorSprite: 329
-    hitSound: 13
-    hitAnimation: 248 #make sure this is cool as fuck
-    explosionHitSound: 117
-    power: 25
-    hidePower: true
-    damageType: 6
-    damageAlter:
-      RandomType: 2
-      IgnorePainImmunity: true
-      ArmorEffectiveness: 0
-      ToStun: 0.25
-      ToMorale: 0.1
-      ToArmor: 0
-      ToTile: 0
-      ToItem: 0
-      ToWound: 0
-      FixRadius: 3
-    clipSize: 4
-    costThrow:
-      energy: 8
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22457
-  - type: STR_KS23_SHELLS_TEARGAS
-    nameAsAmmo: (SIREN-7)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_EXOTIC_AMMUNITION
-      - STR_CROWD_CONTROL_GEAR_BUY
-      - STR_KS23_BUY
-    size: 0.1
-    costBuy: 140
-    costSell: 60
-    weight: 4
-    bigSprite: 262
-    floorSprite: 329
-    hitSound: 13
-    hitAnimation: 192
-    explosionhitSound: 71
-    power: 25
-    hidePower: true
-    damageType: 1
-    damageAlter:
-      ResistType: 8
-      RandomType: 2
-      IgnorePainImmunity: true
-      ArmorEffectiveness: 0
-      IgnoreDirection: true
-      RandomWound: false
-      ToHealth: 0.1
-      ToTime: 0.2
-      ToStun: 0.25
-      ToMorale: 0.2
-      ToWound: 0
-      ToArmor: 0
-      ToTile: 0
-      ToItem: 0
-      FixRadius: 3
-      IgnoreSelfDestruct: true
-      SmokeThreshold: 25
-    clipSize: 4
-    costThrow:
-      energy: 8
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 22458
-  - type: STR_KS23_SHELLS_DRAGONBREATH
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_KS23_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_KS23_SHELLS_DRAGONBREATH_BUY
-    size: 0.1
-    costBuy: 120
-    costSell: 70
-    weight: 4
-    bigSprite: 468 #check
-    floorSprite: 329 #check or make 2
-    hitSound: 93
-    hitAnimation: 287 #check this
-    power: 19
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 10
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    damageType: 1
-    clipSize: 4
-    costThrow:
-      energy: 8
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 40
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22458
-    powerRangeThreshold: 12
-    powerRangeReduction: 2
   - type: STR_FLASHBANG_GRENADE
     hitAnimation: 248
     explosionHitSound: 117
@@ -9562,121 +9901,8 @@ items:
       - STR_BACK_PACK
     attraction: 10
     listOrder: 16611
-  - type: STR_SAWED_OFF
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
-    accuracyMultiplier:
-      firing: 0.5
-      flatHundred: 0.5
-    accuracySnap: 130
-    accuracyAuto: 105
-    tuSnap: 23
-    tuAuto: 28
-    snapRange: 4
-    autoRange: 4
-    dropoff: 11
-    autoShots: 2
-    tuLoad: 10 #15      Same as double barrel.
-    shotgunChoke: 70 #100
-    kneelBonus: 105 #110
-  - type: STR_DOUBLE_BARRELED_BUCKSHOT
-    powerRangeThreshold: 5
-    powerRangeReduction: 1
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-  - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
-    powerRangeThreshold: 9
-    powerRangeReduction: 2
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
   - type: STR_MAG_LITE
     costBuy: 2000 #2200  The staff input says it costs 2000.
-  - type: STR_SHOTGUN
-    powerRangeThreshold: 15
-    powerRangeReduction: 1
-    compatibleAmmo: !add
-      - STR_SHOTGUN_FLECHETTE_SHELLS
-      - STR_SHOTGUN_AA_SHELLS_FLAK
-  - type: STR_WINCHESTER_1901
-    compatibleAmmo: !add
-      - STR_SHOTGUN_FLECHETTE_SHELLS
-    accuracyCloseQuarters: 95
-    accuracySnap: 115
-    accuracyAimed: 135
-    tuSnap: 30
-    tuAimed: 64
-    aimRange: 12
-    snapRange: 6
-    powerRangeThreshold: 13
-    powerRangeReduction: 1
-  - type: STR_SHOTGUN_FLECHETTE_SHELLS
-    nameAsAmmo: (FLECHETTE)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_EXOTIC_AMMUNITION
-      - STR_SHOTGUN_BUY
-      - STR_SHOTGUN_FLECHETTE_SHELLS_BUY
-    size: 0.1
-    costBuy: 120
-    costSell: 70
-    weight: 3
-    bigSprite: 264
-    floorSprite: 2 #add one
-    hitSound: 13
-    hitAnimation: 26
-    power: 12 #15
-    damageAlter:
-      ToTile: 0.25
-      ArmorEffectiveness: 0.75
-      RandomType: 7
-      ToTime: 0.25
-    damageType: 1
-    clipSize: 6
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 50 #25
-    shotgunPellets: 6 #7
-    attraction: 15
-    listOrder: 22571
-    powerRangeThreshold: 18
-    powerRangeReduction: 1
-  - type: STR_SHOTGUN_AA_SHELLS_FLAK
-    nameAsAmmo: (AA|FLAK)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    size: 0.1
-    costSell: 8700
-    weight: 3
-    bigSprite: 265
-    floorSprite: 2 #add one 
-    hitSound: 13
-    hitAnimation: 26
-    power: 16 #20
-    damageAlter:
-      ToTile: 0.33
-      ArmorEffectiveness: 0.75
-      RandomType: 7
-      ToTime: 0.25
-    damageType: 1
-    clipSize: 6
-    battleType: 2
-    armor: 20
-    shotgunBehavior: 1
-    shotgunSpread: 50
-    shotgunPellets: 6
-    attraction: 15
-    listOrder: 22572
-    powerRangeThreshold: 21
-    powerRangeReduction: 1
-  - type: STR_BLACKOPS_SHOTGUN
-    powerRangeThreshold: 15
-    powerRangeReduction: 1
-    compatibleAmmo: !add
-      - STR_SHOTGUN_FLECHETTE_SHELLS
-      - STR_SHOTGUN_AA_SHELLS_FLAK
   - type: STR_BREACHING_CHARGE
     categories: [STR_OTHER, STR_BREACHING_TOOLS ,STR_LAND]
     requiresBuy:
@@ -12192,230 +12418,6 @@ items:
     armor: 30
     attraction: 15
     listOrder: 20172
-  - type: STR_AA12
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
-    requiresBuy:
-      - STR_AA12_BUY
-    size: 0.2
-    costBuy: 3500
-    costSell: 2000
-    weight: 14
-    bigSprite: 374
-    floorSprite: 378
-    handSprite: 2432
-    bulletSprite: 3
-    fireSound: [120, 121, 122, 123]
-    reloadSound: 124
-    compatibleAmmo:
-      - STR_AA12_SHELLS
-      - STR_AA12_DRUM
-      - STR_AA12_DRAGONBREATH_DRUM
-    accuracyCloseQuarters: 95
-    accuracyAuto: 70
-    accuracySnap: 100
-    accuracyAimed: 125
-    tuAuto: 48
-    tuSnap: 34
-    tuAimed: 60
-    aimRange: 12
-    snapRange: 7
-    autoRange: 5
-    dropoff: 6
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 40
-    attraction: 20
-    listOrder: 22590
-  - type: STR_AA12_SHELLS
-    nameAsAmmo: (BS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_AA12_BUY
-    size: 0.1
-    costBuy: 120
-    costSell: 90
-    weight: 3
-    bigSprite: 190
-    floorSprite: 335
-    hitSound: 13
-    hitAnimation: 26
-    power: 15
-    damageType: 1
-    clipSize: 12
-    battleType: 2
-    armor: 20
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22591
-    powerRangeThreshold: 12
-    powerRangeReduction: 1
-  - type: STR_AA12_DRUM
-    nameAsAmmo: (BS)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_AA12_DRUM_BUY
-    size: 0.1
-    costBuy: 120
-    costSell: 90
-    weight: 3
-    bigSprite: 375
-    floorSprite: 379
-    hitSound: 13
-    hitAnimation: 26
-    power: 15
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    damageAlter:
-      RandomType: 7
-      ToTime: *12BS
-      ToStun: *12BS
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22592
-    powerRangeThreshold: 12
-    powerRangeReduction: 1
-  - type: STR_JUDGE_7
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_JUDGE_7_BUY
-    size: 0.1
-    costBuy: 6500
-    costSell: 3000
-    weight: 9
-    bigSprite: 534
-    floorSprite: 351
-    handSprite: 2288
-    bulletSprite: 1
-    fireSound: [198,199,200]
-    reloadSound: 201
-    compatibleAmmo:
-      - STR_JUDGE_7_AP_CLIP
-      - STR_JUDGE_7_BS_CLIP
-    accuracyCloseQuarters: 125
-    accuracySnap: 60
-    accuracyAimed: 80
-    tuSnap: 22
-    tuAimed: 38
-    tuLoad: 25
-    aimRange: 15
-    dropoff: 4
-    kneelBonus: 105
-    battleType: 1
-    twoHanded: false
-    shotgunChoke: 50
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    listOrder: 20271
-  - type: STR_JUDGE_7_AP_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_JUDGE_7_BUY
-    size: 0.1
-    costBuy: 200
-    costSell: 100
-    weight: 3
-    bigSprite: 535
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    power: 32
-    damageType: 1
-    clipSize: 7
-    battleType: 2
-    armor: 32
-    attraction: 15
-    listOrder: 20272
-  - type: STR_JUDGE_7_BS_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
-    requiresBuy:
-      - STR_JUDGE_7_BUY
-    size: 0.1
-    costBuy: 180
-    costSell: 90
-    weight: 3
-    bigSprite: 536
-    floorSprite: 321
-    hitSound: 13
-    hitAnimation: 26
-    powerRangeThreshold: 8
-    powerRangeReduction: 1
-    clipSize: 7
-    damageAlter:
-      RandomType: 7
-      ToTime: 0.25
-      ToStun: 0.5
-    power: 12
-    damageType: 1
-    battleType: 2
-    armor: 32
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 5
-    attraction: 15
-    listOrder: 20272
-  - type: STR_UAC_SMG
-    accuracyCloseQuarters: 120
-    accuracyAuto: 40
-    accuracySnap: 65
-    accuracyAimed: 85
-    tuAuto: 35
-    tuSnap: 25
-    tuAimed: 40
-    autoShots: 2
-    autoRange: 11
-    aimRange: 25
-    dropoff: 3
-    kneelBonus: 105
-    shotgunChoke: 90
-  - type: STR_AA12_DRAGONBREATH_DRUM
-    nameAsAmmo: (D.BREATH)
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_AA12_DRUM_BUY
-      - STR_EXOTIC_AMMUNITION
-      - STR_AA12_DRAGONBREATH_DRUM_BUY
-    size: 0.1
-    costBuy: 240
-    costSell: 120
-    weight: 3
-    bigSprite: 490
-    floorSprite: 379
-    hitSound: 93
-    hitAnimation: 287
-    power: 15
-    damageType: 1
-    clipSize: 18
-    battleType: 2
-    armor: 20
-    damageAlter:
-      FireBlastCalc: false
-      FireThreshold: 8
-      ArmorEffectiveness: 1.15
-      ToMorale: 0.5
-      ToTime: 0.1
-      RandomType: 7
-    shotgunBehavior: 1
-    shotgunSpread: 25
-    shotgunPellets: 7
-    attraction: 15
-    listOrder: 22592
-    powerRangeThreshold: 12
-    powerRangeReduction: 2
   - type: STR_UAC_SMG
     accuracyCloseQuarters: 120
     accuracyAuto: 40
